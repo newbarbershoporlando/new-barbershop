@@ -2,12 +2,22 @@
 import { path, type Lang } from '../data/ui';
 import { categories } from '../data/services';
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
+interface Props {
+  lang: Lang;
+  /** When rendered on one shop's location page, pass that shop's _id:
+      the braids category is a Shop 1 service only, so Shop 2's page
+      must not show the tile (pre-launch audit H1, owner order
+      2026-11-16: remove braids from New Barbershop 2's page EN + ES). */
+  forShop?: 'shop1' | 'shop2';
+}
+const { lang, forShop } = Astro.props;
+const visible = categories.filter(
+  (cat) => !(forShop === 'shop2' && cat._id === 'cat-braids'),
+);
 ---
 
-<div class="tiles tiles--5">
-  {categories.map((cat) => (
+<div class:list={['tiles', { 'tiles--5': visible.length === 5 }]}>
+  {visible.map((cat) => (
     <a class="tile" href={`${path(lang, 'services')}#${cat.slug}`}>
       <img src={cat.image} alt={cat.imageAlt[lang]} loading="lazy" width="600" height="450" />
       <div class="tile-body">

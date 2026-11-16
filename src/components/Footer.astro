@@ -19,7 +19,7 @@ const t = ui[lang];
         <div>
           <h3>{loc.name}</h3>
           <p>{loc.street}<br />{loc.city}, {loc.state} {loc.zip}</p>
-          <p><a href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
+          <p><a class="cta-call cta-footer" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
           <p>{loc.hoursSummary[lang]}</p>
           <p><a href={path(lang, `locations/${loc.slug}`)}>{lang === 'en' ? 'Shop page →' : 'Página de la barbería →'}</a></p>
         </div>

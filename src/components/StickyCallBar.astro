@@ -8,8 +8,10 @@ const t = ui[lang];
 ---
 
 <div class="call-bar" id="callBar" aria-label={t.callToBook}>
-  <a href={shop1.phoneHref}>☎ {t.callShop1}</a>
-  <a href={shop2.phoneHref}>☎ {t.callShop2}</a>
+  {/* Tracking contract (tracking-impl §2, audit H5): cta-call +
+      cta-sticky placement classes; data-shop identifies the shop. */}
+  <a class="cta-call cta-sticky" data-shop="shop_1" href={shop1.phoneHref}>☎ {t.callShop1}</a>
+  <a class="cta-call cta-sticky" data-shop="shop_2" href={shop2.phoneHref}>☎ {t.callShop2}</a>
 </div>
 
 <!-- The bar is always visible, on every page, from the top of the

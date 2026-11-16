@@ -45,8 +45,8 @@ const siteRoot = site.href.replace(/\/$/, '');
           <a href={path(lang, 'services')}>{t.seeServices}</a> · <a href={path(lang, 'contact')}>{t.contactUs}</a>
         </p>
         <div class="btn-stack" style="margin-top:20px">
-          <a class="btn btn--call" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
-          <a class="btn btn--call" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
+          <a class="btn btn--call cta-call cta-page" data-shop="shop_1" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
+          <a class="btn btn--call cta-call cta-page" data-shop="shop_2" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
         </div>
         <p style="margin-top:28px"><a href={path(lang, 'blog')}>{t.backToBlog}</a></p>
       </div>

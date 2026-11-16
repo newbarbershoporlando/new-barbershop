@@ -85,7 +85,7 @@ const shops = [shop1, shop2];
       <h2>{c.teamHeading}</h2>
       <div class="btn-row">
         {shops.map((loc, i) => (
-          <a class="btn btn--ghost-light" href={loc.mapsUrl} target="_blank" rel="noopener">
+          <a class="btn btn--ghost-light" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.mapsUrl} target="_blank" rel="noopener">
             {c.teamButton(i + 1)}
           </a>
         ))}

@@ -21,6 +21,10 @@ const t = ui[lang];
 const seo = pageSeo[loc._id as 'shop1' | 'shop2'][lang];
 const other = locations.find((l) => l._id !== loc._id)!;
 const scope = loc._id as 'shop1' | 'shop2';
+// Tracking contract (tracking-impl §2, audit H5): data-shop values use
+// the shop_1 / shop_2 form the GTM variables expect.
+const shopKey = scope === 'shop1' ? 'shop_1' : 'shop_2';
+const otherKey = scope === 'shop1' ? 'shop_2' : 'shop_1';
 const site = Astro.site!;
 const siteRoot = site.href.replace(/\/$/, '');
 const abs = (slug: string) => new URL(path(lang, slug), site).href;
@@ -50,19 +54,19 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
       <h2>{loc.introHeading[lang]}</h2>
       <p style="max-width:760px">{loc.intro[lang]}</p>
       <p>
-        {loc.street}, {loc.city}, {loc.state} {loc.zip} · <a href={loc.phoneHref}>{loc.phoneDisplay}</a>
+        {loc.street}, {loc.city}, {loc.state} {loc.zip} · <a class="cta-call cta-page" data-shop={shopKey} href={loc.phoneHref}>{loc.phoneDisplay}</a>
         · <a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram</a>
       </p>
 
       <HoursTable loc={loc} lang={lang} />
 
       <div class="action-row">
-        <a class="btn btn--call" href={loc.phoneHref}>
+        <a class="btn btn--call cta-call cta-page" data-shop={shopKey} href={loc.phoneHref}>
           ☎ {loc._id === 'shop1' ? t.callShop1 : t.callShop2} · {loc.phoneDisplay}
         </a>
-        <a class="btn btn--ghost-light" href={loc.mapsUrl} target="_blank" rel="noopener">{t.getDirections}</a>
+        <a class="btn btn--ghost-light" data-shop={shopKey} href={loc.mapsUrl} target="_blank" rel="noopener">{t.getDirections}</a>
         {loc.whatsapp && (
-          <a class="btn btn--whatsapp" href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
+          <a class="btn btn--whatsapp" data-shop={shopKey} href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
         )}
       </div>
     </div>
@@ -87,9 +91,9 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
   <section class="section">
     <div class="wrap">
       <h2>{t.servicesAtGlance}</h2>
-      <CategoryTiles lang={lang} />
+      <CategoryTiles lang={lang} forShop={scope} />
       <p style="margin-top:20px">
-        <a class="btn btn--ghost-light" href={loc.mapsUrl} target="_blank" rel="noopener">
+        <a class="btn btn--ghost-light" data-shop={shopKey} href={loc.mapsUrl} target="_blank" rel="noopener">
           {t.seeWork(loc._id === 'shop1' ? 1 : 2)}
         </a>
       </p>
@@ -105,7 +109,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
       <h2>{t.alsoVisit}</h2>
       <p>
         <strong>{other.name}</strong> — {other.area[lang]} · {other.street}, {other.city}, {other.state} {other.zip}
-        · <a href={other.phoneHref}>{other.phoneDisplay}</a>
+        · <a class="cta-call cta-page" data-shop={otherKey} href={other.phoneHref}>{other.phoneDisplay}</a>
       </p>
       <a class="btn btn--ghost-light" href={path(lang, `locations/${other.slug}`)}>
         {other._id === 'shop1' ? t.visitShop1 : t.visitShop2}

@@ -41,7 +41,7 @@ function initials(name: string): string {
             </div>
           ))}
         </div>
-        <a class="btn btn--ghost-dark" href={loc.mapsUrl} target="_blank" rel="noopener">{t.readReviews}</a>
+        <a class="btn btn--ghost-dark btn-reviews" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.mapsUrl} target="_blank" rel="noopener">{t.readReviews}</a>
       </div>
     ))}
   </div>

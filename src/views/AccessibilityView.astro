@@ -73,7 +73,7 @@ const copy = {
               </p>
               <p>{loc.hoursSummary[lang]}</p>
               <p>
-                <a class="btn btn--call" href={loc.phoneHref}>
+                <a class="btn btn--call cta-call cta-page" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>
                   {copy.callLabel(loc)} — {loc.phoneDisplay}
                 </a>
               </p>

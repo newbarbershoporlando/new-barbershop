@@ -17,11 +17,11 @@ const t = ui[lang];
   <p class="area">{loc.area[lang]}</p>
   <p class="addr">{loc.street}<br />{loc.city}, {loc.state} {loc.zip}</p>
   <p class="hours-line">{loc.hoursSummary[lang]}</p>
-  <p class="phone-big"><a href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
+  <p class="phone-big"><a class="cta-call cta-card" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
   <div class="btn-row">
-    <a class="btn btn--call" href={loc.phoneHref}>☎ {t.callToBook}</a>
+    <a class="btn btn--call cta-call cta-card" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>☎ {t.callToBook}</a>
     {loc.whatsapp && (
-      <a class="btn btn--whatsapp" href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
+      <a class="btn btn--whatsapp" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
     )}
   </div>
   {showVisit && (
