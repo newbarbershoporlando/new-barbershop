@@ -36,7 +36,7 @@ const jpgOf = (webp: string) => webp.replace(/\.webp$/, '.jpg');
           data-alt={item.alt[lang]}
           aria-label={t.viewLarger(labelOf(item))}
         >
-          <img src={item.src} alt={item.alt[lang]} loading="lazy" width="800" height="600" />
+          <img src={item.src} alt={item.alt[lang]} loading="lazy" decoding="async" width="800" height="600" />
         </button>
         {item.caption && <figcaption class="gallery-cap">{item.caption.style[lang]}</figcaption>}
       </figure>

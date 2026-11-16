@@ -19,7 +19,7 @@ const visible = categories.filter(
 <div class:list={['tiles', { 'tiles--5': visible.length === 5 }]}>
   {visible.map((cat) => (
     <a class="tile" href={`${path(lang, 'services')}#${cat.slug}`}>
-      <img src={cat.image} alt={cat.imageAlt[lang]} loading="lazy" width="600" height="450" />
+      <img src={cat.image} alt={cat.imageAlt[lang]} loading="lazy" decoding="async" width="600" height="450" />
       <div class="tile-body">
         <h2>{cat.tileLabel[lang]}</h2>
         <p>{cat.benefit[lang]}</p>

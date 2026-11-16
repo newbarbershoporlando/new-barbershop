@@ -20,7 +20,7 @@ const seo = pageSeo.blog[lang];
           return (
             <article class="card">
               <a href={path(lang, post.slug)}>
-                <img src={postThumb(post)} alt={post.imageAlt[lang]} loading="lazy" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
+                <img src={postThumb(post)} alt={post.imageAlt[lang]} loading="lazy" decoding="async" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
               </a>
               <h2><a href={path(lang, post.slug)}>{loc.title}</a></h2>
               <p>{loc.intro.slice(0, 160)}…</p>

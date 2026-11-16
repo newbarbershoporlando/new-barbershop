@@ -33,7 +33,7 @@ const siteRoot = site.href.replace(/\/$/, '');
     <div class="wrap">
       <div class="post-body">
         <h1>{loc.title}</h1>
-        <img class="post-hero-img" src={post.image} alt={post.imageAlt[lang]} width="1024" height="682" />
+        <img class="post-hero-img" src={post.image} alt={post.imageAlt[lang]} width="1024" height="682" fetchpriority="high" />
         <p>{loc.intro}</p>
         {post.sections.map((sec) => (
           <>
@@ -60,7 +60,7 @@ const siteRoot = site.href.replace(/\/$/, '');
               {related.map((rp) => (
                 <article class="card">
                   <a href={path(lang, rp.slug)}>
-                    <img src={postThumb(rp)} alt={rp.imageAlt[lang]} loading="lazy" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
+                    <img src={postThumb(rp)} alt={rp.imageAlt[lang]} loading="lazy" decoding="async" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
                   </a>
                   <h3><a href={path(lang, rp.slug)}>{rp.locales[lang].title}</a></h3>
                   <a href={path(lang, rp.slug)}>{t.readPost}</a>

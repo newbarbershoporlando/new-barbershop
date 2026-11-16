@@ -81,9 +81,9 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
            interiors, replacing the banner crops that stood in for them,
            manifest §2). The scaffold's shared stock set must never stand
            in for a specific shop. -->
-      <img src={loc.photo} alt={loc.photoAlt[lang]} loading="lazy" width={loc.photoSize?.w ?? 800} height={loc.photoSize?.h ?? 600} style="border-radius:8px;max-width:100%;height:auto" />
+      <img src={loc.photo} alt={loc.photoAlt[lang]} loading="lazy" decoding="async" width={loc.photoSize?.w ?? 800} height={loc.photoSize?.h ?? 600} style="border-radius:8px;max-width:100%;height:auto" />
       {loc.photo2 && loc.photo2Alt && (
-        <img src={loc.photo2} alt={loc.photo2Alt[lang]} loading="lazy" width={loc.photo2Size?.w ?? 1086} height={loc.photo2Size?.h ?? 1448} style="border-radius:8px;max-width:min(480px,100%);height:auto;margin-top:16px" />
+        <img src={loc.photo2} alt={loc.photo2Alt[lang]} loading="lazy" decoding="async" width={loc.photo2Size?.w ?? 1086} height={loc.photo2Size?.h ?? 1448} style="border-radius:8px;max-width:min(480px,100%);height:auto;margin-top:16px" />
       )}
     </div>
   </section>
