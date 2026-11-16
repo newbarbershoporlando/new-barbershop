@@ -4,7 +4,16 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyCallBar from '../components/StickyCallBar.astro';
 import BackToTop from '../components/BackToTop.astro';
-import { GTM_ID, BANNER_ALT, path, altPath, ui, type Lang } from '../data/ui';
+import { GTM_ID, path, altPath, ui, type Lang } from '../data/ui';
+
+/* og:image:alt describes the SHARE image (/images/og-image.jpg — the shop
+   logo on the dark brand background), NOT the hero/banner photo, so it
+   gets its own strings here. BANNER_ALT in ui.ts stays untouched: it is
+   a Sanity siteSettings-fed string and no longer describes this image. */
+const OG_IMAGE_ALT = {
+  en: 'New Barbershop Orlando logo',
+  es: 'Logotipo de New Barbershop Orlando',
+} as const;
 
 interface Props {
   lang: Lang;
@@ -43,7 +52,7 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:alt" content={BANNER_ALT[lang]} />
+    <meta property="og:image:alt" content={OG_IMAGE_ALT[lang]} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" type="image/png" href="/images/logo.png" />
