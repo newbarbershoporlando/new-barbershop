@@ -114,7 +114,7 @@ export const homeCopy = {
   en: {
     heroH1: 'Top-Rated Barber Shop in Orlando for Fades & Grooming',
     heroLine:
-      'Haircuts, skin fades, beard trims and hot towel shaves at two Orlando locations — family-run since 2003, 1,400+ five-star reviews, walk-ins welcome.',
+      'Precision haircuts, beard trims, hot towel shaves, razor line-ups, hair designs, braids and kids cuts — walk-ins welcome at Hunters Creek and near Florida Mall.',
     workHeading: 'Our Work',
     workIntro:
       'Real cuts from our own chairs — every photo below is our work, no stock pictures.',
@@ -144,7 +144,7 @@ export const homeCopy = {
   es: {
     heroH1: 'La Barbería Mejor Valorada de Orlando para Fades y Grooming',
     heroLine:
-      'Cortes de cabello, skin fades, arreglos de barba y afeitado con toalla caliente en dos ubicaciones de Orlando — negocio familiar desde 2003, más de 1,400 reseñas de cinco estrellas, sin cita previa.',
+      'Cortes de precisión, arreglo de barba, afeitado con toalla caliente, perfilado a navaja, diseños en el cabello, trenzas y cortes para niños — sin cita previa en Hunters Creek y cerca de Florida Mall.',
     workHeading: 'Nuestro trabajo',
     workIntro:
       'Cortes reales de nuestras propias sillas — cada foto de abajo es nuestro trabajo, sin fotos de archivo.',
