@@ -144,18 +144,22 @@ const localLocations: Location[] = [
     geo: { lat: 28.4667863, lng: -81.3972292 },
     rating: '5.0',
     reviewCount: 174,
+    // Hours corrected 2026-11-16 from the owner's own screenshots of
+    // the live Google listing (the authority): Mon 9:00 AM–9:00 PM,
+    // Tue–Sun 9:00 AM–10:00 PM. Supersedes the 2026-11-14 Places pull
+    // (Sun 9:30–8:30, Mon 9:30–9:00, Tue–Sat 9:00–10:00).
     hours: [
       {
         day: { en: 'Sunday', es: 'Domingo' },
-        opens: '09:30',
-        closes: '20:30',
-        display: { en: '9:30 AM – 8:30 PM', es: '9:30 AM – 8:30 PM' },
+        opens: '09:00',
+        closes: '22:00',
+        display: { en: '9:00 AM – 10:00 PM', es: '9:00 AM – 10:00 PM' },
       },
       {
         day: { en: 'Monday', es: 'Lunes' },
-        opens: '09:30',
+        opens: '09:00',
         closes: '21:00',
-        display: { en: '9:30 AM – 9:00 PM', es: '9:30 AM – 9:00 PM' },
+        display: { en: '9:00 AM – 9:00 PM', es: '9:00 AM – 9:00 PM' },
       },
       ...(['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const).map(
         (d) =>
@@ -177,8 +181,8 @@ const localLocations: Location[] = [
       ),
     ],
     hoursSummary: {
-      en: 'Sun: 9:30 AM – 8:30 PM · Mon: 9:30 AM – 9:00 PM · Tue–Sat: 9:00 AM – 10:00 PM',
-      es: 'Dom: 9:30 AM – 8:30 PM · Lun: 9:30 AM – 9:00 PM · Mar–Sáb: 9:00 AM – 10:00 PM',
+      en: 'Mon: 9:00 AM – 9:00 PM · Tue–Sun: 9:00 AM – 10:00 PM',
+      es: 'Lun: 9:00 AM – 9:00 PM · Mar–Dom: 9:00 AM – 10:00 PM',
     },
     introHeading: {
       en: 'Your Neighborhood Barbershop Near Florida Mall',
