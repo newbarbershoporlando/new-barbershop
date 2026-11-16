@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ui, path, type Lang } from '../data/ui';
-import { shop1, shop2 } from '../data/locations';
-import { getPost } from '../data/posts';
+import { shop1, shop2, locations } from '../data/locations';
+import { getPost, relatedPosts, postThumb } from '../data/posts';
 import { blogPostingNode } from '../lib/schema';
 
 interface Props { lang: Lang; slug: string }
@@ -10,6 +10,7 @@ const { lang, slug } = Astro.props;
 const t = ui[lang];
 const post = getPost(slug);
 const loc = post.locales[lang];
+const related = relatedPosts(post);
 const site = Astro.site!;
 const siteRoot = site.href.replace(/\/$/, '');
 ---
@@ -48,6 +49,38 @@ const siteRoot = site.href.replace(/\/$/, '');
           <a class="btn btn--call cta-call cta-page" data-shop="shop_1" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
           <a class="btn btn--call cta-call cta-page" data-shop="shop_2" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
         </div>
+
+        {/* Internal linking (audit H3): related posts from the same
+            topic cluster only, then a visit block linking both
+            location pages. Body copy above is untouched. */}
+        {related.length > 0 && (
+          <div class="related-block">
+            <h2>{t.relatedHeading}</h2>
+            <div class="post-cards">
+              {related.map((rp) => (
+                <article class="card">
+                  <a href={path(lang, rp.slug)}>
+                    <img src={postThumb(rp)} alt={rp.imageAlt[lang]} loading="lazy" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
+                  </a>
+                  <h3><a href={path(lang, rp.slug)}>{rp.locales[lang].title}</a></h3>
+                  <a href={path(lang, rp.slug)}>{t.readPost}</a>
+                </article>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="post-locations">
+          <h2>{t.visitUs}</h2>
+          {locations.map((l) => (
+            <p>
+              <strong>{l.name}</strong> — {l.area[lang]} · {l.street}, {l.city}, {l.state} {l.zip}
+              <br />
+              <a href={path(lang, `locations/${l.slug}`)}>{l._id === 'shop1' ? t.visitShop1 : t.visitShop2}</a>
+            </p>
+          ))}
+        </div>
+
         <p style="margin-top:28px"><a href={path(lang, 'blog')}>{t.backToBlog}</a></p>
       </div>
     </div>

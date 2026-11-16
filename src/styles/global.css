@@ -407,6 +407,9 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 @media (min-width: 1000px) { .post-cards { grid-template-columns: repeat(3, 1fr); } }
 .post-body { max-width: 720px; margin: 0 auto; font-size: 18px; line-height: 1.6; }
 .post-body h2 { margin-top: 1.4em; }
+/* Related-posts + visit blocks at the end of every post (audit H3). */
+.related-block { margin-top: 44px; }
+.post-locations { margin-top: 36px; }
 .post-hero-img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 12px; margin-bottom: 28px; }
 
 /* ——— Blog band ——— */

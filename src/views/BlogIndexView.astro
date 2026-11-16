@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ui, path, type Lang } from '../data/ui';
-import { posts } from '../data/posts';
+import { posts, postThumb } from '../data/posts';
 import { pageSeo } from '../data/pages';
 
 interface Props { lang: Lang }
@@ -20,7 +20,7 @@ const seo = pageSeo.blog[lang];
           return (
             <article class="card">
               <a href={path(lang, post.slug)}>
-                <img src={post.image} alt={post.imageAlt[lang]} loading="lazy" width="1024" height="682" style="border-radius:8px;margin-bottom:14px" />
+                <img src={postThumb(post)} alt={post.imageAlt[lang]} loading="lazy" width="480" height="320" style="border-radius:8px;margin-bottom:14px" />
               </a>
               <h2><a href={path(lang, post.slug)}>{loc.title}</a></h2>
               <p>{loc.intro.slice(0, 160)}…</p>

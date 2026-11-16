@@ -1568,3 +1568,36 @@ export function getPost(slug: string): Post {
   if (!post) throw new Error(`Unknown post slug: ${slug}`);
   return post;
 }
+
+// ——— Internal linking (pre-launch audit H3, owner-authorized 2026-11-16) ———
+// Topic clusters for the related-posts block: every post belongs to
+// exactly one cluster, and related posts are drawn ONLY from the same
+// cluster, in canonical post order. Data-driven — edit the cluster
+// lists here and every post page follows.
+/** 480px card thumbnail variant of a post hero (audit M12). */
+export function postThumb(post: Post): string {
+  return post.image.replace(/\.webp$/, '-480.webp');
+}
+
+const CLUSTERS: string[][] = [
+  // Fades & styles
+  ['blog/expert-fades-orlando', 'blog/fade-vs-taper', 'blog/skin-fade-textured-hair', 'blog/line-up-haircut', 'blog/freestyle-hair-designs', 'blog/wave-haircut-technique'],
+  // Braids, waves & textured hair
+  ['blog/braids-orlando', 'blog/braids-aftercare', 'blog/360-waves-routine', 'blog/curly-hair-routine-men', 'blog/orlando-textured-hair-barber'],
+  // Beard & grooming habits
+  ['blog/beard-care-at-home', 'blog/are-beards-attractive', 'blog/beard-shaping-sensitive-skin', 'blog/men-grooming-habits'],
+  // Hair care & routine
+  ['blog/how-often-wash-hair-men', 'blog/best-hair-product-for-men', 'blog/how-often-haircut-men', 'blog/two-week-haircut-routine-professionals'],
+  // Local & visits
+  ['blog/haircut-near-florida-mall', 'blog/haircut-layover-orlando-airport', 'blog/haircut-orange-blossom-trail-car-shopping', 'blog/new-car-haircut', 'blog/holiday-haircuts-orlando'],
+  // The shop & fresh starts
+  ['blog/top-rated-barber-shop-orlando', 'blog/welcome-neighborhood-barbershop-orlando', 'blog/psychology-fresh-haircut', 'blog/haircut-new-start'],
+];
+
+export function relatedPosts(post: Post, count = 3): Post[] {
+  const cluster = CLUSTERS.find((c) => c.includes(post.slug));
+  if (!cluster) return [];
+  return posts
+    .filter((p) => p.slug !== post.slug && cluster.includes(p.slug))
+    .slice(0, count);
+}
