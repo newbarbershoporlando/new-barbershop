@@ -154,6 +154,28 @@ img { max-width: 100%; height: auto; display: block; }
   .header-call { min-height: 44px; padding: 8px 14px; font-size: 16px; }
   .header-in { padding-top: 8px; padding-bottom: 8px; }
 }
+/* Round 3 (Item 1) — compaction-first header fix. Rendered evidence
+   (headless Chromium, pre-change): at ≤480px the flex row ran out of
+   room and the LOGO absorbed the deficit (ES 320px: logo rendered
+   65px against its 120px step; EN 320px: 84px). The fix protects the
+   logo with flex-shrink: 0 and buys the room back from chrome —
+   gaps, side padding, call-button padding/type, switcher padding.
+   The logo's 120px step and every header element stay. This block
+   sits after the ≤899px block so its values win the cascade. */
+@media (max-width: 480px) {
+  .header-in { gap: 8px; padding-left: 12px; padding-right: 12px; }
+  .header-logo { flex-shrink: 0; }
+  /* .header-in prefix: these must outrank the ≤600px .btn--call rule
+     and the base .lang-switch rule, which sit later in this file. */
+  .header-in .header-call { flex-shrink: 0; padding: 8px 10px; font-size: 15px; }
+  .header-in .lang-switch { flex-shrink: 0; padding: 6px 8px; }
+  .menu-toggle { flex-shrink: 0; }
+}
+@media (max-width: 380px) {
+  .header-in { gap: 6px; padding-left: 10px; padding-right: 10px; }
+  .header-in .header-call { padding: 8px 8px; font-size: 14px; }
+  .header-in .lang-switch { padding: 6px 6px; }
+}
 .main-nav { display: none; }
 @media (min-width: 900px) {
   .main-nav { display: block; margin-left: auto; }
@@ -467,6 +489,16 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
    became the homepage's call action — the old .call-bar--deferred
    hide-until-scroll behavior is gone). */
 @media (min-width: 900px) { .call-bar { display: none; } }
+/* Round 3 (Item 1, owner L2) — at ≤480px the bar type steps to 14px
+   and the ☎ glyph is hidden IN THE BAR ONLY (the header keeps its
+   glyph; StickyCallBar wraps it in .cb-glyph). Placed after the base
+   .call-bar rules so it wins the cascade — note the round-1 ≤600px
+   15px step sits BEFORE the base rules in this file and never took
+   effect (rendered bar type measured 16px at every width). */
+@media (max-width: 480px) {
+  .call-bar a { font-size: 14px; letter-spacing: -0.02em; }
+  .call-bar .cb-glyph { display: none; }
+}
 /* Bottom padding = bar height (56) + its 2px top border + 2px
    clearance + safe area, so the bar never covers the footer (§2.4). */
 body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }

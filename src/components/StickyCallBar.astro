@@ -10,8 +10,11 @@ const t = ui[lang];
 <div class="call-bar" id="callBar" aria-label={t.callToBook}>
   {/* Tracking contract (tracking-impl §2, audit H5): cta-call +
       cta-sticky placement classes; data-shop identifies the shop. */}
-  <a class="cta-call cta-sticky" data-shop="shop_1" href={shop1.phoneHref}>☎ {t.callShop1}</a>
-  <a class="cta-call cta-sticky" data-shop="shop_2" href={shop2.phoneHref}>☎ {t.callShop2}</a>
+  {/* Round-3 L2: bar-only labels (barCallShop1/2); the ☎ glyph sits in
+      a span so CSS can hide it in the mobile bar only (≤480px) — the
+      header keeps its glyph. hrefs/classes/data-shop unchanged. */}
+  <a class="cta-call cta-sticky" data-shop="shop_1" href={shop1.phoneHref}><span class="cb-glyph" aria-hidden="true">☎ </span>{t.barCallShop1}</a>
+  <a class="cta-call cta-sticky" data-shop="shop_2" href={shop2.phoneHref}><span class="cb-glyph" aria-hidden="true">☎ </span>{t.barCallShop2}</a>
 </div>
 
 <!-- The bar is always visible, on every page, from the top of the

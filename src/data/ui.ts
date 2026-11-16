@@ -34,6 +34,11 @@ export const ui = {
     call: 'Call',
     callShop1: 'Call Hunters Creek',
     callShop2: 'Call Florida Mall',
+    /* Sticky-bar-only labels (round-3 L2): the bar is space-critical,
+       so it gets its own strings. callShop1/2 above stay untouched —
+       they are shared with the location pages and blog call buttons. */
+    barCallShop1: 'Call Hunters Creek',
+    barCallShop2: 'Call Florida Mall',
     whatsapp: 'WhatsApp Us',
     readReviews: 'Read all our Google reviews',
     reviewsHeading: 'What Our Customers Say',
@@ -77,6 +82,11 @@ export const ui = {
     call: 'Llamar',
     callShop1: 'Llamar a Hunters Creek',
     callShop2: 'Llamar a Florida Mall',
+    /* Sticky-bar-only labels (round-3 L2, owner decision 2026-11-16):
+       shorter than callShop1/2 so they fit the bar on one line at
+       320px; the longer forms stay on location pages and blog buttons. */
+    barCallShop1: 'Llamar Hunters Creek',
+    barCallShop2: 'Llamar Florida Mall',
     whatsapp: 'Escríbenos por WhatsApp',
     readReviews: 'Lee todas nuestras reseñas de Google',
     reviewsHeading: 'Lo que dicen nuestros clientes',
