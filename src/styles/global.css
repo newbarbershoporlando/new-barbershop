@@ -305,7 +305,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 .hero-sub { max-width: 520px; font-size: 19px; margin: 0 auto; text-align: center; }
-/* Location-named call labels (Call Hunters Creek / Call Florida Mall,
+/* Location-named call labels (Call Southchase / Call Florida Mall,
    EN + ES) are longer than the old Shop 1/2 labels: on small screens,
    shrink call-button type a step so label + phone stay on one line
    and paired buttons keep identical heights. Desktop unchanged. */

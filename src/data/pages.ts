@@ -50,12 +50,12 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
     en: {
       title: 'Barber Shop on Orange Blossom Trail Orlando | New Barbershop',
       description:
-        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Hunters Creek (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
+        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Southchase (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
     },
     es: {
       title: 'Barbería en Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Dos barberías en Orange Blossom Trail, Orlando, abiertas los 7 días. Llama a Hunters Creek al (407) 470-4846 o a Florida Mall al (407) 820-4541.',
+        'Dos barberías en Orange Blossom Trail, Orlando, abiertas los 7 días. Llama a Southchase al (407) 470-4846 o a Florida Mall al (407) 820-4541.',
     },
   },
   locations: {
@@ -63,12 +63,12 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
     en: {
       title: 'Barber Shops on Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Two barber shops on Orange Blossom Trail in Orlando — New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
+        'Two barber shops on Orange Blossom Trail in Orlando — New Barbershop 1 in Southchase and New Barbershop 2 near Florida Mall, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
     },
     es: {
       title: 'Barberías en Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Dos barberías en Orange Blossom Trail en Orlando — New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall, abiertas los 7 días de la semana. Llama al (407) 470-4846 o al (407) 820-4541 para reservar.',
+        'Dos barberías en Orange Blossom Trail en Orlando — New Barbershop 1 en Southchase y New Barbershop 2 cerca de Florida Mall, abiertas los 7 días de la semana. Llama al (407) 470-4846 o al (407) 820-4541 para reservar.',
     },
   },
   blog: {
@@ -91,9 +91,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'New Barbershop 1 in Orlando 32837 — family-run since 2003, open 7 days a week. Walk-ins welcome. Call (407) 470-4846 to book your haircut today.',
     },
     es: {
-      title: 'Barbería en Hunters Creek, Orlando 32837 | New Barbershop 1',
+      title: 'Barbería en Southchase, Orlando 32837 | New Barbershop 1',
       description:
-        'New Barbershop 1 en Hunters Creek, Orlando 32837: barbería familiar desde 2003, abierta los 7 días. Sin cita o llama al (407) 470-4846.',
+        'New Barbershop 1 en Southchase, Orlando 32837: barbería familiar desde 2003, abierta los 7 días. Sin cita o llama al (407) 470-4846.',
     },
   },
   shop2: {
@@ -114,7 +114,7 @@ export const homeCopy = {
   en: {
     heroH1: 'Top-Rated Barber Shop in Orlando for Fades & Grooming',
     heroLine:
-      'Precision haircuts, beard trims, hot towel shaves, razor line-ups, hair designs, braids and kids cuts — walk-ins welcome at Hunters Creek and near Florida Mall.',
+      'Precision haircuts, beard trims, hot towel shaves, razor line-ups, hair designs, braids and kids cuts — walk-ins welcome at Southchase and near Florida Mall.',
     workHeading: 'Our Work',
     workIntro:
       'Real cuts from our own chairs — every photo below is our work, no stock pictures.',
@@ -144,7 +144,7 @@ export const homeCopy = {
   es: {
     heroH1: 'La Barbería Mejor Valorada de Orlando para Fades y Grooming',
     heroLine:
-      'Cortes de precisión, arreglo de barba, afeitado con toalla caliente, perfilado a navaja, diseños en el cabello, trenzas y cortes para niños — sin cita previa en Hunters Creek y cerca de Florida Mall.',
+      'Cortes de precisión, arreglo de barba, afeitado con toalla caliente, perfilado a navaja, diseños en el cabello, trenzas y cortes para niños — sin cita previa en Southchase y cerca de Florida Mall.',
     workHeading: 'Nuestro trabajo',
     workIntro:
       'Cortes reales de nuestras propias sillas — cada foto de abajo es nuestro trabajo, sin fotos de archivo.',
@@ -196,9 +196,9 @@ export const aboutCopy = {
     heading: 'The Story Behind Barbershop',
     lead: 'Family-run since 2003, New Barbershop brings over 20 years of experience to every chair in Orlando.',
     body1:
-      'We are two Orlando barbershops on South Orange Blossom Trail: New Barbershop 1 at 9741 S Orange Blossom Trl, Orlando, FL 32837, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, Orlando, FL 32809, near Florida Mall — about 3.7 miles apart. Walk-ins are always welcome. Booking is by phone: call Hunters Creek at (407) 470-4846 or Florida Mall at (407) 820-4541. WhatsApp is available at Hunters Creek.',
+      'We are two Orlando barbershops on South Orange Blossom Trail: New Barbershop 1 at 9741 S Orange Blossom Trl, Orlando, FL 32837, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, Orlando, FL 32809, near Florida Mall — about 3.7 miles apart. Walk-ins are always welcome. Booking is by phone: call Southchase at (407) 470-4846 or Florida Mall at (407) 820-4541. WhatsApp is available at Southchase.',
     body2:
-      'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. We serve you in English y español. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client.',
+      'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. We serve you in English y español. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client.',
     valuesHeading: 'Our Core Values',
     valuesIntro:
       'At Barbershop, our core values guide us in delivering exceptional grooming experiences that empower our clients.',
@@ -224,9 +224,9 @@ export const aboutCopy = {
     heading: 'La historia detrás de Barbershop',
     lead: 'Un negocio familiar desde 2003, New Barbershop aporta más de 20 años de experiencia a cada silla en Orlando.',
     body1:
-      'Somos dos barberías de Orlando sobre South Orange Blossom Trail: New Barbershop 1 en 9741 S Orange Blossom Trl, Orlando, FL 32837, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, Orlando, FL 32809, cerca de Florida Mall — a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita. Las reservas son por teléfono: llama a Hunters Creek al (407) 470-4846 o a Florida Mall al (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+      'Somos dos barberías de Orlando sobre South Orange Blossom Trail: New Barbershop 1 en 9741 S Orange Blossom Trl, Orlando, FL 32837, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, Orlando, FL 32809, cerca de Florida Mall — a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita. Las reservas son por teléfono: llama a Southchase al (407) 470-4846 o a Florida Mall al (407) 820-4541. WhatsApp está disponible en Southchase.',
     body2:
-      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Te atendemos en English y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
+      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Te atendemos en English y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
     valuesHeading: 'Nuestros valores',
     valuesIntro:
       'En Barbershop, nuestros valores guían la forma en que brindamos experiencias excepcionales de cuidado personal que dan confianza a nuestros clientes.',
@@ -262,7 +262,7 @@ export const howItWorks = {
     steps: [
       {
         title: 'Call your shop',
-        body: 'Pick your shop and call to book your chair: Hunters Creek at (407) 470-4846 or Florida Mall at (407) 820-4541. Rather just come by? Walk-ins are always welcome.',
+        body: 'Pick your shop and call to book your chair: Southchase at (407) 470-4846 or Florida Mall at (407) 820-4541. Rather just come by? Walk-ins are always welcome.',
       },
       {
         title: 'Come in and sit down',
@@ -280,7 +280,7 @@ export const howItWorks = {
     steps: [
       {
         title: 'Llama a tu barbería',
-        body: 'Elige tu barbería y llama para apartar tu cita: Hunters Creek al (407) 470-4846 o Florida Mall al (407) 820-4541. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
+        body: 'Elige tu barbería y llama para apartar tu cita: Southchase al (407) 470-4846 o Florida Mall al (407) 820-4541. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
       },
       {
         title: 'Ven y siéntate',

@@ -69,22 +69,22 @@ const localPosts: Post[] = [
           es: 'Una barbería familiar en la que Orlando confía desde 2003',
         },
         body: {
-          en: 'We are a family-run business with over 20 years of experience behind the chair. Our two Orlando shops sit on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client.',
-          es: 'Somos un negocio familiar con más de 20 años de experiencia detrás de la silla. Nuestras dos barberías de Orlando están sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
+          en: 'We are a family-run business with over 20 years of experience behind the chair. Our two Orlando shops sit on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client.',
+          es: 'Somos un negocio familiar con más de 20 años de experiencia detrás de la silla. Nuestras dos barberías de Orlando están sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
         },
       },
       {
         heading: { en: 'Services for Every Style', es: 'Servicios para cada estilo' },
         body: {
-          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. Whether you want a clean fade, a sharp line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. Whether you want a clean fade, a sharp line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'Visit Us or Call to Book', es: 'Visítanos o llama para reservar' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -123,22 +123,22 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Fades in Orlando for Every Style', es: 'Degradados en Orlando para cada estilo' },
         body: {
-          en: 'From low fades to high skin fades, tapers to burst fades, we shape each cut to your hair and your look. Whether you want a clean everyday fade or a bold design, we take our time on the details — the line-up, the edges, the finish. Our full service also covers beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. See everything we do on our Services page.',
-          es: 'Desde degradados bajos hasta degradados altos al ras, tapers y burst fades, adaptamos cada corte a tu cabello y tu look. Ya sea que quieras un degradado limpio para todos los días o un diseño llamativo, nos tomamos el tiempo en los detalles — el delineado, los bordes, el acabado. Nuestro servicio completo también incluye arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Mira todo lo que hacemos en nuestra página de Servicios.',
+          en: 'From low fades to high skin fades, tapers to burst fades, we shape each cut to your hair and your look. Whether you want a clean everyday fade or a bold design, we take our time on the details — the line-up, the edges, the finish. Our full service also covers beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. See everything we do on our Services page.',
+          es: 'Desde degradados bajos hasta degradados altos al ras, tapers y burst fades, adaptamos cada corte a tu cabello y tu look. Ya sea que quieras un degradado limpio para todos los días o un diseño llamativo, nos tomamos el tiempo en los detalles — el delineado, los bordes, el acabado. Nuestro servicio completo también incluye arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Mira todo lo que hacemos en nuestra página de Servicios.',
         },
       },
       {
         heading: { en: 'Two Orlando Shops, One Standard', es: 'Dos barberías en Orlando, un mismo estándar' },
         body: {
-          en: 'We are a family-run business since 2003, with two shops on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'We are a family-run business since 2003, with two shops on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'Book Your Fade', es: 'Reserva tu degradado' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -159,41 +159,41 @@ const localPosts: Post[] = [
         title: 'Braids in Orlando — Braiding for Men and Women',
         seoTitle: 'Braids in Orlando — Braiding for Men and Women',
         metaDescription:
-          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Hunters Creek (407) 470-4846 to book your braiding appointment today.',
+          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Southchase (407) 470-4846 to book your braiding appointment today.',
         intro:
           'Looking for braids in Orlando that are neat, comfortable and made to last? Braiding is a craft — clean parts, even tension, and a style that fits you. At New Barbershop 1, our braiding specialist brings that care to every head of hair, for men and women alike.',
-        closing: 'Braids are a Hunters Creek service — find the shop’s location and hours on our Contact page.',
+        closing: 'Braids are a Southchase service — find the shop’s location and hours on our Contact page.',
       },
       es: {
         title: 'Trenzas en Orlando — Trenzado para hombres y mujeres',
         seoTitle: 'Trenzas en Orlando para hombres y mujeres',
         metaDescription:
-          'Trenzas en Orlando para hombres y mujeres: trenzado limpio y cómodo en New Barbershop 1, Hunters Creek. Llama al (407) 470-4846 para tu cita.',
+          'Trenzas en Orlando para hombres y mujeres: trenzado limpio y cómodo en New Barbershop 1, Southchase. Llama al (407) 470-4846 para tu cita.',
         intro:
           '¿Buscas trenzas en Orlando que se vean prolijas, sean cómodas y duren? Trenzar es un arte — divisiones limpias, tensión uniforme y un estilo que va contigo. En New Barbershop 1, nuestra especialista en trenzas aporta ese cuidado a cada cabellera, tanto para hombres como para mujeres.',
-        closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
+        closing: 'Las trenzas son un servicio de Southchase — encuentra la ubicación y los horarios en nuestra página de Contacto.',
       },
     },
     sections: [
       {
         heading: { en: 'Braids in Orlando for Men and Women', es: 'Trenzas en Orlando para hombres y mujeres' },
         body: {
-          en: 'We offer braiding for men and women at New Barbershop 1 — our shop at 9741 S Orange Blossom Trl, in Hunters Creek. From cornrows to box braids and more, we work with your hair’s length and texture to create a style that looks sharp and feels good. Braids are available at Hunters Creek only, so call Hunters Creek at (407) 470-4846 to book your braiding appointment.',
-          es: 'Ofrecemos trenzado para hombres y mujeres en New Barbershop 1 — nuestra barbería en 9741 S Orange Blossom Trl, en Hunters Creek. Desde cornrows hasta box braids y más, trabajamos con el largo y la textura de tu cabello para crear un estilo que se vea definido y se sienta bien. Las trenzas están disponibles solo en Hunters Creek, así que llama a Hunters Creek al (407) 470-4846 para reservar tu cita de trenzado.',
+          en: 'We offer braiding for men and women at New Barbershop 1 — our shop at 9741 S Orange Blossom Trl, in Southchase. From cornrows to box braids and more, we work with your hair’s length and texture to create a style that looks sharp and feels good. Braids are available at Southchase only, so call Southchase at (407) 470-4846 to book your braiding appointment.',
+          es: 'Ofrecemos trenzado para hombres y mujeres en New Barbershop 1 — nuestra barbería en 9741 S Orange Blossom Trl, en Southchase. Desde cornrows hasta box braids y más, trabajamos con el largo y la textura de tu cabello para crear un estilo que se vea definido y se sienta bien. Las trenzas están disponibles solo en Southchase, así que llama a Southchase al (407) 470-4846 para reservar tu cita de trenzado.',
         },
       },
       {
         heading: { en: 'More Than Braids', es: 'Más que trenzas' },
         body: {
-          en: 'Our full service also covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and our barbers shape every cut to your style. See everything we do on our Services page. We are a family-run business since 2003, with over 20 years of experience, two shops on South Orange Blossom Trail, and over 1,400 Google reviews across both shops, with our Hunters Creek shop rated 5.0 stars. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con nuestro local de Hunters Creek calificado con 5.0 estrellas. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'Our full service also covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and our barbers shape every cut to your style. See everything we do on our Services page. We are a family-run business since 2003, with over 20 years of experience, two shops on South Orange Blossom Trail, and over 1,400 Google reviews across both shops, with our Southchase shop rated 5.0 stars. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con nuestro local de Southchase calificado con 5.0 estrellas. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
-        heading: { en: 'Book Your Braids at Hunters Creek', es: 'Reserva tus trenzas en Hunters Creek' },
+        heading: { en: 'Book Your Braids at Southchase', es: 'Reserva tus trenzas en Southchase' },
         body: {
-          en: 'Call to book braids: Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar trenzas: Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book braids: Southchase (407) 470-4846. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar trenzas: Southchase (407) 470-4846. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -232,22 +232,22 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Your Neighborhood Barbershop Orlando', es: 'Tu barbería de barrio en Orlando' },
         body: {
-          en: 'We have two Orlando shops: New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'We have two Orlando shops: New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'What We Do', es: 'Lo que hacemos' },
         body: {
-          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. Whether you want a sharp fade, a clean line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page.',
-          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Ya sea que quieras un degradado definido, un delineado limpio o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios.',
+          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. Whether you want a sharp fade, a clean line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page.',
+          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Ya sea que quieras un degradado definido, un delineado limpio o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios.',
         },
       },
       {
         heading: { en: 'Come See Us', es: 'Ven a visitarnos' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -293,15 +293,15 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Minutes from Florida Mall, on the Trail', es: 'A minutos de Florida Mall, sobre la Trail' },
         body: {
-          en: 'Both of our shops sit on South Orange Blossom Trail. New Barbershop 2, at 6220 S Orange Blossom Trl, is minutes from Florida Mall — an easy stop between the mall, your hotel and the attractions. Down the Trail, New Barbershop 1 at 9741 S Orange Blossom Trl serves the Hunters Creek side. We are a family-run business since 2003, with over 1,400 five-star Google reviews across both shops, and both locations are open seven days a week — so whenever your free hour lands, a chair is ready.',
-          es: 'Nuestras dos barberías están sobre South Orange Blossom Trail. New Barbershop 2, en 6220 S Orange Blossom Trl, está a minutos de Florida Mall: una parada fácil entre el centro comercial, tu hotel y las atracciones. Más adelante sobre la Trail, New Barbershop 1, en 9741 S Orange Blossom Trl, atiende el lado de Hunters Creek. Somos un negocio familiar desde 2003, con más de 1,400 reseñas de cinco estrellas en Google entre ambas barberías, y las dos ubicaciones abren los siete días de la semana: cuando tengas una hora libre, una silla te espera.',
+          en: 'Both of our shops sit on South Orange Blossom Trail. New Barbershop 2, at 6220 S Orange Blossom Trl, is minutes from Florida Mall — an easy stop between the mall, your hotel and the attractions. Down the Trail, New Barbershop 1 at 9741 S Orange Blossom Trl serves the Southchase side. We are a family-run business since 2003, with over 1,400 five-star Google reviews across both shops, and both locations are open seven days a week — so whenever your free hour lands, a chair is ready.',
+          es: 'Nuestras dos barberías están sobre South Orange Blossom Trail. New Barbershop 2, en 6220 S Orange Blossom Trl, está a minutos de Florida Mall: una parada fácil entre el centro comercial, tu hotel y las atracciones. Más adelante sobre la Trail, New Barbershop 1, en 9741 S Orange Blossom Trl, atiende el lado de Southchase. Somos un negocio familiar desde 2003, con más de 1,400 reseñas de cinco estrellas en Google entre ambas barberías, y las dos ubicaciones abren los siete días de la semana: cuando tengas una hora libre, una silla te espera.',
         },
       },
       {
         heading: { en: 'Walk In or Call Ahead', es: 'Ven sin cita o llama antes' },
         body: {
-          en: 'Call to book: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Florida Mall (407) 820-4541 · Southchase (407) 470-4846. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Florida Mall (407) 820-4541 · Southchase (407) 470-4846. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -340,8 +340,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Right on the Trail, Between the Dealerships', es: 'Justo sobre la Trail, entre los concesionarios' },
         body: {
-          en: 'New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, are about 3.7 miles apart — and both are surrounded by the dealerships that line this corridor. Buying, trading in or waiting on service, you are never more than a short drive from one of our chairs. Walk-ins are welcome at both shops, and both are open seven days a week.',
-          es: 'New Barbershop 1, en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2, en 6220 S Orange Blossom Trl, cerca de Florida Mall, están a unas 3.7 millas de distancia, y ambas están rodeadas por los concesionarios que bordean este corredor. Comprando, entregando tu auto o esperando un servicio, nunca estás a más de un corto trayecto de una de nuestras sillas. Aceptamos clientes sin cita en las dos barberías, y ambas abren los siete días de la semana.',
+          en: 'New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, are about 3.7 miles apart — and both are surrounded by the dealerships that line this corridor. Buying, trading in or waiting on service, you are never more than a short drive from one of our chairs. Walk-ins are welcome at both shops, and both are open seven days a week.',
+          es: 'New Barbershop 1, en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2, en 6220 S Orange Blossom Trl, cerca de Florida Mall, están a unas 3.7 millas de distancia, y ambas están rodeadas por los concesionarios que bordean este corredor. Comprando, entregando tu auto o esperando un servicio, nunca estás a más de un corto trayecto de una de nuestras sillas. Aceptamos clientes sin cita en las dos barberías, y ambas abren los siete días de la semana.',
         },
       },
       {
@@ -354,8 +354,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Walk In While You’re Around', es: 'Ven sin cita mientras estás por la zona' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -401,15 +401,15 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Between Cuts: The Touch-Up', es: 'Entre cortes: el retoque' },
         body: {
-          en: 'The week between cuts is where the routine pays off. A razor line-up restores the edges, a beard trim and shaping keeps the jawline clean, and a neck cleanup takes minutes — the three touch-ups that make a growing-out cut look intentional again before a big showing or closing. It has to fit your calendar, so we keep it easy: walk-ins welcome at both shops, open seven days a week, and our Hunters Creek location runs from 8 AM to 10:30 PM for early starts and late finishes. Both shops sit on South Orange Blossom Trail, near the dealerships and offices where so many of our regulars work.',
-          es: 'La semana entre cortes es donde la rutina rinde. Un perfilado a navaja restaura los bordes, un arreglo y formado de barba mantiene limpia la línea de la mandíbula, y una limpieza de cuello toma minutos: los tres retoques que hacen que un corte en crecimiento se vea intencional otra vez antes de una visita importante o un cierre. Tiene que encajar en tu agenda, así que lo hacemos fácil: clientes sin cita en ambas barberías, abiertas los siete días de la semana, y nuestro local de Hunters Creek atiende de 8 AM a 10:30 PM para empezar temprano o terminar tarde. Ambas barberías están sobre South Orange Blossom Trail, cerca de los concesionarios y las oficinas donde trabajan muchos de nuestros clientes habituales.',
+          en: 'The week between cuts is where the routine pays off. A razor line-up restores the edges, a beard trim and shaping keeps the jawline clean, and a neck cleanup takes minutes — the three touch-ups that make a growing-out cut look intentional again before a big showing or closing. It has to fit your calendar, so we keep it easy: walk-ins welcome at both shops, open seven days a week, and our Southchase location runs from 8 AM to 10:30 PM for early starts and late finishes. Both shops sit on South Orange Blossom Trail, near the dealerships and offices where so many of our regulars work.',
+          es: 'La semana entre cortes es donde la rutina rinde. Un perfilado a navaja restaura los bordes, un arreglo y formado de barba mantiene limpia la línea de la mandíbula, y una limpieza de cuello toma minutos: los tres retoques que hacen que un corte en crecimiento se vea intencional otra vez antes de una visita importante o un cierre. Tiene que encajar en tu agenda, así que lo hacemos fácil: clientes sin cita en ambas barberías, abiertas los siete días de la semana, y nuestro local de Southchase atiende de 8 AM a 10:30 PM para empezar temprano o terminar tarde. Ambas barberías están sobre South Orange Blossom Trail, cerca de los concesionarios y las oficinas donde trabajan muchos de nuestros clientes habituales.',
         },
       },
       {
         heading: { en: 'Keep the Routine', es: 'Mantén la rutina' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -462,8 +462,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Call Ahead for the Holidays', es: 'Llama antes durante las fiestas' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -516,8 +516,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Put Your Cut on a Schedule', es: 'Pon tu corte en un calendario' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -570,8 +570,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Feel the Difference', es: 'Siente la diferencia' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -624,8 +624,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Start the Chapter', es: 'Empieza el capítulo' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -678,8 +678,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Build the Habit', es: 'Crea el hábito' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -725,15 +725,15 @@ const localPosts: Post[] = [
       {
         heading: { en: 'For Travelers: Which Layovers Honestly Work', es: 'Para viajeros: qué escalas funcionan de verdad' },
         body: {
-          en: 'Let us be straight: do not leave the airport on a short connection — a haircut is not worth a missed flight. Where it works beautifully is a long or overnight layover, a rest day, or the hours before you fly home and want to look like the trip treated you well. Here is where we are, honestly: our Florida Mall shop (6220 S Orange Blossom Trl) is about 15 minutes from MCO and about a mile and a half from the Florida Mall, on the same road — an easy pairing with layover shopping. Our Hunters Creek shop (9741 S Orange Blossom Trl) is about a 20-minute drive from MCO. Both are family-run since 2003, with over 1,400 five-star Google reviews, open seven days a week. Call ahead if your window is tight, or just walk in.',
-          es: 'Seamos directos: no salgas del aeropuerto en una conexión corta; un corte no vale un vuelo perdido. Donde sí funciona de maravilla es en una escala larga o con noche incluida, un día de descanso, o las horas antes de volar a casa queriendo verte como si el viaje te hubiera tratado bien. Aquí está nuestra ubicación, con honestidad: nuestro local de Florida Mall (6220 S Orange Blossom Trl) está a unos 15 minutos de MCO y a cerca de milla y media de Florida Mall, sobre la misma avenida: una combinación fácil con las compras de la escala. Nuestro local de Hunters Creek (9741 S Orange Blossom Trl) está a unos 20 minutos en auto de MCO. Ambas son barberías familiares desde 2003, con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana. Llama antes si tu margen es corto, o simplemente ven sin cita.',
+          en: 'Let us be straight: do not leave the airport on a short connection — a haircut is not worth a missed flight. Where it works beautifully is a long or overnight layover, a rest day, or the hours before you fly home and want to look like the trip treated you well. Here is where we are, honestly: our Florida Mall shop (6220 S Orange Blossom Trl) is about 15 minutes from MCO and about a mile and a half from the Florida Mall, on the same road — an easy pairing with layover shopping. Our Southchase shop (9741 S Orange Blossom Trl) is about a 20-minute drive from MCO. Both are family-run since 2003, with over 1,400 five-star Google reviews, open seven days a week. Call ahead if your window is tight, or just walk in.',
+          es: 'Seamos directos: no salgas del aeropuerto en una conexión corta; un corte no vale un vuelo perdido. Donde sí funciona de maravilla es en una escala larga o con noche incluida, un día de descanso, o las horas antes de volar a casa queriendo verte como si el viaje te hubiera tratado bien. Aquí está nuestra ubicación, con honestidad: nuestro local de Florida Mall (6220 S Orange Blossom Trl) está a unos 15 minutos de MCO y a cerca de milla y media de Florida Mall, sobre la misma avenida: una combinación fácil con las compras de la escala. Nuestro local de Southchase (9741 S Orange Blossom Trl) está a unos 20 minutos en auto de MCO. Ambas son barberías familiares desde 2003, con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana. Llama antes si tu margen es corto, o simplemente ven sin cita.',
         },
       },
       {
         heading: { en: 'Walk In Between Flights', es: 'Ven sin cita entre vuelos' },
         body: {
-          en: 'Call to book: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Florida Mall (407) 820-4541 · Southchase (407) 470-4846. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Florida Mall (407) 820-4541 · Southchase (407) 470-4846. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -786,8 +786,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'What to Say in the Chair', es: 'Qué decir en la silla' },
         body: {
-          en: 'For a fade: “Mid fade, down to skin at the bottom, keep the top long enough to style.” For a taper: “Taper the sideburns and neckline, keep the sides full, scissor cut on top.” Either way, tell your barber — or call ahead: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Para un fade: “Degradado medio, hasta la piel abajo, y arriba déjalo con largo suficiente para peinar”. Para un taper: “Taper en las patillas y la nuca, los lados completos, y arriba a tijera”. En cualquier caso, díselo a tu barbero, o llama antes: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'For a fade: “Mid fade, down to skin at the bottom, keep the top long enough to style.” For a taper: “Taper the sideburns and neckline, keep the sides full, scissor cut on top.” Either way, tell your barber — or call ahead: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Para un fade: “Degradado medio, hasta la piel abajo, y arriba déjalo con largo suficiente para peinar”. Para un taper: “Taper en las patillas y la nuca, los lados completos, y arriba a tijera”. En cualquier caso, díselo a tu barbero, o llama antes: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -840,8 +840,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Ask Us in the Chair', es: 'Pregúntanos en la silla' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -894,8 +894,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Wolfing: Where the Depth Comes From', es: 'Wolfing: de dónde sale la profundidad' },
         body: {
-          en: 'Wolfing means growing the hair out — typically four to eight weeks without a cut — while brushing harder than ever, so the waves stack and deepen. During a wolf, your barber visits change: most are edges-only (a razor line-up to keep the wolf looking deliberate), and the final visit is the reveal cut, taken back down with the grain to show what you built. Knowing which visit is which is the difference between a deep pattern and an accidental reset. That rhythm — line-ups during the wolf, the reveal at the end — is the heart of our Waves Styling & Maintenance service. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Wolfing significa dejar crecer el cabello — normalmente de cuatro a ocho semanas sin corte — mientras te cepillas más que nunca, para que las waves se apilen y ganen profundidad. Durante un wolf, tus visitas al barbero cambian: la mayoría son solo de bordes (un perfilado a navaja para que el wolf se vea intencional), y la visita final es el corte de revelación, de vuelta abajo y a favor del grano, para mostrar lo que construiste. Saber qué visita es cuál es la diferencia entre un patrón profundo y un reinicio accidental. Ese ritmo — delineados durante el wolf y la revelación al final — es el corazón de nuestro servicio de peinado y mantenimiento de waves. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Wolfing means growing the hair out — typically four to eight weeks without a cut — while brushing harder than ever, so the waves stack and deepen. During a wolf, your barber visits change: most are edges-only (a razor line-up to keep the wolf looking deliberate), and the final visit is the reveal cut, taken back down with the grain to show what you built. Knowing which visit is which is the difference between a deep pattern and an accidental reset. That rhythm — line-ups during the wolf, the reveal at the end — is the heart of our Waves Styling & Maintenance service. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Wolfing significa dejar crecer el cabello — normalmente de cuatro a ocho semanas sin corte — mientras te cepillas más que nunca, para que las waves se apilen y ganen profundidad. Durante un wolf, tus visitas al barbero cambian: la mayoría son solo de bordes (un perfilado a navaja para que el wolf se vea intencional), y la visita final es el corte de revelación, de vuelta abajo y a favor del grano, para mostrar lo que construiste. Saber qué visita es cuál es la diferencia entre un patrón profundo y un reinicio accidental. Ese ritmo — delineados durante el wolf y la revelación al final — es el corazón de nuestro servicio de peinado y mantenimiento de waves. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -913,19 +913,19 @@ const localPosts: Post[] = [
         title: 'Braids Aftercare: How to Keep Them Clean, Comfortable and In Longer',
         seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer',
         metaDescription:
-          'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Hunters Creek. Call (407) 470-4846.',
+          'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Southchase. Call (407) 470-4846.',
         intro:
           'The install is only half the service. What you do at home decides whether your braids look fresh for the long end of their life or tired by week two. Our braider at New Barbershop 1 gives every client the same aftercare talk — here it is in writing. (Still deciding on the style itself? Start with our Braids in Orlando post; this one is about life after the chair.)',
-        closing: 'Braids are a Hunters Creek service — find the shop’s location and hours on our Contact page.',
+        closing: 'Braids are a Southchase service — find the shop’s location and hours on our Contact page.',
       },
       es: {
         title: 'Cuidado de las trenzas: cómo mantenerlas limpias, cómodas y por más tiempo',
         seoTitle: 'Cuidado de las trenzas: que duren más y se vean limpias',
         metaDescription:
-          'Cuidado de las trenzas: cuánto duran, cómo lavarlas y cuándo retirarlas, por barberos de Orlando. Trenzas en Hunters Creek. Llama al (407) 470-4846.',
+          'Cuidado de las trenzas: cuánto duran, cómo lavarlas y cuándo retirarlas, por barberos de Orlando. Trenzas en Southchase. Llama al (407) 470-4846.',
         intro:
           'La instalación es solo la mitad del servicio. Lo que haces en casa decide si tus trenzas se ven frescas hasta el final de su vida útil o cansadas en la segunda semana. Nuestra trenzadora en New Barbershop 1 le da a cada cliente la misma charla de cuidado posterior; aquí está por escrito. (¿Todavía estás decidiendo el estilo? Empieza con nuestra publicación Trenzas en Orlando; esta trata de la vida después de la silla.)',
-        closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
+        closing: 'Las trenzas son un servicio de Southchase — encuentra la ubicación y los horarios en nuestra página de Contacto.',
       },
     },
     sections: [
@@ -946,8 +946,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Takedown Discipline — and the Tension Rule', es: 'Disciplina al retirarlas — y la regla de la tensión' },
         body: {
-          en: 'Two things we say in the chair that belong in writing. First, the tension rule: braids that hurt are too tight — say so at the install, on the day, not weeks later; a good braider adjusts on the spot. Second, when the growth at the base turns into tangles, the style is done, no matter how good it still looks from the front. A mid-wear check at the shop keeps an install honest, and your next set starts from healthy hair. Braids are done at our Hunters Creek shop, for men and women. Call to book braids: Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
-          es: 'Dos cosas que decimos en la silla y que merecen estar por escrito. Primero, la regla de la tensión: las trenzas que duelen están demasiado apretadas; dilo en la instalación, ese mismo día, no semanas después; una buena trenzadora ajusta en el momento. Segundo, cuando el crecimiento en la base se convierte en enredos, el estilo terminó, sin importar lo bien que se vea de frente. Una revisión a mitad de uso en la barbería mantiene honesta la instalación, y tu próximo set empieza desde un cabello sano. Las trenzas se hacen en nuestro local de Hunters Creek, para hombres y mujeres. Llama para reservar tus trenzas: Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+          en: 'Two things we say in the chair that belong in writing. First, the tension rule: braids that hurt are too tight — say so at the install, on the day, not weeks later; a good braider adjusts on the spot. Second, when the growth at the base turns into tangles, the style is done, no matter how good it still looks from the front. A mid-wear check at the shop keeps an install honest, and your next set starts from healthy hair. Braids are done at our Southchase shop, for men and women. Call to book braids: Southchase (407) 470-4846. WhatsApp is available at Southchase.',
+          es: 'Dos cosas que decimos en la silla y que merecen estar por escrito. Primero, la regla de la tensión: las trenzas que duelen están demasiado apretadas; dilo en la instalación, ese mismo día, no semanas después; una buena trenzadora ajusta en el momento. Segundo, cuando el crecimiento en la base se convierte en enredos, el estilo terminó, sin importar lo bien que se vea de frente. Una revisión a mitad de uso en la barbería mantiene honesta la instalación, y tu próximo set empieza desde un cabello sano. Las trenzas se hacen en nuestro local de Southchase, para hombres y mujeres. Llama para reservar tus trenzas: Southchase (407) 470-4846. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1000,8 +1000,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Wash-Out Reality', es: 'La realidad al lavarlo' },
         body: {
-          en: 'Water-based products rinse out in a normal wash. Oil-based ones do not — work conditioner in first to break them down, then shampoo. And the habit that quietly causes trouble: sleeping in product, night after night, is how buildup starts — residue that flakes off and gets mistaken for dandruff. (Our washing-schedule post covers how often to wash it all out, by hair type.) When in doubt, bring your tub to your appointment and ask your barber which one your cut actually wants. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Los productos a base de agua salen con un lavado normal. Los de base aceitosa, no: trabaja primero el acondicionador para deshacerlos y luego lava con champú. Y el hábito que causa problemas en silencio: dormir con producto, noche tras noche, es como empieza la acumulación: residuo que se desprende en escamas y se confunde con caspa. (Nuestra publicación sobre el calendario de lavado cubre cada cuánto lavar todo esto, según el tipo de cabello.) Ante la duda, trae tu envase a tu cita y pregúntale a tu barbero cuál quiere en realidad tu corte. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Water-based products rinse out in a normal wash. Oil-based ones do not — work conditioner in first to break them down, then shampoo. And the habit that quietly causes trouble: sleeping in product, night after night, is how buildup starts — residue that flakes off and gets mistaken for dandruff. (Our washing-schedule post covers how often to wash it all out, by hair type.) When in doubt, bring your tub to your appointment and ask your barber which one your cut actually wants. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Los productos a base de agua salen con un lavado normal. Los de base aceitosa, no: trabaja primero el acondicionador para deshacerlos y luego lava con champú. Y el hábito que causa problemas en silencio: dormir con producto, noche tras noche, es como empieza la acumulación: residuo que se desprende en escamas y se confunde con caspa. (Nuestra publicación sobre el calendario de lavado cubre cada cuánto lavar todo esto, según el tipo de cabello.) Ante la duda, trae tu envase a tu cita y pregúntale a tu barbero cuál quiere en realidad tu corte. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1054,8 +1054,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Curls Welcome in Both Shops', es: 'Los rizos son bienvenidos en ambas barberías' },
         body: {
-          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1108,8 +1108,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Oils, Balms and the Barber’s Anchor', es: 'Aceites, bálsamos y el ancla del barbero' },
         body: {
-          en: 'Beard oil has one job: conditioning — softening the hair and moisturizing the skin underneath, worked in on a slightly damp beard, down to the skin first and then through the hair. Let us be plain, because the internet is not: oil does not grow hair, and neither does balm. Balm adds light hold and shape on top of oil for longer beards; a brush or comb distributes everything and trains the direction daily. Home care keeps a beard healthy between visits — the shape itself is the chair’s work: our Beard Trim and Beard Shaping & Detailing services set the cheek lines, the neckline and the architecture every few weeks, and a hot towel shave cleans up what home razors rough up. Keep the home routine daily and the shaping on schedule, and the beard always looks deliberate. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'El aceite de barba tiene un solo trabajo: acondicionar — suavizar el vello e hidratar la piel debajo — aplicado sobre la barba ligeramente húmeda, primero hasta la piel y luego a través del vello. Seamos claros, porque internet no lo es: el aceite no hace crecer el vello, y el bálsamo tampoco. El bálsamo aporta fijación ligera y forma sobre el aceite en barbas más largas; un cepillo o peine distribuye todo y entrena la dirección a diario. El cuidado en casa mantiene la barba sana entre visitas; la forma en sí es trabajo de la silla: nuestros servicios de arreglo de barba y de formado y detalle de barba fijan las líneas de las mejillas, la línea del cuello y la arquitectura cada pocas semanas, y un afeitado con toalla caliente limpia lo que las navajas caseras ásperan. Mantén la rutina diaria en casa y el formado en calendario, y la barba siempre se verá intencional. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Beard oil has one job: conditioning — softening the hair and moisturizing the skin underneath, worked in on a slightly damp beard, down to the skin first and then through the hair. Let us be plain, because the internet is not: oil does not grow hair, and neither does balm. Balm adds light hold and shape on top of oil for longer beards; a brush or comb distributes everything and trains the direction daily. Home care keeps a beard healthy between visits — the shape itself is the chair’s work: our Beard Trim and Beard Shaping & Detailing services set the cheek lines, the neckline and the architecture every few weeks, and a hot towel shave cleans up what home razors rough up. Keep the home routine daily and the shaping on schedule, and the beard always looks deliberate. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'El aceite de barba tiene un solo trabajo: acondicionar — suavizar el vello e hidratar la piel debajo — aplicado sobre la barba ligeramente húmeda, primero hasta la piel y luego a través del vello. Seamos claros, porque internet no lo es: el aceite no hace crecer el vello, y el bálsamo tampoco. El bálsamo aporta fijación ligera y forma sobre el aceite en barbas más largas; un cepillo o peine distribuye todo y entrena la dirección a diario. El cuidado en casa mantiene la barba sana entre visitas; la forma en sí es trabajo de la silla: nuestros servicios de arreglo de barba y de formado y detalle de barba fijan las líneas de las mejillas, la línea del cuello y la arquitectura cada pocas semanas, y un afeitado con toalla caliente limpia lo que las navajas caseras ásperan. Mantén la rutina diaria en casa y el formado en calendario, y la barba siempre se verá intencional. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1162,8 +1162,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'The Barber’s Part: Upkeep Decides It', es: 'La parte del barbero: el mantenimiento lo decide' },
         body: {
-          en: 'So the research hands you a lever — maturity, masculinity, presence — and upkeep decides which way it moves. Shaping gives the beard architecture instead of accident; clean cheek lines and a deliberate neckline are what separate “grew a beard” from “wears a beard”; and conditioning keeps it looking like hair, not wire — our Beard Care at Home post covers the sink routine in full. In the chair, our Beard Trim and Beard Shaping & Detailing services do the geometry every few weeks. No barber can promise a beard will change your luck — but a kept beard is the version of you the studies were describing. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Así que la investigación te entrega una palanca — madurez, masculinidad, presencia — y el mantenimiento decide hacia dónde se mueve. El formado le da a la barba arquitectura en vez de accidente; unas líneas de mejilla limpias y una línea de cuello intencional son lo que separa “se dejó la barba” de “lleva una barba”; y el acondicionamiento hace que se vea como cabello y no como alambre: nuestra publicación sobre el cuidado de la barba en casa cubre la rutina del lavabo completa. En la silla, nuestros servicios de arreglo de barba y de formado y detalle de barba hacen la geometría cada pocas semanas. Ningún barbero puede prometer que una barba cambiará tu suerte, pero una barba cuidada es la versión de ti que los estudios describían. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'So the research hands you a lever — maturity, masculinity, presence — and upkeep decides which way it moves. Shaping gives the beard architecture instead of accident; clean cheek lines and a deliberate neckline are what separate “grew a beard” from “wears a beard”; and conditioning keeps it looking like hair, not wire — our Beard Care at Home post covers the sink routine in full. In the chair, our Beard Trim and Beard Shaping & Detailing services do the geometry every few weeks. No barber can promise a beard will change your luck — but a kept beard is the version of you the studies were describing. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Así que la investigación te entrega una palanca — madurez, masculinidad, presencia — y el mantenimiento decide hacia dónde se mueve. El formado le da a la barba arquitectura en vez de accidente; unas líneas de mejilla limpias y una línea de cuello intencional son lo que separa “se dejó la barba” de “lleva una barba”; y el acondicionamiento hace que se vea como cabello y no como alambre: nuestra publicación sobre el cuidado de la barba en casa cubre la rutina del lavabo completa. En la silla, nuestros servicios de arreglo de barba y de formado y detalle de barba hacen la geometría cada pocas semanas. Ningún barbero puede prometer que una barba cambiará tu suerte, pero una barba cuidada es la versión de ti que los estudios describían. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1216,8 +1216,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Two Kinds of Wolf Visits — and the Same Hands', es: 'Dos tipos de visita durante el wolf — y las mismas manos' },
         body: {
-          en: 'During a wolf, most of your appointments should be edges-only: a razor line-up that keeps the hairline and neckline deliberate while the top stays untouched — that visit is part of our Waves Styling & Maintenance service, along with the reveal cut that ends the wolf. What makes the whole system compound is consistency: the same barber remembers your guard, your crown, your lagging panel and exactly how your last cut grew in. Every new pair of hands restarts that learning curve. Pick a barber who cuts waves, then let the same hands keep the pattern. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Durante un wolf, la mayoría de tus citas deberían ser solo de bordes: un perfilado a navaja que mantiene intencionales la línea del cabello y la nuca mientras la parte superior queda intacta; esa visita es parte de nuestro servicio de peinado y mantenimiento de waves, junto con el corte de revelación que termina el wolf. Lo que hace que todo el sistema se acumule es la consistencia: el mismo barbero recuerda tu guía, tu coronilla, tu panel atrasado y exactamente cómo creció tu último corte. Cada par de manos nuevo reinicia esa curva de aprendizaje. Elige un barbero que corte waves y deja que las mismas manos mantengan el patrón. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'During a wolf, most of your appointments should be edges-only: a razor line-up that keeps the hairline and neckline deliberate while the top stays untouched — that visit is part of our Waves Styling & Maintenance service, along with the reveal cut that ends the wolf. What makes the whole system compound is consistency: the same barber remembers your guard, your crown, your lagging panel and exactly how your last cut grew in. Every new pair of hands restarts that learning curve. Pick a barber who cuts waves, then let the same hands keep the pattern. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Durante un wolf, la mayoría de tus citas deberían ser solo de bordes: un perfilado a navaja que mantiene intencionales la línea del cabello y la nuca mientras la parte superior queda intacta; esa visita es parte de nuestro servicio de peinado y mantenimiento de waves, junto con el corte de revelación que termina el wolf. Lo que hace que todo el sistema se acumule es la consistencia: el mismo barbero recuerda tu guía, tu coronilla, tu panel atrasado y exactamente cómo creció tu último corte. Cada par de manos nuevo reinicia esa curva de aprendizaje. Elige un barbero que corte waves y deja que las mismas manos mantengan el patrón. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1324,8 +1324,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'The Named Cuts — and the Right Photo to Show', es: 'Los cortes con nombre — y la foto correcta para mostrar' },
         body: {
-          en: 'This audience asks in a specific vocabulary: the temp fade (Brooklyn fade) that cleans the temples and edges while the top keeps its length and pattern, the low taper that keeps a wave pattern safe, the high skin fade for maximum contrast. All of them live on our Services page under Fade Haircut and High Skin Fade. One practical tip that changes outcomes: show your barber a side-profile photo on hair like yours. A front shot on a different texture shows a silhouette; a profile on your own texture shows the blend, the guideline height and the finish — the actual decisions. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Este público pide con un vocabulario específico: el temp fade (Brooklyn fade) que limpia las sienes y los bordes mientras la parte superior conserva su largo y su patrón, el taper bajo que mantiene seguro un patrón de waves, el degradado alto al ras para el máximo contraste. Todos viven en nuestra página de Servicios bajo Corte degradado y Degradado alto al ras. Un consejo práctico que cambia resultados: muéstrale a tu barbero una foto de perfil lateral en un cabello como el tuyo. Una foto de frente en otra textura muestra una silueta; un perfil en tu propia textura muestra la mezcla, la altura de la guía y el acabado: las decisiones reales. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'This audience asks in a specific vocabulary: the temp fade (Brooklyn fade) that cleans the temples and edges while the top keeps its length and pattern, the low taper that keeps a wave pattern safe, the high skin fade for maximum contrast. All of them live on our Services page under Fade Haircut and High Skin Fade. One practical tip that changes outcomes: show your barber a side-profile photo on hair like yours. A front shot on a different texture shows a silhouette; a profile on your own texture shows the blend, the guideline height and the finish — the actual decisions. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Este público pide con un vocabulario específico: el temp fade (Brooklyn fade) que limpia las sienes y los bordes mientras la parte superior conserva su largo y su patrón, el taper bajo que mantiene seguro un patrón de waves, el degradado alto al ras para el máximo contraste. Todos viven en nuestra página de Servicios bajo Corte degradado y Degradado alto al ras. Un consejo práctico que cambia resultados: muéstrale a tu barbero una foto de perfil lateral en un cabello como el tuyo. Una foto de frente en otra textura muestra una silueta; un perfil en tu propia textura muestra la mezcla, la altura de la guía y el acabado: las decisiones reales. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1371,15 +1371,15 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Ask the Direct Questions', es: 'Haz las preguntas directas' },
         body: {
-          en: 'Before the first cut, three questions separate specialists from generalists. Do you cut waves with the grain — and what guard do you start a first wave cut at? (You are listening for “with the grain” and a number in the #1.5–#2 range.) Do you do freestyle design work, and can I see some? And if braids are your thing: who here braids — at our shops, braiding is a Hunters Creek service, done by our braider for men and women, and we will tell you that on the phone rather than seat you in the wrong shop. Straight answers, given easily, are the sign you found the right chair.',
-          es: 'Antes del primer corte, tres preguntas separan a los especialistas de los generalistas. ¿Cortas las waves a favor del grano, y con qué guía empiezas un primer corte para waves? (Buscas escuchar “a favor del grano” y un número en el rango #1.5–#2.) ¿Haces diseños freestyle, y puedo ver algunos? Y si lo tuyo son las trenzas: ¿quién aquí hace trenzas? En nuestras barberías, el trenzado es un servicio de Hunters Creek, hecho por nuestra trenzadora para hombres y mujeres, y te lo diremos por teléfono en vez de sentarte en el local equivocado. Respuestas directas, dadas con facilidad, son la señal de que encontraste la silla correcta.',
+          en: 'Before the first cut, three questions separate specialists from generalists. Do you cut waves with the grain — and what guard do you start a first wave cut at? (You are listening for “with the grain” and a number in the #1.5–#2 range.) Do you do freestyle design work, and can I see some? And if braids are your thing: who here braids — at our shops, braiding is a Southchase service, done by our braider for men and women, and we will tell you that on the phone rather than seat you in the wrong shop. Straight answers, given easily, are the sign you found the right chair.',
+          es: 'Antes del primer corte, tres preguntas separan a los especialistas de los generalistas. ¿Cortas las waves a favor del grano, y con qué guía empiezas un primer corte para waves? (Buscas escuchar “a favor del grano” y un número en el rango #1.5–#2.) ¿Haces diseños freestyle, y puedo ver algunos? Y si lo tuyo son las trenzas: ¿quién aquí hace trenzas? En nuestras barberías, el trenzado es un servicio de Southchase, hecho por nuestra trenzadora para hombres y mujeres, y te lo diremos por teléfono en vez de sentarte en el local equivocado. Respuestas directas, dadas con facilidad, son la señal de que encontraste la silla correcta.',
         },
       },
       {
         heading: { en: 'The Trial Cut — and What Comes After', es: 'El corte de prueba — y lo que sigue' },
         body: {
-          en: 'Treat the first visit as a trial: a straightforward cut, honestly judged at week one and week two, tells you more than any review. Then give a good barber two or three cuts to learn your crown, your grain and how your hair grows in — because the consistency of one pair of hands is what turns good cuts into your cut, especially on waves and patterns. That is the invitation at our two shops: New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall, both on South Orange Blossom Trail, family-run since 2003 with over 1,400 five-star Google reviews, open seven days a week, walk-ins welcome, service in English and Spanish. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Trata la primera visita como una prueba: un corte directo, juzgado con honestidad en la primera y la segunda semana, te dice más que cualquier reseña. Luego dale a un buen barbero dos o tres cortes para aprender tu coronilla, tu grano y cómo crece tu cabello, porque la consistencia de un solo par de manos es lo que convierte los buenos cortes en tu corte, especialmente en waves y patrones. Esa es la invitación en nuestras dos barberías: New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall, ambas sobre South Orange Blossom Trail, familiares desde 2003 con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana, clientes sin cita bienvenidos, atención en inglés y español. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'Treat the first visit as a trial: a straightforward cut, honestly judged at week one and week two, tells you more than any review. Then give a good barber two or three cuts to learn your crown, your grain and how your hair grows in — because the consistency of one pair of hands is what turns good cuts into your cut, especially on waves and patterns. That is the invitation at our two shops: New Barbershop 1 in Southchase and New Barbershop 2 near Florida Mall, both on South Orange Blossom Trail, family-run since 2003 with over 1,400 five-star Google reviews, open seven days a week, walk-ins welcome, service in English and Spanish. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Trata la primera visita como una prueba: un corte directo, juzgado con honestidad en la primera y la segunda semana, te dice más que cualquier reseña. Luego dale a un buen barbero dos o tres cortes para aprender tu coronilla, tu grano y cómo crece tu cabello, porque la consistencia de un solo par de manos es lo que convierte los buenos cortes en tu corte, especialmente en waves y patrones. Esa es la invitación en nuestras dos barberías: New Barbershop 1 en Southchase y New Barbershop 2 cerca de Florida Mall, ambas sobre South Orange Blossom Trail, familiares desde 2003 con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana, clientes sin cita bienvenidos, atención en inglés y español. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1432,8 +1432,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'The Honest Clock: About 1–2 Weeks', es: 'El reloj honesto: unas 1–2 semanas' },
         body: {
-          en: 'A design is sharpest the day it is cut and stays sharp for about one to two weeks, before regrowth softens the lines — the same growth clock as every cut, which our how-often schedule post maps out by style. The good news inside that clock: a redraw along the original lines is quicker than the first sitting, because the map is already there, so plenty of clients refresh the same design two or three times before retiring it. Time yours backward from the event, the photos or the first day of school, and the art peaks when you want it to. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'Un diseño está más definido el día en que se corta y se mantiene así por una o dos semanas, antes de que el crecimiento suavice las líneas: el mismo reloj de crecimiento de cada corte, que nuestra publicación sobre cada cuánto cortarse el cabello detalla por estilo. La buena noticia dentro de ese reloj: un redibujo sobre las líneas originales es más rápido que la primera sesión, porque el mapa ya está ahí, así que muchos clientes refrescan el mismo diseño dos o tres veces antes de retirarlo. Calcula el tuyo hacia atrás desde el evento, las fotos o el primer día de clases, y el arte llega a su punto máximo cuando tú quieres. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'A design is sharpest the day it is cut and stays sharp for about one to two weeks, before regrowth softens the lines — the same growth clock as every cut, which our how-often schedule post maps out by style. The good news inside that clock: a redraw along the original lines is quicker than the first sitting, because the map is already there, so plenty of clients refresh the same design two or three times before retiring it. Time yours backward from the event, the photos or the first day of school, and the art peaks when you want it to. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'Un diseño está más definido el día en que se corta y se mantiene así por una o dos semanas, antes de que el crecimiento suavice las líneas: el mismo reloj de crecimiento de cada corte, que nuestra publicación sobre cada cuánto cortarse el cabello detalla por estilo. La buena noticia dentro de ese reloj: un redibujo sobre las líneas originales es más rápido que la primera sesión, porque el mapa ya está ahí, así que muchos clientes refrescan el mismo diseño dos o tres veces antes de retirarlo. Calcula el tuyo hacia atrás desde el evento, las fotos o el primer día de clases, y el arte llega a su punto máximo cuando tú quieres. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1486,8 +1486,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Say It Before the Cape Goes On', es: 'Dilo antes de que te pongan la capa' },
         body: {
-          en: 'The most useful sentence in this whole post is yours: “I bump easily — here, and here.” Tell your barber where before the work starts, and expect the plan to change around it: a hot towel shave with a bump-aware hand is a different service from a race to baby-smooth, and a good barber would rather leave a hint of length than send you home inflamed. One boundary we keep honestly: bumps that are painful, infected-looking, scarring, or simply not improving belong to a dermatologist, not a barber — we will shape around your skin all day, but we will not pretend a chair treats skin. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'La frase más útil de toda esta publicación es tuya: “Me salen granitos fácil — aquí, y aquí”. Dile a tu barbero dónde antes de que empiece el trabajo, y espera que el plan cambie alrededor de eso: un afeitado con toalla caliente con una mano consciente de los granitos es un servicio distinto a una carrera hacia la suavidad total, y un buen barbero preferirá dejar un toque de largo antes que enviarte a casa inflamado. Un límite que mantenemos con honestidad: los granitos dolorosos, con aspecto infectado, que dejan cicatriz o que simplemente no mejoran le pertenecen a un dermatólogo, no a un barbero; formaremos alrededor de tu piel todo el día, pero no fingiremos que una silla trata la piel. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'The most useful sentence in this whole post is yours: “I bump easily — here, and here.” Tell your barber where before the work starts, and expect the plan to change around it: a hot towel shave with a bump-aware hand is a different service from a race to baby-smooth, and a good barber would rather leave a hint of length than send you home inflamed. One boundary we keep honestly: bumps that are painful, infected-looking, scarring, or simply not improving belong to a dermatologist, not a barber — we will shape around your skin all day, but we will not pretend a chair treats skin. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'La frase más útil de toda esta publicación es tuya: “Me salen granitos fácil — aquí, y aquí”. Dile a tu barbero dónde antes de que empiece el trabajo, y espera que el plan cambie alrededor de eso: un afeitado con toalla caliente con una mano consciente de los granitos es un servicio distinto a una carrera hacia la suavidad total, y un buen barbero preferirá dejar un toque de largo antes que enviarte a casa inflamado. Un límite que mantenemos con honestidad: los granitos dolorosos, con aspecto infectado, que dejan cicatriz o que simplemente no mejoran le pertenecen a un dermatólogo, no a un barbero; formaremos alrededor de tu piel todo el día, pero no fingiremos que una silla trata la piel. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],
@@ -1540,8 +1540,8 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Same Road, Same Day', es: 'La misma calle, el mismo día' },
         body: {
-          en: 'The logistics are the whole point: both of our shops sit right on South Orange Blossom Trail, on the same corridor as the dealerships — New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall. So the route writes itself: drive out of the lot, drive in for the cut. No appointment needed — walk-ins are welcome, we are open seven days a week, and the Hunters Creek shop runs 8 AM to 10:30 PM for the evening buyers. Keys in a new car, cut to match: that is the upgrade, finished. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
-          es: 'La logística es todo el punto: nuestras dos barberías están sobre South Orange Blossom Trail, en el mismo corredor que los concesionarios — New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall. Así que la ruta se escribe sola: sales del lote manejando y entras por tu corte. No necesitas cita: los clientes sin cita son bienvenidos, abrimos los siete días de la semana y el local de Hunters Creek funciona de 8 AM a 10:30 PM para los compradores de la tarde-noche. Llaves en un auto nuevo, corte a la altura: esa es la mejora, terminada. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+          en: 'The logistics are the whole point: both of our shops sit right on South Orange Blossom Trail, on the same corridor as the dealerships — New Barbershop 1 in Southchase and New Barbershop 2 near Florida Mall. So the route writes itself: drive out of the lot, drive in for the cut. No appointment needed — walk-ins are welcome, we are open seven days a week, and the Southchase shop runs 8 AM to 10:30 PM for the evening buyers. Keys in a new car, cut to match: that is the upgrade, finished. Call to book: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Southchase.',
+          es: 'La logística es todo el punto: nuestras dos barberías están sobre South Orange Blossom Trail, en el mismo corredor que los concesionarios — New Barbershop 1 en Southchase y New Barbershop 2 cerca de Florida Mall. Así que la ruta se escribe sola: sales del lote manejando y entras por tu corte. No necesitas cita: los clientes sin cita son bienvenidos, abrimos los siete días de la semana y el local de Southchase funciona de 8 AM a 10:30 PM para los compradores de la tarde-noche. Llaves en un auto nuevo, corte a la altura: esa es la mejora, terminada. Llama para reservar: Southchase (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Southchase.',
         },
       },
     ],

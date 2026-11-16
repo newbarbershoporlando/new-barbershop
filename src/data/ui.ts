@@ -32,12 +32,12 @@ export const ui = {
     nav: { home: 'Home', about: 'About', services: 'Services', blog: 'Blog', contact: 'Contact', locations: 'Locations' },
     callToBook: 'Call to Book',
     call: 'Call',
-    callShop1: 'Call Hunters Creek',
+    callShop1: 'Call Southchase',
     callShop2: 'Call Florida Mall',
     /* Sticky-bar-only labels (round-3 L2): the bar is space-critical,
        so it gets its own strings. callShop1/2 above stay untouched —
        they are shared with the location pages and blog call buttons. */
-    barCallShop1: 'Call Hunters Creek',
+    barCallShop1: 'Call Southchase',
     barCallShop2: 'Call Florida Mall',
     whatsapp: 'WhatsApp Us',
     readReviews: 'Read all our Google reviews',
@@ -47,9 +47,9 @@ export const ui = {
     /* Shop-named directions labels for the Services page (round-3 2c):
        the bare getDirections label would be ambiguous there because
        both shops appear side by side with no card context. */
-    directionsShop1: 'Get Directions — Hunters Creek',
+    directionsShop1: 'Get Directions — Southchase',
     directionsShop2: 'Get Directions — Florida Mall',
-    visitShop1: 'Visit the Hunters Creek page →',
+    visitShop1: 'Visit the Southchase page →',
     visitShop2: 'Visit the Florida Mall page →',
     alsoVisit: 'Also visit',
     hoursHeading: 'Hours',
@@ -92,21 +92,21 @@ export const ui = {
     nav: { home: 'Inicio', about: 'Nosotros', services: 'Servicios', blog: 'Blog', contact: 'Contacto', locations: 'Ubicaciones' },
     callToBook: 'Llama para reservar',
     call: 'Llamar',
-    callShop1: 'Llamar a Hunters Creek',
+    callShop1: 'Llamar a Southchase',
     callShop2: 'Llamar a Florida Mall',
     /* Sticky-bar-only labels (round-3 L2, owner decision 2026-11-16):
        shorter than callShop1/2 so they fit the bar on one line at
        320px; the longer forms stay on location pages and blog buttons. */
-    barCallShop1: 'Llamar Hunters Creek',
+    barCallShop1: 'Llamar Southchase',
     barCallShop2: 'Llamar Florida Mall',
     whatsapp: 'Escríbenos por WhatsApp',
     readReviews: 'Lee todas nuestras reseñas de Google',
     reviewsHeading: 'Lo que dicen nuestros clientes',
     googleReviewsSuffix: 'reseñas de Google',
     getDirections: 'Cómo llegar',
-    directionsShop1: 'Cómo llegar — Hunters Creek',
+    directionsShop1: 'Cómo llegar — Southchase',
     directionsShop2: 'Cómo llegar — Florida Mall',
-    visitShop1: 'Visita la página de Hunters Creek →',
+    visitShop1: 'Visita la página de Southchase →',
     visitShop2: 'Visita la página de Florida Mall →',
     alsoVisit: 'Visita también',
     hoursHeading: 'Horario',
