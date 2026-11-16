@@ -43,7 +43,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Top-Rated Barber Shop in Orlando — Family-Run Since 2003',
-        seoTitle: 'Top-Rated Barber Shop in Orlando — Family-Run Since 2003 | New Barbershop Orlando',
+        seoTitle: 'Top-Rated Barber Shop in Orlando — Family-Run Since 2003',
         metaDescription:
           'Family-run barber shop in Orlando since 2003. Two shops on Orange Blossom Trail, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book today.',
         intro:
@@ -53,9 +53,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Top-Rated Barber Shop in Orlando — Family-Run Since 2003',
-        seoTitle: 'Top-Rated Barber Shop in Orlando — Family-Run Since 2003 | New Barbershop Orlando',
+        seoTitle: 'La mejor barbería de Orlando — Familiar desde 2003',
         metaDescription:
-          'Family-run barber shop in Orlando since 2003. Two shops on Orange Blossom Trail, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book today.',
+          'Barbería familiar en Orlando desde 2003, con dos locales en Orange Blossom Trail y atención en español. Abiertos los 7 días. Llama al (407) 470-4846.',
         intro:
           '¿Buscas una barbería en Orlando en la que confiar para cada corte? Es más que una silla y unas máquinas — es un equipo que conoce tu estilo, recuerda cómo te gusta y trata cada visita como algo importante. En New Barbershop, así hemos trabajado desde 2003.',
         closing:
@@ -100,7 +100,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Expert Fades in Orlando — Precision Haircuts for Every Style',
-        seoTitle: 'Expert Fades in Orlando — Precision Haircuts for Every Style | New Barbershop Orlando',
+        seoTitle: 'Expert Fades in Orlando — Precision Haircuts for Every Style',
         metaDescription:
           'Expert fades in Orlando — clean blends, sharp line-ups, precision haircuts. Two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.',
         intro:
@@ -110,9 +110,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Expert Fades in Orlando — Precision Haircuts for Every Style',
-        seoTitle: 'Expert Fades in Orlando — Precision Haircuts for Every Style | New Barbershop Orlando',
+        seoTitle: 'Degradados en Orlando — Cortes de precisión para tu estilo',
         metaDescription:
-          'Expert fades in Orlando — clean blends, sharp line-ups, precision haircuts. Two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.',
+          'Degradados expertos en Orlando: difuminados limpios y delineados definidos. Dos locales en Orange Blossom Trail. Llama al (407) 470-4846.',
         intro:
           '¿Buscas degradados en Orlando que se mantengan definidos mucho después de salir de la silla? Un gran degradado está en la mezcla — líneas limpias, una transición suave y una forma que va con tu estilo. En New Barbershop, nuestros barberos llevan más de 20 años perfeccionando esa mezcla.',
         closing:
@@ -157,7 +157,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Braids in Orlando — Braiding for Men and Women',
-        seoTitle: 'Braids in Orlando — Braiding for Men and Women | New Barbershop Orlando',
+        seoTitle: 'Braids in Orlando — Braiding for Men and Women',
         metaDescription:
           'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Hunters Creek (407) 470-4846 to book your braiding appointment today.',
         intro:
@@ -166,9 +166,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Braids in Orlando — Braiding for Men and Women',
-        seoTitle: 'Braids in Orlando — Braiding for Men and Women | New Barbershop Orlando',
+        seoTitle: 'Trenzas en Orlando para hombres y mujeres',
         metaDescription:
-          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Hunters Creek (407) 470-4846 to book your braiding appointment today.',
+          'Trenzas en Orlando para hombres y mujeres: trenzado limpio y cómodo en New Barbershop 1, Hunters Creek. Llama al (407) 470-4846 para tu cita.',
         intro:
           '¿Buscas trenzas en Orlando que se vean prolijas, sean cómodas y duren? Trenzar es un arte — divisiones limpias, tensión uniforme y un estilo que va contigo. En New Barbershop 1, nuestra especialista en trenzas aporta ese cuidado a cada cabellera, tanto para hombres como para mujeres.',
         closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
@@ -209,7 +209,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Welcome to Your Neighborhood Barbershop in Orlando',
-        seoTitle: 'Welcome to Your Neighborhood Barbershop in Orlando | New Barbershop Orlando',
+        seoTitle: 'Welcome to Your Neighborhood Barbershop in Orlando',
         metaDescription:
           'Welcome to your neighborhood barbershop in Orlando. Family-run since 2003, two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.',
         intro:
@@ -219,9 +219,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Welcome to Your Neighborhood Barbershop in Orlando',
-        seoTitle: 'Welcome to Your Neighborhood Barbershop in Orlando | New Barbershop Orlando',
+        seoTitle: 'Bienvenido a tu barbería de barrio en Orlando',
         metaDescription:
-          'Welcome to your neighborhood barbershop in Orlando. Family-run since 2003, two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.',
+          'Tu barbería de barrio en Orlando: negocio familiar desde 2003, dos locales en Orange Blossom Trail. Llama al (407) 470-4846 o al (407) 820-4541.',
         intro:
           'Bienvenido a tu barbería de barrio, en la que Orlando confía desde 2003. New Barbershop es un negocio familiar que corta cabello sobre South Orange Blossom Trail — más de 20 años de experiencia, dos barberías y una promesa sencilla: un corte limpio, una silla justa y un equipo que te trata como a un vecino. Esta es nuestra primera publicación y queríamos aprovecharla para saludarte y contarte un poco de quiénes somos.',
         closing:
@@ -263,7 +263,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Visiting Orlando? Get a Fresh Haircut Near Florida Mall',
-        seoTitle: 'Visiting Orlando? Get a Fresh Haircut Near Florida Mall | New Barbershop Orlando',
+        seoTitle: 'Visiting Orlando? Get a Fresh Haircut Near Florida Mall',
         metaDescription:
           'Visiting Orlando? Get a fresh haircut minutes from Florida Mall — walk-ins welcome, bilingual service, open 7 days a week. Call (407) 820-4541 or (407) 470-4846.',
         intro:
@@ -273,9 +273,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Visiting Orlando? Get a Fresh Haircut Near Florida Mall',
-        seoTitle: 'Visiting Orlando? Get a Fresh Haircut Near Florida Mall | New Barbershop Orlando',
+        seoTitle: '¿De visita en Orlando? Corte cerca de Florida Mall',
         metaDescription:
-          'Visiting Orlando? Get a fresh haircut minutes from Florida Mall — walk-ins welcome, bilingual service, open 7 days a week. Call (407) 820-4541 or (407) 470-4846.',
+          '¿De visita en Orlando? Hazte un corte a minutos de Florida Mall: sin cita, atención bilingüe y abiertos los 7 días. Llama al (407) 820-4541.',
         intro:
           '¿Estás de vacaciones en Orlando y tu corte no sobrevivió al viaje? Pasa seguido: el calor de Florida, la piscina y los parques castigan cualquier corte. La buena noticia es que no necesitas cita ni planearlo. Entra a New Barbershop, siéntate y sal luciendo impecable para el resto de tu viaje.',
         closing:
@@ -317,7 +317,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Car Shopping on Orange Blossom Trail? Get a Haircut While You’re Around',
-        seoTitle: 'Car Shopping on Orange Blossom Trail? Get a Haircut While You’re Around | New Barbershop Orlando',
+        seoTitle: 'Car Shopping on Orange Blossom Trail? Get a Haircut Nearby',
         metaDescription:
           'Spending the day at the dealerships on Orange Blossom Trail? Both New Barbershop locations are right on the Trail — walk-ins welcome. Call (407) 470-4846 or (407) 820-4541.',
         intro:
@@ -327,9 +327,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Car Shopping on Orange Blossom Trail? Get a Haircut While You’re Around',
-        seoTitle: 'Car Shopping on Orange Blossom Trail? Get a Haircut While You’re Around | New Barbershop Orlando',
+        seoTitle: '¿Comprando auto en Orange Blossom Trail? Córtate el cabello',
         metaDescription:
-          'Spending the day at the dealerships on Orange Blossom Trail? Both New Barbershop locations are right on the Trail — walk-ins welcome. Call (407) 470-4846 or (407) 820-4541.',
+          '¿De concesionario en concesionario por Orange Blossom Trail? Nuestras dos barberías están sobre la misma calle. Sin cita. Llama al (407) 470-4846.',
         intro:
           'Si vas a pasar el día en Orange Blossom Trail, ya conoces el ritmo: una prueba de manejo, unos papeles, una espera en el área de servicio y más papeles. La Trail es la zona de los concesionarios en Orlando, y nuestras dos barberías están justo sobre ella, lo bastante cerca para que un corte fresco encaje en las horas que ya vas a estar aquí.',
         closing:
@@ -371,7 +371,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Realtors, Loan Officers & Sales Pros: The Two-Week Haircut Routine',
-        seoTitle: 'Realtors, Loan Officers & Sales Pros: The Two-Week Haircut Routine | New Barbershop Orlando',
+        seoTitle: 'The Two-Week Haircut Routine for Sales Pros & Realtors',
         metaDescription:
           'Realtors, loan officers and sales pros: keep your fade sharp on a two-week routine — full cuts, line-up and beard touch-ups, walk-ins welcome. Call (407) 470-4846 or (407) 820-4541.',
         intro:
@@ -381,9 +381,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Realtors, Loan Officers & Sales Pros: The Two-Week Haircut Routine',
-        seoTitle: 'Realtors, Loan Officers & Sales Pros: The Two-Week Haircut Routine | New Barbershop Orlando',
+        seoTitle: 'La rutina de corte cada dos semanas para profesionales',
         metaDescription:
-          'Realtors, loan officers and sales pros: keep your fade sharp on a two-week routine — full cuts, line-up and beard touch-ups, walk-ins welcome. Call (407) 470-4846 or (407) 820-4541.',
+          'Agentes, prestamistas y vendedores: mantén tu degradado impecable con una rutina de dos semanas. Sin cita. Llama al (407) 470-4846 o al (407) 820-4541.',
         intro:
           'Cuando tu trabajo es cara a cara — visitas a propiedades, cierres, reuniones con clientes, el piso de ventas — tu corte es parte de la primera impresión, y tiene fecha de vencimiento. Un degradado que se ve perfecto esta semana empieza a crecer la siguiente. La solución no es un mejor corte, es una rutina: un corte completo cada dos semanas, aproximadamente, con retoques rápidos en el medio.',
         closing:
@@ -425,7 +425,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Holiday Haircuts in Orlando: Look Sharp for Thanksgiving, Christmas & New Year’s',
-        seoTitle: 'Holiday Haircuts in Orlando: Look Sharp for Thanksgiving, Christmas & New Year’s | New Barbershop Orlando',
+        seoTitle: 'Holiday Haircuts in Orlando for Thanksgiving & Christmas',
         metaDescription:
           'Holiday haircuts in Orlando — fades, line-ups, beard trims, hot towel shaves and kids cuts for Thanksgiving, Christmas and New Year’s photos. Call (407) 470-4846 or (407) 820-4541.',
         intro:
@@ -435,9 +435,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Holiday Haircuts in Orlando: Look Sharp for Thanksgiving, Christmas & New Year’s',
-        seoTitle: 'Holiday Haircuts in Orlando: Look Sharp for Thanksgiving, Christmas & New Year’s | New Barbershop Orlando',
+        seoTitle: 'Cortes para las fiestas en Orlando: luce impecable',
         metaDescription:
-          'Holiday haircuts in Orlando — fades, line-ups, beard trims, hot towel shaves and kids cuts for Thanksgiving, Christmas and New Year’s photos. Call (407) 470-4846 or (407) 820-4541.',
+          'Cortes para las fiestas en Orlando: degradados, delineados, barba y cortes para niños para las fotos de fin de año. Llama al (407) 470-4846.',
         intro:
           'Las fiestas te ponen en más fotos que cualquier otra temporada: reuniones familiares en Acción de Gracias, fotos de Navidad, la víspera de Año Nuevo. Un corte fresco es la mejora más fácil en cada una de esas fotos, y un poco de planificación lo hace ver aún mejor. Así es como nuestros clientes habituales planean sus cortes de temporada.',
         closing:
@@ -479,7 +479,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'How Often Should a Man Get a Haircut? A Barber’s Honest Schedule by Style',
-        seoTitle: 'How Often Should a Man Get a Haircut? An Orlando Barber’s Schedule by Style | New Barbershop Orlando',
+        seoTitle: 'How Often Should a Man Get a Haircut? A Barber’s Schedule',
         metaDescription:
           'How often should a man get a haircut? An Orlando barber’s honest schedule by style — skin fades, fades, tapers, classics and beards. Walk-ins welcome. Call (407) 470-4846.',
         intro:
@@ -489,9 +489,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'How Often Should a Man Get a Haircut? A Barber’s Honest Schedule by Style',
-        seoTitle: 'How Often Should a Man Get a Haircut? An Orlando Barber’s Schedule by Style | New Barbershop Orlando',
+        seoTitle: '¿Cada cuánto debe cortarse el cabello un hombre?',
         metaDescription:
-          'How often should a man get a haircut? An Orlando barber’s honest schedule by style — skin fades, fades, tapers, classics and beards. Walk-ins welcome. Call (407) 470-4846.',
+          '¿Cada cuánto cortarse el cabello? La guía honesta de un barbero de Orlando según tu estilo: degradados, taper, clásicos y barba. Llama al (407) 470-4846.',
         intro:
           'Es la pregunta que más escuchamos en la silla: ¿cada cuánto debe cortarse el cabello un hombre? La respuesta honesta es que no hay un solo número: depende del estilo que lleves, porque todos los estilos crecen a la misma velocidad, pero dejan de verse definidos en semanas distintas. Aquí está el calendario que les damos a nuestros propios clientes, estilo por estilo.',
         closing:
@@ -533,7 +533,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'The Psychology of a Fresh Haircut: Why You Walk Out Standing Taller',
-        seoTitle: 'The Psychology of a Fresh Haircut — Why It Boosts Confidence | New Barbershop Orlando',
+        seoTitle: 'The Psychology of a Fresh Haircut — Why It Boosts Confidence',
         metaDescription:
           'The psychology of a fresh haircut: the mirror effect, first impressions and the reset of a clean cut, explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
         intro:
@@ -543,9 +543,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'The Psychology of a Fresh Haircut: Why You Walk Out Standing Taller',
-        seoTitle: 'The Psychology of a Fresh Haircut — Why It Boosts Confidence | New Barbershop Orlando',
+        seoTitle: 'La psicología de un corte fresco: confianza al instante',
         metaDescription:
-          'The psychology of a fresh haircut: the mirror effect, first impressions and the reset of a clean cut, explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+          'La psicología de un corte de cabello fresco: el efecto espejo, las primeras impresiones y el reinicio de un buen corte. Llama al (407) 470-4846.',
         intro:
           'Nadie lo ha medido en un laboratorio, pero todo barbero lo ha visto pasar: un cliente entra encogido y sale erguido, con los hombros atrás, mirándose en el espejo camino a la puerta. Hay una psicología real detrás de un corte fresco; nada clínico, solo la forma cotidiana en que verte bien cambia cómo te presentas.',
         closing:
@@ -587,7 +587,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'New Look, New Chapter: Why a Fresh Cut Is Step One of a Fresh Start',
-        seoTitle: 'Haircut for a New Start: Why a Fresh Cut Is Step One | New Barbershop Orlando',
+        seoTitle: 'Haircut for a New Start: Why a Fresh Cut Is Step One',
         metaDescription:
           'A haircut for a new start: why a fresh cut is step one of a fresh chapter — new job, new city, back on the dating scene. Orlando barbers, walk-ins welcome. Call (407) 470-4846.',
         intro:
@@ -597,9 +597,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'New Look, New Chapter: Why a Fresh Cut Is Step One of a Fresh Start',
-        seoTitle: 'Haircut for a New Start: Why a Fresh Cut Is Step One | New Barbershop Orlando',
+        seoTitle: 'Corte para un nuevo comienzo: el primer paso',
         metaDescription:
-          'A haircut for a new start: why a fresh cut is step one of a fresh chapter — new job, new city, back on the dating scene. Orlando barbers, walk-ins welcome. Call (407) 470-4846.',
+          'Un corte para un nuevo comienzo: trabajo nuevo, ciudad nueva o de vuelta a las citas. Barberos en Orlando, sin cita. Llama al (407) 470-4846.',
         intro:
           'Una ruptura, un trabajo nuevo, una ciudad nueva, volver a la escena de las citas: sea cual sea el momento de cambio, el primer movimiento casi siempre es el mismo: cambiarse el cabello. No es vanidad. Un corte fresco es el cambio visible más rápido que controlas por completo, y te dice a ti, antes que a nadie más, que el capítulo nuevo ya empezó.',
         closing:
@@ -641,7 +641,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Look Like You Mean Business: The Grooming Habits of Men Who Always Look Put Together',
-        seoTitle: 'Men’s Grooming Habits: How Put-Together Men Stay Sharp | New Barbershop Orlando',
+        seoTitle: 'Men’s Grooming Habits: How Put-Together Men Stay Sharp',
         metaDescription:
           'The men’s grooming habits that keep you looking put together — a fixed haircut cadence, deliberate beard lines, a five-minute daily routine. Orlando barbers. Call (407) 470-4846.',
         intro:
@@ -651,9 +651,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Look Like You Mean Business: The Grooming Habits of Men Who Always Look Put Together',
-        seoTitle: 'Men’s Grooming Habits: How Put-Together Men Stay Sharp | New Barbershop Orlando',
+        seoTitle: 'Hábitos de cuidado personal para hombres impecables',
         metaDescription:
-          'The men’s grooming habits that keep you looking put together — a fixed haircut cadence, deliberate beard lines, a five-minute daily routine. Orlando barbers. Call (407) 470-4846.',
+          'Los hábitos de cuidado de los hombres que lucen impecables: rutina de corte fija, barba cuidada y 5 minutos al día. Llama al (407) 470-4846.',
         intro:
           'Algunos hombres siempre se ven bien presentados: no elegantes, solo intencionales, todos los días, incluso un martes cualquiera. Casi nunca se trata de tener más productos. Viendo a nuestros clientes habituales con los años, todo se reduce a unos pocos hábitos de cuidado personal, y el primero es un calendario, no una botella.',
         closing:
@@ -695,7 +695,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Flying Through MCO? The Layover & Crew Guide to Getting a Haircut in Orlando',
-        seoTitle: 'Haircut on a Layover at Orlando Airport (MCO)? A Crew & Traveler Guide | New Barbershop Orlando',
+        seoTitle: 'Haircut on a Layover at Orlando Airport (MCO)? Crew Guide',
         metaDescription:
           'Getting a haircut on a layover at Orlando airport (MCO) — crew and travelers: two walk-in barber shops about 15–20 minutes from MCO, open 7 days. Call (407) 820-4541.',
         intro:
@@ -705,9 +705,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Flying Through MCO? The Layover & Crew Guide to Getting a Haircut in Orlando',
-        seoTitle: 'Haircut on a Layover at Orlando Airport (MCO)? A Crew & Traveler Guide | New Barbershop Orlando',
+        seoTitle: '¿Escala en el aeropuerto de Orlando (MCO)? Guía de corte',
         metaDescription:
-          'Getting a haircut on a layover at Orlando airport (MCO) — crew and travelers: two walk-in barber shops about 15–20 minutes from MCO, open 7 days. Call (407) 820-4541.',
+          '¿Escala en el aeropuerto de Orlando (MCO)? Dos barberías sin cita a unos 15–20 minutos, abiertas los 7 días. Llama al (407) 820-4541.',
         intro:
           'El Aeropuerto Internacional de Orlando mueve a millones de personas por esta ciudad, y un buen número de ellas trabaja en los vuelos, no los toma. Pilotos y tripulantes de cabina llegan a MCO con un estándar de presentación que mantener y un horario que cambia por mensaje de texto. Los viajeros llegan con escalas largas y fotos de vacaciones por delante. Ambos grupos hacen la misma pregunta: ¿dónde puedo cortarme bien el cabello cerca del aeropuerto, sin cita? Esta guía es la respuesta honesta.',
         closing:
@@ -749,7 +749,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Fade vs Taper: Which One Is Right for You?',
-        seoTitle: 'Fade vs Taper Haircut: What’s the Difference? An Orlando Barber Explains | New Barbershop Orlando',
+        seoTitle: 'Fade vs Taper Haircut: What’s the Difference?',
         metaDescription:
           'Fade vs taper haircut — what’s the difference, which grows out better, and what to ask your barber for. Explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
         intro:
@@ -759,9 +759,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Fade vs Taper: Which One Is Right for You?',
-        seoTitle: 'Fade vs Taper Haircut: What’s the Difference? An Orlando Barber Explains | New Barbershop Orlando',
+        seoTitle: 'Degradado vs taper: ¿cuál es la diferencia?',
         metaDescription:
-          'Fade vs taper haircut — what’s the difference, which grows out better, and what to ask your barber for. Explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+          'Degradado o taper: cuál es la diferencia, cuál crece mejor y qué pedirle a tu barbero. Te lo explican barberos de Orlando. Llama al (407) 470-4846.',
         intro:
           '¿Fade o taper? Es la pregunta detrás de la mitad de las fotos que nos muestran los clientes, y el miedo detrás de la otra mitad es pedir el equivocado. La buena noticia: la diferencia se explica en una frase, y elegir entre los dos se reduce a tres cosas: cuánto contraste quieres, cómo te trata el crecimiento y cada cuánto quieres volver a la silla.',
         closing:
@@ -803,7 +803,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'How Often Should a Man Wash His Hair? The Schedule by Hair Type and Scalp',
-        seoTitle: 'How Often Should a Man Wash His Hair? An Orlando Barber’s Schedule by Hair Type | New Barbershop Orlando',
+        seoTitle: 'How Often Should a Man Wash His Hair? A Barber’s Guide',
         metaDescription:
           'How often to wash men’s hair — the schedule by hair type and scalp, from an Orlando barber: oily, wavy, thick, curly and coily. Walk-ins welcome. Call (407) 470-4846.',
         intro:
@@ -813,9 +813,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'How Often Should a Man Wash His Hair? The Schedule by Hair Type and Scalp',
-        seoTitle: 'How Often Should a Man Wash His Hair? An Orlando Barber’s Schedule by Hair Type | New Barbershop Orlando',
+        seoTitle: '¿Cada cuánto debe lavarse el cabello un hombre?',
         metaDescription:
-          'How often to wash men’s hair — the schedule by hair type and scalp, from an Orlando barber: oily, wavy, thick, curly and coily. Walk-ins welcome. Call (407) 470-4846.',
+          '¿Cada cuánto lavar el cabello de un hombre? La guía de un barbero de Orlando según tu tipo de cabello y cuero cabelludo. Llama al (407) 470-4846.',
         intro:
           'Pregúntale a diez hombres cada cuánto se lavan el cabello y escucharás de todo: desde “todos los días, obvio” hasta “cuando empieza a picar”. Ambos pueden tener razón, porque la respuesta honesta depende de tu tipo de cabello y de tu cuero cabelludo, no de una regla que alguien te vendió. Este es el calendario que repasamos con los clientes en la silla.',
         closing:
@@ -857,7 +857,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: '360 Waves: The Brush, Durag and Wolfing Routine, Explained by a Barber',
-        seoTitle: '360 Waves Routine: Brush, Durag and Wolfing, Explained by an Orlando Barber | New Barbershop Orlando',
+        seoTitle: '360 Waves Routine: Brush, Durag and Wolfing Explained',
         metaDescription:
           'The 360 waves routine from an Orlando barber — brush sessions, durag compression, wash-and-style and wolfing, plus our Waves Styling & Maintenance service. Call (407) 470-4846.',
         intro:
@@ -867,9 +867,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: '360 Waves: The Brush, Durag and Wolfing Routine, Explained by a Barber',
-        seoTitle: '360 Waves Routine: Brush, Durag and Wolfing, Explained by an Orlando Barber | New Barbershop Orlando',
+        seoTitle: 'Rutina 360 waves: cepillo, durag y wolfing',
         metaDescription:
-          'The 360 waves routine from an Orlando barber — brush sessions, durag compression, wash-and-style and wolfing, plus our Waves Styling & Maintenance service. Call (407) 470-4846.',
+          'La rutina 360 waves de un barbero de Orlando: sesiones de cepillado, compresión con durag, lavado y wolfing. Llama al (407) 470-4846.',
         intro:
           'Las waves son el estilo más incomprendido de los que cortamos. Los clientes las piden como si fueran un corte; los barberos sabemos que son un programa de entrenamiento que el corte apenas inicia. El patrón lo crea tu cepillo, lo sostiene tu durag y lo profundiza tu paciencia. Esta es la rutina, tal como la explicamos en la silla.',
         closing:
@@ -911,7 +911,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Braids Aftercare: How to Keep Them Clean, Comfortable and In Longer',
-        seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer | New Barbershop Orlando',
+        seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer',
         metaDescription:
           'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Hunters Creek. Call (407) 470-4846.',
         intro:
@@ -920,9 +920,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Braids Aftercare: How to Keep Them Clean, Comfortable and In Longer',
-        seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer | New Barbershop Orlando',
+        seoTitle: 'Cuidado de las trenzas: que duren más y se vean limpias',
         metaDescription:
-          'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Hunters Creek. Call (407) 470-4846.',
+          'Cuidado de las trenzas: cuánto duran, cómo lavarlas y cuándo retirarlas, por barberos de Orlando. Trenzas en Hunters Creek. Llama al (407) 470-4846.',
         intro:
           'La instalación es solo la mitad del servicio. Lo que haces en casa decide si tus trenzas se ven frescas hasta el final de su vida útil o cansadas en la segunda semana. Nuestra trenzadora en New Barbershop 1 le da a cada cliente la misma charla de cuidado posterior; aquí está por escrito. (¿Todavía estás decidiendo el estilo? Empieza con nuestra publicación Trenzas en Orlando; esta trata de la vida después de la silla.)',
         closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
@@ -963,7 +963,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Pomade, Clay, Wax, Gel or Paste? Pick Your Product by Hold and Shine',
-        seoTitle: 'Best Hair Product for Men: Pomade, Clay, Wax, Gel or Paste? | New Barbershop Orlando',
+        seoTitle: 'Best Hair Product for Men: Pomade, Clay, Wax, Gel or Paste?',
         metaDescription:
           'The best hair product for men, decoded by hold and shine — pomade, clay, wax, gel and paste compared by Orlando barbers, plus how to apply each. Call (407) 470-4846.',
         intro:
@@ -973,9 +973,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Pomade, Clay, Wax, Gel or Paste? Pick Your Product by Hold and Shine',
-        seoTitle: 'Best Hair Product for Men: Pomade, Clay, Wax, Gel or Paste? | New Barbershop Orlando',
+        seoTitle: '¿Pomada, cera, arcilla, gel o pasta? Guía para hombres',
         metaDescription:
-          'The best hair product for men, decoded by hold and shine — pomade, clay, wax, gel and paste compared by Orlando barbers, plus how to apply each. Call (407) 470-4846.',
+          'El mejor producto para el cabello del hombre, según fijación y brillo: pomada, arcilla, cera, gel y pasta comparados. Llama al (407) 470-4846.',
         intro:
           'El estante confunde a propósito: cinco envases que prometen “fijación”, cada uno haciendo algo completamente distinto. La mayoría de los hombres tiene el equivocado, y luego culpa a su cabello. Olvida las marcas: los barberos elegimos el producto con dos preguntas: ¿cuánta fijación y cuánto brillo? Respóndelas y la categoría correcta se elige sola.',
         closing:
@@ -1017,7 +1017,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'The Curly Hair Routine for Men: Wash Less, Condition Every Time, Touch Less',
-        seoTitle: 'Curly Hair Routine for Men: Wash Less, Condition More | New Barbershop Orlando',
+        seoTitle: 'Curly Hair Routine for Men: Wash Less, Condition More',
         metaDescription:
           'The curly hair routine for men — wash less, condition every wash, detangle wet, style on damp hair, touch less. From Orlando barbers who cut curls daily. Call (407) 470-4846.',
         intro:
@@ -1027,9 +1027,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'The Curly Hair Routine for Men: Wash Less, Condition Every Time, Touch Less',
-        seoTitle: 'Curly Hair Routine for Men: Wash Less, Condition More | New Barbershop Orlando',
+        seoTitle: 'Rutina para cabello rizado en hombres: lava menos',
         metaDescription:
-          'The curly hair routine for men — wash less, condition every wash, detangle wet, style on damp hair, touch less. From Orlando barbers who cut curls daily. Call (407) 470-4846.',
+          'La rutina para el cabello rizado del hombre: lava menos, acondiciona siempre, desenreda mojado y toca poco. Barberos de Orlando. Llama al (407) 470-4846.',
         intro:
           'El cabello rizado no es cabello difícil: es cabello que juega con otras reglas y que normalmente se maneja con el manual del cabello lacio. Aplica la rutina para rizos y la misma cabellera que se llenaba de frizz cada tarde se vuelve cooperadora. Tres principios lo gobiernan todo: lava menos, acondiciona siempre, toca menos.',
         closing:
@@ -1071,7 +1071,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Beard Care at Home: Wash It, Feed It, Grow It Out Right',
-        seoTitle: 'Beard Care at Home: Wash, Condition and Grow It Out Right | New Barbershop Orlando',
+        seoTitle: 'Beard Care at Home: Wash, Condition and Grow It Out Right',
         metaDescription:
           'Beard care at home — how to wash and condition a beard, get through the itch phase, handle patchy spots honestly, and use oils and balms right. Orlando barbers. Call (407) 470-4846.',
         intro:
@@ -1081,9 +1081,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Beard Care at Home: Wash It, Feed It, Grow It Out Right',
-        seoTitle: 'Beard Care at Home: Wash, Condition and Grow It Out Right | New Barbershop Orlando',
+        seoTitle: 'Cuidado de la barba en casa: lávala y déjala crecer bien',
         metaDescription:
-          'Beard care at home — how to wash and condition a beard, get through the itch phase, handle patchy spots honestly, and use oils and balms right. Orlando barbers. Call (407) 470-4846.',
+          'Cuidado de la barba en casa: cómo lavarla y acondicionarla, pasar la picazón y usar aceites y bálsamos bien. Llama al (407) 470-4846.',
         intro:
           'Una buena barba se crece en casa y se termina en la silla. Lo que haces en el lavabo entre visitas decide si se ve cuidada o descuidada, y el vello de la barba juega con sus propias reglas, porque no es cabello de la cabeza: es más grueso, más seco y crece sobre la piel más lavada y rasurada de tu cuerpo. Esta es la rutina casera que enseñamos.',
         closing:
@@ -1125,7 +1125,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Are Beards Attractive? What the Research Says — and Why Upkeep Decides It',
-        seoTitle: 'Are Beards Attractive? What the Research Says | New Barbershop Orlando',
+        seoTitle: 'Are Beards Attractive? What the Research Says',
         metaDescription:
           'Are beards attractive? What research finds about maturity, masculinity and status — and why upkeep, shaping and clean lines decide it. Orlando barbers. Call (407) 470-4846.',
         intro:
@@ -1135,9 +1135,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Are Beards Attractive? What the Research Says — and Why Upkeep Decides It',
-        seoTitle: 'Are Beards Attractive? What the Research Says | New Barbershop Orlando',
+        seoTitle: '¿Son atractivas las barbas? Lo que dice la ciencia',
         metaDescription:
-          'Are beards attractive? What research finds about maturity, masculinity and status — and why upkeep, shaping and clean lines decide it. Orlando barbers. Call (407) 470-4846.',
+          '¿Son atractivas las barbas? Lo que encuentra la investigación sobre madurez y presencia, y por qué el cuidado decide. Llama al (407) 470-4846.',
         intro:
           'Es la pregunta que la mitad de nuestros clientes de barba se hace en silencio al sentarse: ¿las barbas son atractivas de verdad, o es algo que los hombres con barba se dicen entre ellos? Los investigadores sí han estudiado esto, y su respuesta es más interesante que un sí o un no. Lo que los estudios encuentran una y otra vez es que una barba cambia cómo se lee a un hombre. Que esa lectura juegue a tu favor depende de lo que hagas con ella.',
         closing:
@@ -1179,7 +1179,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'The Wave Cut, Done Right: Grain, Guards and the Wolf — From the Barber’s Side of the Chair',
-        seoTitle: 'Wave Haircut Technique: Grain, Guards and the Wolf | New Barbershop Orlando',
+        seoTitle: 'Wave Haircut Technique: Grain, Guards and the Wolf',
         metaDescription:
           'Wave haircut technique from the barber’s side of the chair — grain mapping, guard choice, crown protection and wolf-cycle cuts in Orlando. Call (407) 470-4846.',
         intro:
@@ -1189,9 +1189,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'The Wave Cut, Done Right: Grain, Guards and the Wolf — From the Barber’s Side of the Chair',
-        seoTitle: 'Wave Haircut Technique: Grain, Guards and the Wolf | New Barbershop Orlando',
+        seoTitle: 'Técnica del corte para waves: grano, guías y wolfing',
         metaDescription:
-          'Wave haircut technique from the barber’s side of the chair — grain mapping, guard choice, crown protection and wolf-cycle cuts in Orlando. Call (407) 470-4846.',
+          'La técnica del corte waves desde la silla del barbero: mapa del grano, elección de guías y protección de la corona. Llama al (407) 470-4846.',
         intro:
           'Nuestra publicación de la ola 3 sobre la rutina cubrió tu mitad del trabajo: el cepillo, el durag, el cuidado del wolfing en casa. Esta publicación es la otra mitad: lo que un barbero que corta waves hace en realidad en la silla, y por qué dos hombres con la misma rutina casera obtienen resultados distintos con barberos distintos. Un corte para waves es una técnica, y empieza antes de que la máquina se encienda.',
         closing:
@@ -1233,7 +1233,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'The Line-Up, Explained: Edge-Up, Shape-Up, and Keeping Your Hairline Where It Grows',
-        seoTitle: 'Line-Up Haircut, Edge-Up, Shape-Up: What It Is and How Long It Lasts | New Barbershop Orlando',
+        seoTitle: 'Line-Up Haircut: What It Is and How Long It Lasts',
         metaDescription:
           'The line-up haircut explained — line-up, edge-up and shape-up are one service; how long it stays crisp, the razor finish, and protecting your natural hairline. Orlando. Call (407) 470-4846.',
         intro:
@@ -1243,9 +1243,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'The Line-Up, Explained: Edge-Up, Shape-Up, and Keeping Your Hairline Where It Grows',
-        seoTitle: 'Line-Up Haircut, Edge-Up, Shape-Up: What It Is and How Long It Lasts | New Barbershop Orlando',
+        seoTitle: 'Delineado (line-up): qué es y cuánto dura',
         metaDescription:
-          'The line-up haircut explained — line-up, edge-up and shape-up are one service; how long it stays crisp, the razor finish, and protecting your natural hairline. Orlando. Call (407) 470-4846.',
+          'El delineado explicado: line-up, edge-up y shape-up son el mismo servicio; cuánto dura definido y cómo cuidar tu línea natural. Llama al (407) 470-4846.',
         intro:
           'Pídelo en Orlando y es un line-up; en Nueva York es un edge-up; en muchas barberías del sur es un shape-up. Tres nombres, un solo servicio — y el que tiene más probabilidades de ser malentendido, hecho a la carrera o ejecutado de una forma que te cuesta línea de cabello que nunca recuperas. Aquí está la explicación completa, incluyendo la parte que nadie te cuenta.',
         closing:
@@ -1287,7 +1287,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Skin Fades on Textured Hair Are a Different Craft — Here’s What Your Barber Is Actually Doing',
-        seoTitle: 'Skin Fade on Textured Hair: The Technique, Explained | New Barbershop Orlando',
+        seoTitle: 'Skin Fade on Textured Hair: The Technique, Explained',
         metaDescription:
           'A skin fade on textured hair is a different craft — shrinkage, dry cutting, guideline and lever work, shadow vs skin finish. Orlando barbers explain. Call (407) 470-4846.',
         intro:
@@ -1297,9 +1297,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Skin Fades on Textured Hair Are a Different Craft — Here’s What Your Barber Is Actually Doing',
-        seoTitle: 'Skin Fade on Textured Hair: The Technique, Explained | New Barbershop Orlando',
+        seoTitle: 'Degradado al ras en cabello texturizado: la técnica',
         metaDescription:
-          'A skin fade on textured hair is a different craft — shrinkage, dry cutting, guideline and lever work, shadow vs skin finish. Orlando barbers explain. Call (407) 470-4846.',
+          'El degradado al ras en cabello texturizado es otro oficio: encogimiento, corte en seco y acabado sombra o al ras. Llama al (407) 470-4846.',
         intro:
           'Un degradado al ras es un degradado al ras — hasta que el cabello es rizado o afro, y entonces casi todas las variables cambian: cuánto mide el cabello en realidad, cómo se comporta la mezcla, cuántas pasadas toma, dónde van las guías. Esta no es la pregunta de elección de estilo (nuestra publicación Fade vs Taper se encarga de eso). Esto es ejecución: lo que tu barbero hace en realidad de forma distinta en el cabello texturizado, y por qué toma el tiempo que toma.',
         closing:
@@ -1341,7 +1341,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'New to Orlando — or Just Done Searching? How to Find a Barber Who Actually Cuts Your Hair',
-        seoTitle: 'Finding an Orlando Textured Hair Barber: A Vetting Guide | New Barbershop Orlando',
+        seoTitle: 'Finding an Orlando Textured Hair Barber: A Vetting Guide',
         metaDescription:
           'Searching for an Orlando textured hair barber? How to vet a shop — portfolio on your texture, the right questions, the trial cut. Two shops on the Trail. Call (407) 470-4846.',
         intro:
@@ -1351,9 +1351,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'New to Orlando — or Just Done Searching? How to Find a Barber Who Actually Cuts Your Hair',
-        seoTitle: 'Finding an Orlando Textured Hair Barber: A Vetting Guide | New Barbershop Orlando',
+        seoTitle: 'Barbero para cabello texturizado en Orlando: guía',
         metaDescription:
-          'Searching for an Orlando textured hair barber? How to vet a shop — portfolio on your texture, the right questions, the trial cut. Two shops on the Trail. Call (407) 470-4846.',
+          '¿Buscas un barbero para cabello texturizado en Orlando? Cómo evaluar una barbería: portafolio en tu textura y el corte de prueba. Llama al (407) 470-4846.',
         intro:
           'Todo hombre con cabello texturizado que se muda a una ciudad nueva conoce esta búsqueda, y sabe que no es la misma que hacen los demás. La pregunta no es “¿quién corta bien el cabello?”, es “¿quién puede cortar MI cabello?”. El grano, la contracción y el trabajo de patrones hacen del cabello texturizado una especialidad, y una barbería excelente en cabello lacio puede seguir siendo la silla equivocada. Así se evalúa una antes de sentarte en ella.',
         closing:
@@ -1395,7 +1395,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Freestyle Hair Designs: Wearable Art, Cut Fresh',
-        seoTitle: 'Freestyle Hair Designs: How They Work and How Long They Last | New Barbershop Orlando',
+        seoTitle: 'Freestyle Hair Designs: How They Work and How Long They Last',
         metaDescription:
           'Freestyle hair designs in Orlando — how barber art is drawn into a fade, how long a design stays sharp (about 1–2 weeks), redraws and kids’ designs. Call (407) 470-4846.',
         intro:
@@ -1405,9 +1405,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Freestyle Hair Designs: Wearable Art, Cut Fresh',
-        seoTitle: 'Freestyle Hair Designs: How They Work and How Long They Last | New Barbershop Orlando',
+        seoTitle: 'Diseños freestyle en el cabello: cómo se hacen',
         metaDescription:
-          'Freestyle hair designs in Orlando — how barber art is drawn into a fade, how long a design stays sharp (about 1–2 weeks), redraws and kids’ designs. Call (407) 470-4846.',
+          'Diseños freestyle en Orlando: cómo se dibuja el arte en un degradado y cuánto dura definido (1–2 semanas). Llama al (407) 470-4846.',
         intro:
           'Un diseño en el cabello es el único servicio de la barbería que es arte de verdad: sin plantilla, sin molde — líneas y formas dibujadas a mano alzada con recortadora y navaja dentro del degradado, distintas en cada cabeza. También es el servicio con el reloj más honesto de la barbería. Así funcionan los diseños, cómo encargar uno bien y cuánto dura el arte en realidad.',
         closing:
@@ -1449,7 +1449,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'Beard Shaping for Bump-Prone Skin: What a Careful Barber Does Differently',
-        seoTitle: 'Beard Shaping for Sensitive, Bump-Prone Skin: The Careful Barber’s Method | New Barbershop Orlando',
+        seoTitle: 'Beard Shaping for Sensitive, Bump-Prone Skin',
         metaDescription:
           'Beard shaping for bump-prone skin — hot-towel prep, with-the-grain work, clipper finishes on the neck and honest length, from Orlando barbers. Call (407) 470-4846.',
         intro:
@@ -1459,9 +1459,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'Beard Shaping for Bump-Prone Skin: What a Careful Barber Does Differently',
-        seoTitle: 'Beard Shaping for Sensitive, Bump-Prone Skin: The Careful Barber’s Method | New Barbershop Orlando',
+        seoTitle: 'Formado de barba para piel sensible, propensa a bultos',
         metaDescription:
-          'Beard shaping for bump-prone skin — hot-towel prep, with-the-grain work, clipper finishes on the neck and honest length, from Orlando barbers. Call (407) 470-4846.',
+          'Formado de barba para piel propensa a bultos: preparación con toalla caliente, trabajo a favor del grano y acabado cuidadoso. Llama al (407) 470-4846.',
         intro:
           'Si tu piel se llena de granitos después de afeitarte, ya conoces el temor: mientras más al ras el afeitado, peor la semana siguiente. Esta publicación es la mitad del problema que ocurre en la silla: lo que un barbero cuidadoso hace distinto al formar y afeitar una piel propensa a los granitos. (La mitad del cuidado en casa — lavado, aceites, la rutina diaria — vive en nuestra publicación sobre el cuidado de la barba en casa; esta nunca sale de la silla.)',
         closing:
@@ -1503,7 +1503,7 @@ const localPosts: Post[] = [
     locales: {
       en: {
         title: 'New Ride? New Cut — Finish the Upgrade',
-        seoTitle: 'Fresh Cut After Buying a Car: Finish the Upgrade | New Barbershop Orlando',
+        seoTitle: 'Fresh Cut After Buying a Car: Finish the Upgrade',
         metaDescription:
           'Just bought a car on Orange Blossom Trail? Finish the upgrade with a fresh cut — fade, line-up and beard shape, minutes from the dealerships. Walk-ins, open 7 days. Call (407) 470-4846.',
         intro:
@@ -1513,9 +1513,9 @@ const localPosts: Post[] = [
       },
       es: {
         title: 'New Ride? New Cut — Finish the Upgrade',
-        seoTitle: 'Fresh Cut After Buying a Car: Finish the Upgrade | New Barbershop Orlando',
+        seoTitle: '¿Auto nuevo? Termina el cambio con un corte fresco',
         metaDescription:
-          'Just bought a car on Orange Blossom Trail? Finish the upgrade with a fresh cut — fade, line-up and beard shape, minutes from the dealerships. Walk-ins, open 7 days. Call (407) 470-4846.',
+          '¿Acabas de comprar un auto en Orange Blossom Trail? Termina el cambio con un corte fresco, a minutos de los concesionarios. Llama al (407) 470-4846.',
         intro:
           'Hay una sensación específica que llega al firmar los papeles y recibir las llaves, y trae un problema de imagen adjunto: te sientes nuevo, y el espejo de la visera dice otra cosa. Esta publicación trata de la parte más pequeña y rápida del día del auto nuevo: el corte de cabello nuevo después de comprar un auto, hecho sobre la misma calle donde lo compraste. (¿Ya viste la versión de la espera? Nuestra publicación sobre los concesionarios de Orange Blossom Trail cubre la espera del servicio y al personal; esta es puramente el momento del comprador.)',
         closing:

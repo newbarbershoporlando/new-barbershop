@@ -17,9 +17,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'Barber shop in Orlando — family-run since 2003. Two shops on Orange Blossom Trail, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
     },
     es: {
-      title: 'Barber Shop Orlando | New Barbershop',
+      title: 'Barbería en Orlando | New Barbershop',
       description:
-        'Barber shop in Orlando — family-run since 2003. Two shops on Orange Blossom Trail, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
+        'Barbería familiar en Orlando desde 2003, con dos locales en Orange Blossom Trail. Abiertos los 7 días. Llama al (407) 470-4846 o al (407) 820-4541.',
     },
   },
   services: {
@@ -29,9 +29,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         "Men's haircuts in Orlando — fades, beard trims, hot towel shaves and more. Two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.",
     },
     es: {
-      title: "Men's Haircuts Orlando | New Barbershop",
+      title: 'Cortes de cabello para hombre en Orlando | New Barbershop',
       description:
-        "Men's haircuts in Orlando — fades, beard trims, hot towel shaves and more. Two shops on Orange Blossom Trail. Call (407) 470-4846 or (407) 820-4541 to book.",
+        'Cortes de cabello para hombre en Orlando: degradados, arreglo de barba, afeitado con toalla caliente y más. Llama al (407) 470-4846 o al (407) 820-4541.',
     },
   },
   about: {
@@ -41,9 +41,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'Family-run barber shop in Orlando since 2003. Two shops on Orange Blossom Trail, 20+ years of experience. Call (407) 470-4846 or (407) 820-4541 to book.',
     },
     es: {
-      title: 'Family-Run Barber Shop Orlando | New Barbershop',
+      title: 'Barbería familiar en Orlando desde 2003 | New Barbershop',
       description:
-        'Family-run barber shop in Orlando since 2003. Two shops on Orange Blossom Trail, 20+ years of experience. Call (407) 470-4846 or (407) 820-4541 to book.',
+        'Barbería familiar en Orlando desde 2003, con más de 20 años de experiencia y dos locales en Orange Blossom Trail. Llama al (407) 470-4846.',
     },
   },
   contact: {
@@ -53,9 +53,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Hunters Creek (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
     },
     es: {
-      title: 'Barber Shop on Orange Blossom Trail Orlando | New Barbershop',
+      title: 'Barbería en Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Hunters Creek (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
+        'Dos barberías en Orange Blossom Trail, Orlando, abiertas los 7 días. Llama a Hunters Creek al (407) 470-4846 o a Florida Mall al (407) 820-4541.',
     },
   },
   locations: {
@@ -79,7 +79,7 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'Grooming tips, style ideas and shop news from the barbers at New Barbershop in Orlando — fades, braids, beard care and more. Call (407) 470-4846 or (407) 820-4541 to book.',
     },
     es: {
-      title: 'Consejos de cuidado personal, estilos y novedades | New Barbershop Orlando',
+      title: 'Consejos de cuidado y estilos | New Barbershop Orlando',
       description:
         'Consejos de cuidado personal, ideas de estilo y novedades de los barberos de New Barbershop en Orlando — degradados, trenzas, cuidado de la barba y más. Llama al (407) 470-4846 o al (407) 820-4541 para reservar.',
     },
@@ -91,9 +91,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'New Barbershop 1 in Orlando 32837 — family-run since 2003, open 7 days a week. Walk-ins welcome. Call (407) 470-4846 to book your haircut today.',
     },
     es: {
-      title: 'Barber Shop in Orlando 32837 | New Barbershop 1',
+      title: 'Barbería en Hunters Creek, Orlando 32837 | New Barbershop 1',
       description:
-        'New Barbershop 1 in Orlando 32837 — family-run since 2003, open 7 days a week. Walk-ins welcome. Call (407) 470-4846 to book your haircut today.',
+        'New Barbershop 1 en Hunters Creek, Orlando 32837: barbería familiar desde 2003, abierta los 7 días. Sin cita o llama al (407) 470-4846.',
     },
   },
   shop2: {
@@ -103,9 +103,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
         'New Barbershop 2 in Orlando 32809 — family-run since 2003, open 7 days a week. Walk-ins welcome. Call (407) 820-4541 to book your haircut today.',
     },
     es: {
-      title: 'Barber Shop in Orlando 32809 | New Barbershop 2',
+      title: 'Barbería cerca de Florida Mall, Orlando 32809 | New Barbershop 2',
       description:
-        'New Barbershop 2 in Orlando 32809 — family-run since 2003, open 7 days a week. Walk-ins welcome. Call (407) 820-4541 to book your haircut today.',
+        'New Barbershop 2 cerca de Florida Mall, Orlando 32809: barbería familiar desde 2003, abierta los 7 días. Sin cita o llama al (407) 820-4541.',
     },
   },
 };
