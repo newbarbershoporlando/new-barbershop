@@ -6,6 +6,7 @@
 // assets-ready/manifest.md §4 (honest descriptions of what each photo shows).
 
 import type { LocalizedString } from './locations';
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export interface ServiceCategory {
   _id: string;
@@ -25,7 +26,7 @@ export interface Service {
   description: LocalizedString;
 }
 
-export const categories: ServiceCategory[] = [
+const localCategories: ServiceCategory[] = [
   {
     _id: 'cat-cuts',
     slug: 'haircuts-fades',
@@ -107,7 +108,7 @@ const s = (
   description: { en: den, es: des },
 });
 
-export const services: Service[] = [
+const localServices: Service[] = [
   // Haircuts & Fades
   s('svc-haircut', 'haircut', 'cat-cuts', 'Haircut', 'Corte de cabello',
     'Our classic precision cut, tailored to your style, your hair and how you wear it every day.',
@@ -171,6 +172,43 @@ export const services: Service[] = [
     'Wave styling, brushing and care — for a defined pattern that holds between visits.',
     'Peinado, cepillado y cuidado de waves — para un patrón definido que se mantiene entre visitas.'),
 ];
+
+// ——— Sanity swap (wiring guide §6, Services query verbatim: categories
+// with their services nested; the flat `services` export is the same
+// docs un-nested in category/order sequence, exactly the local order) ———
+const CATEGORIES_QUERY = `*[_type == "serviceCategory"] | order(order asc) {
+  _id, "slug": slug.current, tileLabel, heading, benefit,
+  "image": coalesce(image.asset->url, imagePath), imageAlt,
+  "services": *[_type == "service" && category._ref == ^._id] | order(order asc) {
+    _id, "slug": slug.current, "category": category._ref, name, description
+  }
+}`;
+
+type CategoryWithServices = ServiceCategory & { services: Service[] };
+
+const resolvedServices = await (async () => {
+  if (!USE_SANITY) return { categories: localCategories, services: localServices };
+  const fetched = await fetchSanity<CategoryWithServices[]>(
+    'service categories (+ nested services)',
+    CATEGORIES_QUERY,
+  );
+  if (fetched && fetched.length === localCategories.length) {
+    const flat = fetched.flatMap((c) => c.services);
+    if (flat.length === localServices.length) {
+      return {
+        categories: fetched.map(({ services: _nested, ...cat }) => cat),
+        services: flat,
+      };
+    }
+  }
+  console.error(
+    '[sanity] services: fetch missing/incomplete — using LOCAL services data',
+  );
+  return { categories: localCategories, services: localServices };
+})();
+
+export const categories: ServiceCategory[] = resolvedServices.categories;
+export const services: Service[] = resolvedServices.services;
 
 export function servicesByCategory(categoryId: string): Service[] {
   return services.filter((svc) => svc.category === categoryId);

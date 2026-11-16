@@ -1,5 +1,14 @@
 // Structured content — mirrors the Sanity `location` schema (sanity/schemas/location.ts).
 // One document per shop; every user-facing string is localized { en, es }.
+//
+// Data-layer swap (sanity-wiring.md §6): with PUBLIC_USE_SANITY=1 the
+// array below is replaced at build time by the Sanity GROQ fetch; the
+// local array stays as the flag-off / fetch-failure fallback. NOTE: the
+// Sanity `location` schema has no photo/photoAlt fields — those exist
+// only here, so a Sanity-sourced location carries photo === undefined
+// until the schema/seed grows them (see DEPLOY.md §3).
+
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export interface LocalizedString {
   en: string;
@@ -55,7 +64,7 @@ function shop1Day(en: string, es: string): DayHours {
   };
 }
 
-export const locations: Location[] = [
+const localLocations: Location[] = [
   {
     _id: 'shop1',
     slug: 'new-barbershop-1',
@@ -165,6 +174,30 @@ export const locations: Location[] = [
     },
   },
 ];
+
+// ——— Sanity swap (wiring guide §6, Locations query verbatim) ———
+const LOCATIONS_QUERY = `*[_type == "location"] | order(order asc) {
+  _id,
+  "slug": slug.current,
+  name, area, street, city, state, zip,
+  phoneDisplay, phoneHref,
+  "whatsapp": whatsappUrl,
+  mapsUrl,
+  "geo": geo { lat, lng },
+  rating, reviewCount,
+  hours[] { day, opens, closes, display },
+  hoursSummary, introHeading, intro
+}`;
+
+export const locations: Location[] = await (async () => {
+  if (!USE_SANITY) return localLocations;
+  const fetched = await fetchSanity<Location[]>('locations', LOCATIONS_QUERY);
+  if (fetched && fetched.length === localLocations.length) return fetched;
+  console.error(
+    '[sanity] locations: fetch missing/incomplete — using LOCAL location data',
+  );
+  return localLocations;
+})();
 
 export const shop1 = locations[0];
 export const shop2 = locations[1];

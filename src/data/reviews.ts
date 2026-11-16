@@ -5,6 +5,7 @@
 // recorded Spanish translation for the /es/ pages.
 
 import type { LocalizedString } from './locations';
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export interface Review {
   _id: string;
@@ -13,7 +14,7 @@ export interface Review {
   text: LocalizedString;
 }
 
-export const reviews: Review[] = [
+const localReviews: Review[] = [
   // ——— New Barbershop 1 ———
   {
     _id: 'rev-s1-carlos',
@@ -72,15 +73,43 @@ export const reviews: Review[] = [
   },
 ];
 
+// ——— Sanity swap (wiring guide §6, Reviews queries: per-location rows in
+// one fetch — reviewsFor() slices by location exactly as the local array;
+// featured testimonial via the guide's featured query verbatim) ———
+const REVIEWS_QUERY = `*[_type == "review" && defined(location)] | order(order asc) { _id, "location": location._ref, author, text }`;
+const FEATURED_QUERY = `*[_type == "review" && featured == true][0] { author, text }`;
+
+export const reviews: Review[] = await (async () => {
+  if (!USE_SANITY) return localReviews;
+  const fetched = await fetchSanity<Review[]>('reviews', REVIEWS_QUERY);
+  if (fetched && fetched.length > 0) return fetched;
+  console.error('[sanity] reviews: fetch missing/incomplete — using LOCAL review data');
+  return localReviews;
+})();
+
 export function reviewsFor(locationId: string): Review[] {
   return reviews.filter((r) => r.location === locationId);
 }
 
 /** Featured testimonial on the Services page (verbatim, 5 stars). */
-export const featuredTestimonial = {
+const localFeaturedTestimonial = {
   author: 'Preston Figueroa',
   text: {
     en: "Provided great customer service. Very clean shop. Very welcoming. The cut was incredible, very clean, sharp and quick. He used many products. It's hard for my brothers and I to trust just anyone but this guy did the job and did it very well! When in Florida we will be back. We are from Austin, Texas.",
     es: 'Brindaron un excelente servicio al cliente. La barbería está muy limpia. Muy acogedores. El corte fue increíble, muy limpio, definido y rápido. Usó muchos productos. Para mis hermanos y para mí es difícil confiar en cualquiera, pero él hizo el trabajo y lo hizo muy bien. Cuando estemos en Florida, volveremos. Somos de Austin, Texas.',
   } as LocalizedString,
 };
+
+export const featuredTestimonial: { author: string; text: LocalizedString } =
+  await (async () => {
+    if (!USE_SANITY) return localFeaturedTestimonial;
+    const fetched = await fetchSanity<{ author: string; text: LocalizedString }>(
+      'featured testimonial',
+      FEATURED_QUERY,
+    );
+    if (fetched && fetched.author) return fetched;
+    console.error(
+      '[sanity] featured testimonial: fetch missing/incomplete — using LOCAL testimonial',
+    );
+    return localFeaturedTestimonial;
+  })();

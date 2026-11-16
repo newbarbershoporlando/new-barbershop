@@ -1,11 +1,20 @@
 // Global site constants + UI strings. Tracking IDs carry over unchanged
 // (seo-tracking-plan.md §1): GTM GTM-PBVWSGGW · GA4 G-04D0XBCMM7 · Ads AW-11066381386.
+//
+// Data-layer swap (sanity-wiring.md §6): the values below are the local
+// fallback for the Sanity `siteSettings` singleton. With
+// PUBLIC_USE_SANITY=1 they are overridden at build time by the fetched
+// settings (GTM/GA4/Ads IDs, Instagram, banner alt, trust strip, blog
+// band, footer tagline, copyright). The nav labels and other UI strings
+// stay in code — they are not part of the settings document.
+
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export type Lang = 'en' | 'es';
 
-export const GTM_ID = 'GTM-PBVWSGGW';
-export const INSTAGRAM_URL = 'https://www.instagram.com/new.barbershoop';
-export const BANNER_ALT = {
+export let GTM_ID = 'GTM-PBVWSGGW';
+export let INSTAGRAM_URL = 'https://www.instagram.com/new.barbershoop';
+export let BANNER_ALT = {
   en: 'Inside New Barbershop 1 and New Barbershop 2 — both Orlando barber shop locations side by side',
   es: 'Interior de New Barbershop 1 y New Barbershop 2 — ambas barberías de Orlando, una junto a la otra',
 };
@@ -77,7 +86,7 @@ export const ui = {
     seeServices: 'Ver nuestros Servicios',
     contactUs: 'página de Contacto',
   },
-} as const;
+};
 
 /**
  * Spanish slugs for the core pages (seo-tracking-plan.md §2.1). Callers
@@ -104,4 +113,49 @@ export function path(lang: Lang, slug: string): string {
 /** The same page in the other language (for the switcher + hreflang). */
 export function altPath(lang: Lang, slug: string): string {
   return path(lang === 'en' ? 'es' : 'en', slug);
+}
+
+// ——— Sanity swap (wiring guide §6, Site settings query verbatim) ———
+const SETTINGS_QUERY = `*[_type == "siteSettings" && _id == "siteSettings"][0] {
+  businessName, instagramUrl, gtmId, ga4Id, adsId,
+  trustStrip, blogBand, footerTagline, copyright, bannerAlt, defaultSeo
+}`;
+
+interface SiteSettings {
+  businessName: string;
+  instagramUrl: string;
+  gtmId: string;
+  ga4Id: string;
+  adsId: string;
+  trustStrip: { en: string; es: string };
+  blogBand: {
+    heading: { en: string; es: string };
+    line: { en: string; es: string };
+    buttonLabel: { en: string; es: string };
+  };
+  footerTagline: { en: string; es: string };
+  copyright: string;
+  bannerAlt: { en: string; es: string };
+}
+
+if (USE_SANITY) {
+  const settings = await fetchSanity<SiteSettings>('siteSettings', SETTINGS_QUERY);
+  if (settings && settings.gtmId) {
+    GTM_ID = settings.gtmId;
+    INSTAGRAM_URL = settings.instagramUrl;
+    BANNER_ALT = settings.bannerAlt;
+    for (const lang of ['en', 'es'] as const) {
+      ui[lang].trustStrip = settings.trustStrip[lang];
+      ui[lang].blogBandHeading = settings.blogBand.heading[lang];
+      ui[lang].blogBandLine = settings.blogBand.line[lang];
+      ui[lang].blogBandButton = settings.blogBand.buttonLabel[lang];
+      ui[lang].footerTagline = settings.footerTagline[lang];
+      ui[lang].copyright = settings.copyright;
+    }
+    console.log('[sanity] siteSettings: applied to layout constants + UI strings');
+  } else {
+    console.error(
+      '[sanity] siteSettings: fetch missing/incomplete — using LOCAL settings',
+    );
+  }
 }

@@ -8,6 +8,7 @@
 // (no-call-buttons rule on that page).
 
 import type { LocalizedString } from './locations';
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export interface Faq {
   _id: string;
@@ -28,7 +29,7 @@ const q = (
   cta?: Faq['cta'],
 ): Faq => ({ _id, scope, question: { en: qen, es: qes }, answer: { en: aen, es: aes }, cta });
 
-export const faqs: Faq[] = [
+const localFaqs: Faq[] = [
   // ——— General (Services page) ———
   q('faq-g-walkins', 'general',
     'Do I need an appointment, or can I walk in?',
@@ -114,6 +115,20 @@ export const faqs: Faq[] = [
     'Es mi primera visita. ¿Qué debo esperar?',
     'Walk in or call ahead, then tell your barber the style you’re after — our barbers take the time to understand your preferences before the first cut. You’ll get the same care our regulars have trusted for over 20 years.',
     'Ven sin cita o llama antes, y cuéntale a tu barbero el estilo que buscas — nuestros barberos se toman el tiempo de entender tus preferencias antes del primer corte. Recibirás la misma atención que nuestros clientes de siempre han recibido durante más de 20 años.'),
+  // Payment facts supplied by Ernesto 2026-11-15 (both shops).
+  q('faq-1-payments', 'shop1',
+    'What payment methods do you accept?',
+    '¿Qué métodos de pago aceptan?',
+    'We accept cash and cards, and you can also pay with Zelle or Cash App. There’s an ATM available at the shop if you need cash.',
+    'Aceptamos efectivo y tarjetas, y también puedes pagar con Zelle o Cash App. Hay un cajero automático (ATM) disponible en la barbería si necesitas efectivo.'),
+  // Parking/access facts supplied by Ernesto 2026-11-15 (both shops:
+  // ground-floor units in big shopping plazas, handicap-accessible
+  // entrances).
+  q('faq-1-parking', 'shop1',
+    'Is there parking, and is the shop handicap accessible?',
+    '¿Hay estacionamiento y la entrada es accesible para personas con discapacidad?',
+    'Yes — we’re a ground-floor (first floor) unit in a large shopping plaza, with plaza parking right outside, and our entrance is handicap accessible.',
+    'Sí — somos un local en la planta baja (primer piso) de una plaza comercial grande, con estacionamiento de la plaza justo afuera, y nuestra entrada es accesible para personas con discapacidad.'),
 
   // ——— Shop 2 (new-copy.md §1C/1D, verbatim, minus the braids question) ———
   q('faq-2-walkins', 'shop2',
@@ -156,7 +171,36 @@ export const faqs: Faq[] = [
     'Es mi primera visita. ¿Qué debo esperar?',
     'Walk in or call ahead, and tell your barber the style you’re after — we’ll take it from there in a welcoming, relaxed atmosphere. It’s the same care behind our 174 Google reviews.',
     'Ven sin cita o llama antes, y cuéntale a tu barbero el estilo que buscas — nosotros nos encargamos del resto en un ambiente acogedor y relajado. Es la misma calidad de atención que reflejan nuestras 174 reseñas de Google.'),
+  // Payment facts supplied by Ernesto 2026-11-15 (both shops).
+  q('faq-2-payments', 'shop2',
+    'What payment methods do you accept?',
+    '¿Qué métodos de pago aceptan?',
+    'We accept cash and cards, and you can also pay with Zelle or Cash App. There’s an ATM available at the shop if you need cash.',
+    'Aceptamos efectivo y tarjetas, y también puedes pagar con Zelle o Cash App. Hay un cajero automático (ATM) disponible en la barbería si necesitas efectivo.'),
+  // Parking/access facts supplied by Ernesto 2026-11-15 (both shops:
+  // ground-floor units in big shopping plazas, handicap-accessible
+  // entrances).
+  q('faq-2-parking', 'shop2',
+    'Is there parking, and is the shop handicap accessible?',
+    '¿Hay estacionamiento y la entrada es accesible para personas con discapacidad?',
+    'Yes — we’re a ground-floor (first floor) unit in a large shopping plaza, with plaza parking right outside, and our entrance is handicap accessible.',
+    'Sí — somos un local en la planta baja (primer piso) de una plaza comercial grande, con estacionamiento de la plaza justo afuera, y nuestra entrada es accesible para personas con discapacidad.'),
 ];
+
+// ——— Sanity swap (wiring guide §6, FAQs query: one fetch across all
+// scopes, ordered scope-then-order so faqsFor() slices match the local
+// array layout; the guide's per-scope $scope form returns the same rows.
+// NOTE: the Sanity `faq` schema has no `cta` field — a Sanity-sourced
+// faq-g-book renders without its Contact link until the schema grows it.)
+const FAQS_QUERY = `*[_type == "faq"] | order(scope asc, order asc) { _id, scope, question, answer }`;
+
+export const faqs: Faq[] = await (async () => {
+  if (!USE_SANITY) return localFaqs;
+  const fetched = await fetchSanity<Faq[]>('faqs', FAQS_QUERY);
+  if (fetched && fetched.length > 0) return fetched;
+  console.error('[sanity] faqs: fetch missing/incomplete — using LOCAL faq data');
+  return localFaqs;
+})();
 
 export function faqsFor(scope: Faq['scope']): Faq[] {
   return faqs.filter((f) => f.scope === scope);

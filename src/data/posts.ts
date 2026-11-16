@@ -2,6 +2,12 @@
 // Bodies are verbatim from the content pack (staging build), EN + ES.
 // Slugs are Agent D's planned inventory (seo-tracking-plan.md §2.1):
 // /blog/<slug>/ in both languages. Featured images + alts: manifest §5.
+//
+// Data-layer swap (sanity-wiring.md §6): with PUBLIC_USE_SANITY=1 the
+// array below is replaced at build time by the Sanity GROQ fetch; the
+// local array stays as the flag-off / fetch-failure fallback.
+
+import { USE_SANITY, fetchSanity } from '../lib/sanity';
 
 export interface PostSection {
   heading: { en: string; es: string };
@@ -25,7 +31,7 @@ export interface Post {
   sections: PostSection[];
 }
 
-export const posts: Post[] = [
+const localPosts: Post[] = [
   {
     _id: 'post-1',
     slug: 'blog/top-rated-barber-shop-orlando',
@@ -247,6 +253,21 @@ export const posts: Post[] = [
     ],
   },
 ];
+
+// ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
+const POSTS_QUERY = `*[_type == "post"] | order(order asc) {
+  _id, "slug": slug.current,
+  "image": coalesce(image.asset->url, imagePath), imageAlt,
+  locales, sections[] { heading, body }
+}`;
+
+export const posts: Post[] = await (async () => {
+  if (!USE_SANITY) return localPosts;
+  const fetched = await fetchSanity<Post[]>('posts', POSTS_QUERY);
+  if (fetched && fetched.length > 0) return fetched;
+  console.error('[sanity] posts: fetch missing/incomplete — using LOCAL post data');
+  return localPosts;
+})();
 
 export function getPost(slug: string): Post {
   const post = posts.find((p) => p.slug === slug);
