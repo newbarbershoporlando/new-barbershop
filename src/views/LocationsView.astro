@@ -71,7 +71,7 @@ const site = Astro.site!;
 
   <section class="section" data-rv>
     <div class="wrap">
-      <div class="cards">
+      <div class="cards cards--swipe" data-swipe>
         {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
       </div>
     </div>

@@ -638,6 +638,43 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 .back-to-top:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
 @media (min-width: 1100px) { .back-to-top { bottom: 24px; right: 24px; } }
 
+/* ——— Upgrade (2026-11-16): swipeable rows (mobile only) ———
+   Location cards, the photo gallery and related-post cards become
+   horizontal scroll-snap rows on small screens; each row's next
+   item peeks in from the edge as the visible swipe indicator.
+   Desktop grids are untouched (these rules live entirely inside
+   max-width media queries). Rows bleed to the screen edge via the
+   .wrap padding (margin -16px + padding 16px) so the first item
+   still aligns with the page gutter. Pure CSS: no JS, works with
+   touch, mouse drag-scroll and keyboard scroll alike, and never
+   interferes with vertical page scrolling (snap applies to the
+   row's own axis only). */
+@media (max-width: 899px) {
+  .cards--swipe {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  .cards--swipe::-webkit-scrollbar { display: none; }
+  .cards--swipe > * { flex: 0 0 86%; min-width: 0; scroll-snap-align: start; }
+}
+@media (max-width: 639px) {
+  .gallery {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery-item { flex: 0 0 68%; scroll-snap-align: start; }
+  .post-cards--swipe {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  .post-cards--swipe::-webkit-scrollbar { display: none; }
+  .post-cards--swipe > * { flex: 0 0 84%; min-width: 0; scroll-snap-align: start; }
+}
+
 /* ——— Upgrade (2026-11-16): scroll-triggered reveals ———
    Content is visible by default in the server-rendered page. Only
    when JS is available (html.js, set by the BaseLayout head script)

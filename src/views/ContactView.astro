@@ -17,7 +17,7 @@ const seo = pageSeo.contact[lang];
     <div class="wrap">
       <h1>{c.heading}</h1>
       <h2>{c.locationsHeading}</h2>
-      <div class="cards">
+      <div class="cards cards--swipe" data-swipe>
         {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
       </div>
       <p style="margin-top:24px">
