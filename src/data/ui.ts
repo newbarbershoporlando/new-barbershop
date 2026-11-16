@@ -80,6 +80,13 @@ export const ui = {
     prevPhoto: 'Previous photo',
     nextPhoto: 'Next photo',
     viewLarger: (label: string) => `View larger photo: ${label}`,
+    /* Accessible names (round-3 Item 3b): EN values are byte-identical
+       to the strings previously hardcoded in the templates; ES values
+       localize them. */
+    ariaHome: 'New Barbershop — Home',
+    ariaMainNav: 'Main',
+    ariaMenu: 'Menu',
+    ariaStars: '5 stars',
   },
   es: {
     nav: { home: 'Inicio', about: 'Nosotros', services: 'Servicios', blog: 'Blog', contact: 'Contacto', locations: 'Ubicaciones' },
@@ -130,6 +137,10 @@ export const ui = {
     prevPhoto: 'Foto anterior',
     nextPhoto: 'Foto siguiente',
     viewLarger: (label: string) => `Ver la foto más grande: ${label}`,
+    ariaHome: 'New Barbershop — Inicio',
+    ariaMainNav: 'Principal',
+    ariaMenu: 'Menú',
+    ariaStars: '5 estrellas',
   },
 };
 

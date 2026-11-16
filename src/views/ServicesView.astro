@@ -74,7 +74,7 @@ const site = Astro.site!;
   <section class="section section--dark">
     <div class="wrap">
       <div class="testimonial">
-        <div class="stars-line" aria-label="5 stars">★★★★★</div>
+        <div class="stars-line" aria-label={t.ariaStars}>★★★★★</div>
         <blockquote>“{featuredTestimonial.text[lang]}”</blockquote>
         <p class="who">— {featuredTestimonial.author}</p>
       </div>

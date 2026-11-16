@@ -32,7 +32,7 @@ function initials(name: string): string {
         <div class="review-cards">
           {reviewsFor(loc._id).map((rev) => (
             <div class="review-card">
-              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <div class="stars" aria-label={t.ariaStars}>★★★★★</div>
               <blockquote>{rev.text[lang]}</blockquote>
               <div class="review-author">
                 <span class="avatar-chip" aria-hidden="true">{initials(rev.author)}</span>

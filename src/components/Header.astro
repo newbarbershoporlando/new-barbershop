@@ -23,10 +23,10 @@ const navItems = [
 
 <header class:list={['site-header', { 'site-header--overlay': overlay }]} id="siteHeader">
   <div class="header-in">
-    <a class="header-logo" href={path(lang, '')} aria-label="New Barbershop — Home">
+    <a class="header-logo" href={path(lang, '')} aria-label={t.ariaHome}>
       <img src="/images/logo.png" alt="New Barbershop" width="360" height="115" />
     </a>
-    <nav class="main-nav" aria-label="Main">
+    <nav class="main-nav" aria-label={t.ariaMainNav}>
       <ul>
         {navItems.map((item) => (
           <li><a href={path(lang, item.slug)}>{item.label}</a></li>
@@ -48,7 +48,7 @@ const navItems = [
     <a class="lang-switch" href={altPath(lang, slug)} hreflang={lang === 'en' ? 'es' : 'en'}>
       {lang === 'en' ? 'ES' : 'EN'}
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label={t.ariaMenu} aria-expanded="false" aria-controls="mobileMenu">☰</button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
     {navItems.map((item) => <a href={path(lang, item.slug)}>{item.label}</a>)}
