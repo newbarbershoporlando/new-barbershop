@@ -56,11 +56,6 @@ const navItems = [
     {locations.map((loc) => (
       <a class="sub" href={path(lang, `locations/${loc.slug}`)}>{loc.name}</a>
     ))}
-    {locations.map((loc) => (
-      <a class="btn btn--call" href={loc.phoneHref}>
-        {loc._id === 'shop1' ? t.callShop1 : t.callShop2} · {loc.phoneDisplay}
-      </a>
-    ))}
   </div>
 </header>
 
