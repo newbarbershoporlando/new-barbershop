@@ -75,9 +75,12 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
     </div>
   </section>
 
-  <HowItWorks lang={lang} />
+  {/* Item 6: light sections alternate strictly on this page —
+      intro W, how-it-works P, photos W, services P, FAQ W,
+      also-visit P, blog W (was W/W/P/W — a 1,732px white run). */}
+  <HowItWorks lang={lang} paper />
 
-  <section class="section section--paper" data-rv>
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{t.photosHeading}</h2>
       <!-- This shop's OWN real photos (owner-supplied 2026-11-15 — genuine
@@ -91,7 +94,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
     </div>
   </section>
 
-  <section class="section" data-rv>
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{t.servicesAtGlance}</h2>
       <CategoryTiles lang={lang} forShop={scope} />

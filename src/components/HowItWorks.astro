@@ -2,12 +2,18 @@
 import { type Lang } from '../data/ui';
 import { howItWorks } from '../data/pages';
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
+interface Props {
+  lang: Lang;
+  /** Premium design item 6 (2026-11-16): band alternation — the
+      caller assigns the paper band where this section is the
+      page's second light section. Default stays white. */
+  paper?: boolean;
+}
+const { lang, paper = false } = Astro.props;
 const c = howItWorks[lang];
 ---
 
-<section class="section" data-rv>
+<section class:list={['section', { 'section--paper': paper }]} data-rv>
   <div class="wrap">
     <h2>{c.heading}</h2>
     <p style="max-width:760px">{c.intro}</p>

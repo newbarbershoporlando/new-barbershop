@@ -114,8 +114,11 @@ const site = Astro.site!;
     </div>
   </section>
 
-  <!-- Experience -->
-  <section class="section" data-rv>
+  <!-- Experience — premium design item 6 (2026-11-16): paper band.
+       Light sections now alternate strictly (work W, locations P,
+       services W, experience P, how-it-works W, blog P); the old
+       Experience + How It Works run was 1,648px of unbroken white. -->
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{c.experienceHeading}</h2>
       <p style="max-width:760px">{c.experienceIntro}</p>
@@ -134,5 +137,6 @@ const site = Astro.site!;
   <HowItWorks lang={lang} />
 
   <ReviewsBand lang={lang} />
-  <BlogBand lang={lang} />
+  {/* Item 6: the blog band is this page's 6th light section → paper. */}
+  <BlogBand lang={lang} paper />
 </BaseLayout>

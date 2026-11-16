@@ -122,7 +122,9 @@ const site = Astro.site!;
     </div>
   </section>
 
-  <FaqBlock lang={lang} items={faqsFor('general')} />
+  {/* Item 6: FAQ is this page's 2nd light section → paper (the old
+       main + FAQ run was 2,938px of unbroken white). */}
+  <FaqBlock lang={lang} items={faqsFor('general')} paper />
 
   <section class="section section--dark" data-rv>
     <div class="wrap">

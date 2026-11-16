@@ -1,12 +1,18 @@
 ---
 import { ui, path, type Lang } from '../data/ui';
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
+interface Props {
+  lang: Lang;
+  /** Premium design item 6 (2026-11-16): band alternation — the
+      caller assigns the paper band where this closing band is the
+      page's even-numbered light section. Default stays white. */
+  paper?: boolean;
+}
+const { lang, paper = false } = Astro.props;
 const t = ui[lang];
 ---
 
-<section class="section blog-band" data-rv>
+<section class:list={['section', 'blog-band', { 'section--paper': paper }]} data-rv>
   <div class="wrap">
     <div class="in">
       <h2>{t.blogBandHeading}</h2>
