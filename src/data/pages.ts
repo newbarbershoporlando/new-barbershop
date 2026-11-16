@@ -302,7 +302,10 @@ export const howItWorks = {
 // the media swap and are NEVER rendered with a mismatched photo.
 export interface GalleryItem {
   src: string | null;
-  /** Lightbox-size variant of src (3:2 crop, up to 1200px wide). */
+  /** Lightbox-size variant of src (natural aspect, up to 1200px on the
+      long edge, NO crop — owner phone pass 2026-11-16: the lightbox must
+      show the complete photo; the old 3:2-crop -lg files cut the tops
+      and bottoms off the owner's portrait photos). */
   largeSrc: string | null;
   alt: { en: string; es: string };
   caption?: {

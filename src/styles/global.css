@@ -399,7 +399,14 @@ body.lb-open { overflow: hidden; }
 .lightbox[hidden] { display: none; }
 .lb-figure { margin: auto; max-width: min(1120px, 100%); text-align: center; }
 .lb-figure img {
-  max-width: 100%; max-height: 72vh; width: auto; height: auto;
+  /* Owner phone pass 2026-11-16: the FULL photo must always be visible —
+     never cropped. The -lg files are now natural-aspect (no baked-in
+     crop), and this rule sizes the img by the photo's own aspect within
+     the viewport bounds; object-fit: contain is the belt-and-braces so
+     no future fixed-size variant can crop either. Any leftover space
+     shows the dark backdrop. */
+  max-width: 100%; max-height: 76vh; width: auto; height: auto;
+  object-fit: contain;
   border-radius: 10px;
 }
 .lb-cap { color: var(--white); margin-top: 14px; }
