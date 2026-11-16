@@ -405,9 +405,13 @@ table.svc td.desc { width: 70%; color: var(--ink); }
    expand. */
 .readmore { display: grid; grid-template-rows: 1fr; }
 .readmore-in { overflow: hidden; min-height: 0; }
-.readmore-row { margin-top: 4px; }
+/* The toggle row renders only where the toggle can exist (JS +
+   sub-900px) — otherwise the empty row would add stray whitespace
+   (measured: +18px on desktop About). */
+.readmore-row { display: none; margin-top: 4px; }
 [data-readmore-toggle] { display: none; }
 @media (max-width: 899px) {
+  .js .readmore-row { display: block; }
   .js .readmore { transition: grid-template-rows 0.45s ease, visibility 0s linear 0s; }
   .js .readmore.readmore-collapsed {
     grid-template-rows: 0fr; visibility: hidden;
