@@ -73,6 +73,9 @@ export const ui = {
     readMore: 'Read More',
     showLess: 'Show Less',
     readPost: 'Read more →',
+    /* Swipe-affordance label above the mobile swipe rows (owner
+       add-on 2026-11-16): visual cue only, aria-hidden in markup. */
+    swipeHint: 'Swipe to explore →',
     ourLocations: 'Our Locations',
     backToBlog: '← Back to the blog',
     skipToContent: 'Skip to content',
@@ -134,6 +137,7 @@ export const ui = {
     readMore: 'Leer más',
     showLess: 'Mostrar menos',
     readPost: 'Leer más →',
+    swipeHint: 'Desliza para explorar →',
     ourLocations: 'Nuestras ubicaciones',
     backToBlog: '← Volver al blog',
     skipToContent: 'Saltar al contenido',

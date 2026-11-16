@@ -684,6 +684,35 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
   .post-cards--swipe > * { flex: 0 0 84%; min-width: 0; scroll-snap-align: start; }
 }
 
+/* ——— Upgrade swipe hints (owner add-on 2026-11-16) ———
+   A small static label above each swipeable row ("Swipe to
+   explore →"), shown only on swipe-sized screens and only while
+   the row actually overflows — the BaseLayout script toggles
+   .is-on from a scrollWidth check. The slot height is part of
+   the mobile layout and only `visibility` toggles, so the hint
+   appearing or disappearing can never shift layout (CLS 0).
+   No animation of any kind: reduced motion is respected by
+   construction. Desktop keeps display:none — layouts untouched.
+   The label is aria-hidden in markup: a visual gesture cue only;
+   the row content itself is fully reachable without it. Color is
+   the existing --smoke token (≈7.8:1 on --paper, ≈8.3:1 on
+   white — WCAG AA for small text on every section background
+   these rows sit on). */
+.swipe-hint { display: none; }
+@media (max-width: 899px) {
+  .swipe-hint {
+    display: block; visibility: hidden;
+    height: 15px; margin: 0 2px 7px 0;
+    font-family: 'Oswald', sans-serif; font-size: 12px; font-weight: 500;
+    letter-spacing: 0.08em; line-height: 15px; text-transform: uppercase;
+    text-align: right; color: var(--smoke);
+  }
+  .swipe-hint.is-on { visibility: visible; }
+}
+/* Gallery + related-post rows swipe only at ≤639px, so their
+   hints (and slots) exist only in that band too. */
+@media (min-width: 640px) { .swipe-hint--sm { display: none; } }
+
 /* ——— Upgrade (2026-11-16): scroll-triggered reveals ———
    Content is visible by default in the server-rendered page. Only
    when JS is available (html.js, set by the BaseLayout head script)

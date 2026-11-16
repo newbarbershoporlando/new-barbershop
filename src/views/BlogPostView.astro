@@ -56,6 +56,7 @@ const siteRoot = site.href.replace(/\/$/, '');
         {related.length > 0 && (
           <div class="related-block" data-rv>
             <h2>{t.relatedHeading}</h2>
+            <p class="swipe-hint swipe-hint--sm" data-swipe-hint aria-hidden="true">{t.swipeHint}</p>
             <div class="post-cards post-cards--swipe" data-swipe>
               {related.map((rp) => (
                 <article class="card">

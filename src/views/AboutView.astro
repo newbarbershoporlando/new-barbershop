@@ -123,6 +123,7 @@ const shops = [shop1, shop2];
 
   <section class="section section--paper" data-rv>
     <div class="wrap">
+      <p class="swipe-hint" data-swipe-hint aria-hidden="true">{ui[lang].swipeHint}</p>
       <div class="cards cards--swipe" data-swipe>
         {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
       </div>

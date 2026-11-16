@@ -118,5 +118,28 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
         els.forEach(function (el) { io.observe(el); });
       })();
     </script>
+    {/* Swipe hints (owner add-on 2026-11-16): reveal each
+        [data-swipe-hint] label only while its row genuinely
+        overflows (scrollWidth > clientWidth). Pure class toggle —
+        the label's slot is reserved by CSS and only visibility
+        changes, so this can never shift layout. Re-checked on
+        load and on resize. No-JS: labels stay hidden, which is
+        correct — peek + native scrolling still communicate. */}
+    <script is:inline>
+      (function () {
+        var hints = document.querySelectorAll('[data-swipe-hint]');
+        if (!hints.length) return;
+        var check = function () {
+          hints.forEach(function (hint) {
+            var row = hint.nextElementSibling;
+            if (row) hint.classList.toggle('is-on', row.scrollWidth > row.clientWidth + 1);
+          });
+        };
+        check();
+        window.addEventListener('load', check);
+        var t = 0;
+        window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(check, 120); });
+      })();
+    </script>
   </body>
 </html>

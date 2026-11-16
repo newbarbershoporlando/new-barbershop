@@ -22,6 +22,7 @@ const jpgOf = (webp: string) => webp.replace(/\.webp$/, '.jpg');
 ---
 
 <div data-gallery>
+  <p class="swipe-hint swipe-hint--sm" data-swipe-hint aria-hidden="true">{t.swipeHint}</p>
   <div class="gallery">
     {shown.map((item, i) => (
       <figure class="gallery-item">
