@@ -77,6 +77,9 @@ const siteRoot = site.href.replace(/\/$/, '');
               <strong>{l.name}</strong> — {l.area[lang]} · {l.street}, {l.city}, {l.state} {l.zip}
               <br />
               <a href={path(lang, `locations/${l.slug}`)}>{l._id === 'shop1' ? t.visitShop1 : t.visitShop2}</a>
+              {/* Directions (round-3 Item 2b): same attribution pattern
+                  as the location pages — data-shop set, no btn-reviews. */}
+              · <a data-shop={l._id === 'shop1' ? 'shop_1' : 'shop_2'} href={l.mapsUrl} target="_blank" rel="noopener">{t.getDirections}</a>
             </p>
           ))}
         </div>

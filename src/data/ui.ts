@@ -44,6 +44,11 @@ export const ui = {
     reviewsHeading: 'What Our Customers Say',
     googleReviewsSuffix: 'Google reviews',
     getDirections: 'Get Directions',
+    /* Shop-named directions labels for the Services page (round-3 2c):
+       the bare getDirections label would be ambiguous there because
+       both shops appear side by side with no card context. */
+    directionsShop1: 'Get Directions — Hunters Creek',
+    directionsShop2: 'Get Directions — Florida Mall',
     visitShop1: 'Visit the Hunters Creek page →',
     visitShop2: 'Visit the Florida Mall page →',
     alsoVisit: 'Also visit',
@@ -92,6 +97,8 @@ export const ui = {
     reviewsHeading: 'Lo que dicen nuestros clientes',
     googleReviewsSuffix: 'reseñas de Google',
     getDirections: 'Cómo llegar',
+    directionsShop1: 'Cómo llegar — Hunters Creek',
+    directionsShop2: 'Cómo llegar — Florida Mall',
     visitShop1: 'Visita la página de Hunters Creek →',
     visitShop2: 'Visita la página de Florida Mall →',
     alsoVisit: 'Visita también',

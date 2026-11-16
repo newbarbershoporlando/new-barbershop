@@ -57,6 +57,15 @@ const site = Astro.site!;
         <a class="btn btn--ghost-light" data-shop="shop_1" href={shop1.mapsUrl} target="_blank" rel="noopener">{t.seeWork(1)}</a>
         <a class="btn btn--ghost-light" data-shop="shop_2" href={shop2.mapsUrl} target="_blank" rel="noopener">{t.seeWork(2)}</a>
       </div>
+
+      {/* Directions (round-3 Item 2c, owner's conditional inclusion):
+          shop-named labels — the bare 'Get Directions' would read
+          identically twice here with no shop context. Same pattern:
+          data-shop attribution, no btn-reviews, no cta-* classes. */}
+      <div class="action-row" style="margin-top:12px">
+        <a class="btn btn--ghost-light" data-shop="shop_1" href={shop1.mapsUrl} target="_blank" rel="noopener">{t.directionsShop1}</a>
+        <a class="btn btn--ghost-light" data-shop="shop_2" href={shop2.mapsUrl} target="_blank" rel="noopener">{t.directionsShop2}</a>
+      </div>
     </div>
   </section>
 

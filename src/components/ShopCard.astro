@@ -20,6 +20,11 @@ const t = ui[lang];
   <p class="phone-big"><a class="cta-call cta-card" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
   <div class="btn-row">
     <a class="btn btn--call cta-call cta-card" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.phoneHref}>☎ {t.callToBook}</a>
+    {/* Directions (round-3 Item 2a): exact pattern proven on
+        LocationDetailView — data-shop attribution, NO btn-reviews,
+        NO cta-* classes (call-only per tracking contract §2). Order
+        keeps Call first: Call → Directions → WhatsApp. */}
+    <a class="btn btn--ghost-light" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.mapsUrl} target="_blank" rel="noopener">{t.getDirections}</a>
     {loc.whatsapp && (
       <a class="btn btn--whatsapp" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
     )}
