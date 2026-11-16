@@ -10,3 +10,13 @@
 
 /fonts/*
   Cache-Control: public, max-age=2592000
+
+# Round 3 (Item 5, Stage 1) — safe response headers on every response.
+# nosniff / Referrer-Policy re-declare the platform-supplied values so
+# the posture is owned by this repo; deploy verification must confirm
+# each appears exactly once in the live response.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
