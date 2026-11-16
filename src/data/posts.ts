@@ -468,6 +468,330 @@ const localPosts: Post[] = [
       },
     ],
   },
+  {
+    _id: 'post-9',
+    slug: 'blog/how-often-haircut-men',
+    image: '/images/blog-09-how-often.webp',
+    imageAlt: {
+      en: 'Client with a fresh high skin fade at New Barbershop in Orlando',
+      es: 'Cliente con un degradado alto al ras recién hecho en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'How Often Should a Man Get a Haircut? A Barber’s Honest Schedule by Style',
+        seoTitle: 'How Often Should a Man Get a Haircut? An Orlando Barber’s Schedule by Style | New Barbershop Orlando',
+        metaDescription:
+          'How often should a man get a haircut? An Orlando barber’s honest schedule by style — skin fades, fades, tapers, classics and beards. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'It is the question we hear more than any other in the chair: how often should a man get a haircut? The honest answer is that there is no single number — it depends on the style you wear, because every style grows out at the same speed but stops looking sharp at a different week. Here is the schedule we give our own clients, style by style.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'How Often Should a Man Get a Haircut? A Barber’s Honest Schedule by Style',
+        seoTitle: 'How Often Should a Man Get a Haircut? An Orlando Barber’s Schedule by Style | New Barbershop Orlando',
+        metaDescription:
+          'How often should a man get a haircut? An Orlando barber’s honest schedule by style — skin fades, fades, tapers, classics and beards. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Es la pregunta que más escuchamos en la silla: ¿cada cuánto debe cortarse el cabello un hombre? La respuesta honesta es que no hay un solo número: depende del estilo que lleves, porque todos los estilos crecen a la misma velocidad, pero dejan de verse definidos en semanas distintas. Aquí está el calendario que les damos a nuestros propios clientes, estilo por estilo.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Schedule by Style', es: 'El calendario según el estilo' },
+        body: {
+          en: 'Skin fades: every 1–2 weeks — the contrast against bare skin is the whole look, and it is the first to soften. Regular fades: every 2–3 weeks keeps the blend clean. Tapers: every 3–5 weeks, because the blend only lives at the sideburns and neckline and grows out gently. Classic cuts and longer styles: every 3–6 weeks before the shape collapses. Beards run on their own clock: a line-up every 1–2 weeks, a full trim every 2–4. If your style is not on this list, ask us in the chair — the full menu is on our Services page, and we will put a number on yours.',
+          es: 'Degradados al ras: cada 1–2 semanas; el contraste contra la piel es todo el estilo, y es lo primero que se suaviza. Degradados regulares: cada 2–3 semanas mantiene limpia la mezcla. Tapers: cada 3–5 semanas, porque la mezcla solo vive en las patillas y la nuca y crece con suavidad. Cortes clásicos y estilos más largos: cada 3–6 semanas, antes de que la forma se pierda. La barba tiene su propio reloj: un delineado cada 1–2 semanas y un arreglo completo cada 2–4. Si tu estilo no está en esta lista, pregúntanos en la silla: el menú completo está en nuestra página de Servicios, y le ponemos un número al tuyo.',
+        },
+      },
+      {
+        heading: { en: 'Why the Clock Runs at the Same Speed for Everyone', es: 'Por qué el reloj corre igual para todos' },
+        body: {
+          en: 'Hair grows about half an inch a month, no matter the style — what changes is how much growth a style can hide. A skin fade shows a week of growth; a classic cut forgives a month. Need to stretch your interval? Two tricks from the chair: ask for a slightly softer blend, which grows out more gracefully, and book a quick line-up and neck cleanup between full cuts — ten minutes that buy you another week or two. (If your calendar runs your cut for work reasons, our Two-Week Haircut Routine post breaks down the professional version of this schedule.)',
+          es: 'El cabello crece alrededor de media pulgada al mes, sin importar el estilo; lo que cambia es cuánto crecimiento puede esconder cada estilo. Un degradado al ras muestra una semana de crecimiento; un corte clásico perdona un mes. ¿Necesitas estirar tu intervalo? Dos trucos de la silla: pide una mezcla un poco más suave, que crece con más gracia, y reserva un delineado y limpieza de cuello rápidos entre cortes completos: diez minutos que te compran una o dos semanas más. (Si tu calendario manda sobre tu corte por motivos de trabajo, nuestra publicación sobre la rutina de corte de dos semanas detalla la versión profesional de este calendario.)',
+        },
+      },
+      {
+        heading: { en: 'Put Your Cut on a Schedule', es: 'Pon tu corte en un calendario' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-10',
+    slug: 'blog/psychology-fresh-haircut',
+    image: '/images/blog-10-psychology.webp',
+    imageAlt: {
+      en: 'Client with a fresh classic haircut and a confident look at New Barbershop in Orlando',
+      es: 'Cliente con un corte clásico recién hecho y una expresión segura en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'The Psychology of a Fresh Haircut: Why You Walk Out Standing Taller',
+        seoTitle: 'The Psychology of a Fresh Haircut — Why It Boosts Confidence | New Barbershop Orlando',
+        metaDescription:
+          'The psychology of a fresh haircut: the mirror effect, first impressions and the reset of a clean cut, explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Nobody has ever measured it in a lab, but every barber has watched it happen: a client walks in slumped and walks out standing taller, shoulders back, checking the mirror on the way to the door. There is a real psychology to a fresh haircut — nothing clinical, just the everyday way looking sharp changes how you carry yourself.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'The Psychology of a Fresh Haircut: Why You Walk Out Standing Taller',
+        seoTitle: 'The Psychology of a Fresh Haircut — Why It Boosts Confidence | New Barbershop Orlando',
+        metaDescription:
+          'The psychology of a fresh haircut: the mirror effect, first impressions and the reset of a clean cut, explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Nadie lo ha medido en un laboratorio, pero todo barbero lo ha visto pasar: un cliente entra encogido y sale erguido, con los hombros atrás, mirándose en el espejo camino a la puerta. Hay una psicología real detrás de un corte fresco; nada clínico, solo la forma cotidiana en que verte bien cambia cómo te presentas.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Mirror Effect', es: 'El efecto espejo' },
+        body: {
+          en: 'You meet your own reflection all day — in the bathroom mirror, the car window, the front camera you did not mean to open. When what you see looks deliberate, you act like it: you make eye contact, you speak up sooner, you stop adjusting and fidgeting. A grown-out cut does the opposite; it nags at the edge of your attention. That is most of the psychology of a fresh haircut — not magic, just removing a small daily distraction and replacing it with a version of yourself you are happy to present.',
+          es: 'Te encuentras con tu propio reflejo todo el día: en el espejo del baño, en la ventanilla del auto, en la cámara frontal que abriste sin querer. Cuando lo que ves se ve intencional, actúas en consecuencia: haces contacto visual, hablas antes, dejas de acomodarte y de inquietarte. Un corte crecido hace lo contrario: molesta en el borde de tu atención. Esa es casi toda la psicología de un corte fresco: no es magia, es quitar una pequeña distracción diaria y reemplazarla con una versión de ti que te gusta presentar.',
+        },
+      },
+      {
+        heading: { en: 'First Impressions and the Reset', es: 'Primeras impresiones y el reinicio' },
+        body: {
+          en: 'People form a first impression in seconds, and grooming is the fastest cue they get — before your clothes register, before you say a word. A clean line-up and a shaped beard tell the room you handle details. The other half is the reset: a fresh cut marks a line between before and after, which is why so many men get one at a turning point — a new job, a new routine, a new chapter (our New Look, New Chapter post is all about that moment). The effect fades as the cut grows out, which is the practical argument for a regular cadence: keep the interval steady and the taller-standing feeling never fully expires. Our Services page lists every cut and finish that goes into it.',
+          es: 'Las personas forman una primera impresión en segundos, y el arreglo personal es la señal más rápida que reciben, antes de que tu ropa se registre y antes de que digas una palabra. Un delineado limpio y una barba formada le dicen al cuarto que cuidas los detalles. La otra mitad es el reinicio: un corte fresco marca una línea entre el antes y el después, y por eso tantos hombres se cortan el cabello en un momento de cambio: un trabajo nuevo, una rutina nueva, un capítulo nuevo (nuestra publicación Nuevo look, nuevo capítulo trata justo de ese momento). El efecto se desvanece a medida que el corte crece, y ese es el argumento práctico de una cadencia regular: mantén el intervalo estable y la sensación de caminar erguido nunca expira del todo. Nuestra página de Servicios lista cada corte y acabado que lo hace posible.',
+        },
+      },
+      {
+        heading: { en: 'Feel the Difference', es: 'Siente la diferencia' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-11',
+    slug: 'blog/haircut-new-start',
+    image: '/images/blog-11-new-start.webp',
+    imageAlt: {
+      en: 'Client with a fresh burst fade and shaped beard at New Barbershop in Orlando',
+      es: 'Cliente con un burst fade recién hecho y la barba formada en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'New Look, New Chapter: Why a Fresh Cut Is Step One of a Fresh Start',
+        seoTitle: 'Haircut for a New Start: Why a Fresh Cut Is Step One | New Barbershop Orlando',
+        metaDescription:
+          'A haircut for a new start: why a fresh cut is step one of a fresh chapter — new job, new city, back on the dating scene. Orlando barbers, walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Breakup, new job, new city, back on the dating scene — whatever the turning point, the first move is almost always the same: change the hair. It is not vanity. A fresh cut is the fastest visible change you fully control, and it tells you, before it tells anyone else, that the new chapter has started.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'New Look, New Chapter: Why a Fresh Cut Is Step One of a Fresh Start',
+        seoTitle: 'Haircut for a New Start: Why a Fresh Cut Is Step One | New Barbershop Orlando',
+        metaDescription:
+          'A haircut for a new start: why a fresh cut is step one of a fresh chapter — new job, new city, back on the dating scene. Orlando barbers, walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Una ruptura, un trabajo nuevo, una ciudad nueva, volver a la escena de las citas: sea cual sea el momento de cambio, el primer movimiento casi siempre es el mismo: cambiarse el cabello. No es vanidad. Un corte fresco es el cambio visible más rápido que controlas por completo, y te dice a ti, antes que a nadie más, que el capítulo nuevo ya empezó.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Why the Hair Changes First', es: 'Por qué el cabello cambia primero' },
+        body: {
+          en: 'Most fresh starts are slow — applications, leases, routines that take months to stick. A haircut takes an hour and shows immediately, which is why it works as step one: it gives the change a face. The chair is also where the plan gets practical. Bring two or three photos of the look you are moving toward, matched to your hair type, and talk it through with your barber — the full menu of cuts, fades, designs and beard work is on our Services page, and a good barber will tell you honestly what your hair will and will not do.',
+          es: 'La mayoría de los comienzos son lentos: solicitudes, contratos, rutinas que tardan meses en cuajar. Un corte toma una hora y se nota de inmediato, y por eso funciona como paso uno: le da una cara al cambio. La silla también es donde el plan se vuelve práctico. Trae dos o tres fotos del look al que quieres llegar, acordes a tu tipo de cabello, y háblalo con tu barbero; el menú completo de cortes, degradados, diseños y trabajo de barba está en nuestra página de Servicios, y un buen barbero te dirá con honestidad lo que tu cabello puede y no puede hacer.',
+        },
+      },
+      {
+        heading: { en: 'The Date-Night Version', es: 'La versión para una cita' },
+        body: {
+          en: 'If the new chapter includes dating, two rules from the chair: get the cut two to three days before the date, not the morning of — a cut settles into its natural shape after a day or two, and you skip the just-cut look in photos — and aim for a sharper version of you, not a costume. A clean fade or classic cut, a deliberate line-up and a shaped beard read as confidence; a drastic experiment reads as a gamble. Then make it stick: a new look expires in about three weeks without a cadence, so set your interval before you leave the chair. A fresh cut will not run your dating life for you — but walking in feeling like the best version of yourself is a fair head start.',
+          es: 'Si el capítulo nuevo incluye citas, dos reglas desde la silla: córtate dos o tres días antes de la cita, no la misma mañana — un corte se asienta en su forma natural después de un día o dos, y evitas el look de recién cortado en las fotos — y apunta a una versión más definida de ti, no a un disfraz. Un degradado limpio o un corte clásico, un delineado intencional y una barba formada se leen como confianza; un experimento drástico se lee como una apuesta. Y haz que dure: un look nuevo expira en unas tres semanas sin una cadencia, así que define tu intervalo antes de levantarte de la silla. Un corte fresco no va a manejar tu vida amorosa por ti, pero entrar sintiéndote la mejor versión de ti mismo es una buena ventaja inicial.',
+        },
+      },
+      {
+        heading: { en: 'Start the Chapter', es: 'Empieza el capítulo' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-12',
+    slug: 'blog/men-grooming-habits',
+    image: '/images/blog-12-grooming-habits.webp',
+    imageAlt: {
+      en: 'Barber finishing a razor line-up at New Barbershop in Orlando',
+      es: 'Barbero terminando un perfilado a navaja en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Look Like You Mean Business: The Grooming Habits of Men Who Always Look Put Together',
+        seoTitle: 'Men’s Grooming Habits: How Put-Together Men Stay Sharp | New Barbershop Orlando',
+        metaDescription:
+          'The men’s grooming habits that keep you looking put together — a fixed haircut cadence, deliberate beard lines, a five-minute daily routine. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'Some men always look put together — not dressed up, just deliberate, every day, even on a random Tuesday. It is rarely about owning more products. Watching our regulars over the years, it comes down to a handful of grooming habits, and the first one is a calendar, not a bottle.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Look Like You Mean Business: The Grooming Habits of Men Who Always Look Put Together',
+        seoTitle: 'Men’s Grooming Habits: How Put-Together Men Stay Sharp | New Barbershop Orlando',
+        metaDescription:
+          'The men’s grooming habits that keep you looking put together — a fixed haircut cadence, deliberate beard lines, a five-minute daily routine. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'Algunos hombres siempre se ven bien presentados: no elegantes, solo intencionales, todos los días, incluso un martes cualquiera. Casi nunca se trata de tener más productos. Viendo a nuestros clientes habituales con los años, todo se reduce a unos pocos hábitos de cuidado personal, y el primero es un calendario, no una botella.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Habit One: A Fixed Cadence', es: 'Hábito uno: una cadencia fija' },
+        body: {
+          en: 'Men who always look sharp never find themselves “between cuts” when a big moment lands — because their next cut is already a rhythm, not a reaction. Every three to four weeks for most styles, every two to three for fades, with a quick line-up in between if the week demands it. Our post on how often a man should get a haircut breaks the intervals down by style, and the Two-Week Haircut Routine shows how professionals run the tightest version. Pick your interval, and the “I need a cut before Friday” scramble disappears.',
+          es: 'Los hombres que siempre se ven bien nunca quedan “entre cortes” cuando llega un momento importante, porque su próximo corte ya es un ritmo, no una reacción. Cada tres o cuatro semanas para la mayoría de los estilos, cada dos o tres para los degradados, con un delineado rápido en el medio si la semana lo exige. Nuestra publicación sobre cada cuánto debe cortarse el cabello un hombre detalla los intervalos por estilo, y la rutina de corte de dos semanas muestra cómo los profesionales llevan la versión más estricta. Elige tu intervalo, y la carrera de “necesito un corte antes del viernes” desaparece.',
+        },
+      },
+      {
+        heading: { en: 'The Details People Actually Read', es: 'Los detalles que la gente sí nota' },
+        body: {
+          en: 'Nobody studies your haircut — they read the edges. A beard line that is deliberate instead of accidental, a clean neckline, eyebrows tidied, the line-up crisp: those are the signals that add up to “put together.” Most of them live in services that take minutes — beard shaping, a razor line-up, an eyebrow cleanup, all on our Services page. And the daily routine behind it all is shorter than you think: one cleanser, one moisturizer, one styling product you actually use, five minutes. A drawer full of products you skip loses to three you never skip.',
+          es: 'Nadie estudia tu corte: la gente lee los bordes. Una línea de barba intencional en vez de accidental, una nuca limpia, las cejas arregladas, el delineado definido: esas son las señales que suman el “bien presentado”. La mayoría vive en servicios que toman minutos: formado de barba, un perfilado a navaja, una limpieza de cejas, todo en nuestra página de Servicios. Y la rutina diaria detrás de todo es más corta de lo que crees: un limpiador, una crema hidratante, un producto de peinado que sí uses; cinco minutos. Un cajón lleno de productos que omites pierde contra tres que nunca omites.',
+        },
+      },
+      {
+        heading: { en: 'Build the Habit', es: 'Crea el hábito' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-13',
+    slug: 'blog/haircut-layover-orlando-airport',
+    image: '/images/blog-13-mco-layover.webp',
+    imageAlt: {
+      en: 'The waiting lounge inside New Barbershop in Orlando',
+      es: 'El área de espera dentro de New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Flying Through MCO? The Layover & Crew Guide to Getting a Haircut in Orlando',
+        seoTitle: 'Haircut on a Layover at Orlando Airport (MCO)? A Crew & Traveler Guide | New Barbershop Orlando',
+        metaDescription:
+          'Getting a haircut on a layover at Orlando airport (MCO) — crew and travelers: two walk-in barber shops about 15–20 minutes from MCO, open 7 days. Call (407) 820-4541.',
+        intro:
+          'Orlando International Airport moves millions of people through this city — and a good number of them are working the flights, not taking them. Pilots and flight attendants land at MCO with a grooming standard to keep and a schedule that changes by text message. Travelers land with long layovers and vacation photos ahead. Both groups ask the same question: where can I get a proper haircut near the airport, without an appointment? This guide is the honest answer.',
+        closing:
+          'Stop by either shop or call ahead — find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Flying Through MCO? The Layover & Crew Guide to Getting a Haircut in Orlando',
+        seoTitle: 'Haircut on a Layover at Orlando Airport (MCO)? A Crew & Traveler Guide | New Barbershop Orlando',
+        metaDescription:
+          'Getting a haircut on a layover at Orlando airport (MCO) — crew and travelers: two walk-in barber shops about 15–20 minutes from MCO, open 7 days. Call (407) 820-4541.',
+        intro:
+          'El Aeropuerto Internacional de Orlando mueve a millones de personas por esta ciudad, y un buen número de ellas trabaja en los vuelos, no los toma. Pilotos y tripulantes de cabina llegan a MCO con un estándar de presentación que mantener y un horario que cambia por mensaje de texto. Los viajeros llegan con escalas largas y fotos de vacaciones por delante. Ambos grupos hacen la misma pregunta: ¿dónde puedo cortarme bien el cabello cerca del aeropuerto, sin cita? Esta guía es la respuesta honesta.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama antes — encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'For Crew: Grooming Is Part of the Job', es: 'Para tripulantes: el arreglo es parte del trabajo' },
+        body: {
+          en: 'Crew appearance standards are not vanity — neat hair kept off the ears and collar, tidy sideburns, and beards kept tight and well-kept are written into the job, and they get checked before duty. The problem is the roster: when your days off move, a booked-out barber does not work. Walk-ins do. Both of our shops take walk-ins every day, so a rest day or an overnight in Orlando is all you need: haircuts, skin fades, beard trims and line-ups that bring you back inside standard, in English or Spanish. (If you are visiting the city rather than working it, our Florida Mall visitor guide covers the vacation version.)',
+          es: 'Los estándares de presentación de las tripulaciones no son vanidad: el cabello prolijo, fuera de las orejas y del cuello, las patillas cuidadas y las barbas cortas y bien mantenidas están escritos en el trabajo, y se revisan antes del servicio. El problema es el itinerario: cuando tus días libres se mueven, un barbero con agenda llena no sirve. Los clientes sin cita, sí. Nuestras dos barberías aceptan clientes sin cita todos los días, así que un día de descanso o una noche en Orlando es todo lo que necesitas: cortes, degradados al ras, arreglos de barba y delineados que te devuelven al estándar, en inglés o español. (Si estás de visita en la ciudad en vez de trabajando en ella, nuestra guía para visitantes de Florida Mall cubre la versión de vacaciones.)',
+        },
+      },
+      {
+        heading: { en: 'For Travelers: Which Layovers Honestly Work', es: 'Para viajeros: qué escalas funcionan de verdad' },
+        body: {
+          en: 'Let us be straight: do not leave the airport on a short connection — a haircut is not worth a missed flight. Where it works beautifully is a long or overnight layover, a rest day, or the hours before you fly home and want to look like the trip treated you well. Here is where we are, honestly: our Florida Mall shop (6220 S Orange Blossom Trl) is about 15 minutes from MCO and about a mile and a half from the Florida Mall, on the same road — an easy pairing with layover shopping. Our Hunters Creek shop (9741 S Orange Blossom Trl) is about a 20-minute drive from MCO. Both are family-run since 2003, with over 1,400 five-star Google reviews, open seven days a week. Call ahead if your window is tight, or just walk in.',
+          es: 'Seamos directos: no salgas del aeropuerto en una conexión corta; un corte no vale un vuelo perdido. Donde sí funciona de maravilla es en una escala larga o con noche incluida, un día de descanso, o las horas antes de volar a casa queriendo verte como si el viaje te hubiera tratado bien. Aquí está nuestra ubicación, con honestidad: nuestro local de Florida Mall (6220 S Orange Blossom Trl) está a unos 15 minutos de MCO y a cerca de milla y media de Florida Mall, sobre la misma avenida: una combinación fácil con las compras de la escala. Nuestro local de Hunters Creek (9741 S Orange Blossom Trl) está a unos 20 minutos en auto de MCO. Ambas son barberías familiares desde 2003, con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana. Llama antes si tu margen es corto, o simplemente ven sin cita.',
+        },
+      },
+      {
+        heading: { en: 'Walk In Between Flights', es: 'Ven sin cita entre vuelos' },
+        body: {
+          en: 'Call to book: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Florida Mall (407) 820-4541 · Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-14',
+    slug: 'blog/fade-vs-taper',
+    image: '/images/blog-14-fade-vs-taper.webp',
+    imageAlt: {
+      en: 'Client with a taper fade at New Barbershop in Orlando',
+      es: 'Cliente con un taper fade en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Fade vs Taper: Which One Is Right for You?',
+        seoTitle: 'Fade vs Taper Haircut: What’s the Difference? An Orlando Barber Explains | New Barbershop Orlando',
+        metaDescription:
+          'Fade vs taper haircut — what’s the difference, which grows out better, and what to ask your barber for. Explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Fade or taper? It is the question behind half the photos clients show us — and the fear behind the other half is asking for the wrong one. The good news: the difference takes one sentence to explain, and choosing between them comes down to three things — how much contrast you want, how the grow-out treats you, and how often you want to sit back in the chair.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Fade vs Taper: Which One Is Right for You?',
+        seoTitle: 'Fade vs Taper Haircut: What’s the Difference? An Orlando Barber Explains | New Barbershop Orlando',
+        metaDescription:
+          'Fade vs taper haircut — what’s the difference, which grows out better, and what to ask your barber for. Explained by Orlando barbers. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          '¿Fade o taper? Es la pregunta detrás de la mitad de las fotos que nos muestran los clientes, y el miedo detrás de la otra mitad es pedir el equivocado. La buena noticia: la diferencia se explica en una frase, y elegir entre los dos se reduce a tres cosas: cuánto contraste quieres, cómo te trata el crecimiento y cada cuánto quieres volver a la silla.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The One-Sentence Difference', es: 'La diferencia en una frase' },
+        body: {
+          en: 'A fade blends the sides all the way around the head, usually down to the skin at the bottom — the hair disappears gradually, with no visible line where it ends. A taper blends only at the edges — the sideburns and the neckline — while the sides keep their full length and shape. Same family, different commitment: the fade is a statement of contrast, the taper is a cleanup of the outline. (For the full tour of fade types and blends, our Expert Fades in Orlando post goes deep on that side of the family.)',
+          es: 'Un fade (degradado) mezcla los lados alrededor de toda la cabeza, normalmente hasta la piel en la parte baja: el cabello desaparece gradualmente, sin una línea visible donde termina. Un taper mezcla solo los bordes — las patillas y la nuca — mientras los lados conservan su largo y su forma completos. Misma familia, compromiso distinto: el fade es una declaración de contraste; el taper es una limpieza del contorno. (Para el recorrido completo de tipos de degradado y mezclas, nuestra publicación Degradados expertos en Orlando profundiza en ese lado de la familia.)',
+        },
+      },
+      {
+        heading: { en: 'Decide by Contrast, Grow-Out and Upkeep', es: 'Decide por contraste, crecimiento y mantenimiento' },
+        body: {
+          en: 'Contrast: the higher and tighter the fade, the sharper and bolder the look; the taper is the office-safe, classic option that never reads as “a haircut event.” Grow-out: a fade shows its age in about two weeks as the blend climbs; a taper grows out softly for four to five weeks because there is less contrast to lose. Upkeep follows from that — fades live on a 2–3 week cadence, tapers on 3–5. Hair type breaks ties: very curly or wavy hair shows a beautiful taper, while straight, thick hair holds a fade’s gradient crisply. Still torn? Start with the taper or a low fade — you can always take it higher next visit, and every option is on our Services page.',
+          es: 'Contraste: mientras más alto y ajustado el fade, más definido y audaz el look; el taper es la opción clásica y segura para la oficina, que nunca se lee como “un evento de corte”. Crecimiento: un fade muestra su edad en unas dos semanas, a medida que la mezcla sube; un taper crece con suavidad durante cuatro o cinco semanas porque hay menos contraste que perder. El mantenimiento sigue de ahí: los fades viven en una cadencia de 2–3 semanas; los tapers, de 3–5. El tipo de cabello desempata: el cabello muy rizado u ondulado luce un taper hermoso, mientras el cabello lacio y grueso sostiene el degradado de un fade con nitidez. ¿Sigues entre los dos? Empieza con el taper o un fade bajo: siempre puedes subirlo en la próxima visita, y cada opción está en nuestra página de Servicios.',
+        },
+      },
+      {
+        heading: { en: 'What to Say in the Chair', es: 'Qué decir en la silla' },
+        body: {
+          en: 'For a fade: “Mid fade, down to skin at the bottom, keep the top long enough to style.” For a taper: “Taper the sideburns and neckline, keep the sides full, scissor cut on top.” Either way, tell your barber — or call ahead: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Para un fade: “Degradado medio, hasta la piel abajo, y arriba déjalo con largo suficiente para peinar”. Para un taper: “Taper en las patillas y la nuca, los lados completos, y arriba a tijera”. En cualquier caso, díselo a tu barbero, o llama antes: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
 ];
 
 // ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
