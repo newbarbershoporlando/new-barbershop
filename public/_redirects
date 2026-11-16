@@ -1,26 +1,27 @@
 # _redirects — New Barbershop (Cloudflare Pages syntax)
 # ============================================================================
-# LAUNCH CASE THIS FILE IS WRITTEN FOR: OLD DOMAIN (newbarbershop1.com).
-# Drop this file at the root of the Astro build output (public/_redirects)
-# when the new site launches on newbarbershop1.com. All rules are 301.
+# LAUNCH CASE: NEW DOMAIN (newbarbershoporlando.com) — decided 2026-11-15;
+# the domain is registered in the owner's own Cloudflare account and
+# astro.config.mjs now points at it. This file ships in the build output
+# (public/_redirects) and the rules below fire on the new host. All rules
+# are 301.
 # Source map: seo-tracking-plan.md §2.2 (Agent D, 2026-11-15), reconciled
 # against Search Console's Pages report before launch (plan §2.2 step) —
 # any indexed URL not listed here gets a rule added BEFORE DNS flips.
 #
-# NEW-DOMAIN VARIANT (launch on newbarbershoporlando.com instead):
-# Keep this file as-is — the rules still fire for anyone who reaches the
-# NEW domain with a legacy path (typed, shared, or printed links).
-# What this file CANNOT do: redirect traffic on the OLD domain. Without
-# control of the old domain's DNS/hosting there is no redirect surface
-# there at all; old-domain URLs only survive if the ownership push or
-# transfer lands, in which case deploy this same file (or a domain-level
-# forward) on the old domain pointing at the new one. See
-# new-domain-memo.md play M1.
+# WHY LEGACY-PATH RULES ON THE NEW DOMAIN: the rules still fire for anyone
+# who reaches the NEW domain with a legacy path (typed, shared, or printed
+# links). What this file CANNOT do: redirect traffic on the OLD domain
+# (newbarbershop1.com). Without control of the old domain's DNS/hosting
+# there is no redirect surface there at all; old-domain URLs only survive
+# if the ownership push or transfer lands, in which case deploy this same
+# file (or a domain-level forward) on the old domain pointing at the new
+# one. See new-domain-memo.md play M1.
 #
 # HOSTNAME RULES ARE NOT HERE ON PURPOSE: Cloudflare Pages _redirects
 # matches paths on one hostname only. www -> apex (canonical) is a
 # Cloudflare Redirect Rule / Bulk Redirect at the zone level (Agent E,
-# cutover runbook) — canonical host: https://newbarbershop1.com.
+# cutover runbook) — canonical host: https://newbarbershoporlando.com.
 #
 # Format: <from> <to> 301 — both slash and no-slash variants are listed
 # for legacy paths so matching never depends on trailing-slash handling.
