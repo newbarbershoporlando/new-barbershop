@@ -1,0 +1,113 @@
+---
+// Branded fallback / error page (owner order 2026-11-15, modeled on the live
+// maintenance page). Fully self-contained: all styles inline so the page
+// renders correctly even if the global stylesheet or other assets fail.
+// Astro emits this as dist/404.html; Cloudflare Pages serves it for
+// unmatched routes with an HTTP 404 status.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Page not found — but New Barbershop Orlando is open. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. Página no encontrada — pero estamos abiertos. Llama para reservar."
+    />
+    <title>New Barbershop Orlando — We Are Open | Estamos Abiertos</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <style>
+      :root {
+        --red: #e80613;
+        --coal: #1f0a0c;
+        --coal-2: #2a0e11;
+        --paper: #ffffff;
+        --muted: #cbb9bb;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--coal);
+        color: var(--paper);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 16px 48px;
+      }
+      .wrap { width: 100%; max-width: 860px; text-align: center; }
+      .logo { width: 200px; max-width: 60vw; height: auto; margin: 0 auto 20px; display: block; }
+      .kicker {
+        color: var(--red);
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+      }
+      h1 { font-size: clamp(1.6rem, 4.5vw, 2.4rem); line-height: 1.2; margin-bottom: 10px; }
+      .es-line { color: var(--muted); font-size: clamp(1rem, 3vw, 1.2rem); margin-bottom: 32px; }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        text-align: left;
+      }
+      @media (min-width: 720px) {
+        .cards { grid-template-columns: 1fr 1fr; }
+      }
+      .card {
+        background: var(--coal-2);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-top: 4px solid var(--red);
+        border-radius: 12px;
+        padding: 22px;
+      }
+      .card h2 { font-size: 1.25rem; margin-bottom: 6px; }
+      .addr { color: var(--muted); margin-bottom: 6px; }
+      .hours { color: var(--muted); font-size: 0.95rem; margin-bottom: 18px; }
+      .btn {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 13px 16px;
+        margin-top: 10px;
+      }
+      .btn-call { background: var(--red); color: #fff; }
+      .btn-wa { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.4); }
+      .home { margin-top: 28px; }
+      .home a { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <img class="logo" src="/images/logo.png" alt="New Barbershop" width="360" height="115" />
+      <p class="kicker">404 · Page Not Found</p>
+      <h1>We are giving our website a fresh cut — but we are open. Call to book.</h1>
+      <p class="es-line">Estamos dándole un corte nuevo a nuestro sitio web — pero estamos abiertos. Llama para reservar.</p>
+
+      <div class="cards">
+        <section class="card">
+          <h2>New Barbershop 1</h2>
+          <p class="addr">9741 S Orange Blossom Trl, Orlando, FL 32837</p>
+          <p class="hours">Open daily 8:00 AM – 10:30 PM</p>
+          <a class="btn btn-call" href="tel:+14074704846">Call Hunters Creek</a>
+          <a class="btn btn-wa" href="https://wa.me/message/SOGEVWV7NKT2C1">WhatsApp</a>
+        </section>
+
+        <section class="card">
+          <h2>New Barbershop 2</h2>
+          <p class="addr">6220 S Orange Blossom Trl, Orlando, FL 32809</p>
+          <p class="hours">Sun 9:30 AM – 8:30 PM · Mon 9:30 AM – 9:00 PM · Tue–Sat 9:00 AM – 10:00 PM</p>
+          <a class="btn btn-call" href="tel:+14078204541">Call Florida Mall</a>
+        </section>
+      </div>
+
+      <p class="home"><a href="/">Back to the homepage · Volver al inicio</a></p>
+    </main>
+  </body>
+</html>

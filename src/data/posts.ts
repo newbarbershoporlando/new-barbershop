@@ -1492,6 +1492,60 @@ const localPosts: Post[] = [
       },
     ],
   },
+  {
+    _id: 'post-28',
+    slug: 'blog/new-car-haircut',
+    image: '/images/blog-28-new-ride.webp',
+    imageAlt: {
+      en: 'Client with a fresh skin fade at New Barbershop in Orlando — the finishing touch on new-car day',
+      es: 'Cliente con un degradado al ras recién hecho en New Barbershop en Orlando: el toque final del día del auto nuevo',
+    },
+    locales: {
+      en: {
+        title: 'New Ride? New Cut — Finish the Upgrade',
+        seoTitle: 'Fresh Cut After Buying a Car: Finish the Upgrade | New Barbershop Orlando',
+        metaDescription:
+          'Just bought a car on Orange Blossom Trail? Finish the upgrade with a fresh cut — fade, line-up and beard shape, minutes from the dealerships. Walk-ins, open 7 days. Call (407) 470-4846.',
+        intro:
+          'There is a specific feeling that comes with signing the papers and getting handed the keys, and it has a look problem attached: you feel brand new, and the mirror in the visor says otherwise. This post is about the smallest, fastest part of new-car day — the fresh cut after buying a car, done on the same road where you bought it. (Already covered the waiting-around version? Our Orange Blossom Trail dealership post handles the service-wait and staff angles; this one is purely the buyer’s moment.)',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'New Ride? New Cut — Finish the Upgrade',
+        seoTitle: 'Fresh Cut After Buying a Car: Finish the Upgrade | New Barbershop Orlando',
+        metaDescription:
+          'Just bought a car on Orange Blossom Trail? Finish the upgrade with a fresh cut — fade, line-up and beard shape, minutes from the dealerships. Walk-ins, open 7 days. Call (407) 470-4846.',
+        intro:
+          'Hay una sensación específica que llega al firmar los papeles y recibir las llaves, y trae un problema de imagen adjunto: te sientes nuevo, y el espejo de la visera dice otra cosa. Esta publicación trata de la parte más pequeña y rápida del día del auto nuevo: el corte de cabello nuevo después de comprar un auto, hecho sobre la misma calle donde lo compraste. (¿Ya viste la versión de la espera? Nuestra publicación sobre los concesionarios de Orange Blossom Trail cubre la espera del servicio y al personal; esta es puramente el momento del comprador.)',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'From Test Drive to Fresh Fade', es: 'De la prueba de manejo al degradado fresco' },
+        body: {
+          en: 'A new car resets how you see yourself for about a week — the first commute feels different, the first fill-up feels like an occasion. It is the same psychology as any fresh start, just with a steering wheel: the upgrade is visible, so the man driving it wants to be visible to match. That is why the barbershop stop happens on the way home so often on this corridor. It is not vanity; it is finishing the job. The car got detailed before delivery. You should get the same courtesy.',
+          es: 'Un auto nuevo reinicia cómo te ves durante una semana: el primer viaje al trabajo se siente distinto, la primera tanqueada se siente como una ocasión. Es la misma psicología de cualquier comienzo fresco, solo que con volante: la mejora es visible, así que el hombre que la maneja quiere verse a la altura. Por eso la parada en la barbería ocurre tan seguido de camino a casa en este corredor. No es vanidad; es terminar el trabajo. El auto fue detallado antes de la entrega. Tú mereces la misma cortesía.',
+        },
+      },
+      {
+        heading: { en: 'Match the Cut to the Moment', es: 'Combina el corte con el momento' },
+        body: {
+          en: 'New-car day has two photo sessions built in: the first drive, and the first pictures — yours, and the ones friends demand when you pull up. The cut that serves both is clean and deliberate rather than experimental: a fresh fade with a crisp razor line-up reads sharp in every one of those photos, and a beard trim or shape makes the whole face look as considered as the purchase. Save the brand-new style experiment for a quieter week (our New Look, New Chapter post makes that case); today is about the polished version of you, delivered in one sitting from the Fade Haircut, Razor Line-Up and Beard Shaping services on our Services page.',
+          es: 'El día del auto nuevo trae dos sesiones de fotos incluidas: el primer manejo y las primeras fotos — las tuyas y las que los amigos exigen cuando llegas. El corte que sirve para ambas es limpio e intencional, no experimental: un degradado fresco con un perfilado a navaja definido se lee impecable en cada una de esas fotos, y un arreglo o formado de barba hace que todo el rostro se vea tan pensado como la compra. Guarda el experimento de estilo nuevo para una semana más tranquila (nuestra publicación Nuevo look, nuevo capítulo defiende ese caso); hoy se trata de la versión pulida de ti, entregada en una sola sesión con los servicios de corte degradado, perfilado a navaja y formado de barba de nuestra página de Servicios.',
+        },
+      },
+      {
+        heading: { en: 'Same Road, Same Day', es: 'La misma calle, el mismo día' },
+        body: {
+          en: 'The logistics are the whole point: both of our shops sit right on South Orange Blossom Trail, on the same corridor as the dealerships — New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall. So the route writes itself: drive out of the lot, drive in for the cut. No appointment needed — walk-ins are welcome, we are open seven days a week, and the Hunters Creek shop runs 8 AM to 10:30 PM for the evening buyers. Keys in a new car, cut to match: that is the upgrade, finished. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'La logística es todo el punto: nuestras dos barberías están sobre South Orange Blossom Trail, en el mismo corredor que los concesionarios — New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall. Así que la ruta se escribe sola: sales del lote manejando y entras por tu corte. No necesitas cita: los clientes sin cita son bienvenidos, abrimos los siete días de la semana y el local de Hunters Creek funciona de 8 AM a 10:30 PM para los compradores de la tarde-noche. Llaves en un auto nuevo, corte a la altura: esa es la mejora, terminada. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
 ];
 
 // ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
