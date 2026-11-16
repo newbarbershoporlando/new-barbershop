@@ -7,7 +7,7 @@ const { lang, items } = Astro.props;
 const t = ui[lang];
 ---
 
-<section class="section">
+<section class="section" data-rv>
   <div class="wrap">
     <h2>{t.faqHeading}</h2>
     {items.map((f) => (

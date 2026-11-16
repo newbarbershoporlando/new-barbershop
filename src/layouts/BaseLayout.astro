@@ -58,6 +58,11 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <!-- Google Tag Manager -->
     <script is:inline set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`} />
+    {/* Upgrade (2026-11-16): JS-available marker. Progressive-enhancement
+        styles (scroll reveals, collapsibles) are gated on html.js so
+        no-JS visitors and crawlers always see all content in its final
+        state. Runs in <head> so the class is set before first paint. */}
+    <script is:inline>document.documentElement.classList.add('js');</script>
     {jsonLdBlocks.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
   </head>
   <body>
@@ -78,5 +83,27 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
     <Footer lang={lang} />
     <StickyCallBar lang={lang} />
     <BackToTop lang={lang} />
+    {/* Upgrade (2026-11-16): scroll-triggered reveals. Elements carry
+        data-rv and are visible by default; only html.js styles start
+        them faded/translated (see global.css), and this observer adds
+        .rv-in ONCE as each enters the viewport. No IntersectionObserver
+        or reduced-motion preference -> everything is shown at once.
+        Opacity/transform only: no layout shift, and the fixed sticky
+        call bar is never a reveal target. */}
+    <script is:inline>
+      (function () {
+        var els = document.querySelectorAll('[data-rv]');
+        if (!els.length) return;
+        var showAll = function () { els.forEach(function (el) { el.classList.add('rv-in'); }); };
+        if (!('IntersectionObserver' in window) ||
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches) { showAll(); return; }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('rv-in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0, rootMargin: '0px 0px -48px 0px' });
+        els.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>

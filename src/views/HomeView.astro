@@ -41,7 +41,7 @@ const site = Astro.site!;
       <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
     </picture>
   </section>
-  <section class="hero">
+  <section class="hero" data-rv>
     <div class="wrap">
       <h1>{c.heroH1}</h1>
       <p class="hero-sub">{c.heroLine}</p>
@@ -71,7 +71,7 @@ const site = Astro.site!;
   <!-- Work gallery — owner addition 2026-11-15: real client photos
        only (homeGalleryItems), high on the page so visitors see the
        shop's work early. Same treatment as the Services gallery. -->
-  <section class="section" id="workGallery">
+  <section class="section" id="workGallery" data-rv>
     <div class="wrap">
       <h2>{c.workHeading}</h2>
       <p style="max-width:800px">{c.workIntro}</p>
@@ -82,7 +82,7 @@ const site = Astro.site!;
   <!-- Locations — moved directly under the work gallery by owner
        order 2026-11-16 (was below How It Works). The block moves
        whole: same markup, classes, copy and ShopCard links. -->
-  <section class="section section--paper">
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{t.ourLocations}</h2>
       <p>{c.locationsLine}</p>
@@ -93,7 +93,7 @@ const site = Astro.site!;
   </section>
 
   <!-- Services preview: 5 category tiles -->
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{c.servicesHeading}</h2>
       <p>{c.servicesIntro}</p>
@@ -105,7 +105,7 @@ const site = Astro.site!;
   </section>
 
   <!-- Story -->
-  <section class="section section--dark">
+  <section class="section section--dark" data-rv>
     <div class="wrap">
       <h2>{c.storyHeading}</h2>
       <p style="max-width:760px">{c.storyBody}</p>
@@ -114,7 +114,7 @@ const site = Astro.site!;
   </section>
 
   <!-- Experience -->
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{c.experienceHeading}</h2>
       <p style="max-width:760px">{c.experienceIntro}</p>

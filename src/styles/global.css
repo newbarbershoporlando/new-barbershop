@@ -577,6 +577,24 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 .back-to-top:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
 @media (min-width: 1100px) { .back-to-top { bottom: 24px; right: 24px; } }
 
+/* ——— Upgrade (2026-11-16): scroll-triggered reveals ———
+   Content is visible by default in the server-rendered page. Only
+   when JS is available (html.js, set by the BaseLayout head script)
+   do [data-rv] blocks start faded + slightly lowered; the observer
+   in BaseLayout adds .rv-in once as each block enters the viewport
+   (~450ms, inside the spec's 350–550ms band; scrolling back never
+   re-hides). Opacity/transform only — no layout shift. Reduced
+   motion: blocks render in their final state, no animation. */
+.js [data-rv] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.js [data-rv].rv-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rv] { opacity: 1; transform: none; transition: none; }
+}
+
 .banner-img { width: 100%; }
 .two-col { display: grid; grid-template-columns: 1fr; gap: 28px; }
 @media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; align-items: start; } }

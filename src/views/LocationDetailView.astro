@@ -49,7 +49,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
     <div class="wrap"><h1>{loc.name}</h1></div>
   </section>
 
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{loc.introHeading[lang]}</h2>
       <p style="max-width:760px">{loc.intro[lang]}</p>
@@ -74,7 +74,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
 
   <HowItWorks lang={lang} />
 
-  <section class="section section--paper">
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{t.photosHeading}</h2>
       <!-- This shop's OWN real photos (owner-supplied 2026-11-15 — genuine
@@ -88,7 +88,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{t.servicesAtGlance}</h2>
       <CategoryTiles lang={lang} forShop={scope} />
@@ -104,7 +104,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
 
   <FaqBlock lang={lang} items={faqsFor(scope)} />
 
-  <section class="section section--paper">
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{t.alsoVisit}</h2>
       <p>

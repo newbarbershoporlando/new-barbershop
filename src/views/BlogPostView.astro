@@ -54,7 +54,7 @@ const siteRoot = site.href.replace(/\/$/, '');
             topic cluster only, then a visit block linking both
             location pages. Body copy above is untouched. */}
         {related.length > 0 && (
-          <div class="related-block">
+          <div class="related-block" data-rv>
             <h2>{t.relatedHeading}</h2>
             <div class="post-cards">
               {related.map((rp) => (
@@ -70,7 +70,7 @@ const siteRoot = site.href.replace(/\/$/, '');
           </div>
         )}
 
-        <div class="post-locations">
+        <div class="post-locations" data-rv>
           <h2>{t.visitUs}</h2>
           {locations.map((l) => (
             <p>

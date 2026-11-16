@@ -57,7 +57,7 @@ const shops = [shop1, shop2];
     }
   </script>
 
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap" style="max-width:800px">
       <p style="font-size:20px;font-weight:600">{c.lead}</p>
       <p>{c.body1}</p>
@@ -65,7 +65,7 @@ const shops = [shop1, shop2];
     </div>
   </section>
 
-  <section class="section section--paper">
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <h2>{c.valuesHeading}</h2>
       <p>{c.valuesIntro}</p>
@@ -80,7 +80,7 @@ const shops = [shop1, shop2];
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-rv>
     <div class="wrap">
       <h2>{c.teamHeading}</h2>
       <div class="btn-row">
@@ -93,7 +93,7 @@ const shops = [shop1, shop2];
     </div>
   </section>
 
-  <section class="section section--paper">
+  <section class="section section--paper" data-rv>
     <div class="wrap">
       <div class="cards">
         {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
