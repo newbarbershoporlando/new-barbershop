@@ -1,7 +1,10 @@
 ---
 // Location page stack per the design-patterns study §5.4:
-// hero → intro → FULL hours table → Call+Directions action row → photos band →
+// hero → intro → Call+Directions action row → FULL hours table → photos band →
 // services-at-a-glance tiles → reviews → FAQ → cross-link to the other shop.
+// (Premium design item 2, 2026-11-16: the action row moved above the
+// hours table — it rendered below the fold at y≈1039/1126; same
+// elements, classes and data-shop attribution, DOM order only.)
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HoursTable from '../components/HoursTable.astro';
 import CategoryTiles from '../components/CategoryTiles.astro';
@@ -58,9 +61,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
         · <a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram</a>
       </p>
 
-      <HoursTable loc={loc} lang={lang} />
-
-      <div class="action-row">
+      <div class="action-row action-row--detail">
         <a class="btn btn--call cta-call cta-page" data-shop={shopKey} href={loc.phoneHref}>
           ☎ {loc._id === 'shop1' ? t.callShop1 : t.callShop2} · {loc.phoneDisplay}
         </a>
@@ -69,6 +70,8 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
           <a class="btn btn--whatsapp" data-shop={shopKey} href={loc.whatsapp} target="_blank" rel="noopener">{t.whatsapp}</a>
         )}
       </div>
+
+      <HoursTable loc={loc} lang={lang} />
     </div>
   </section>
 

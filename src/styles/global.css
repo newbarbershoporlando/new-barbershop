@@ -548,6 +548,13 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 
 /* ——— Action row ——— */
 .action-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+/* Premium design item 2 (2026-11-16): on narrow screens the
+   location-detail action row stacks full-width in BOTH languages —
+   the ES labels previously wrapped the row differently from EN
+   (design review B-P9). Desktop keeps the horizontal row. */
+@media (max-width: 639px) {
+  .action-row--detail .btn { flex: 1 1 100%; }
+}
 
 /* ——— Testimonial ——— */
 .testimonial { max-width: 720px; margin: 0 auto; text-align: center; }
