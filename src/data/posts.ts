@@ -37,8 +37,8 @@ const localPosts: Post[] = [
     slug: 'blog/top-rated-barber-shop-orlando',
     image: '/images/blog-01-top-rated.webp',
     imageAlt: {
-      en: "Barber combing a client's hair in the shop",
-      es: 'Barbero peinando el cabello de un cliente en la barbería',
+      en: "Barber combing a client's hair",
+      es: 'Barbero peinando el cabello de un cliente',
     },
     locales: {
       en: {
@@ -743,8 +743,8 @@ const localPosts: Post[] = [
     slug: 'blog/fade-vs-taper',
     image: '/images/blog-14-fade-vs-taper.webp',
     imageAlt: {
-      en: 'Client with a taper fade at New Barbershop in Orlando',
-      es: 'Cliente con un taper fade en New Barbershop en Orlando',
+      en: "Barber blending a fade with clippers at the side of a client's head",
+      es: 'Barbero difuminando un degradado con máquina en el lateral de la cabeza de un cliente',
     },
     locales: {
       en: {
@@ -797,8 +797,8 @@ const localPosts: Post[] = [
     slug: 'blog/how-often-wash-hair-men',
     image: '/images/blog-15-wash-hair.webp',
     imageAlt: {
-      en: 'Client with a clean low fade at New Barbershop in Orlando',
-      es: 'Cliente con un degradado bajo y limpio en New Barbershop en Orlando',
+      en: 'Close-up of a barber fading the nape of a client with curly hair',
+      es: 'Primer plano de un barbero degradando la nuca de un cliente con cabello rizado',
     },
     locales: {
       en: {
@@ -957,8 +957,8 @@ const localPosts: Post[] = [
     slug: 'blog/best-hair-product-for-men',
     image: '/images/blog-18-hair-products.webp',
     imageAlt: {
-      en: 'Barber styling a client’s hair at New Barbershop in Orlando',
-      es: 'Barbero peinando el cabello de un cliente en New Barbershop en Orlando',
+      en: "Barber cutting a client's hair with scissors and a comb, seen from behind",
+      es: 'Barbero cortando el cabello de un cliente con tijeras y peine, visto desde atrás',
     },
     locales: {
       en: {

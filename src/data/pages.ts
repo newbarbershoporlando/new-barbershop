@@ -340,18 +340,10 @@ export const galleryItems: GalleryItem[] = [
     'Client with a classic pompadour haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un corte clásico con tupé y barba perfilada en una barbería en Orlando, FL',
     'Classic Haircut', 'Corte clásico',
     'A timeless cut, tailored to your style and finished clean.', 'Un corte atemporal, adaptado a tu estilo y con un acabado limpio.'),
-  cap('/images/low-fade-orlando.webp',
-    'Barber blending a low fade haircut with clippers at the nape in an Orlando barber shop', 'Barbero mezclando un degradado bajo con máquina en la nuca en una barbería de Orlando',
-    'Low Fade', 'Degradado bajo',
-    'A subtle blend that keeps the sides clean and natural.', 'Un difuminado sutil que mantiene los laterales limpios y naturales.'),
   cap('/images/high-skin-fade-orlando.webp',
     'Client with a finished high skin fade haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un degradado alto al ras terminado y barba perfilada en una barbería en Orlando, FL',
     'High Skin Fade', 'Degradado alto al ras',
     'A bold, high-contrast fade taken down to the skin.', 'Un degradado llamativo y de alto contraste, llevado hasta la piel.'),
-  cap('/images/taper-fade-orlando.webp',
-    'Barber tapering the neckline with clippers — taper fade haircut in an Orlando barber shop', 'Barbero haciendo el taper en la nuca con máquina — degradado taper en una barbería de Orlando',
-    'Taper Fade', 'Degradado taper',
-    'A clean taper around the edges, for a polished everyday look.', 'Un taper limpio en los bordes, para lucir impecable todos los días.'),
   cap('/images/burst-fade-orlando.webp',
     'Young client with a curly textured top and a burst fade haircut around the ear at a barber shop in Orlando, FL', 'Cliente joven con la parte superior rizada y texturizada y un degradado burst alrededor de la oreja en una barbería en Orlando, FL',
     'Burst Fade', 'Degradado burst',
@@ -383,12 +375,17 @@ export const galleryItems: GalleryItem[] = [
     'Client with neat cornrow braids and faded sides at a barber shop in Orlando, FL', 'Cliente con trenzas cornrow impecables y laterales degradados en una barbería en Orlando, FL',
     'Braids', 'Trenzas',
     'Neat, comfortable braiding for men and women, made to last.', 'Trenzado limpio y cómodo para hombres y mujeres, hecho para durar.'),
-  // General set (manifest §3) — verified stock texture, no style caption.
-  { src: '/images/barber-combing-hair-orlando.webp', largeSrc: lgOf('/images/barber-combing-hair-orlando.webp'), alt: { en: "Barber combing a client's hair at a barber shop in Orlando, FL", es: 'Barbero peinando el cabello de un cliente en una barbería en Orlando, FL' } },
-  { src: '/images/scissor-cut-close-up-orlando.webp', largeSrc: lgOf('/images/scissor-cut-close-up-orlando.webp'), alt: { en: 'Close-up of a scissor cut on dark hair at a barber shop in Orlando, FL', es: 'Primer plano de un corte con tijeras en cabello oscuro en una barbería en Orlando, FL' } },
-  { src: '/images/barber-trimming-haircut-orlando.webp', largeSrc: lgOf('/images/barber-trimming-haircut-orlando.webp'), alt: { en: "Barber trimming the back of a client's haircut with scissors at a barber shop in Orlando, FL", es: 'Barbero recortando con tijeras la parte trasera del corte de un cliente en una barbería en Orlando, FL' } },
-  { src: '/images/barber-cutting-young-client-hair-orlando.webp', largeSrc: lgOf('/images/barber-cutting-young-client-hair-orlando.webp'), alt: { en: "Barber cutting the top of a young client's hair with scissors at a barber shop in Orlando, FL", es: 'Barbero cortando con tijeras la parte superior del cabello de un cliente joven en una barbería en Orlando, FL' } },
-  { src: '/images/barber-fading-hair-clippers-orlando.webp', largeSrc: lgOf('/images/barber-fading-hair-clippers-orlando.webp'), alt: { en: "Barber fading a client's hair with clippers at a barber shop in Orlando, FL", es: 'Barbero haciendo un degradado con máquina a un cliente en una barbería en Orlando, FL' } },
+  // General set — the shops' OWN photos, no style caption. Design 1
+  // (2026-11-16): the previous general set was 5 Pexels stock items,
+  // and the captioned Low Fade / Taper Fade slots were stock too —
+  // 7 stock photos under an "Our Work" heading. All 7 are removed;
+  // in their place, the two staged real alternates from
+  // assets-ready/haircuts (haircut-05: finished fade + beard with the
+  // barber; haircut-07: braids in progress). The gallery is now 100%
+  // the shops' real photos. Low Fade and Taper Fade keep their full
+  // presence in the services list, category tiles and blog content.
+  { src: '/images/barber-with-client-fade-orlando.webp', largeSrc: lgOf('/images/barber-with-client-fade-orlando.webp'), alt: { en: "Barber standing behind a client with a finished skin fade and shaped beard at a barber shop in Orlando, FL", es: 'Barbero de pie detrás de un cliente con un degradado al ras terminado y barba perfilada en una barbería en Orlando, FL' } },
+  { src: '/images/barber-braiding-client-hair-orlando.webp', largeSrc: lgOf('/images/barber-braiding-client-hair-orlando.webp'), alt: { en: "Barber working on a client's cornrow braids in the chair at a barber shop in Orlando, FL", es: 'Barbero trabajando en las trenzas cornrow de un cliente en la silla en una barbería en Orlando, FL' } },
 ];
 
 /* Homepage work gallery (owner addition 2026-11-15): REAL client
