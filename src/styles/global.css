@@ -136,6 +136,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .header-logo img { width: 140px; }
 @media (min-width: 900px) { .header-logo img { width: 180px; } }
+/* Narrow phones (audit M9): shrink the logo a step and tighten the
+   header gap so logo + call button + language switch + menu toggle
+   fit 360px viewports without clipping. Small screens only. */
+@media (max-width: 480px) {
+  .header-logo img { width: 120px; }
+  .header-in { gap: 10px; }
+}
 .header-call { white-space: nowrap; }
 .hc-short { display: none; }
 @media (max-width: 899px) {
@@ -178,7 +185,9 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 6px; color: var(--white); font-size: 22px; cursor: pointer;
 }
 @media (min-width: 900px) { .menu-toggle { display: none; } }
-.mobile-menu { display: none; background: var(--coal); padding: 8px 16px 20px; }
+/* max-height + scroll (audit M8): on short/landscape viewports the
+   open menu's bottom links must stay reachable. */
+.mobile-menu { display: none; background: var(--coal); padding: 8px 16px 20px; max-height: calc(100dvh - 64px); overflow-y: auto; }
 .mobile-menu.open { display: block; }
 @media (min-width: 900px) { .mobile-menu { display: none !important; } }
 .mobile-menu a {
@@ -240,6 +249,10 @@ img { max-width: 100%; height: auto; display: block; }
    and paired buttons keep identical heights. Desktop unchanged. */
 @media (max-width: 600px) {
   .btn--call { font-size: 15px; padding-left: 16px; padding-right: 16px; }
+  /* Same one-step shrink for the sticky call bar (audit M7): the
+     location-named labels (ES longest) wrapped mid-phrase on narrow
+     screens at the base 16px. */
+  .call-bar a { font-size: 15px; }
 }
 .page-hero { background: var(--coal); color: var(--white); padding: 44px 0; }
 .page-hero h1 { margin: 0; }
@@ -335,9 +348,13 @@ body.lb-open { overflow: hidden; }
   background: rgba(12, 5, 6, 0.94);
   display: flex; align-items: center; justify-content: center;
   padding: 20px 12px;
+  /* Short/landscape viewports (audit L6): the figure can exceed the
+     viewport height — let the overlay scroll and auto-margin the
+     figure so the caption stays reachable. */
+  overflow-y: auto;
 }
 .lightbox[hidden] { display: none; }
-.lb-figure { margin: 0; max-width: min(1120px, 100%); text-align: center; }
+.lb-figure { margin: auto; max-width: min(1120px, 100%); text-align: center; }
 .lb-figure img {
   max-width: 100%; max-height: 72vh; width: auto; height: auto;
   border-radius: 10px;
