@@ -1168,6 +1168,330 @@ const localPosts: Post[] = [
       },
     ],
   },
+  {
+    _id: 'post-22',
+    slug: 'blog/wave-haircut-technique',
+    image: '/images/blog-22-wave-cut.webp',
+    imageAlt: {
+      en: 'Client with a short, with-the-grain cut — the barber’s canvas for 360 waves',
+      es: 'Cliente con un corte corto a favor del grano: el lienzo del barbero para las 360 waves',
+    },
+    locales: {
+      en: {
+        title: 'The Wave Cut, Done Right: Grain, Guards and the Wolf — From the Barber’s Side of the Chair',
+        seoTitle: 'Wave Haircut Technique: Grain, Guards and the Wolf | New Barbershop Orlando',
+        metaDescription:
+          'Wave haircut technique from the barber’s side of the chair — grain mapping, guard choice, crown protection and wolf-cycle cuts in Orlando. Call (407) 470-4846.',
+        intro:
+          'Our wave-3 routine post covered your half of the work — the brush, the durag, the wolfing care at home. This post is the other half: what a barber who cuts waves actually does in the chair, and why two men on the same home routine get different results from different barbers. A wave cut is a technique, and it starts before the clippers ever turn on.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'The Wave Cut, Done Right: Grain, Guards and the Wolf — From the Barber’s Side of the Chair',
+        seoTitle: 'Wave Haircut Technique: Grain, Guards and the Wolf | New Barbershop Orlando',
+        metaDescription:
+          'Wave haircut technique from the barber’s side of the chair — grain mapping, guard choice, crown protection and wolf-cycle cuts in Orlando. Call (407) 470-4846.',
+        intro:
+          'Nuestra publicación de la ola 3 sobre la rutina cubrió tu mitad del trabajo: el cepillo, el durag, el cuidado del wolfing en casa. Esta publicación es la otra mitad: lo que un barbero que corta waves hace en realidad en la silla, y por qué dos hombres con la misma rutina casera obtienen resultados distintos con barberos distintos. Un corte para waves es una técnica, y empieza antes de que la máquina se encienda.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'First, the Barber Reads the Pattern', es: 'Primero, el barbero lee el patrón' },
+        body: {
+          en: 'A wave cut follows a map that is already on your head: the crown, where the pattern spirals from, and the grain direction on every panel — front, sides, back — because hair does not grow in one direction and the cut has to run with each panel’s flow, the same directions you brush. A barber who cuts waves studies that map dry, before water or product, finds your crown’s center and your weak spots (every waver has one panel that lags), and plans the pass directions from it. Skip the reading and the cut fights the pattern for the next month.',
+          es: 'Un corte para waves sigue un mapa que ya está en tu cabeza: la coronilla, desde donde el patrón gira en espiral, y la dirección del grano en cada panel — frente, lados, parte trasera — porque el cabello no crece en una sola dirección y el corte tiene que correr con el flujo de cada panel, las mismas direcciones en que te cepillas. Un barbero que corta waves estudia ese mapa en seco, antes del agua o el producto, encuentra el centro de tu coronilla y tus zonas débiles (todo waver tiene un panel que se atrasa) y planifica las direcciones de pasada a partir de ahí. Si se salta la lectura, el corte pelea con el patrón durante el próximo mes.',
+        },
+      },
+      {
+        heading: { en: 'Guards Are a Stage Decision', es: 'Las guías son una decisión de etapa' },
+        body: {
+          en: 'The guard is chosen for where you are in the cycle, not by habit. Setting or maintaining a pattern: a #1.5 to #2, cut with the grain — against the grain at a low guard can scalp the pattern and erase weeks of training in one pass, so a careful barber simply does not do it. Mid-wolf trims go higher, taking off just enough to keep the wolf orderly without touching the depth you are building. And the reveal cut after a wolf surprises first-timers: it is cut higher than the wolf started, because the length that trained the depth is not the length that shows it. The crown gets protected throughout — it is thinned last and least, because a scalped crown cannot hold a spiral.',
+          es: 'La guía se elige según el momento del ciclo en que estás, no por costumbre. Para fijar o mantener un patrón: una #1.5 a #2, cortada a favor del grano; ir contra el grano con una guía baja puede arrasar el patrón y borrar semanas de entrenamiento en una sola pasada, así que un barbero cuidadoso simplemente no lo hace. Los recortes a mitad del wolf van más altos, quitando solo lo necesario para mantener el wolf ordenado sin tocar la profundidad que estás construyendo. Y el corte de revelación después de un wolf sorprende a los primerizos: se corta más alto de lo que empezó el wolf, porque el largo que entrenó la profundidad no es el largo que la muestra. La coronilla se protege durante todo el proceso: se rebaja al final y lo menos posible, porque una coronilla arrasada no puede sostener una espiral.',
+        },
+      },
+      {
+        heading: { en: 'Two Kinds of Wolf Visits — and the Same Hands', es: 'Dos tipos de visita durante el wolf — y las mismas manos' },
+        body: {
+          en: 'During a wolf, most of your appointments should be edges-only: a razor line-up that keeps the hairline and neckline deliberate while the top stays untouched — that visit is part of our Waves Styling & Maintenance service, along with the reveal cut that ends the wolf. What makes the whole system compound is consistency: the same barber remembers your guard, your crown, your lagging panel and exactly how your last cut grew in. Every new pair of hands restarts that learning curve. Pick a barber who cuts waves, then let the same hands keep the pattern. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Durante un wolf, la mayoría de tus citas deberían ser solo de bordes: un perfilado a navaja que mantiene intencionales la línea del cabello y la nuca mientras la parte superior queda intacta; esa visita es parte de nuestro servicio de peinado y mantenimiento de waves, junto con el corte de revelación que termina el wolf. Lo que hace que todo el sistema se acumule es la consistencia: el mismo barbero recuerda tu guía, tu coronilla, tu panel atrasado y exactamente cómo creció tu último corte. Cada par de manos nuevo reinicia esa curva de aprendizaje. Elige un barbero que corte waves y deja que las mismas manos mantengan el patrón. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-23',
+    slug: 'blog/line-up-haircut',
+    image: '/images/blog-23-line-up.webp',
+    imageAlt: {
+      en: 'Barber finishing a razor line-up — the edge work that frames a cut',
+      es: 'Barbero terminando un perfilado a navaja: el trabajo de bordes que enmarca un corte',
+    },
+    locales: {
+      en: {
+        title: 'The Line-Up, Explained: Edge-Up, Shape-Up, and Keeping Your Hairline Where It Grows',
+        seoTitle: 'Line-Up Haircut, Edge-Up, Shape-Up: What It Is and How Long It Lasts | New Barbershop Orlando',
+        metaDescription:
+          'The line-up haircut explained — line-up, edge-up and shape-up are one service; how long it stays crisp, the razor finish, and protecting your natural hairline. Orlando. Call (407) 470-4846.',
+        intro:
+          'Order it in Orlando and it is a line-up; in New York it is an edge-up; in plenty of Southern shops it is a shape-up. Three names, one service — and the one most likely to be misunderstood, rushed, or done in a way that costs you hairline you never get back. Here is the full explainer, including the part nobody tells you.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'The Line-Up, Explained: Edge-Up, Shape-Up, and Keeping Your Hairline Where It Grows',
+        seoTitle: 'Line-Up Haircut, Edge-Up, Shape-Up: What It Is and How Long It Lasts | New Barbershop Orlando',
+        metaDescription:
+          'The line-up haircut explained — line-up, edge-up and shape-up are one service; how long it stays crisp, the razor finish, and protecting your natural hairline. Orlando. Call (407) 470-4846.',
+        intro:
+          'Pídelo en Orlando y es un line-up; en Nueva York es un edge-up; en muchas barberías del sur es un shape-up. Tres nombres, un solo servicio — y el que tiene más probabilidades de ser malentendido, hecho a la carrera o ejecutado de una forma que te cuesta línea de cabello que nunca recuperas. Aquí está la explicación completa, incluyendo la parte que nadie te cuenta.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'What a Line-Up Actually Is', es: 'Qué es un line-up en realidad' },
+        body: {
+          en: 'A line-up defines the frame: the front hairline, the temples, the sideburns and the neckline, sharpened with trimmer and straight razor. It is its own service — our Razor Line-Up on the Services page — not a haircut: no length comes off the top, and plenty of clients get one between full cuts to reset the frame while the cut itself still has life. The finish matters, too: a trimmer line is clean, but a razor finish reads harder and crisper, because the razor takes the edge down to skin with no stubble shadow. Neckline shape is a choice within the service — blocked, rounded or tapered — and a good barber asks which you wear before defaulting.',
+          es: 'Un line-up define el marco: la línea frontal del cabello, las sienes, las patillas y la línea de la nuca, afilados con recortadora y navaja recta. Es un servicio propio — nuestro perfilado a navaja en la página de Servicios — no un corte: no se quita largo de la parte superior, y muchos clientes se lo hacen entre cortes completos para reiniciar el marco mientras el corte todavía tiene vida. El acabado también importa: una línea con recortadora es limpia, pero un acabado a navaja se lee más duro y definido, porque la navaja lleva el borde hasta la piel sin sombra de vello. La forma de la nuca es una elección dentro del servicio — recta (blocked), redondeada o degradada (tapered) — y un buen barbero pregunta cuál llevas antes de asumir.',
+        },
+      },
+      {
+        heading: { en: 'The Honest Lifespan', es: 'La vida útil, con honestidad' },
+        body: {
+          en: 'A line-up is at its crispest for the first several days. Inside a week, new growth softens the edges — that is not a bad line-up, that is hair doing what hair does at about half an inch a month. The standard rhythm is a refresh every one to two weeks between full cuts, which is why the line-up is the most-booked in-between service in the shop: ten-odd minutes that make a two-week-old cut read fresh again. Anyone who promises you a line-up that stays razor-crisp for a month is promising you something biology does not sell.',
+          es: 'Un line-up está en su punto más definido durante los primeros días. Dentro de una semana, el crecimiento nuevo suaviza los bordes; eso no es un mal line-up, es el cabello haciendo lo que hace a razón de media pulgada al mes. El ritmo estándar es un retoque cada una o dos semanas entre cortes completos, y por eso el line-up es el servicio intermedio más reservado de la barbería: unos diez minutos que hacen que un corte de dos semanas se lea fresco otra vez. Quien te prometa un line-up que se mantiene definido a navaja por un mes te está prometiendo algo que la biología no vende.',
+        },
+      },
+      {
+        heading: { en: 'Keeping Your Hairline Where It Grows', es: 'Mantener tu línea de cabello donde crece' },
+        body: {
+          en: 'Here is the differentiator, and it matters more than the razor: your natural hairline is not ruler-straight. It has small irregularities, a widow’s peak here, a softer corner there. A barber who forces it geometrically straight has to cut into real hairline to do it — and doing that every two weeks migrates the line backward, cut by cut, until the “clean” look has cost you hairline that does not grow back on schedule. The craftsman’s rule is the opposite: line me up where it grows, do not take it back. We line up the hairline you have — sharpened, cleaned of the fuzz beyond it, never relocated. If a barber starts pushing your line back for sharpness, that is the sentence to say. It is your hairline; the razor works for it, not the other way around.',
+          es: 'Aquí está el diferenciador, y importa más que la navaja: tu línea natural de cabello no es recta como una regla. Tiene pequeñas irregularidades: un pico de viuda aquí, una esquina más suave allá. Un barbero que la fuerza geométricamente recta tiene que cortar dentro de la línea real para lograrlo, y hacer eso cada dos semanas migra la línea hacia atrás, corte tras corte, hasta que el look “limpio” te ha costado línea de cabello que no vuelve a crecer en calendario. La regla del artesano es la contraria: perfílame donde crece, no la lleves hacia atrás. Nosotros perfilamos la línea que tienes: afilada, limpia de la pelusa más allá de ella, nunca reubicada. Si un barbero empieza a empujar tu línea hacia atrás en nombre de la definición, esa es la frase que debes decir. Es tu línea de cabello; la navaja trabaja para ella, no al revés.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-24',
+    slug: 'blog/skin-fade-textured-hair',
+    image: '/images/blog-24-textured-skin-fade.webp',
+    imageAlt: {
+      en: 'Client with a high skin fade on textured hair at New Barbershop in Orlando',
+      es: 'Cliente con un degradado alto al ras en cabello texturizado en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Skin Fades on Textured Hair Are a Different Craft — Here’s What Your Barber Is Actually Doing',
+        seoTitle: 'Skin Fade on Textured Hair: The Technique, Explained | New Barbershop Orlando',
+        metaDescription:
+          'A skin fade on textured hair is a different craft — shrinkage, dry cutting, guideline and lever work, shadow vs skin finish. Orlando barbers explain. Call (407) 470-4846.',
+        intro:
+          'A skin fade is a skin fade — until the hair is curly or coily, and then nearly every variable changes: how long the hair really is, how the blend behaves, how many passes it takes, where the guidelines go. This is not the style-choice question (our Fade vs Taper post owns that). This is execution: what your barber is actually doing differently on textured hair, and why it takes the time it takes.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Skin Fades on Textured Hair Are a Different Craft — Here’s What Your Barber Is Actually Doing',
+        seoTitle: 'Skin Fade on Textured Hair: The Technique, Explained | New Barbershop Orlando',
+        metaDescription:
+          'A skin fade on textured hair is a different craft — shrinkage, dry cutting, guideline and lever work, shadow vs skin finish. Orlando barbers explain. Call (407) 470-4846.',
+        intro:
+          'Un degradado al ras es un degradado al ras — hasta que el cabello es rizado o afro, y entonces casi todas las variables cambian: cuánto mide el cabello en realidad, cómo se comporta la mezcla, cuántas pasadas toma, dónde van las guías. Esta no es la pregunta de elección de estilo (nuestra publicación Fade vs Taper se encarga de eso). Esto es ejecución: lo que tu barbero hace en realidad de forma distinta en el cabello texturizado, y por qué toma el tiempo que toma.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Shrinkage Runs the Whole Job', es: 'La contracción manda en todo el trabajo' },
+        body: {
+          en: 'Coily hair shrinks — the tightest coils can show a fraction of their true length once dry — so a fade on textured hair is judged and cut dry, in its real state, not wet and stretched into a lie. Texture also softens transitions: the curl diffuses the edge between lengths, which a skilled barber uses as a blending ally instead of fighting it — and which is why the work takes more passes, checking the blend from distance and in different light as it builds. Rush those passes and the fade shows steps; respect them and the gradient melts.',
+          es: 'El cabello afro se contrae: los rizos más cerrados pueden mostrar una fracción de su largo real una vez secos, así que un degradado en cabello texturizado se juzga y se corta en seco, en su estado real, no mojado y estirado en una mentira. La textura también suaviza las transiciones: el rizo difumina el borde entre largos, y un barbero hábil lo usa como aliado de la mezcla en vez de pelear contra él; por eso el trabajo toma más pasadas, revisando la mezcla desde lejos y con distinta luz mientras se construye. Si apuras esas pasadas, el degradado muestra escalones; si las respetas, el degradado se funde.',
+        },
+      },
+      {
+        heading: { en: 'Guidelines, Levers and the Shadow Choice', es: 'Guías, palancas y la elección del acabado sombra' },
+        body: {
+          en: 'Technique, translated: the first guideline is set lower than the fade’s final height, deliberately, to leave room to blend upward into it. The blend itself is built with lever work and half-guard steps — small, controlled increments instead of jumps between full guards — because textured hair punishes jumps with visible lines. Then comes a real choice your barber should offer: a true skin finish, taken all the way down, or a shadow fade that stops around a #0.5 to #1 — softer against sensitive scalps, gentler in the grow-out, and nearly as sharp in the mirror. Neither is the “right” answer; the right answer is the one matched to your skin and your calendar.',
+          es: 'La técnica, traducida: la primera guía se fija más baja que la altura final del degradado, deliberadamente, para dejar espacio de mezclar hacia arriba hasta ella. La mezcla en sí se construye con trabajo de palanca y pasos de media guía — incrementos pequeños y controlados en vez de saltos entre guías completas — porque el cabello texturizado castiga los saltos con líneas visibles. Luego viene una elección real que tu barbero debería ofrecerte: un acabado al ras verdadero, llevado hasta abajo, o un degradado sombra (shadow fade) que se detiene alrededor de una #0.5 a #1: más suave con los cueros cabelludos sensibles, más amable al crecer y casi tan definido en el espejo. Ninguna es la respuesta “correcta”; la correcta es la que combina con tu piel y tu calendario.',
+        },
+      },
+      {
+        heading: { en: 'The Named Cuts — and the Right Photo to Show', es: 'Los cortes con nombre — y la foto correcta para mostrar' },
+        body: {
+          en: 'This audience asks in a specific vocabulary: the temp fade (Brooklyn fade) that cleans the temples and edges while the top keeps its length and pattern, the low taper that keeps a wave pattern safe, the high skin fade for maximum contrast. All of them live on our Services page under Fade Haircut and High Skin Fade. One practical tip that changes outcomes: show your barber a side-profile photo on hair like yours. A front shot on a different texture shows a silhouette; a profile on your own texture shows the blend, the guideline height and the finish — the actual decisions. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Este público pide con un vocabulario específico: el temp fade (Brooklyn fade) que limpia las sienes y los bordes mientras la parte superior conserva su largo y su patrón, el taper bajo que mantiene seguro un patrón de waves, el degradado alto al ras para el máximo contraste. Todos viven en nuestra página de Servicios bajo Corte degradado y Degradado alto al ras. Un consejo práctico que cambia resultados: muéstrale a tu barbero una foto de perfil lateral en un cabello como el tuyo. Una foto de frente en otra textura muestra una silueta; un perfil en tu propia textura muestra la mezcla, la altura de la guía y el acabado: las decisiones reales. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-25',
+    slug: 'blog/orlando-textured-hair-barber',
+    image: '/images/blog-25-find-your-barber.webp',
+    imageAlt: {
+      en: 'Inside New Barbershop 2 on South Orange Blossom Trail in Orlando',
+      es: 'Interior de New Barbershop 2 sobre South Orange Blossom Trail en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'New to Orlando — or Just Done Searching? How to Find a Barber Who Actually Cuts Your Hair',
+        seoTitle: 'Finding an Orlando Textured Hair Barber: A Vetting Guide | New Barbershop Orlando',
+        metaDescription:
+          'Searching for an Orlando textured hair barber? How to vet a shop — portfolio on your texture, the right questions, the trial cut. Two shops on the Trail. Call (407) 470-4846.',
+        intro:
+          'Every man with textured hair who moves to a new city knows this search, and knows it is not the same search everyone else runs. The question is not “who cuts hair well?” — it is “who can cut MY hair?” Grain, shrinkage and pattern work make textured hair a specialty, and a shop that is excellent on straight hair can still be the wrong chair. Here is how to vet one before you sit in it.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'New to Orlando — or Just Done Searching? How to Find a Barber Who Actually Cuts Your Hair',
+        seoTitle: 'Finding an Orlando Textured Hair Barber: A Vetting Guide | New Barbershop Orlando',
+        metaDescription:
+          'Searching for an Orlando textured hair barber? How to vet a shop — portfolio on your texture, the right questions, the trial cut. Two shops on the Trail. Call (407) 470-4846.',
+        intro:
+          'Todo hombre con cabello texturizado que se muda a una ciudad nueva conoce esta búsqueda, y sabe que no es la misma que hacen los demás. La pregunta no es “¿quién corta bien el cabello?”, es “¿quién puede cortar MI cabello?”. El grano, la contracción y el trabajo de patrones hacen del cabello texturizado una especialidad, y una barbería excelente en cabello lacio puede seguir siendo la silla equivocada. Así se evalúa una antes de sentarte en ella.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Vet the Portfolio — on Your Texture', es: 'Evalúa el portafolio — en tu textura' },
+        body: {
+          en: 'The single most reliable test: photos of finished work on hair like yours. Not just any sharp fade — your texture, your style family. If you wear waves, look for wave clients and line-ups that respect natural hairlines; if you wear designs, look for design work, because not every barber does it. Reviews help the same way when they name the style — “he keeps my waves right” tells you more than five stars alone. A shop confident in this work shows it; a shop that cannot show it is asking you to be the experiment.',
+          es: 'La prueba más confiable: fotos de trabajos terminados en un cabello como el tuyo. No cualquier degradado definido: tu textura, tu familia de estilos. Si llevas waves, busca clientes con waves y perfilados que respeten las líneas naturales; si llevas diseños, busca trabajos de diseño, porque no todo barbero los hace. Las reseñas ayudan igual cuando nombran el estilo: “mantiene mis waves perfectas” te dice más que cinco estrellas solas. Una barbería segura de este trabajo lo muestra; una que no puede mostrarlo te está pidiendo que seas el experimento.',
+        },
+      },
+      {
+        heading: { en: 'Ask the Direct Questions', es: 'Haz las preguntas directas' },
+        body: {
+          en: 'Before the first cut, three questions separate specialists from generalists. Do you cut waves with the grain — and what guard do you start a first wave cut at? (You are listening for “with the grain” and a number in the #1.5–#2 range.) Do you do freestyle design work, and can I see some? And if braids are your thing: who here braids — at our shops, braiding is a Hunters Creek service, done by our braider for men and women, and we will tell you that on the phone rather than seat you in the wrong shop. Straight answers, given easily, are the sign you found the right chair.',
+          es: 'Antes del primer corte, tres preguntas separan a los especialistas de los generalistas. ¿Cortas las waves a favor del grano, y con qué guía empiezas un primer corte para waves? (Buscas escuchar “a favor del grano” y un número en el rango #1.5–#2.) ¿Haces diseños freestyle, y puedo ver algunos? Y si lo tuyo son las trenzas: ¿quién aquí hace trenzas? En nuestras barberías, el trenzado es un servicio de Hunters Creek, hecho por nuestra trenzadora para hombres y mujeres, y te lo diremos por teléfono en vez de sentarte en el local equivocado. Respuestas directas, dadas con facilidad, son la señal de que encontraste la silla correcta.',
+        },
+      },
+      {
+        heading: { en: 'The Trial Cut — and What Comes After', es: 'El corte de prueba — y lo que sigue' },
+        body: {
+          en: 'Treat the first visit as a trial: a straightforward cut, honestly judged at week one and week two, tells you more than any review. Then give a good barber two or three cuts to learn your crown, your grain and how your hair grows in — because the consistency of one pair of hands is what turns good cuts into your cut, especially on waves and patterns. That is the invitation at our two shops: New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall, both on South Orange Blossom Trail, family-run since 2003 with over 1,400 five-star Google reviews, open seven days a week, walk-ins welcome, service in English and Spanish. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Trata la primera visita como una prueba: un corte directo, juzgado con honestidad en la primera y la segunda semana, te dice más que cualquier reseña. Luego dale a un buen barbero dos o tres cortes para aprender tu coronilla, tu grano y cómo crece tu cabello, porque la consistencia de un solo par de manos es lo que convierte los buenos cortes en tu corte, especialmente en waves y patrones. Esa es la invitación en nuestras dos barberías: New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall, ambas sobre South Orange Blossom Trail, familiares desde 2003 con más de 1,400 reseñas de cinco estrellas en Google, abiertas los siete días de la semana, clientes sin cita bienvenidos, atención en inglés y español. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-26',
+    slug: 'blog/freestyle-hair-designs',
+    image: '/images/blog-26-hair-designs.webp',
+    imageAlt: {
+      en: 'Client with a freestyle design carved into a fade at New Barbershop in Orlando',
+      es: 'Cliente con un diseño freestyle tallado en un degradado en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Freestyle Hair Designs: Wearable Art, Cut Fresh',
+        seoTitle: 'Freestyle Hair Designs: How They Work and How Long They Last | New Barbershop Orlando',
+        metaDescription:
+          'Freestyle hair designs in Orlando — how barber art is drawn into a fade, how long a design stays sharp (about 1–2 weeks), redraws and kids’ designs. Call (407) 470-4846.',
+        intro:
+          'A hair design is the one service in the shop that is genuinely art: no stencil, no template — lines and shapes drawn freehand with a trimmer and razor into the fade, different on every head. It is also the service with the most honest clock in barbering. Here is how designs work, how to commission one well, and how long the art actually lasts.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Freestyle Hair Designs: Wearable Art, Cut Fresh',
+        seoTitle: 'Freestyle Hair Designs: How They Work and How Long They Last | New Barbershop Orlando',
+        metaDescription:
+          'Freestyle hair designs in Orlando — how barber art is drawn into a fade, how long a design stays sharp (about 1–2 weeks), redraws and kids’ designs. Call (407) 470-4846.',
+        intro:
+          'Un diseño en el cabello es el único servicio de la barbería que es arte de verdad: sin plantilla, sin molde — líneas y formas dibujadas a mano alzada con recortadora y navaja dentro del degradado, distintas en cada cabeza. También es el servicio con el reloj más honesto de la barbería. Así funcionan los diseños, cómo encargar uno bien y cuánto dura el arte en realidad.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Fade Is the Canvas', es: 'El degradado es el lienzo' },
+        body: {
+          en: 'Designs are carved into short, faded sides, and the physics are simple: the shorter and smoother the canvas, the sharper the line — which is why designs read best on skin-level fades and on darker hair, where the contrast between hair and skin draws the picture for you. The barber sketches the design into the fade with the trimmer, then cleans and hardens the lines with the razor. It is why our Hair Designs service sits next to Fade Haircut and High Skin Fade on the Services page: the art and the canvas are one appointment. And a boundary worth knowing before you sit down — not every barber does design work. Check the portfolio first; a barber who designs will have the photos ready.',
+          es: 'Los diseños se tallan en lados cortos y degradados, y la física es simple: mientras más corto y suave el lienzo, más definida la línea; por eso los diseños se leen mejor en degradados a nivel de piel y en cabello más oscuro, donde el contraste entre el cabello y la piel dibuja la imagen por ti. El barbero bosqueja el diseño dentro del degradado con la recortadora y luego limpia y endurece las líneas con la navaja. Por eso nuestro servicio de diseños en el cabello vive junto al corte degradado y al degradado alto al ras en la página de Servicios: el arte y el lienzo son una sola cita. Y un límite que vale la pena conocer antes de sentarte: no todo barbero hace diseños. Revisa el portafolio primero; un barbero que diseña tendrá las fotos listas.',
+        },
+      },
+      {
+        heading: { en: 'Commissioning One Well', es: 'Cómo encargar uno bien' },
+        body: {
+          en: 'Bring a photo — then expect your barber to adapt it, not photocopy it. Head shape, hairline and hair texture all change how a design lands, so a good barber redraws the reference for your head; a line-for-line promise is a red flag, not a selling point. Choose bold, simple lines over fine detail: thick lines read from across the room and survive the grow-out, while hairline-thin detail blurs first. Kids’ designs follow the same rules with simpler, bolder art — a line, a star, a number — and the same honesty about what a young hairline should carry.',
+          es: 'Trae una foto — y espera que tu barbero la adapte, no que la fotocopie. La forma de la cabeza, la línea del cabello y la textura cambian cómo cae un diseño, así que un buen barbero redibuja la referencia para tu cabeza; una promesa línea por línea es una señal de alerta, no un argumento de venta. Elige líneas audaces y simples sobre el detalle fino: las líneas gruesas se leen desde el otro lado del cuarto y sobreviven al crecimiento, mientras el detalle fino como un cabello se difumina primero. Los diseños para niños siguen las mismas reglas con arte más simple y audaz — una línea, una estrella, un número — y la misma honestidad sobre lo que una línea de cabello joven debería llevar.',
+        },
+      },
+      {
+        heading: { en: 'The Honest Clock: About 1–2 Weeks', es: 'El reloj honesto: unas 1–2 semanas' },
+        body: {
+          en: 'A design is sharpest the day it is cut and stays sharp for about one to two weeks, before regrowth softens the lines — the same growth clock as every cut, which our how-often schedule post maps out by style. The good news inside that clock: a redraw along the original lines is quicker than the first sitting, because the map is already there, so plenty of clients refresh the same design two or three times before retiring it. Time yours backward from the event, the photos or the first day of school, and the art peaks when you want it to. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Un diseño está más definido el día en que se corta y se mantiene así por una o dos semanas, antes de que el crecimiento suavice las líneas: el mismo reloj de crecimiento de cada corte, que nuestra publicación sobre cada cuánto cortarse el cabello detalla por estilo. La buena noticia dentro de ese reloj: un redibujo sobre las líneas originales es más rápido que la primera sesión, porque el mapa ya está ahí, así que muchos clientes refrescan el mismo diseño dos o tres veces antes de retirarlo. Calcula el tuyo hacia atrás desde el evento, las fotos o el primer día de clases, y el arte llega a su punto máximo cuando tú quieres. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-27',
+    slug: 'blog/beard-shaping-sensitive-skin',
+    image: '/images/blog-27-bump-prone-beard.webp',
+    imageAlt: {
+      en: 'Client with a shaped beard and clean lines at New Barbershop in Orlando',
+      es: 'Cliente con una barba formada y líneas limpias en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Beard Shaping for Bump-Prone Skin: What a Careful Barber Does Differently',
+        seoTitle: 'Beard Shaping for Sensitive, Bump-Prone Skin: The Careful Barber’s Method | New Barbershop Orlando',
+        metaDescription:
+          'Beard shaping for bump-prone skin — hot-towel prep, with-the-grain work, clipper finishes on the neck and honest length, from Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'If your skin bumps up after shaving, you already know the dread: the closer the shave, the worse the week after. This post is the chair-side half of that problem — what a careful barber does differently when shaping and shaving bump-prone skin. (The home-care half — washing, oils, the daily routine — lives in our Beard Care at Home post; this one never leaves the chair.)',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Beard Shaping for Bump-Prone Skin: What a Careful Barber Does Differently',
+        seoTitle: 'Beard Shaping for Sensitive, Bump-Prone Skin: The Careful Barber’s Method | New Barbershop Orlando',
+        metaDescription:
+          'Beard shaping for bump-prone skin — hot-towel prep, with-the-grain work, clipper finishes on the neck and honest length, from Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'Si tu piel se llena de granitos después de afeitarte, ya conoces el temor: mientras más al ras el afeitado, peor la semana siguiente. Esta publicación es la mitad del problema que ocurre en la silla: lo que un barbero cuidadoso hace distinto al formar y afeitar una piel propensa a los granitos. (La mitad del cuidado en casa — lavado, aceites, la rutina diaria — vive en nuestra publicación sobre el cuidado de la barba en casa; esta nunca sale de la silla.)',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Why It Happens — Hair Geometry, Not Hygiene', es: 'Por qué pasa: geometría del vello, no higiene' },
+        body: {
+          en: 'The mechanism is simple and it is not your fault or your cleanliness: tightly curled beard hair, cut very close — or below the skin’s surface — can curl back into the skin as it regrows, and the skin reacts to the intrusion with a bump. The closer and more aggressive the cut, the more likely the curl-back, which is why the neck, where hair grows in swirls and gets shaved closest, is where it concentrates. Everything a careful barber does follows from that one paragraph: the goal stops being “as close as possible” and becomes “as clean as your skin allows.”',
+          es: 'El mecanismo es simple y no es tu culpa ni tu limpieza: el vello de barba muy rizado, cortado muy al ras — o por debajo de la superficie de la piel — puede curvarse de vuelta hacia la piel al recrecer, y la piel reacciona a la intrusión con un granito. Mientras más cerrado y agresivo el corte, más probable el regreso del rizo, y por eso el cuello, donde el vello crece en remolinos y se afeita más al ras, es donde se concentra. Todo lo que hace un barbero cuidadoso sigue de ese párrafo: la meta deja de ser “lo más al ras posible” y pasa a ser “lo más limpio que tu piel permite”.',
+        },
+      },
+      {
+        heading: { en: 'What a Careful Barber Does Differently', es: 'Lo que un barbero cuidadoso hace distinto' },
+        body: {
+          en: 'Four technique choices, all visible from the chair. Hot-towel prep first: heat and moisture soften the beard hair so it cuts instead of tugging and snapping back. Work with the grain on the passes that matter, especially the neck — against-the-grain closeness is exactly what bump-prone skin is asking not to receive. On the neckline, a clipper or guarded finish instead of a skin-close razor pass where you are prone, trading a whisper of length for a week of calm skin. And shaping that respects the same logic: cheek and neck lines set where your skin tolerates them, as part of our Beard Shaping & Detailing and Beard Trim services — the architecture from our Services page, executed at your skin’s settings, not the template’s.',
+          es: 'Cuatro decisiones de técnica, todas visibles desde la silla. Primero, preparación con toalla caliente: el calor y la humedad suavizan el vello de la barba para que se corte en vez de halar y rebotar. Trabajar a favor del grano en las pasadas que importan, especialmente el cuello: la cercanía contra el grano es justo lo que una piel propensa a granitos está pidiendo no recibir. En la línea del cuello, un acabado con máquina o con guía en vez de una pasada de navaja al ras donde eres propenso, cambiando un suspiro de largo por una semana de piel tranquila. Y un formado que respeta la misma lógica: líneas de mejilla y cuello fijadas donde tu piel las tolera, como parte de nuestros servicios de formado y detalle de barba y de arreglo de barba — la arquitectura de nuestra página de Servicios, ejecutada con los ajustes de tu piel, no los de una plantilla.',
+        },
+      },
+      {
+        heading: { en: 'Say It Before the Cape Goes On', es: 'Dilo antes de que te pongan la capa' },
+        body: {
+          en: 'The most useful sentence in this whole post is yours: “I bump easily — here, and here.” Tell your barber where before the work starts, and expect the plan to change around it: a hot towel shave with a bump-aware hand is a different service from a race to baby-smooth, and a good barber would rather leave a hint of length than send you home inflamed. One boundary we keep honestly: bumps that are painful, infected-looking, scarring, or simply not improving belong to a dermatologist, not a barber — we will shape around your skin all day, but we will not pretend a chair treats skin. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'La frase más útil de toda esta publicación es tuya: “Me salen granitos fácil — aquí, y aquí”. Dile a tu barbero dónde antes de que empiece el trabajo, y espera que el plan cambie alrededor de eso: un afeitado con toalla caliente con una mano consciente de los granitos es un servicio distinto a una carrera hacia la suavidad total, y un buen barbero preferirá dejar un toque de largo antes que enviarte a casa inflamado. Un límite que mantenemos con honestidad: los granitos dolorosos, con aspecto infectado, que dejan cicatriz o que simplemente no mejoran le pertenecen a un dermatólogo, no a un barbero; formaremos alrededor de tu piel todo el día, pero no fingiremos que una silla trata la piel. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
 ];
 
 // ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
