@@ -2,9 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import BlogBand from '../components/BlogBand.astro';
+import SvcGroup from '../components/SvcGroup.astro';
 import { ui, type Lang } from '../data/ui';
 import { shop1, shop2 } from '../data/locations';
-import { categories, servicesByCategory } from '../data/services';
+import { categories } from '../data/services';
 import { featuredTestimonial } from '../data/reviews';
 import { faqsFor } from '../data/faqs';
 import { pageSeo, servicesCopy, galleryItems } from '../data/pages';
@@ -26,28 +27,41 @@ const site = Astro.site!;
       <h1>{c.heading}</h1>
       <p style="max-width:800px">{c.intro}</p>
 
-      {categories.map((cat) => (
-        <div class="svc-group" id={cat.slug} data-rv>
-          <h2>{cat.heading[lang]}</h2>
-          <p class="benefit">{cat.benefit[lang]}</p>
-          <table class="svc">
-            <thead>
-              <tr>
-                <th>{lang === 'en' ? 'Service' : 'Servicio'}</th>
-                <th>{lang === 'en' ? 'Description' : 'Descripción'}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {servicesByCategory(cat._id).map((svc) => (
-                <tr>
-                  <td class="name">{svc.name[lang]}</td>
-                  <td class="desc">{svc.description[lang]}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {/* Upgrade (2026-11-16): the two most important categories
+          (Haircuts & Fades, Beard & Shave) render immediately; the
+          remaining categories sit in the "View All" region. ALL of
+          them are in the server-rendered HTML — the region is only
+          visually collapsed when JS is available (html.js + the
+          script below), so no-JS visitors and crawlers see the full
+          list. Availability is never mixed: this page lists the
+          combined menu exactly as before (braids category copy keeps
+          its Shop 1 attribution in its own text). */}
+      {categories.slice(0, 2).map((cat) => <SvcGroup cat={cat} lang={lang} />)}
+
+      <div class="svc-more" id="svcMore" data-svc-more>
+        <div class="svc-more-in">
+          {categories.slice(2).map((cat) => <SvcGroup cat={cat} lang={lang} />)}
         </div>
-      ))}
+      </div>
+      <p class="svc-toggle-row">
+        <button type="button" class="btn btn--ghost-light" data-svc-toggle aria-expanded="false" aria-controls="svcMore">
+          <span data-svc-toggle-label data-more={t.viewAllServices} data-fewer={t.showFewerServices}>{t.viewAllServices}</span>
+        </button>
+      </p>
+
+      <script>
+        const svcWrap = document.querySelector('[data-svc-more]');
+        const svcBtn = document.querySelector('[data-svc-toggle]');
+        if (svcWrap && svcBtn) {
+          const svcLabel = svcBtn.querySelector('[data-svc-toggle-label]');
+          svcWrap.classList.add('svc-collapsed');
+          svcBtn.addEventListener('click', () => {
+            const collapsed = svcWrap.classList.toggle('svc-collapsed');
+            svcBtn.setAttribute('aria-expanded', String(!collapsed));
+            if (svcLabel) svcLabel.textContent = collapsed ? svcLabel.dataset.more : svcLabel.dataset.fewer;
+          });
+        }
+      </script>
 
       <div data-rv>
         <h2>{c.galleryHeading}</h2>

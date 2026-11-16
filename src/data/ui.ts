@@ -65,6 +65,13 @@ export const ui = {
     seeWork: (n: number) => `See our work & photos — Shop ${n} on Google`,
     callForPrices: 'Call for Prices',
     learnMore: 'Learn More',
+    /* Upgrade (2026-11-16): Services "View All" toggle labels — the
+       expand label is the exact string the Upgrade spec prescribes;
+       the collapse label is its natural counterpart. */
+    viewAllServices: 'View All Services',
+    showFewerServices: 'Show Fewer Services',
+    readMore: 'Read More',
+    showLess: 'Show Less',
     readPost: 'Read more →',
     ourLocations: 'Our Locations',
     backToBlog: '← Back to the blog',
@@ -122,6 +129,10 @@ export const ui = {
     seeWork: (n: number) => `Mira nuestro trabajo y fotos — Shop ${n} en Google`,
     callForPrices: 'Llama para consultar precios',
     learnMore: 'Conoce más',
+    viewAllServices: 'Ver todos los servicios',
+    showFewerServices: 'Ver menos servicios',
+    readMore: 'Leer más',
+    showLess: 'Mostrar menos',
     readPost: 'Leer más →',
     ourLocations: 'Nuestras ubicaciones',
     backToBlog: '← Volver al blog',

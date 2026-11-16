@@ -378,6 +378,23 @@ table.svc td.desc { width: 70%; color: var(--ink); }
   table.svc thead { display: none; }
 }
 
+/* Upgrade (2026-11-16): Services "View All" region. Rendered fully
+   expanded; the collapse exists only under html.js once the view's
+   script adds .svc-collapsed. grid-template-rows animation mirrors
+   the FAQ panels; visibility:hidden (post-transition) keeps the
+   collapsed groups out of the tab order. The toggle button is
+   display:none without JS — a dead control is never shown. */
+.svc-more { display: grid; grid-template-rows: 1fr; }
+.svc-more-in { overflow: hidden; min-height: 0; }
+.js .svc-more { transition: grid-template-rows 0.45s ease, visibility 0s linear 0s; }
+.js .svc-more.svc-collapsed {
+  grid-template-rows: 0fr; visibility: hidden;
+  transition: grid-template-rows 0.45s ease, visibility 0s linear 0.45s;
+}
+.svc-toggle-row { margin-top: 4px; }
+[data-svc-toggle] { display: none; }
+.js [data-svc-toggle] { display: inline-flex; }
+
 /* ——— Gallery ———
    Owner caption redesign 2026-11-15: grid figures carry ONLY the
    short style title on one tidy line (the old two-part caption with
