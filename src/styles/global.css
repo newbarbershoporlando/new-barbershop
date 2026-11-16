@@ -100,6 +100,17 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .header-logo img { width: 140px; }
 @media (min-width: 900px) { .header-logo img { width: 180px; } }
+.header-call { white-space: nowrap; }
+.hc-short { display: none; }
+@media (max-width: 899px) {
+  /* Spec mobile pattern (build-spec §3.1, hero-fix-review.md §2.1):
+     phone icon + "Call" on one line; slimmer button + tighter header
+     padding return the header to its 64px spec height. */
+  .hc-full { display: none; }
+  .hc-short { display: inline; }
+  .header-call { min-height: 44px; padding: 8px 14px; font-size: 16px; }
+  .header-in { padding-top: 8px; padding-bottom: 8px; }
+}
 .main-nav { display: none; }
 @media (min-width: 900px) {
   .main-nav { display: block; margin-left: auto; }
@@ -143,26 +154,26 @@ img { max-width: 100%; height: auto; display: block; }
 .mobile-menu .btn { margin-top: 14px; width: 100%; }
 
 /* ——— Hero (homepage) — owner-locked banner placement ——— */
+/* ——— Hero (home) ———
+   Owner rule, 2026-11-15 phone pass (hero-fix-review.md): NO text over
+   the banner at any viewport — the overlay layout formerly in
+   build-spec §3.3 is reversed. Stack: H1 + subhead on solid --coal →
+   clean full-width banner strip at natural aspect (the baked-in "1"
+   and "2" are never cropped) → both call buttons below the banner,
+   same width, 20px gap, on the standard section rhythm. */
 .hero {
-  background-color: var(--coal);
-  background-image: var(--hero-img);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: var(--coal);
   color: var(--white);
-  padding: 40px 0 56px;
+  padding: 40px 0 48px;
 }
 @media (min-width: 900px) {
-  .hero { background-size: cover; padding: 90px 0 110px; }
+  .hero { padding: 64px 0 80px; }
 }
-/* Below desktop the hero shows the FULL banner (Contain, spec §3.3) using
-   the dedicated full-frame mobile downscale (manifest §1) so the baked-in
-   "1" and "2" are never cut off. Do not crop it. */
-@media (max-width: 899px) {
-  .hero { background-image: url('/images/banner-hero-mobile.webp'); }
-}
-.hero h1 { max-width: 640px; text-shadow: 0 2px 14px rgba(0,0,0,0.55); }
-.hero p { max-width: 520px; font-size: 19px; text-shadow: 0 1px 10px rgba(0,0,0,0.6); }
+.hero h1 { max-width: 640px; }
+.hero-sub { max-width: 520px; font-size: 19px; margin: 0; }
+.hero-banner { display: block; margin: 24px 0; }
+.hero-banner img { width: 100%; height: auto; display: block; }
+.hero-btns { align-items: stretch; max-width: 560px; }
 .page-hero { background: var(--coal); color: var(--white); padding: 44px 0; }
 .page-hero h1 { margin: 0; }
 
@@ -295,15 +306,24 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
   display: flex; background: var(--coal);
   padding-bottom: env(safe-area-inset-bottom);
   border-top: 2px solid var(--red);
+  transition: transform 0.3s ease;
 }
+/* One treatment for both halves (hero-fix-review.md §2.2): identical
+   red fill, differing only in label/number. */
 .call-bar a {
   flex: 1; display: flex; align-items: center; justify-content: center;
   min-height: 56px; background: var(--red); color: var(--white);
   font-weight: 700; text-transform: uppercase; text-decoration: none; font-size: 16px;
 }
-.call-bar a + a { background: var(--coal); border-left: 1px solid #2c1216; }
+.call-bar a + a { border-left: 2px solid var(--red-dark); }
+/* Homepage only (script-added): hidden while the hero call stack is on
+   screen, fades in once it scrolls away (hero-fix-review.md §2.3). */
+.call-bar--deferred { transform: translateY(110%); }
+.call-bar--deferred.call-bar--shown { transform: none; }
 @media (min-width: 900px) { .call-bar { display: none; } }
-body { padding-bottom: 56px; }
+/* Bottom padding = bar height (56) + its 2px top border + 2px
+   clearance + safe area, so the bar never covers the footer (§2.4). */
+body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 @media (min-width: 900px) { body { padding-bottom: 0; } }
 
 .banner-img { width: 100%; }

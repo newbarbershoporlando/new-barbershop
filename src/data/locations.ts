@@ -36,9 +36,17 @@ export interface Location {
   phoneHref: string;
   whatsapp: string | null;
   mapsUrl: string;
-  /** This shop's own real interior photo (manifest §2 — crop of the shop's banner). */
+  /** This shop's own REAL interior photo (owner-supplied 2026-11-15,
+      replacing the banner crop that stood in for it — manifest §2). */
   photo: string;
   photoAlt: LocalizedString;
+  /** Intrinsic size of `photo`, for the location page's width/height attrs. */
+  photoSize: { w: number; h: number };
+  /** Optional second real photo (Shop 1 waiting area, owner-supplied
+      2026-11-15) with its intrinsic size. */
+  photo2?: string;
+  photo2Alt?: LocalizedString;
+  photo2Size?: { w: number; h: number };
   geo: { lat: number; lng: number };
   rating: string;
   reviewCount: number;
@@ -77,11 +85,18 @@ const localLocations: Location[] = [
     phoneDisplay: '(407) 470-4846',
     phoneHref: 'tel:+14074704846',
     whatsapp: 'https://wa.me/message/SOGEVWV7NKT2C1',
-    photo: '/images/location-shop1.webp',
+    photo: '/images/shop1-interior.webp',
     photoAlt: {
-      en: 'Inside New Barbershop 1 in Orlando — barber chairs, mirrors and waiting area',
-      es: 'Interior de New Barbershop 1 en Orlando — sillas de barbero, espejos y sala de espera',
+      en: 'Inside New Barbershop 1 — barber chairs with red headrests, ring lights and waiting area, Orlando',
+      es: 'Interior de New Barbershop 1 — sillas de barbero con reposacabezas rojos, luces de aro y sala de espera, Orlando',
     },
+    photoSize: { w: 1320, h: 990 },
+    photo2: '/images/shop1-lounge.webp',
+    photo2Alt: {
+      en: 'New Barbershop 1 waiting area — TV lounge wall with marble and wood paneling, Orlando',
+      es: 'Sala de espera de New Barbershop 1 — pared de TV con mármol y paneles de madera, Orlando',
+    },
+    photo2Size: { w: 1086, h: 1448 },
     mapsUrl:
       'https://www.google.com/maps/place/New+Barbershop+1/@28.4151854,-81.4041153,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77d92ef6aaaab:0xd9562e620584cfd4!8m2!3d28.4151854!4d-81.4041153!16s%2Fg%2F11v67rz1m2',
     geo: { lat: 28.4151854, lng: -81.4041153 },
@@ -118,11 +133,12 @@ const localLocations: Location[] = [
     phoneDisplay: '(407) 820-4541',
     phoneHref: 'tel:+14078204541',
     whatsapp: null,
-    photo: '/images/location-shop2.webp',
+    photo: '/images/shop2-interior.webp',
     photoAlt: {
-      en: 'Inside New Barbershop 2 in Orlando — barber chairs under hexagonal ceiling lights',
-      es: 'Interior de New Barbershop 2 en Orlando — sillas de barbero bajo luces hexagonales en el techo',
+      en: 'Inside New Barbershop 2 — barber chairs, mirrors and hexagonal ceiling lights, Orlando',
+      es: 'Interior de New Barbershop 2 — sillas de barbero, espejos y luces hexagonales en el techo, Orlando',
     },
+    photoSize: { w: 1320, h: 660 },
     mapsUrl:
       'https://www.google.com/maps/place/New+barbershop+2/@28.4667863,-81.3972292,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77d9f5bf2d175:0xfe777d3b0beb6fcc!8m2!3d28.4667863!4d-81.3972292!16s%2Fg%2F11n2x_lxb6',
     geo: { lat: 28.4667863, lng: -81.3972292 },

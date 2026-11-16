@@ -7,7 +7,25 @@ const { lang } = Astro.props;
 const t = ui[lang];
 ---
 
-<div class="call-bar" aria-label={t.callToBook}>
+<div class="call-bar" id="callBar" aria-label={t.callToBook}>
   <a href={shop1.phoneHref}>☎ {t.callShop1}</a>
   <a href={shop2.phoneHref}>☎ {t.callShop2}</a>
 </div>
+
+<script>
+  // hero-fix-review.md §2.3: on pages with a hero call stack (the
+  // homepage), keep the bar hidden until that stack scrolls out of view
+  // so the first screen never shows four red call blocks at once.
+  // Everywhere else — and if this script fails — the bar stays visible.
+  const bar = document.getElementById('callBar');
+  const heroCta = document.getElementById('heroCta');
+  if (bar && heroCta && 'IntersectionObserver' in window) {
+    bar.classList.add('call-bar--deferred');
+    new IntersectionObserver(
+      (entries) => {
+        bar.classList.toggle('call-bar--shown', !entries[0].isIntersecting);
+      },
+      { threshold: 0 },
+    ).observe(heroCta);
+  }
+</script>

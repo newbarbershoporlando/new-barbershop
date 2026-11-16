@@ -38,7 +38,10 @@ const navItems = [
         </li>
       </ul>
     </nav>
-    <a class="btn btn--call header-call" href={path(lang, 'contact')}>{t.callToBook}</a>
+    <a class="btn btn--call header-call" href={path(lang, 'contact')}>
+      <span class="hc-full">{t.callToBook}</span>
+      <span class="hc-short">☎ {t.call}</span>
+    </a>
     <a class="lang-switch" href={altPath(lang, slug)} hreflang={lang === 'en' ? 'es' : 'en'}>
       {lang === 'en' ? 'ES' : 'EN'}
     </a>

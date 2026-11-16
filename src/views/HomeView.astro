@@ -6,7 +6,7 @@ import ShopCard from '../components/ShopCard.astro';
 import ReviewsBand from '../components/ReviewsBand.astro';
 import BlogBand from '../components/BlogBand.astro';
 import HowItWorks from '../components/HowItWorks.astro';
-import { ui, path, type Lang } from '../data/ui';
+import { ui, path, BANNER_ALT, type Lang } from '../data/ui';
 import { locations, shop1, shop2 } from '../data/locations';
 import { pageSeo, homeCopy } from '../data/pages';
 import { homeGraph } from '../lib/schema';
@@ -20,12 +20,23 @@ const site = Astro.site!;
 ---
 
 <BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={homeGraph(site.href.replace(/\/$/, ''))}>
-  <!-- Hero — owner-locked banner placement: Cover desktop / Contain strip mobile -->
-  <section class="hero" style="--hero-img: url('/images/banner-hero.webp')">
+  <!-- Hero — owner rule (2026-11-15 phone pass, hero-fix-review.md):
+       NO text overlaid on the banner at any viewport. Stack: H1 + subhead
+       on solid coal → clean full-width banner strip (natural aspect,
+       wordmark never cropped) → both call buttons below the banner,
+       same width, 20px gap. The subhead was MOVED here by the owner's
+       word ("Move it") — not deleted. -->
+  <section class="hero">
     <div class="wrap">
       <h1>{c.heroH1}</h1>
-      <p>{c.heroLine}</p>
-      <div class="btn-stack">
+      <p class="hero-sub">{c.heroLine}</p>
+    </div>
+    <picture class="hero-banner">
+      <source media="(max-width: 899px)" srcset="/images/banner-hero-mobile.webp" />
+      <img src="/images/banner-hero.webp" alt={BANNER_ALT[lang]} width="1320" height="556" />
+    </picture>
+    <div class="wrap">
+      <div class="btn-stack hero-btns" id="heroCta">
         <a class="btn btn--call" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
         <a class="btn btn--call" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
       </div>

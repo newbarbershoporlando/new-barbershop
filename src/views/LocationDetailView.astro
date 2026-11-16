@@ -73,10 +73,14 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
   <section class="section section--paper">
     <div class="wrap">
       <h2>{t.photosHeading}</h2>
-      <!-- This shop's OWN real interior photo (manifest §2 — a crop of the
-           shop's banner). The scaffold's shared stock set must not stand in
-           for a specific shop; more per-shop photos land at the media swap. -->
-      <img src={loc.photo} alt={loc.photoAlt[lang]} loading="lazy" width="800" height="600" style="border-radius:8px;max-width:100%;height:auto" />
+      <!-- This shop's OWN real photos (owner-supplied 2026-11-15 — genuine
+           interiors, replacing the banner crops that stood in for them,
+           manifest §2). The scaffold's shared stock set must never stand
+           in for a specific shop. -->
+      <img src={loc.photo} alt={loc.photoAlt[lang]} loading="lazy" width={loc.photoSize?.w ?? 800} height={loc.photoSize?.h ?? 600} style="border-radius:8px;max-width:100%;height:auto" />
+      {loc.photo2 && loc.photo2Alt && (
+        <img src={loc.photo2} alt={loc.photo2Alt[lang]} loading="lazy" width={loc.photo2Size?.w ?? 1086} height={loc.photo2Size?.h ?? 1448} style="border-radius:8px;max-width:min(480px,100%);height:auto;margin-top:16px" />
+      )}
     </div>
   </section>
 
