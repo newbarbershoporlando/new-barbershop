@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import TrustStrip from '../components/TrustStrip.astro';
 import ShopCard from '../components/ShopCard.astro';
 import BlogBand from '../components/BlogBand.astro';
-import { ui, path, BANNER_ALT, type Lang } from '../data/ui';
+import { ui, path, HERO_ALT, type Lang } from '../data/ui';
 import { locations } from '../data/locations';
 import { pageSeo } from '../data/pages';
 import { breadcrumbNode } from '../lib/schema';
@@ -27,15 +27,23 @@ const site = Astro.site!;
   overlayHeader
 >
   <!-- Hero-v3 treatment (owner order 2026-11-15, same as homepage):
-       the Locations page's OWN banner photo as a full-bleed band at
-       y=0 with the translucent floating header over it; the headline
-       sits on the solid dark band BELOW the photo. HARD RULE: no text
-       overlaid on the photo at any viewport. Copy and everything
-       below (TrustStrip, location cards) unchanged. -->
+       full-bleed photo band at y=0 with the translucent floating
+       header over it; the headline sits on the solid dark band BELOW
+       the photo. HARD RULE: no text overlaid on the photo at any
+       viewport. Copy and everything below (TrustStrip, location
+       cards) unchanged. PHOTO (owner correction 2026-11-16, phone
+       pass): the page's own wide banner cover-cropped badly on
+       mobile ("too zoomed in", badges clipped) — replaced with the
+       HOMEPAGE hero photo and its exact picture markup, so the
+       .hero-photo sizing matches the homepage framing for framing
+       (desktop natural aspect; mobile 4:3 cover window) and the
+       baked-in logo stays fully visible. -->
   <section class="hero-photo" id="heroPhoto">
     <picture>
-      <source type="image/webp" srcset="/images/banner-wide.webp" />
-      <img src="/images/banner-wide.jpg" alt={BANNER_ALT[lang]} width="1320" height="440" fetchpriority="high" />
+      <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
+      <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
+      <source type="image/webp" srcset="/images/shop1-hero.webp" />
+      <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
     </picture>
   </section>
   <section class="hero">
