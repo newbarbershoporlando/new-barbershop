@@ -135,7 +135,19 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex; align-items: center; gap: 16px;
 }
 .header-logo img { width: 140px; }
-@media (min-width: 900px) { .header-logo img { width: 180px; } }
+/* Round 3.1 — the desktop/mobile navigation switch moved 900px →
+   1100px. Rendered sweep evidence (headless Chromium, ES binding):
+   in the desktop pattern the flex row ran out of room below ~1075px
+   and the LOGO absorbed the whole deficit 1:1 (ES 900px: logo 17px;
+   1024px: 141px; first full 180px at 1075px). The owner's preferred
+   fix extends the compact pattern instead of shrinking the logo, so
+   every nav-pattern rule keyed to the old switch moved together:
+   logo step, hc-full/hc-short swap, .main-nav, .header-call margin,
+   .menu-toggle, .mobile-menu, .call-bar, body + footer bottom
+   padding, .back-to-top offset. Content/typography breakpoints
+   (type scale, grids, section + hero padding, hero image switch)
+   are NOT part of the nav pattern and stay at 900px. */
+@media (min-width: 1100px) { .header-logo img { width: 180px; } }
 /* Narrow phones (audit M9): shrink the logo a step and tighten the
    header gap so logo + call button + language switch + menu toggle
    fit 360px viewports without clipping. Small screens only. */
@@ -145,10 +157,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .header-call { white-space: nowrap; }
 .hc-short { display: none; }
-@media (max-width: 899px) {
+@media (max-width: 1099px) {
   /* Spec mobile pattern (build-spec §3.1, hero-fix-review.md §2.1):
      phone icon + "Call" on one line; slimmer button + tighter header
-     padding return the header to its 64px spec height. */
+     padding return the header to its 64px spec height.
+     (Range extended 899px → 1099px in Round 3.1 — see the note at
+     the .header-logo 180px step.) */
   .hc-full { display: none; }
   .hc-short { display: inline; }
   .header-call { min-height: 44px; padding: 8px 14px; font-size: 16px; }
@@ -161,7 +175,7 @@ img { max-width: 100%; height: auto; display: block; }
    logo with flex-shrink: 0 and buys the room back from chrome —
    gaps, side padding, call-button padding/type, switcher padding.
    The logo's 120px step and every header element stay. This block
-   sits after the ≤899px block so its values win the cascade. */
+   sits after the ≤1099px block so its values win the cascade. */
 @media (max-width: 480px) {
   .header-in { gap: 8px; padding-left: 12px; padding-right: 12px; }
   .header-logo { flex-shrink: 0; }
@@ -172,12 +186,19 @@ img { max-width: 100%; height: auto; display: block; }
   .menu-toggle { flex-shrink: 0; }
 }
 @media (max-width: 380px) {
-  .header-in { gap: 6px; padding-left: 10px; padding-right: 10px; }
+  /* Round 3.1 regression find (pre-existing, A/B-proven against the
+     Round 3 CSS): at ES 320px the flex row's fixed-size children sum
+     to ~324px, so the menu toggle's right edge sat 4px past the
+     viewport — invisible to document-overflow checks because the
+     homepage header is position:fixed. Tighten the same chrome
+     levers Round 3 used (side padding, gaps, switcher padding);
+     the logo's 120px step and all tap targets are untouched. */
+  .header-in { gap: 4px; padding-left: 6px; padding-right: 6px; }
   .header-in .header-call { padding: 8px 8px; font-size: 14px; }
-  .header-in .lang-switch { padding: 6px 6px; }
+  .header-in .lang-switch { padding: 6px 5px; }
 }
 .main-nav { display: none; }
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .main-nav { display: block; margin-left: auto; }
   .main-nav ul { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; align-items: center; }
   .main-nav a {
@@ -199,19 +220,19 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .nav-dropdown a:hover { color: var(--red-hover) !important; }
 .header-call { margin-left: auto; min-height: 48px; padding: 8px 16px; }
-@media (min-width: 900px) { .header-call { margin-left: 0; } }
+@media (min-width: 1100px) { .header-call { margin-left: 0; } }
 .lang-switch { color: var(--white); font-weight: 700; text-decoration: none; border: 2px solid var(--white); border-radius: 6px; padding: 6px 10px; font-size: 15px; display: inline-flex; align-items: center; min-height: 44px; }
 .menu-toggle {
   display: inline-flex; align-items: center; justify-content: center;
   width: 48px; height: 48px; background: transparent; border: 2px solid var(--white);
   border-radius: 6px; color: var(--white); font-size: 22px; cursor: pointer;
 }
-@media (min-width: 900px) { .menu-toggle { display: none; } }
+@media (min-width: 1100px) { .menu-toggle { display: none; } }
 /* max-height + scroll (audit M8): on short/landscape viewports the
    open menu's bottom links must stay reachable. */
 .mobile-menu { display: none; background: var(--coal); padding: 8px 16px 20px; max-height: calc(100dvh - 64px); overflow-y: auto; }
 .mobile-menu.open { display: block; }
-@media (min-width: 900px) { .mobile-menu { display: none !important; } }
+@media (min-width: 1100px) { .mobile-menu { display: none !important; } }
 .mobile-menu a {
   display: block; color: var(--white); text-decoration: none;
   font-size: 20px; font-weight: 600; padding: 14px 4px; min-height: 52px;
@@ -457,7 +478,7 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 
 /* ——— Footer ——— */
 .site-footer { background: var(--coal); color: var(--white); padding: 48px 0 110px; }
-@media (min-width: 900px) { .site-footer { padding-bottom: 48px; } }
+@media (min-width: 1100px) { .site-footer { padding-bottom: 48px; } }
 .footer-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
 @media (min-width: 900px) { .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; } }
 .site-footer a { color: var(--white); }
@@ -488,7 +509,7 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
    2026-11-15: the homepage hero button pair was removed and this bar
    became the homepage's call action — the old .call-bar--deferred
    hide-until-scroll behavior is gone). */
-@media (min-width: 900px) { .call-bar { display: none; } }
+@media (min-width: 1100px) { .call-bar { display: none; } }
 /* Round 3 (Item 1, owner L2) — at ≤480px the bar type steps to 14px
    and the ☎ glyph is hidden IN THE BAR ONLY (the header keeps its
    glyph; StickyCallBar wraps it in .cb-glyph). Placed after the base
@@ -502,7 +523,7 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 /* Bottom padding = bar height (56) + its 2px top border + 2px
    clearance + safe area, so the bar never covers the footer (§2.4). */
 body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
-@media (min-width: 900px) { body { padding-bottom: 0; } }
+@media (min-width: 1100px) { body { padding-bottom: 0; } }
 
 /* ——— Floating back-to-top button (owner order 2026-11-16) ———
    Circular brand-red button, fixed bottom-right. On mobile it sits
@@ -528,7 +549,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 }
 .back-to-top.visible { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
 .back-to-top:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
-@media (min-width: 900px) { .back-to-top { bottom: 24px; right: 24px; } }
+@media (min-width: 1100px) { .back-to-top { bottom: 24px; right: 24px; } }
 
 .banner-img { width: 100%; }
 .two-col { display: grid; grid-template-columns: 1fr; gap: 28px; }
