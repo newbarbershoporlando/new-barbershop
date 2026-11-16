@@ -77,7 +77,7 @@ const localLocations: Location[] = [
     _id: 'shop1',
     slug: 'new-barbershop-1',
     name: 'New Barbershop 1',
-    area: { en: 'Near Kissimmee', es: 'Cerca de Kissimmee' },
+    area: { en: 'Hunters Creek', es: 'Hunters Creek' },
     street: '9741 S Orange Blossom Trl',
     city: 'Orlando',
     state: 'FL',
@@ -117,8 +117,8 @@ const localLocations: Location[] = [
     },
     introHeading: { en: 'The Original New Barbershop', es: 'La New Barbershop original' },
     intro: {
-      en: 'New Barbershop 1 is the original New Barbershop in Orlando, on South Orange Blossom Trail near Kissimmee. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. Braids for men and women are available at this shop, and we serve you in English y español.',
-      es: 'New Barbershop 1 es la barbería original de New Barbershop en Orlando, sobre South Orange Blossom Trail, cerca de Kissimmee. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. En esta barbería ofrecemos trenzas para hombres y mujeres, y te atendemos en English y español.',
+      en: 'New Barbershop 1 is the original New Barbershop in Orlando, on South Orange Blossom Trail in Hunters Creek. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. Braids for men and women are available at this shop, and we serve you in English y español.',
+      es: 'New Barbershop 1 es la barbería original de New Barbershop en Orlando, sobre South Orange Blossom Trail, en Hunters Creek. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. En esta barbería ofrecemos trenzas para hombres y mujeres, y te atendemos en English y español.',
     },
   },
   {

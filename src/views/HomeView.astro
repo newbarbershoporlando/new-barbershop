@@ -7,8 +7,8 @@ import ReviewsBand from '../components/ReviewsBand.astro';
 import BlogBand from '../components/BlogBand.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import { ui, path, HERO_ALT, type Lang } from '../data/ui';
-import { locations, shop1, shop2 } from '../data/locations';
-import { pageSeo, homeCopy } from '../data/pages';
+import { locations } from '../data/locations';
+import { pageSeo, homeCopy, homeGalleryItems } from '../data/pages';
 import { homeGraph } from '../lib/schema';
 
 interface Props { lang: Lang }
@@ -20,7 +20,7 @@ const site = Astro.site!;
 ---
 
 <BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={homeGraph(site.href.replace(/\/$/, ''))} overlayHeader>
-  <!-- Hero — owner request 2026-11-15 (supersedes the banner-strip
+  <!-- Hero — owner requests 2026-11-15 (supersede the banner-strip
        stack of the same day's phone pass): the owner-supplied Shop 1
        interior photo is a full-bleed band at y=0 and the header floats
        OVER it, translucent (see .site-header--overlay). HARD RULE
@@ -28,7 +28,10 @@ const site = Astro.site!;
        the photo at any viewport — the photo's baked-in logo stays
        fully visible and uncollided. Below the photo, on solid coal:
        H1 → subhead (relocated by the owner's word "Move it", NOT
-       deleted) → both call buttons → trust strip. -->
+       deleted) → trust strip. There is NO call-button pair in the
+       hero (owner change, same day): the floating bottom call bar is
+       the homepage's call action, visible from the top of the page
+       exactly as on Contact — see StickyCallBar. -->
   <section class="hero-photo" id="heroPhoto">
     <picture>
       <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
@@ -41,10 +44,6 @@ const site = Astro.site!;
     <div class="wrap">
       <h1>{c.heroH1}</h1>
       <p class="hero-sub">{c.heroLine}</p>
-      <div class="btn-stack hero-btns" id="heroCta">
-        <a class="btn btn--call" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
-        <a class="btn btn--call" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
-      </div>
     </div>
   </section>
 
@@ -67,6 +66,29 @@ const site = Astro.site!;
   </script>
 
   <TrustStrip lang={lang} />
+
+  <!-- Work gallery — owner addition 2026-11-15: real client photos
+       only (homeGalleryItems), directly above the services preview
+       so visitors see the shop's work early. Same treatment as the
+       Services gallery. -->
+  <section class="section" id="workGallery">
+    <div class="wrap">
+      <h2>{c.workHeading}</h2>
+      <p style="max-width:800px">{c.workIntro}</p>
+      <div class="gallery">
+        {homeGalleryItems.map((item) => (
+          <figure style="margin:0">
+            <img src={item.src} alt={item.alt[lang]} loading="lazy" width="800" height="600" />
+            {item.caption && (
+              <figcaption>
+                <strong>{item.caption.style[lang]}</strong> — {item.caption.text[lang]}
+              </figcaption>
+            )}
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <!-- Services preview: 5 category tiles -->
   <section class="section">

@@ -50,12 +50,12 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
     en: {
       title: 'Barber Shop on Orange Blossom Trail Orlando | New Barbershop',
       description:
-        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Shop 1 (407) 470-4846 or Shop 2 (407) 820-4541 to book today.',
+        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Hunters Creek (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
     },
     es: {
       title: 'Barber Shop on Orange Blossom Trail Orlando | New Barbershop',
       description:
-        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Shop 1 (407) 470-4846 or Shop 2 (407) 820-4541 to book today.',
+        'Barber shop on Orange Blossom Trail in Orlando — two locations, open 7 days a week. Call Hunters Creek (407) 470-4846 or Florida Mall (407) 820-4541 to book today.',
     },
   },
   locations: {
@@ -63,12 +63,12 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
     en: {
       title: 'Barber Shops on Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Two barber shops on Orange Blossom Trail in Orlando — New Barbershop 1 near Kissimmee and New Barbershop 2 near Florida Mall, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
+        'Two barber shops on Orange Blossom Trail in Orlando — New Barbershop 1 in Hunters Creek and New Barbershop 2 near Florida Mall, open 7 days a week. Call (407) 470-4846 or (407) 820-4541 to book.',
     },
     es: {
       title: 'Barberías en Orange Blossom Trail, Orlando | New Barbershop',
       description:
-        'Dos barberías en Orange Blossom Trail en Orlando — New Barbershop 1 cerca de Kissimmee y New Barbershop 2 cerca de Florida Mall, abiertas los 7 días de la semana. Llama al (407) 470-4846 o al (407) 820-4541 para reservar.',
+        'Dos barberías en Orange Blossom Trail en Orlando — New Barbershop 1 en Hunters Creek y New Barbershop 2 cerca de Florida Mall, abiertas los 7 días de la semana. Llama al (407) 470-4846 o al (407) 820-4541 para reservar.',
     },
   },
   blog: {
@@ -115,6 +115,9 @@ export const homeCopy = {
     heroH1: 'Experience Premier Grooming',
     heroLine:
       'Exceptional haircuts and shaves tailored to enhance your style and confidence in a relaxing environment.',
+    workHeading: 'Our Work',
+    workIntro:
+      'Real cuts from our own chairs — every photo below is our work, no stock pictures.',
     servicesHeading: 'Explore Our Premium Services',
     servicesIntro:
       'Discover the perfect blend of style and sophistication with our range of grooming services tailored just for men.',
@@ -142,6 +145,9 @@ export const homeCopy = {
     heroH1: 'Experimenta un cuidado de primer nivel',
     heroLine:
       'Cortes de cabello y afeitados excepcionales, diseñados para realzar tu estilo y tu confianza en un ambiente relajante.',
+    workHeading: 'Nuestro trabajo',
+    workIntro:
+      'Cortes reales de nuestras propias sillas — cada foto de abajo es nuestro trabajo, sin fotos de archivo.',
     servicesHeading: 'Explora nuestros servicios premium',
     servicesIntro:
       'Descubre la combinación perfecta de estilo y sofisticación con nuestra gama de servicios de cuidado personal diseñados para ti.',
@@ -190,9 +196,9 @@ export const aboutCopy = {
     heading: 'The Story Behind Barbershop',
     lead: 'Family-run since 2003, New Barbershop brings over 20 years of experience to every chair in Orlando.',
     body1:
-      'We are two Orlando barbershops on South Orange Blossom Trail: New Barbershop 1 at 9741 S Orange Blossom Trl, Orlando, FL 32837, near Kissimmee, and New Barbershop 2 at 6220 S Orange Blossom Trl, Orlando, FL 32809, near Florida Mall — about 3.7 miles apart. Walk-ins are always welcome. Booking is by phone: call Shop 1 at (407) 470-4846 or Shop 2 at (407) 820-4541. WhatsApp is available for Shop 1.',
+      'We are two Orlando barbershops on South Orange Blossom Trail: New Barbershop 1 at 9741 S Orange Blossom Trl, Orlando, FL 32837, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, Orlando, FL 32809, near Florida Mall — about 3.7 miles apart. Walk-ins are always welcome. Booking is by phone: call Hunters Creek at (407) 470-4846 or Florida Mall at (407) 820-4541. WhatsApp is available at Hunters Creek.',
     body2:
-      'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Shop 1. We serve you in English y español. With over 1,400 Google reviews across both shops, and Shop 1 rated 5.0 stars, we take pride in every cut and every client.',
+      'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. We serve you in English y español. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client.',
     valuesHeading: 'Our Core Values',
     valuesIntro:
       'At Barbershop, our core values guide us in delivering exceptional grooming experiences that empower our clients.',
@@ -218,9 +224,9 @@ export const aboutCopy = {
     heading: 'La historia detrás de Barbershop',
     lead: 'Un negocio familiar desde 2003, New Barbershop aporta más de 20 años de experiencia a cada silla en Orlando.',
     body1:
-      'Somos dos barberías de Orlando sobre South Orange Blossom Trail: New Barbershop 1 en 9741 S Orange Blossom Trl, Orlando, FL 32837, cerca de Kissimmee, y New Barbershop 2 en 6220 S Orange Blossom Trl, Orlando, FL 32809, cerca de Florida Mall — a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita. Las reservas son por teléfono: llama a Shop 1 al (407) 470-4846 o a Shop 2 al (407) 820-4541. WhatsApp está disponible para Shop 1.',
+      'Somos dos barberías de Orlando sobre South Orange Blossom Trail: New Barbershop 1 en 9741 S Orange Blossom Trl, Orlando, FL 32837, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, Orlando, FL 32809, cerca de Florida Mall — a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita. Las reservas son por teléfono: llama a Hunters Creek al (407) 470-4846 o a Florida Mall al (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
     body2:
-      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Shop 1. Te atendemos en English y español. Con más de 1,400 reseñas de Google entre ambas barberías, y Shop 1 con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
+      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Te atendemos en English y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
     valuesHeading: 'Nuestros valores',
     valuesIntro:
       'En Barbershop, nuestros valores guían la forma en que brindamos experiencias excepcionales de cuidado personal que dan confianza a nuestros clientes.',
@@ -256,7 +262,7 @@ export const howItWorks = {
     steps: [
       {
         title: 'Call your shop',
-        body: 'Pick your shop and call to book your chair: Shop 1 at (407) 470-4846 or Shop 2 at (407) 820-4541. Rather just come by? Walk-ins are always welcome.',
+        body: 'Pick your shop and call to book your chair: Hunters Creek at (407) 470-4846 or Florida Mall at (407) 820-4541. Rather just come by? Walk-ins are always welcome.',
       },
       {
         title: 'Come in and sit down',
@@ -274,7 +280,7 @@ export const howItWorks = {
     steps: [
       {
         title: 'Llama a tu barbería',
-        body: 'Elige tu barbería y llama para apartar tu cita: Shop 1 al (407) 470-4846 o Shop 2 al (407) 820-4541. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
+        body: 'Elige tu barbería y llama para apartar tu cita: Hunters Creek al (407) 470-4846 o Florida Mall al (407) 820-4541. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
       },
       {
         title: 'Ven y siéntate',
@@ -374,4 +380,30 @@ export const galleryItems: GalleryItem[] = [
   { src: '/images/gallery-general-03.webp', alt: { en: "Barber trimming the back of a client's haircut with scissors", es: 'Barbero recortando con tijeras la parte trasera del corte de un cliente' } },
   { src: '/images/gallery-general-04.webp', alt: { en: "Barber cutting the top of a young client's hair with scissors", es: 'Barbero cortando con tijeras la parte superior del cabello de un cliente joven' } },
   { src: '/images/gallery-general-05.webp', alt: { en: "Barber fading a client's hair with clippers", es: 'Barbero haciendo un degradado con máquina a un cliente' } },
+];
+
+/* Homepage work gallery (owner addition 2026-11-15): REAL client
+   photos only — the captioned haircut set, reusing the Services
+   gallery entries by src so captions/alts can never drift apart.
+   No stock items, and no Hot Towel Shave (still no photo exists —
+   no reserved slot on the homepage). haircut-16 takes the Kids Fade
+   slot here (the stronger shot); haircut-15 is new. */
+const bySrc = (src: string): GalleryItem => galleryItems.find((i) => i.src === src)!;
+export const homeGalleryItems: GalleryItem[] = [
+  bySrc('/images/gallery-09-razor-line-up.webp'),
+  bySrc('/images/gallery-10-hair-design.webp'),
+  bySrc('/images/gallery-12-braids.webp'),
+  bySrc('/images/gallery-06-buzz-cut.webp'),
+  bySrc('/images/gallery-05-burst-fade.webp'),
+  cap('/images/gallery-13-burst-fade-beard.webp',
+    'Client with a burst fade around the ear and a full shaped beard, side view', 'Cliente con un degradado burst alrededor de la oreja y barba completa perfilada, vista de lado',
+    'Burst Fade & Beard', 'Degradado burst + barba',
+    'A curved burst fade finished with clean, shaped beard work.', 'Un degradado burst curvo terminado con un arreglo de barba limpio y perfilado.'),
+  cap('/images/gallery-14-kids-fade.webp',
+    'Young client with a skin fade and a sharp line-up', 'Cliente joven con un degradado al ras y un delineado definido',
+    'Kids Fade', 'Degradado para niños',
+    'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
+  bySrc('/images/gallery-01-classic-haircut-real.webp'),
+  bySrc('/images/gallery-03-high-skin-fade-real.webp'),
+  bySrc('/images/gallery-07-haircut-beard-combo-real.webp'),
 ];

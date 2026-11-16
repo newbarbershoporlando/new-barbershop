@@ -172,16 +172,18 @@ img { max-width: 100%; height: auto; display: block; }
 .mobile-menu .btn { margin-top: 14px; width: 100%; }
 
 /* ——— Hero (home) ———
-   Owner request 2026-11-15 (build-spec §3.3, third revision): the
+   Owner requests 2026-11-15 (build-spec §3.3, fourth revision): the
    owner-supplied Shop 1 interior photo is a full-bleed band starting
    at y=0 with the header floating translucent over its top. HARD
    RULE (unchanged through every revision): NO text over the photo at
    any viewport — its baked-in logo stays fully visible. Below the
    photo, on solid --coal: H1 → subhead (owner: "Move it", never
-   deleted) → both call buttons, same width, 20px gap → trust strip.
-   Desktop shows the photo at natural aspect, uncropped. Mobile uses
-   a cover-style crop in a 4:3 window, centered — the logo sits in
-   the photo's center, so centering keeps it whole. */
+   deleted) → trust strip, tightly spaced. NO call buttons in the
+   hero — the floating bottom call bar is the call action, visible
+   from the top. Desktop shows the photo at natural aspect,
+   uncropped. Mobile uses a cover-style crop in a 4:3 window,
+   centered — the logo sits in the photo's center, so centering
+   keeps it whole. */
 .hero-photo { background: var(--coal); }
 .hero-photo picture { display: block; }
 .hero-photo img { width: 100%; height: auto; display: block; }
@@ -193,14 +195,13 @@ img { max-width: 100%; height: auto; display: block; }
 .hero {
   background: var(--coal);
   color: var(--white);
-  padding: 40px 0 48px;
+  padding: 36px 0 40px;
 }
 @media (min-width: 900px) {
-  .hero { padding: 64px 0 80px; }
+  .hero { padding: 56px 0 60px; }
 }
 .hero h1 { max-width: 640px; }
 .hero-sub { max-width: 520px; font-size: 19px; margin: 0; }
-.hero-btns { align-items: stretch; max-width: 560px; margin-top: 24px; }
 /* Location-named call labels (Call Hunters Creek / Call Florida Mall,
    EN + ES) are longer than the old Shop 1/2 labels: on small screens,
    shrink call-button type a step so label + phone stay on one line
@@ -337,7 +338,7 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 /* ——— Sticky mobile call bar ——— */
 .call-bar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-  display: flex; background: var(--coal);
+  display: grid; grid-template-columns: 1fr 1fr; background: var(--coal);
   padding-bottom: env(safe-area-inset-bottom);
   border-top: 2px solid var(--red);
   transition: transform 0.3s ease;
@@ -345,15 +346,15 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 /* One treatment for both halves (hero-fix-review.md §2.2): identical
    red fill, differing only in label/number. */
 .call-bar a {
-  flex: 1; display: flex; align-items: center; justify-content: center;
+  min-width: 0; display: flex; align-items: center; justify-content: center;
   min-height: 56px; background: var(--red); color: var(--white);
   font-weight: 700; text-transform: uppercase; text-decoration: none; font-size: 16px;
 }
 .call-bar a + a { border-left: 2px solid var(--red-dark); }
-/* Homepage only (script-added): hidden while the hero call stack is on
-   screen, fades in once it scrolls away (hero-fix-review.md §2.3). */
-.call-bar--deferred { transform: translateY(110%); }
-.call-bar--deferred.call-bar--shown { transform: none; }
+/* The bar is visible from the top on every page (owner change
+   2026-11-15: the homepage hero button pair was removed and this bar
+   became the homepage's call action — the old .call-bar--deferred
+   hide-until-scroll behavior is gone). */
 @media (min-width: 900px) { .call-bar { display: none; } }
 /* Bottom padding = bar height (56) + its 2px top border + 2px
    clearance + safe area, so the bar never covers the footer (§2.4). */

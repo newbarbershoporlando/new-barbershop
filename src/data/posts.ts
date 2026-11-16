@@ -69,22 +69,22 @@ const localPosts: Post[] = [
           es: 'Una barbería familiar en la que Orlando confía desde 2003',
         },
         body: {
-          en: 'We are a family-run business with over 20 years of experience behind the chair. Our two Orlando shops sit on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, near Kissimmee, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and Shop 1 rated 5.0 stars, we take pride in every cut and every client.',
-          es: 'Somos un negocio familiar con más de 20 años de experiencia detrás de la silla. Nuestras dos barberías de Orlando están sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, cerca de Kissimmee, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y Shop 1 con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
+          en: 'We are a family-run business with over 20 years of experience behind the chair. Our two Orlando shops sit on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client.',
+          es: 'Somos un negocio familiar con más de 20 años de experiencia detrás de la silla. Nuestras dos barberías de Orlando están sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
         },
       },
       {
         heading: { en: 'Services for Every Style', es: 'Servicios para cada estilo' },
         body: {
-          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Shop 1. Whether you want a clean fade, a sharp line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Shop 1. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. Whether you want a clean fade, a sharp line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'Visit Us or Call to Book', es: 'Visítanos o llama para reservar' },
         body: {
-          en: 'Call to book: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp is available for Shop 1.',
-          es: 'Llama para reservar: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp está disponible para Shop 1.',
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
         },
       },
     ],
@@ -123,22 +123,22 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Fades in Orlando for Every Style', es: 'Degradados en Orlando para cada estilo' },
         body: {
-          en: 'From low fades to high skin fades, tapers to burst fades, we shape each cut to your hair and your look. Whether you want a clean everyday fade or a bold design, we take our time on the details — the line-up, the edges, the finish. Our full service also covers beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Shop 1. See everything we do on our Services page.',
-          es: 'Desde degradados bajos hasta degradados altos al ras, tapers y burst fades, adaptamos cada corte a tu cabello y tu look. Ya sea que quieras un degradado limpio para todos los días o un diseño llamativo, nos tomamos el tiempo en los detalles — el delineado, los bordes, el acabado. Nuestro servicio completo también incluye arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Shop 1. Mira todo lo que hacemos en nuestra página de Servicios.',
+          en: 'From low fades to high skin fades, tapers to burst fades, we shape each cut to your hair and your look. Whether you want a clean everyday fade or a bold design, we take our time on the details — the line-up, the edges, the finish. Our full service also covers beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. See everything we do on our Services page.',
+          es: 'Desde degradados bajos hasta degradados altos al ras, tapers y burst fades, adaptamos cada corte a tu cabello y tu look. Ya sea que quieras un degradado limpio para todos los días o un diseño llamativo, nos tomamos el tiempo en los detalles — el delineado, los bordes, el acabado. Nuestro servicio completo también incluye arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Mira todo lo que hacemos en nuestra página de Servicios.',
         },
       },
       {
         heading: { en: 'Two Orlando Shops, One Standard', es: 'Dos barberías en Orlando, un mismo estándar' },
         body: {
-          en: 'We are a family-run business since 2003, with two shops on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, near Kissimmee, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and Shop 1 rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, cerca de Kissimmee, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y Shop 1 con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'We are a family-run business since 2003, with two shops on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'Book Your Fade', es: 'Reserva tu degradado' },
         body: {
-          en: 'Call to book: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp is available for Shop 1.',
-          es: 'Llama para reservar: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp está disponible para Shop 1.',
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
         },
       },
     ],
@@ -159,41 +159,41 @@ const localPosts: Post[] = [
         title: 'Braids in Orlando — Braiding for Men and Women',
         seoTitle: 'Braids in Orlando — Braiding for Men and Women | New Barbershop Orlando',
         metaDescription:
-          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Shop 1 (407) 470-4846 to book your braiding appointment today.',
+          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Hunters Creek (407) 470-4846 to book your braiding appointment today.',
         intro:
           'Looking for braids in Orlando that are neat, comfortable and made to last? Braiding is a craft — clean parts, even tension, and a style that fits you. At New Barbershop 1, our braiding specialist brings that care to every head of hair, for men and women alike.',
-        closing: 'Braids are a Shop 1 service — find the shop’s location and hours on our Contact page.',
+        closing: 'Braids are a Hunters Creek service — find the shop’s location and hours on our Contact page.',
       },
       es: {
         title: 'Braids in Orlando — Braiding for Men and Women',
         seoTitle: 'Braids in Orlando — Braiding for Men and Women | New Barbershop Orlando',
         metaDescription:
-          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Shop 1 (407) 470-4846 to book your braiding appointment today.',
+          'Braids in Orlando for men and women — neat, comfortable braiding at New Barbershop 1. Call Hunters Creek (407) 470-4846 to book your braiding appointment today.',
         intro:
           '¿Buscas trenzas en Orlando que se vean prolijas, sean cómodas y duren? Trenzar es un arte — divisiones limpias, tensión uniforme y un estilo que va contigo. En New Barbershop 1, nuestra especialista en trenzas aporta ese cuidado a cada cabellera, tanto para hombres como para mujeres.',
-        closing: 'Las trenzas son un servicio de Shop 1 — encuentra la ubicación y los horarios en nuestra página de Contacto.',
+        closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
       },
     },
     sections: [
       {
         heading: { en: 'Braids in Orlando for Men and Women', es: 'Trenzas en Orlando para hombres y mujeres' },
         body: {
-          en: 'We offer braiding for men and women at New Barbershop 1 — our shop at 9741 S Orange Blossom Trl, near Kissimmee. From cornrows to box braids and more, we work with your hair’s length and texture to create a style that looks sharp and feels good. Braids are available at Shop 1 only, so call Shop 1 at (407) 470-4846 to book your braiding appointment.',
-          es: 'Ofrecemos trenzado para hombres y mujeres en New Barbershop 1 — nuestra barbería en 9741 S Orange Blossom Trl, cerca de Kissimmee. Desde cornrows hasta box braids y más, trabajamos con el largo y la textura de tu cabello para crear un estilo que se vea definido y se sienta bien. Las trenzas están disponibles solo en Shop 1, así que llama a Shop 1 al (407) 470-4846 para reservar tu cita de trenzado.',
+          en: 'We offer braiding for men and women at New Barbershop 1 — our shop at 9741 S Orange Blossom Trl, in Hunters Creek. From cornrows to box braids and more, we work with your hair’s length and texture to create a style that looks sharp and feels good. Braids are available at Hunters Creek only, so call Hunters Creek at (407) 470-4846 to book your braiding appointment.',
+          es: 'Ofrecemos trenzado para hombres y mujeres en New Barbershop 1 — nuestra barbería en 9741 S Orange Blossom Trl, en Hunters Creek. Desde cornrows hasta box braids y más, trabajamos con el largo y la textura de tu cabello para crear un estilo que se vea definido y se sienta bien. Las trenzas están disponibles solo en Hunters Creek, así que llama a Hunters Creek al (407) 470-4846 para reservar tu cita de trenzado.',
         },
       },
       {
         heading: { en: 'More Than Braids', es: 'Más que trenzas' },
         body: {
-          en: 'Our full service also covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and our barbers shape every cut to your style. See everything we do on our Services page. We are a family-run business since 2003, with over 20 years of experience, two shops on South Orange Blossom Trail, and over 1,400 Google reviews across both shops, with Shop 1 rated 5.0 stars. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con Shop 1 calificada con 5.0 estrellas. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'Our full service also covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and our barbers shape every cut to your style. See everything we do on our Services page. We are a family-run business since 2003, with over 20 years of experience, two shops on South Orange Blossom Trail, and over 1,400 Google reviews across both shops, with our Hunters Creek shop rated 5.0 stars. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con nuestro local de Hunters Creek calificado con 5.0 estrellas. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
-        heading: { en: 'Book Your Braids at Shop 1', es: 'Reserva tus trenzas en Shop 1' },
+        heading: { en: 'Book Your Braids at Hunters Creek', es: 'Reserva tus trenzas en Hunters Creek' },
         body: {
-          en: 'Call to book braids: Shop 1 (407) 470-4846. WhatsApp is available for Shop 1.',
-          es: 'Llama para reservar trenzas: Shop 1 (407) 470-4846. WhatsApp está disponible para Shop 1.',
+          en: 'Call to book braids: Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar trenzas: Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
         },
       },
     ],
@@ -232,22 +232,22 @@ const localPosts: Post[] = [
       {
         heading: { en: 'Your Neighborhood Barbershop Orlando', es: 'Tu barbería de barrio en Orlando' },
         body: {
-          en: 'We have two Orlando shops: New Barbershop 1 at 9741 S Orange Blossom Trl, near Kissimmee, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and Shop 1 rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, cerca de Kissimmee, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y Shop 1 con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          en: 'We have two Orlando shops: New Barbershop 1 at 9741 S Orange Blossom Trl, in Hunters Creek, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Hunters Creek shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
+          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, en Hunters Creek, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Hunters Creek con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
         heading: { en: 'What We Do', es: 'Lo que hacemos' },
         body: {
-          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Shop 1. Whether you want a sharp fade, a clean line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page.',
-          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Shop 1. Ya sea que quieras un degradado definido, un delineado limpio o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios.',
+          en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Hunters Creek. Whether you want a sharp fade, a clean line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page.',
+          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Hunters Creek. Ya sea que quieras un degradado definido, un delineado limpio o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios.',
         },
       },
       {
         heading: { en: 'Come See Us', es: 'Ven a visitarnos' },
         body: {
-          en: 'Call to book: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp is available for Shop 1.',
-          es: 'Llama para reservar: Shop 1 (407) 470-4846 · Shop 2 (407) 820-4541. WhatsApp está disponible para Shop 1.',
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
         },
       },
     ],
