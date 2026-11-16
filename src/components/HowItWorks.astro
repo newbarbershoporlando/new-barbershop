@@ -1,0 +1,23 @@
+---
+import { type Lang } from '../data/ui';
+import { howItWorks } from '../data/pages';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const c = howItWorks[lang];
+---
+
+<section class="section">
+  <div class="wrap">
+    <h2>{c.heading}</h2>
+    <p style="max-width:760px">{c.intro}</p>
+    <div class="cards">
+      {c.steps.map((step, i) => (
+        <article class="card">
+          <h3>{i + 1}. {step.title}</h3>
+          <p>{step.body}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

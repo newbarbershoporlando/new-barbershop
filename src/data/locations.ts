@@ -1,0 +1,176 @@
+// Structured content — mirrors the Sanity `location` schema (sanity/schemas/location.ts).
+// One document per shop; every user-facing string is localized { en, es }.
+
+export interface LocalizedString {
+  en: string;
+  es: string;
+}
+
+export interface DayHours {
+  day: LocalizedString;
+  /** 24h "HH:MM" — used for schema.org openingHoursSpecification */
+  opens: string;
+  closes: string;
+  display: LocalizedString;
+}
+
+export interface Location {
+  _id: string;
+  slug: string;
+  name: string;
+  area: LocalizedString;
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+  phoneDisplay: string;
+  phoneHref: string;
+  whatsapp: string | null;
+  mapsUrl: string;
+  /** This shop's own real interior photo (manifest §2 — crop of the shop's banner). */
+  photo: string;
+  photoAlt: LocalizedString;
+  geo: { lat: number; lng: number };
+  rating: string;
+  reviewCount: number;
+  hours: DayHours[];
+  hoursSummary: LocalizedString;
+  introHeading: LocalizedString;
+  intro: LocalizedString;
+}
+
+const sun1: DayHours = {
+  day: { en: 'Sunday', es: 'Domingo' },
+  opens: '08:00',
+  closes: '22:30',
+  display: { en: '8:00 AM – 10:30 PM', es: '8:00 AM – 10:30 PM' },
+};
+
+function shop1Day(en: string, es: string): DayHours {
+  return {
+    day: { en, es },
+    opens: '08:00',
+    closes: '22:30',
+    display: { en: '8:00 AM – 10:30 PM', es: '8:00 AM – 10:30 PM' },
+  };
+}
+
+export const locations: Location[] = [
+  {
+    _id: 'shop1',
+    slug: 'new-barbershop-1',
+    name: 'New Barbershop 1',
+    area: { en: 'Near Kissimmee', es: 'Cerca de Kissimmee' },
+    street: '9741 S Orange Blossom Trl',
+    city: 'Orlando',
+    state: 'FL',
+    zip: '32837',
+    phoneDisplay: '(407) 470-4846',
+    phoneHref: 'tel:+14074704846',
+    whatsapp: 'https://wa.me/message/SOGEVWV7NKT2C1',
+    photo: '/images/location-shop1.webp',
+    photoAlt: {
+      en: 'Inside New Barbershop 1 in Orlando — barber chairs, mirrors and waiting area',
+      es: 'Interior de New Barbershop 1 en Orlando — sillas de barbero, espejos y sala de espera',
+    },
+    mapsUrl:
+      'https://www.google.com/maps/place/New+Barbershop+1/@28.4151854,-81.4041153,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77d92ef6aaaab:0xd9562e620584cfd4!8m2!3d28.4151854!4d-81.4041153!16s%2Fg%2F11v67rz1m2',
+    geo: { lat: 28.4151854, lng: -81.4041153 },
+    rating: '5.0',
+    reviewCount: 1263,
+    hours: [
+      sun1,
+      shop1Day('Monday', 'Lunes'),
+      shop1Day('Tuesday', 'Martes'),
+      shop1Day('Wednesday', 'Miércoles'),
+      shop1Day('Thursday', 'Jueves'),
+      shop1Day('Friday', 'Viernes'),
+      shop1Day('Saturday', 'Sábado'),
+    ],
+    hoursSummary: {
+      en: 'Open Daily: 8:00 AM – 10:30 PM',
+      es: 'Abierto todos los días: 8:00 AM – 10:30 PM',
+    },
+    introHeading: { en: 'The Original New Barbershop', es: 'La New Barbershop original' },
+    intro: {
+      en: 'New Barbershop 1 is the original New Barbershop in Orlando, on South Orange Blossom Trail near Kissimmee. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. Braids for men and women are available at this shop, and we serve you in English y español.',
+      es: 'New Barbershop 1 es la barbería original de New Barbershop en Orlando, sobre South Orange Blossom Trail, cerca de Kissimmee. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. En esta barbería ofrecemos trenzas para hombres y mujeres, y te atendemos en English y español.',
+    },
+  },
+  {
+    _id: 'shop2',
+    slug: 'new-barbershop-2',
+    name: 'New Barbershop 2',
+    area: { en: 'Near Florida Mall', es: 'Cerca de Florida Mall' },
+    street: '6220 S Orange Blossom Trl',
+    city: 'Orlando',
+    state: 'FL',
+    zip: '32809',
+    phoneDisplay: '(407) 820-4541',
+    phoneHref: 'tel:+14078204541',
+    whatsapp: null,
+    photo: '/images/location-shop2.webp',
+    photoAlt: {
+      en: 'Inside New Barbershop 2 in Orlando — barber chairs under hexagonal ceiling lights',
+      es: 'Interior de New Barbershop 2 en Orlando — sillas de barbero bajo luces hexagonales en el techo',
+    },
+    mapsUrl:
+      'https://www.google.com/maps/place/New+barbershop+2/@28.4667863,-81.3972292,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77d9f5bf2d175:0xfe777d3b0beb6fcc!8m2!3d28.4667863!4d-81.3972292!16s%2Fg%2F11n2x_lxb6',
+    geo: { lat: 28.4667863, lng: -81.3972292 },
+    rating: '5.0',
+    reviewCount: 174,
+    hours: [
+      {
+        day: { en: 'Sunday', es: 'Domingo' },
+        opens: '09:30',
+        closes: '20:30',
+        display: { en: '9:30 AM – 8:30 PM', es: '9:30 AM – 8:30 PM' },
+      },
+      {
+        day: { en: 'Monday', es: 'Lunes' },
+        opens: '09:30',
+        closes: '21:00',
+        display: { en: '9:30 AM – 9:00 PM', es: '9:30 AM – 9:00 PM' },
+      },
+      ...(['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const).map(
+        (d) =>
+          ({
+            day: {
+              en: d,
+              es: {
+                Tuesday: 'Martes',
+                Wednesday: 'Miércoles',
+                Thursday: 'Jueves',
+                Friday: 'Viernes',
+                Saturday: 'Sábado',
+              }[d],
+            },
+            opens: '09:00',
+            closes: '22:00',
+            display: { en: '9:00 AM – 10:00 PM', es: '9:00 AM – 10:00 PM' },
+          }) as DayHours,
+      ),
+    ],
+    hoursSummary: {
+      en: 'Sun: 9:30 AM – 8:30 PM · Mon: 9:30 AM – 9:00 PM · Tue–Sat: 9:00 AM – 10:00 PM',
+      es: 'Dom: 9:30 AM – 8:30 PM · Lun: 9:30 AM – 9:00 PM · Mar–Sáb: 9:00 AM – 10:00 PM',
+    },
+    introHeading: {
+      en: 'Your Neighborhood Barbershop Near Florida Mall',
+      es: 'Tu barbería de barrio cerca de Florida Mall',
+    },
+    intro: {
+      en: 'New Barbershop 2 is our neighborhood barbershop on South Orange Blossom Trail, near Florida Mall. We are a family-friendly shop with haircuts for all ages, from kids to seniors, in a welcoming, relaxed atmosphere. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. We serve you in English y español — call (407) 820-4541 to book.',
+      es: 'New Barbershop 2 es nuestra barbería de barrio sobre South Orange Blossom Trail, cerca de Florida Mall. Somos una barbería familiar con cortes para todas las edades, desde niños hasta adultos mayores, en un ambiente acogedor y relajado. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. Te atendemos en English y español — llama al (407) 820-4541 para reservar.',
+    },
+  },
+];
+
+export const shop1 = locations[0];
+export const shop2 = locations[1];
+
+export function getLocation(slug: string): Location {
+  const loc = locations.find((l) => l.slug === slug);
+  if (!loc) throw new Error(`Unknown location slug: ${slug}`);
+  return loc;
+}

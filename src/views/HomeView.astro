@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustStrip from '../components/TrustStrip.astro';
+import CategoryTiles from '../components/CategoryTiles.astro';
+import ShopCard from '../components/ShopCard.astro';
+import ReviewsBand from '../components/ReviewsBand.astro';
+import BlogBand from '../components/BlogBand.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import { ui, path, type Lang } from '../data/ui';
+import { locations, shop1, shop2 } from '../data/locations';
+import { pageSeo, homeCopy } from '../data/pages';
+import { homeGraph } from '../lib/schema';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const c = homeCopy[lang];
+const seo = pageSeo.home[lang];
+const site = Astro.site!;
+---
+
+<BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={homeGraph(site.href.replace(/\/$/, ''))}>
+  <!-- Hero — owner-locked banner placement: Cover desktop / Contain strip mobile -->
+  <section class="hero" style="--hero-img: url('/images/banner-hero.webp')">
+    <div class="wrap">
+      <h1>{c.heroH1}</h1>
+      <p>{c.heroLine}</p>
+      <div class="btn-stack">
+        <a class="btn btn--call" href={shop1.phoneHref}>☎ {t.callShop1} · {shop1.phoneDisplay}</a>
+        <a class="btn btn--call" href={shop2.phoneHref}>☎ {t.callShop2} · {shop2.phoneDisplay}</a>
+      </div>
+    </div>
+  </section>
+
+  <TrustStrip lang={lang} />
+
+  <!-- Services preview: 5 category tiles -->
+  <section class="section">
+    <div class="wrap">
+      <h2>{c.servicesHeading}</h2>
+      <p>{c.servicesIntro}</p>
+      <CategoryTiles lang={lang} />
+      <p style="margin-top:24px">
+        <a class="btn btn--ghost-light" href={path(lang, 'contact')}>{t.callForPrices}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <h2>{c.storyHeading}</h2>
+      <p style="max-width:760px">{c.storyBody}</p>
+      <a class="btn btn--ghost-dark" href={path(lang, 'about')}>{t.learnMore}</a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <div class="wrap">
+      <h2>{c.experienceHeading}</h2>
+      <p style="max-width:760px">{c.experienceIntro}</p>
+      <div class="cards">
+        {c.experienceCards.map((card) => (
+          <article class="card">
+            <h3>{card.title}</h3>
+            <p>{card.body}</p>
+            <a class="btn btn--ghost-light" href={path(lang, 'services')}>{t.learnMore}</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <HowItWorks lang={lang} />
+
+  <!-- Locations -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <h2>{t.ourLocations}</h2>
+      <p>{c.locationsLine}</p>
+      <div class="cards">
+        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+
+  <ReviewsBand lang={lang} />
+  <BlogBand lang={lang} />
+</BaseLayout>

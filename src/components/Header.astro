@@ -1,0 +1,72 @@
+---
+import { ui, path, altPath, type Lang } from '../data/ui';
+import { locations } from '../data/locations';
+
+interface Props {
+  lang: Lang;
+  /** Current page slug without locale prefix, e.g. "services" or "locations/new-barbershop-1". */
+  slug: string;
+}
+const { lang, slug } = Astro.props;
+const t = ui[lang];
+const navItems = [
+  { label: t.nav.home, slug: '' },
+  { label: t.nav.about, slug: 'about' },
+  { label: t.nav.services, slug: 'services' },
+  { label: t.nav.blog, slug: 'blog' },
+  { label: t.nav.contact, slug: 'contact' },
+];
+---
+
+<header class="site-header" id="siteHeader">
+  <div class="header-in">
+    <a class="header-logo" href={path(lang, '')} aria-label="New Barbershop — Home">
+      <img src="/images/logo.png" alt="New Barbershop" width="360" height="115" />
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        {navItems.map((item) => (
+          <li><a href={path(lang, item.slug)}>{item.label}</a></li>
+        ))}
+        <li class="nav-item">
+          <a href={path(lang, 'locations')} aria-haspopup="true">{t.nav.locations} ▾</a>
+          <div class="nav-dropdown">
+            {locations.map((loc) => (
+              <a href={path(lang, `locations/${loc.slug}`)}>{loc.name}</a>
+            ))}
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <a class="btn btn--call header-call" href={path(lang, 'contact')}>{t.callToBook}</a>
+    <a class="lang-switch" href={altPath(lang, slug)} hreflang={lang === 'en' ? 'es' : 'en'}>
+      {lang === 'en' ? 'ES' : 'EN'}
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    {navItems.map((item) => <a href={path(lang, item.slug)}>{item.label}</a>)}
+    <a href={path(lang, 'locations')}>{t.nav.locations}</a>
+    {locations.map((loc) => (
+      <a class="sub" href={path(lang, `locations/${loc.slug}`)}>{loc.name}</a>
+    ))}
+    {locations.map((loc) => (
+      <a class="btn btn--call" href={loc.phoneHref}>
+        {loc._id === 'shop1' ? t.callShop1 : t.callShop2} · {loc.phoneDisplay}
+      </a>
+    ))}
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mobileMenu');
+  const header = document.getElementById('siteHeader');
+  toggle?.addEventListener('click', () => {
+    const open = menu?.classList.toggle('open') ?? false;
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  window.addEventListener('scroll', () => {
+    header?.classList.toggle('scrolled', window.scrollY > 8);
+  }, { passive: true });
+</script>

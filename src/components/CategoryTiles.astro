@@ -1,0 +1,19 @@
+---
+import { path, type Lang } from '../data/ui';
+import { categories } from '../data/services';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+
+<div class="tiles tiles--5">
+  {categories.map((cat) => (
+    <a class="tile" href={`${path(lang, 'services')}#${cat.slug}`}>
+      <img src={cat.image} alt={cat.imageAlt[lang]} loading="lazy" width="600" height="450" />
+      <div class="tile-body">
+        <h3>{cat.tileLabel[lang]}</h3>
+        <p>{cat.benefit[lang]}</p>
+      </div>
+    </a>
+  ))}
+</div>

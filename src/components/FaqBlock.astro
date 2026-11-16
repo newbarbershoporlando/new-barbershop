@@ -1,0 +1,28 @@
+---
+import { ui, path, type Lang } from '../data/ui';
+import type { Faq } from '../data/faqs';
+
+interface Props { lang: Lang; items: Faq[] }
+const { lang, items } = Astro.props;
+const t = ui[lang];
+---
+
+<section class="section">
+  <div class="wrap">
+    <h2>{t.faqHeading}</h2>
+    {items.map((f) => (
+      <div class="faq-item">
+        <h3>{f.question[lang]}</h3>
+        <p>
+          {f.answer[lang]}
+          {f.cta && (
+            <>
+              {' '}
+              <a href={path(lang, f.cta.slug)}>{f.cta.label[lang]}</a>
+            </>
+          )}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>

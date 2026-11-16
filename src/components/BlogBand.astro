@@ -1,0 +1,17 @@
+---
+import { ui, path, type Lang } from '../data/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+
+<section class="section blog-band">
+  <div class="wrap">
+    <div class="in">
+      <h2>{t.blogBandHeading}</h2>
+      <p>{t.blogBandLine}</p>
+      <a class="btn btn--call" href={path(lang, 'blog')}>{t.blogBandButton}</a>
+    </div>
+  </div>
+</section>

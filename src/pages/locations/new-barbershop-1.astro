@@ -1,0 +1,6 @@
+---
+import LocationDetailView from '../../views/LocationDetailView.astro';
+import { getLocation } from '../../data/locations';
+---
+
+<LocationDetailView lang="en" loc={getLocation('new-barbershop-1')} />

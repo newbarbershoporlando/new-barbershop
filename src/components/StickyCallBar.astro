@@ -1,0 +1,13 @@
+---
+import { ui, type Lang } from '../data/ui';
+import { shop1, shop2 } from '../data/locations';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+
+<div class="call-bar" aria-label={t.callToBook}>
+  <a href={shop1.phoneHref}>☎ {t.callShop1}</a>
+  <a href={shop2.phoneHref}>☎ {t.callShop2}</a>
+</div>

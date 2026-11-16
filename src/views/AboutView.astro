@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ShopCard from '../components/ShopCard.astro';
+import BlogBand from '../components/BlogBand.astro';
+import { BANNER_ALT, type Lang } from '../data/ui';
+import { locations, shop1, shop2 } from '../data/locations';
+import { pageSeo, aboutCopy } from '../data/pages';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const c = aboutCopy[lang];
+const seo = pageSeo.about[lang];
+const shops = [shop1, shop2];
+---
+
+<BaseLayout lang={lang} slug="about" title={seo.title} description={seo.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">{c.eyebrow}</p>
+      <h1>{c.heading}</h1>
+    </div>
+  </section>
+
+  <img class="banner-img" src="/images/banner-wide.webp" alt={BANNER_ALT[lang]} width="1320" height="440" />
+
+  <section class="section">
+    <div class="wrap" style="max-width:800px">
+      <p style="font-size:20px;font-weight:600">{c.lead}</p>
+      <p>{c.body1}</p>
+      <p>{c.body2}</p>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="wrap">
+      <h2>{c.valuesHeading}</h2>
+      <p>{c.valuesIntro}</p>
+      <div class="values">
+        {c.values.map((v) => (
+          <article class="card">
+            <h3>{v.title}</h3>
+            <p>{v.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{c.teamHeading}</h2>
+      <div class="btn-row">
+        {shops.map((loc, i) => (
+          <a class="btn btn--ghost-light" href={loc.mapsUrl} target="_blank" rel="noopener">
+            {c.teamButton(i + 1)}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="wrap">
+      <div class="cards">
+        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+
+  <BlogBand lang={lang} />
+</BaseLayout>

@@ -1,0 +1,126 @@
+# _redirects — New Barbershop (Cloudflare Pages syntax)
+# ============================================================================
+# LAUNCH CASE THIS FILE IS WRITTEN FOR: OLD DOMAIN (newbarbershop1.com).
+# Drop this file at the root of the Astro build output (public/_redirects)
+# when the new site launches on newbarbershop1.com. All rules are 301.
+# Source map: seo-tracking-plan.md §2.2 (Agent D, 2026-11-15), reconciled
+# against Search Console's Pages report before launch (plan §2.2 step) —
+# any indexed URL not listed here gets a rule added BEFORE DNS flips.
+#
+# NEW-DOMAIN VARIANT (launch on newbarbershoporlando.com instead):
+# Keep this file as-is — the rules still fire for anyone who reaches the
+# NEW domain with a legacy path (typed, shared, or printed links).
+# What this file CANNOT do: redirect traffic on the OLD domain. Without
+# control of the old domain's DNS/hosting there is no redirect surface
+# there at all; old-domain URLs only survive if the ownership push or
+# transfer lands, in which case deploy this same file (or a domain-level
+# forward) on the old domain pointing at the new one. See
+# new-domain-memo.md play M1.
+#
+# HOSTNAME RULES ARE NOT HERE ON PURPOSE: Cloudflare Pages _redirects
+# matches paths on one hostname only. www -> apex (canonical) is a
+# Cloudflare Redirect Rule / Bulk Redirect at the zone level (Agent E,
+# cutover runbook) — canonical host: https://newbarbershop1.com.
+#
+# Format: <from> <to> 301 — both slash and no-slash variants are listed
+# for legacy paths so matching never depends on trailing-slash handling.
+# ============================================================================
+
+# --- Staging build paths (/staging/ was publicly reachable on this domain)
+/staging / 301
+/staging/ / 301
+/staging/services /services/ 301
+/staging/services/ /services/ 301
+/staging/about /about/ 301
+/staging/about/ /about/ 301
+/staging/contact /contact/ 301
+/staging/contact/ /contact/ 301
+/staging/blog /blog/ 301
+/staging/blog/ /blog/ 301
+/staging/locations /locations/ 301
+/staging/locations/ /locations/ 301
+/staging/locations/new-barbershop-1 /locations/new-barbershop-1/ 301
+/staging/locations/new-barbershop-1/ /locations/new-barbershop-1/ 301
+/staging/locations/new-barbershop-2 /locations/new-barbershop-2/ 301
+/staging/locations/new-barbershop-2/ /locations/new-barbershop-2/ 301
+/staging/post-1 /blog/top-rated-barber-shop-orlando/ 301
+/staging/post-1/ /blog/top-rated-barber-shop-orlando/ 301
+/staging/post-2 /blog/expert-fades-orlando/ 301
+/staging/post-2/ /blog/expert-fades-orlando/ 301
+/staging/post-3 /blog/braids-orlando/ 301
+/staging/post-3/ /blog/braids-orlando/ 301
+/staging/hello-world /blog/welcome-neighborhood-barbershop-orlando/ 301
+/staging/hello-world/ /blog/welcome-neighborhood-barbershop-orlando/ 301
+/staging/offerings /services/ 301
+/staging/offerings/ /services/ 301
+# Staging fallback: anything else under /staging/ maps to the same path live
+/staging/* /:splat 301
+
+# --- WordPress-era blog slugs (Oct 2026 build; may still be indexed)
+/post-1 /blog/top-rated-barber-shop-orlando/ 301
+/post-1/ /blog/top-rated-barber-shop-orlando/ 301
+/post-2 /blog/expert-fades-orlando/ 301
+/post-2/ /blog/expert-fades-orlando/ 301
+/post-3 /blog/braids-orlando/ 301
+/post-3/ /blog/braids-orlando/ 301
+/hello-world /blog/welcome-neighborhood-barbershop-orlando/ 301
+/hello-world/ /blog/welcome-neighborhood-barbershop-orlando/ 301
+
+# --- WordPress-era per-service pages (folded into the single /services/ page)
+/services/haircuts-fades /services/ 301
+/services/haircuts-fades/ /services/ 301
+/services/beard-trim /services/ 301
+/services/beard-trim/ /services/ 301
+/services/haircut-and-beard /services/ 301
+/services/haircut-and-beard/ /services/ 301
+/services/hot-towel-shave /services/ 301
+/services/hot-towel-shave/ /services/ 301
+/services/kids-haircuts /services/ 301
+/services/kids-haircuts/ /services/ 301
+/services/hair-designs-eyebrows /services/ 301
+/services/hair-designs-eyebrows/ /services/ 301
+
+# --- WordPress-era landing / misc pages
+/barber-near-florida-mall /locations/ 301
+/barber-near-florida-mall/ /locations/ 301
+/barber-near-mall-at-millenia /locations/ 301
+/barber-near-mall-at-millenia/ /locations/ 301
+/barber-near-international-drive /locations/ 301
+/barber-near-international-drive/ /locations/ 301
+/dealership-team-haircuts-orlando / 301
+/dealership-team-haircuts-orlando/ / 301
+/sample-page / 301
+/sample-page/ / 301
+/offerings /services/ 301
+/offerings/ /services/ 301
+
+# --- Language orphans
+/es/inicio /es/ 301
+/es/inicio/ /es/ 301
+/pt/barbearia-perto-do-florida-mall / 301
+/pt/barbearia-perto-do-florida-mall/ / 301
+
+# --- Integration addition (2026-11-15, beyond Agent D's map): the first
+# Astro scaffold shipped same-slug /es/ paths and root-level blog slugs on
+# preview builds. Those URLs were never the production inventory, but any
+# preview link already shared keeps working via these rules.
+/es/services /es/servicios/ 301
+/es/services/ /es/servicios/ 301
+/es/about /es/nosotros/ 301
+/es/about/ /es/nosotros/ 301
+/es/contact /es/contacto/ 301
+/es/contact/ /es/contacto/ 301
+/es/locations /es/ubicaciones/ 301
+/es/locations/ /es/ubicaciones/ 301
+/es/locations/new-barbershop-1 /es/ubicaciones/new-barbershop-1/ 301
+/es/locations/new-barbershop-1/ /es/ubicaciones/new-barbershop-1/ 301
+/es/locations/new-barbershop-2 /es/ubicaciones/new-barbershop-2/ 301
+/es/locations/new-barbershop-2/ /es/ubicaciones/new-barbershop-2/ 301
+/es/post-1 /es/blog/top-rated-barber-shop-orlando/ 301
+/es/post-1/ /es/blog/top-rated-barber-shop-orlando/ 301
+/es/post-2 /es/blog/expert-fades-orlando/ 301
+/es/post-2/ /es/blog/expert-fades-orlando/ 301
+/es/post-3 /es/blog/braids-orlando/ 301
+/es/post-3/ /es/blog/braids-orlando/ 301
+/es/hello-world /es/blog/welcome-neighborhood-barbershop-orlando/ 301
+/es/hello-world/ /es/blog/welcome-neighborhood-barbershop-orlando/ 301

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqBlock from '../components/FaqBlock.astro';
+import BlogBand from '../components/BlogBand.astro';
+import { ui, type Lang } from '../data/ui';
+import { shop1, shop2 } from '../data/locations';
+import { categories, servicesByCategory } from '../data/services';
+import { featuredTestimonial } from '../data/reviews';
+import { faqsFor } from '../data/faqs';
+import { pageSeo, servicesCopy, galleryItems } from '../data/pages';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const c = servicesCopy[lang];
+const seo = pageSeo.services[lang];
+---
+
+<BaseLayout lang={lang} slug="services" title={seo.title} description={seo.description}>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">{c.eyebrow}</p>
+      <h1>{c.heading}</h1>
+      <p style="max-width:800px">{c.intro}</p>
+
+      {categories.map((cat) => (
+        <div class="svc-group" id={cat.slug}>
+          <h3>{cat.heading[lang]}</h3>
+          <p class="benefit">{cat.benefit[lang]}</p>
+          <table class="svc">
+            <thead>
+              <tr>
+                <th>{lang === 'en' ? 'Service' : 'Servicio'}</th>
+                <th>{lang === 'en' ? 'Description' : 'Descripción'}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {servicesByCategory(cat._id).map((svc) => (
+                <tr>
+                  <td class="name">{svc.name[lang]}</td>
+                  <td class="desc">{svc.description[lang]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+
+      <h2>{c.galleryHeading}</h2>
+      <p style="max-width:800px">{c.galleryIntro}</p>
+      <div class="gallery">
+        {galleryItems.filter((item) => item.src).map((item) => (
+          <figure style="margin:0">
+            <img src={item.src} alt={item.alt[lang]} loading="lazy" width="800" height="600" />
+            {item.caption && (
+              <figcaption>
+                <strong>{item.caption.style[lang]}</strong> — {item.caption.text[lang]}
+              </figcaption>
+            )}
+          </figure>
+        ))}
+      </div>
+
+      <div class="action-row" style="margin-top:24px">
+        <a class="btn btn--ghost-light" href={shop1.mapsUrl} target="_blank" rel="noopener">{t.seeWork(1)}</a>
+        <a class="btn btn--ghost-light" href={shop2.mapsUrl} target="_blank" rel="noopener">{t.seeWork(2)}</a>
+      </div>
+    </div>
+  </section>
+
+  <FaqBlock lang={lang} items={faqsFor('general')} />
+
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="testimonial">
+        <div class="stars-line" aria-label="5 stars">★★★★★</div>
+        <blockquote>“{featuredTestimonial.text[lang]}”</blockquote>
+        <p class="who">— {featuredTestimonial.author}</p>
+      </div>
+    </div>
+  </section>
+
+  <BlogBand lang={lang} />
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import { ui, type Lang } from '../data/ui';
+import { locations, type Location } from '../data/locations';
+import { reviewsFor } from '../data/reviews';
+
+interface Props {
+  lang: Lang;
+  /** Which shops to show. Default: both (homepage). */
+  only?: Location;
+  heading?: boolean;
+}
+const { lang, only, heading = true } = Astro.props;
+const t = ui[lang];
+const shops = only ? [only] : locations;
+
+function initials(name: string): string {
+  return name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]!.toUpperCase())
+    .join('');
+}
+---
+
+<section class="section section--black">
+  <div class="wrap">
+    {heading && <h2>{t.reviewsHeading}</h2>}
+    {shops.map((loc) => (
+      <div class="review-group">
+        <h3>{loc.name} — {loc.rating} ★ · {loc.reviewCount.toLocaleString('en-US')} {t.googleReviewsSuffix}</h3>
+        <div class="review-cards">
+          {reviewsFor(loc._id).map((rev) => (
+            <div class="review-card">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>{rev.text[lang]}</blockquote>
+              <div class="review-author">
+                <span class="avatar-chip" aria-hidden="true">{initials(rev.author)}</span>
+                {rev.author}
+              </div>
+            </div>
+          ))}
+        </div>
+        <a class="btn btn--ghost-dark" href={loc.mapsUrl} target="_blank" rel="noopener">{t.readReviews}</a>
+      </div>
+    ))}
+  </div>
+</section>

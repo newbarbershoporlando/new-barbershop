@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustStrip from '../components/TrustStrip.astro';
+import ShopCard from '../components/ShopCard.astro';
+import BlogBand from '../components/BlogBand.astro';
+import { ui, path, BANNER_ALT, type Lang } from '../data/ui';
+import { locations } from '../data/locations';
+import { pageSeo } from '../data/pages';
+import { breadcrumbNode } from '../lib/schema';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const seo = pageSeo.locations[lang];
+const site = Astro.site!;
+---
+
+<BaseLayout
+  lang={lang}
+  slug="locations"
+  title={seo.title}
+  description={seo.description}
+  jsonLd={breadcrumbNode([
+    { name: t.nav.home, url: new URL(path(lang, ''), site).href },
+    { name: t.nav.locations, url: new URL(path(lang, 'locations'), site).href },
+  ])}
+>
+  <section class="page-hero">
+    <div class="wrap"><h1>{t.ourLocations}</h1></div>
+  </section>
+
+  <img class="banner-img" src="/images/banner-wide.webp" alt={BANNER_ALT[lang]} width="1320" height="440" />
+  <TrustStrip lang={lang} />
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cards">
+        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+
+  <BlogBand lang={lang} />
+</BaseLayout>

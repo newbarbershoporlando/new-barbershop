@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ShopCard from '../components/ShopCard.astro';
+import BlogBand from '../components/BlogBand.astro';
+import { INSTAGRAM_URL, type Lang } from '../data/ui';
+import { locations } from '../data/locations';
+import { pageSeo, contactCopy } from '../data/pages';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const c = contactCopy[lang];
+const seo = pageSeo.contact[lang];
+---
+
+<BaseLayout lang={lang} slug="contact" title={seo.title} description={seo.description}>
+  <section class="section">
+    <div class="wrap">
+      <h1>{c.heading}</h1>
+      <h2>{c.locationsHeading}</h2>
+      <div class="cards">
+        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
+      </div>
+      <p style="margin-top:24px">
+        <a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram — @new.barbershoop</a>
+      </p>
+    </div>
+  </section>
+
+  <BlogBand lang={lang} />
+</BaseLayout>

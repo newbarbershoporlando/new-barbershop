@@ -1,0 +1,20 @@
+---
+import { ui, type Lang } from '../data/ui';
+import type { Location } from '../data/locations';
+
+interface Props { loc: Location; lang: Lang }
+const { loc, lang } = Astro.props;
+const t = ui[lang];
+---
+
+<h3>{t.hoursHeading}</h3>
+<table class="hours">
+  <tbody>
+    {loc.hours.map((h) => (
+      <tr>
+        <td class="day">{h.day[lang]}</td>
+        <td>{h.display[lang]}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

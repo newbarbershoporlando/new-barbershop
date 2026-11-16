@@ -1,0 +1,9 @@
+# Cloudflare Pages — New Barbershop
+# Project name in the Cloudflare dashboard must match `name` below.
+# Build settings (build command / output dir / NODE_VERSION) are configured
+# in the Pages project settings — canonical list in ../DEPLOY.md.
+# This file is picked up automatically by Pages on git-connected deploys
+# and by `wrangler pages deploy` for direct uploads.
+name = "new-barbershop"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-15"

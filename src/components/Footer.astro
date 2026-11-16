@@ -1,0 +1,30 @@
+---
+import { ui, path, INSTAGRAM_URL, type Lang } from '../data/ui';
+import { locations } from '../data/locations';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="flogo" src="/images/logo.png" alt="New Barbershop" width="360" height="115" />
+        <p>{t.footerTagline}</p>
+        <p><a href={INSTAGRAM_URL} target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      {locations.map((loc) => (
+        <div>
+          <h3>{loc.name}</h3>
+          <p>{loc.street}<br />{loc.city}, {loc.state} {loc.zip}</p>
+          <p><a href={loc.phoneHref}>{loc.phoneDisplay}</a></p>
+          <p>{loc.hoursSummary[lang]}</p>
+          <p><a href={path(lang, `locations/${loc.slug}`)}>{lang === 'en' ? 'Shop page →' : 'Página de la barbería →'}</a></p>
+        </div>
+      ))}
+    </div>
+    <div class="footer-bottom">{t.copyright}</div>
+  </div>
+</footer>
