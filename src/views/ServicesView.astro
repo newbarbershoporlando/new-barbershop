@@ -54,9 +54,8 @@ const site = Astro.site!;
         const svcBtn = document.querySelector('[data-svc-toggle]');
         if (svcWrap && svcBtn) {
           const svcLabel = svcBtn.querySelector('[data-svc-toggle-label]');
-          svcWrap.classList.add('svc-collapsed');
-          svcBtn.addEventListener('click', () => {
-            const collapsed = svcWrap.classList.toggle('svc-collapsed');
+          const setSvc = (collapsed) => {
+            svcWrap.classList.toggle('svc-collapsed', collapsed);
             svcBtn.setAttribute('aria-expanded', String(!collapsed));
             if (svcLabel) svcLabel.textContent = collapsed ? svcLabel.dataset.more : svcLabel.dataset.fewer;
             // The groups inside carry data-rv reveals; while collapsed
@@ -64,7 +63,30 @@ const site = Astro.site!;
             // IntersectionObserver entries — reveal them outright on
             // expand so expanded content is never left transparent.
             if (!collapsed) svcWrap.querySelectorAll('[data-rv]').forEach((el) => el.classList.add('rv-in'));
+          };
+          const hashTargetInMore = () => {
+            if (!location.hash) return null;
+            let el = null;
+            try { el = document.querySelector(location.hash); } catch (err) { el = null; }
+            return el && svcWrap.contains(el) ? el : null;
+          };
+          // Deep links (category tiles site-wide point at
+          // /services#<slug>, and three categories live in this
+          // region): if the fragment target is inside the region,
+          // skip the collapse so the landing scroll works and the
+          // target is visible. Same on later hash changes.
+          setSvc(!hashTargetInMore());
+          window.addEventListener('hashchange', () => {
+            const el = hashTargetInMore();
+            if (el && svcWrap.classList.contains('svc-collapsed')) {
+              setSvc(false);
+              // Scroll AFTER the 450ms expand transition: the target
+              // moves down as the region grows, so an immediate
+              // scrollIntoView lands short of it.
+              setTimeout(() => el.scrollIntoView(), 480);
+            }
           });
+          svcBtn.addEventListener('click', () => setSvc(!svcWrap.classList.contains('svc-collapsed')));
         }
       </script>
 

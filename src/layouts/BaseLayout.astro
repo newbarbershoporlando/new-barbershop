@@ -61,8 +61,19 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
     {/* Upgrade (2026-11-16): JS-available marker. Progressive-enhancement
         styles (scroll reveals, collapsibles) are gated on html.js so
         no-JS visitors and crawlers always see all content in its final
-        state. Runs in <head> so the class is set before first paint. */}
-    <script is:inline>document.documentElement.classList.add('js');</script>
+        state. Runs in <head> so the class is set before first paint.
+        The same script arms a one-shot watchdog: if the reveal
+        observer script at the end of <body> has not initialized (and
+        cleared the timer) within 2.5s, all reveal blocks are shown
+        outright — content can never be stranded invisible. In normal
+        operation the body script runs during the same parse and
+        clears the timer immediately, so the watchdog never fires. */}
+    <script is:inline>
+      document.documentElement.classList.add('js');
+      window.__rvWatchdog = setTimeout(function () {
+        document.querySelectorAll('[data-rv]').forEach(function (el) { el.classList.add('rv-in'); });
+      }, 2500);
+    </script>
     {jsonLdBlocks.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
   </head>
   <body>
@@ -92,6 +103,8 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
         call bar is never a reveal target. */}
     <script is:inline>
       (function () {
+        // Observer initializing = the head watchdog is stood down.
+        if (window.__rvWatchdog) { clearTimeout(window.__rvWatchdog); window.__rvWatchdog = null; }
         var els = document.querySelectorAll('[data-rv]');
         if (!els.length) return;
         var showAll = function () { els.forEach(function (el) { el.classList.add('rv-in'); }); };

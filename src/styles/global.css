@@ -359,7 +359,9 @@ img { max-width: 100%; height: auto; display: block; }
 .card .phone-big { font-size: 20px; font-weight: 700; }
 
 /* ——— Services table ——— */
-.svc-group { margin-bottom: 44px; }
+/* scroll-margin: fragment landings (/services#<slug> from the
+   category tiles) clear the sticky header. */
+.svc-group { margin-bottom: 44px; scroll-margin-top: 84px; }
 .svc-group > h3 { border-bottom: 3px solid var(--red); padding-bottom: 6px; }
 .svc-group > h2 { border-bottom: 3px solid var(--red); padding-bottom: 6px; font-size: 22px; font-weight: 500; }
 @media (min-width: 900px) { .svc-group > h2 { font-size: 26px; } }
@@ -652,6 +654,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 @media (max-width: 899px) {
   .cards--swipe {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    touch-action: pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
   }
@@ -661,6 +664,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 @media (max-width: 639px) {
   .gallery {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    touch-action: pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
   }
@@ -668,6 +672,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
   .gallery-item { flex: 0 0 68%; scroll-snap-align: start; }
   .post-cards--swipe {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    touch-action: pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
   }
