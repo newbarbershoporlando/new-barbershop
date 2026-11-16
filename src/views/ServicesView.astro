@@ -59,6 +59,11 @@ const site = Astro.site!;
             const collapsed = svcWrap.classList.toggle('svc-collapsed');
             svcBtn.setAttribute('aria-expanded', String(!collapsed));
             if (svcLabel) svcLabel.textContent = collapsed ? svcLabel.dataset.more : svcLabel.dataset.fewer;
+            // The groups inside carry data-rv reveals; while collapsed
+            // they are visibility:hidden, which also suspends their
+            // IntersectionObserver entries — reveal them outright on
+            // expand so expanded content is never left transparent.
+            if (!collapsed) svcWrap.querySelectorAll('[data-rv]').forEach((el) => el.classList.add('rv-in'));
           });
         }
       </script>
