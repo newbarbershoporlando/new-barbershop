@@ -3,15 +3,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { ui, path, type Lang } from '../data/ui';
 import { shop1, shop2 } from '../data/locations';
 import { getPost } from '../data/posts';
+import { blogPostingNode } from '../lib/schema';
 
 interface Props { lang: Lang; slug: string }
 const { lang, slug } = Astro.props;
 const t = ui[lang];
 const post = getPost(slug);
 const loc = post.locales[lang];
+const site = Astro.site!;
+const siteRoot = site.href.replace(/\/$/, '');
 ---
 
-<BaseLayout lang={lang} slug={post.slug} title={loc.seoTitle} description={loc.metaDescription}>
+<BaseLayout
+  lang={lang}
+  slug={post.slug}
+  title={loc.seoTitle}
+  description={loc.metaDescription}
+  jsonLd={blogPostingNode({
+    siteUrl: siteRoot,
+    pageUrl: new URL(path(lang, post.slug), site).href,
+    headline: loc.title,
+    description: loc.metaDescription,
+    imagePath: post.image,
+    lang,
+  })}
+>
   <section class="section">
     <div class="wrap">
       <div class="post-body">

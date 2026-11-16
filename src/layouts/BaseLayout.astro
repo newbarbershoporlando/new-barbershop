@@ -33,6 +33,9 @@ const ogImage = new URL('/images/banner-wide.webp', site).href;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {/* Full hreflang set incl. the self-referencing entry (pre-launch
+        audit M2, owner-authorized 2026-11-16). */}
+    <link rel="alternate" hreflang={lang} href={canonical} />
     <link rel="alternate" hreflang={lang === 'en' ? 'es' : 'en'} href={altUrl} />
     <link rel="alternate" hreflang="x-default" href={enUrl} />
     <meta property="og:type" content="website" />

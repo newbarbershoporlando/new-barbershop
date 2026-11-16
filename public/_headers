@@ -1,0 +1,12 @@
+# Cloudflare Pages response headers (pre-launch audit M13,
+# owner-authorized 2026-11-16). Astro's hashed bundles can be cached
+# forever; images and fonts carry stable names, so they get a long
+# but finite max-age instead of immutable.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/fonts/*
+  Cache-Control: public, max-age=2592000

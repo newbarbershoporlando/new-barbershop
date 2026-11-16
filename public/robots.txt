@@ -1,0 +1,9 @@
+# New Barbershop Orlando — robots.txt
+# Pre-launch audit M1 (owner-authorized 2026-11-16): the site ships its
+# own robots file. Note: the Cloudflare zone's Managed robots.txt toggle
+# may still prepend its content-signals preamble in production — that is
+# a dashboard setting, outside the build.
+User-agent: *
+Allow: /
+
+Sitemap: https://newbarbershoporlando.com/sitemap-index.xml

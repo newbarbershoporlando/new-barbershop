@@ -123,6 +123,38 @@ export function galleryImageGraph(siteUrl: string, items: GalleryItem[], lang: L
   };
 }
 
+// BlogPosting node (pre-launch audit M3, owner-authorized 2026-11-16):
+// one per blog post page, EN + ES. Author/publisher reference the
+// homepage graph's Organization node by its stable @id. The post data
+// carries no publication dates, so no date fields are emitted (never
+// invent dates).
+export function blogPostingNode(args: {
+  siteUrl: string;
+  pageUrl: string;
+  headline: string;
+  description: string;
+  imagePath: string;
+  lang: Lang;
+}) {
+  const orgRef = {
+    '@type': 'Organization',
+    '@id': `${args.siteUrl}/#organization`,
+    name: 'New Barbershop',
+    url: `${args.siteUrl}/`,
+  };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: args.headline,
+    description: args.description,
+    image: `${args.siteUrl}${args.imagePath}`,
+    inLanguage: args.lang,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': args.pageUrl },
+    author: orgRef,
+    publisher: orgRef,
+  };
+}
+
 // BreadcrumbList node (seo-impl/faq-schema.md rule 4).
 export function breadcrumbNode(items: { name: string; url: string }[]) {
   return {
