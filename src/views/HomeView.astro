@@ -69,14 +69,26 @@ const site = Astro.site!;
   <TrustStrip lang={lang} />
 
   <!-- Work gallery — owner addition 2026-11-15: real client photos
-       only (homeGalleryItems), directly above the services preview
-       so visitors see the shop's work early. Same treatment as the
-       Services gallery. -->
+       only (homeGalleryItems), high on the page so visitors see the
+       shop's work early. Same treatment as the Services gallery. -->
   <section class="section" id="workGallery">
     <div class="wrap">
       <h2>{c.workHeading}</h2>
       <p style="max-width:800px">{c.workIntro}</p>
       <Gallery items={homeGalleryItems} lang={lang} />
+    </div>
+  </section>
+
+  <!-- Locations — moved directly under the work gallery by owner
+       order 2026-11-16 (was below How It Works). The block moves
+       whole: same markup, classes, copy and ShopCard links. -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <h2>{t.ourLocations}</h2>
+      <p>{c.locationsLine}</p>
+      <div class="cards">
+        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
+      </div>
     </div>
   </section>
 
@@ -119,17 +131,6 @@ const site = Astro.site!;
   </section>
 
   <HowItWorks lang={lang} />
-
-  <!-- Locations -->
-  <section class="section section--paper">
-    <div class="wrap">
-      <h2>{t.ourLocations}</h2>
-      <p>{c.locationsLine}</p>
-      <div class="cards">
-        {locations.map((loc) => <ShopCard loc={loc} lang={lang} />)}
-      </div>
-    </div>
-  </section>
 
   <ReviewsBand lang={lang} />
   <BlogBand lang={lang} />
