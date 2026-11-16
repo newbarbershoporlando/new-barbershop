@@ -7,22 +7,65 @@ const { lang, items } = Astro.props;
 const t = ui[lang];
 ---
 
+{/* Upgrade (2026-11-16): FAQ accordion as progressive enhancement.
+    Server-rendered state is FULLY EXPANDED (aria-expanded="true",
+    panel visible) so no-JS visitors and crawlers see every question
+    and answer — identical content to the FAQPage JSON-LD, which is
+    generated from the same data. The inline script below collapses
+    the items and wires toggle + APG keyboard navigation (Enter/Space
+    native, ArrowUp/ArrowDown/Home/End move between questions). */}
 <section class="section" data-rv>
   <div class="wrap">
     <h2>{t.faqHeading}</h2>
-    {items.map((f) => (
-      <div class="faq-item">
-        <h3>{f.question[lang]}</h3>
-        <p>
-          {f.answer[lang]}
-          {f.cta && (
-            <>
-              {' '}
-              <a href={path(lang, f.cta.slug)}>{f.cta.label[lang]}</a>
-            </>
-          )}
-        </p>
-      </div>
-    ))}
+    <div data-faq>
+      {items.map((f, i) => (
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-q" id={`faq-q-${i}`} aria-expanded="true" aria-controls={`faq-a-${i}`}>
+              {f.question[lang]}
+            </button>
+          </h3>
+          <div class="faq-panel" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
+            <div class="faq-panel-in">
+              <p>
+                {f.answer[lang]}
+                {f.cta && (
+                  <>
+                    {' '}
+                    <a href={path(lang, f.cta.slug)}>{f.cta.label[lang]}</a>
+                  </>
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
+
+<script>
+  document.querySelectorAll('[data-faq]').forEach((root) => {
+    const buttons = Array.from(root.querySelectorAll('.faq-q'));
+    if (!buttons.length) return;
+    root.classList.add('faq--enhanced');
+    const setState = (btn, open) => {
+      btn.setAttribute('aria-expanded', String(open));
+      btn.closest('.faq-item').classList.toggle('closed', !open);
+    };
+    buttons.forEach((btn, i) => {
+      setState(btn, false);
+      btn.addEventListener('click', () => {
+        setState(btn, btn.getAttribute('aria-expanded') !== 'true');
+      });
+      btn.addEventListener('keydown', (e) => {
+        let n = null;
+        if (e.key === 'ArrowDown') n = (i + 1) % buttons.length;
+        else if (e.key === 'ArrowUp') n = (i - 1 + buttons.length) % buttons.length;
+        else if (e.key === 'Home') n = 0;
+        else if (e.key === 'End') n = buttons.length - 1;
+        if (n !== null) { e.preventDefault(); buttons[n].focus(); }
+      });
+    });
+  });
+</script>
