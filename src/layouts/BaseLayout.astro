@@ -141,5 +141,14 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
         window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(check, 120); });
       })();
     </script>
+    {/* Premium design item 3 (2026-11-16): iOS Safari applies the
+        CSS :active press states only while a touch listener exists
+        on the document. This empty passive listener is the standard
+        enabler — it handles nothing, prevents nothing, and changes
+        no behavior beyond letting the press states render on
+        iPhones. */}
+    <script is:inline>
+      document.addEventListener('touchstart', function () {}, { passive: true });
+    </script>
   </body>
 </html>

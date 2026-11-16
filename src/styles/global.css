@@ -93,6 +93,9 @@ img { max-width: 100%; height: auto; display: block; }
   text-transform: uppercase; text-decoration: none;
   border-radius: 6px; border: 2px solid transparent;
   cursor: pointer; text-align: center;
+  /* Premium design item 3 (2026-11-16): the hover colors below
+     always existed — this transition stops them snapping. */
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 .btn--call { background: var(--red); color: var(--white) !important; }
 .btn--call:hover { background: var(--red-dark); }
@@ -101,10 +104,40 @@ img { max-width: 100%; height: auto; display: block; }
 .btn--ghost-dark { border-color: var(--white); color: var(--white) !important; background: transparent; }
 .btn--ghost-dark:hover { background: var(--white); color: var(--ink) !important; }
 .btn--whatsapp { border-color: #25d366; color: #0f7a3f !important; background: transparent; }
+/* Item 3: the WhatsApp variant was the one button with no hover
+   state at all — a tint of its own AA-verified green (text color
+   unchanged, so contrast is unchanged). */
+.btn--whatsapp:hover { background: rgba(15, 122, 63, 0.08); }
 .section--dark .btn--whatsapp, .section--black .btn--whatsapp { color: #4be07f !important; }
+.section--dark .btn--whatsapp:hover, .section--black .btn--whatsapp:hover { background: rgba(75, 224, 127, 0.12); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn-stack { display: flex; flex-direction: column; align-items: flex-start; }
 .btn-stack .btn + .btn { margin-top: 20px; }
+
+/* ——— Premium design item 3 (2026-11-16): press feedback ———
+   The shipped CSS had ZERO :active rules, so on touch (the
+   primary audience) a tap was acknowledged only by whatever
+   happened next, never by the control itself. Press states mirror
+   the existing hover colors — no new colors. Paint-only
+   properties (plus a 1px transform on .btn itself): INP-neutral,
+   no layout shift. The View All / Read More toggles are
+   .btn--ghost-light and inherit its press state; the FAQ toggle
+   (.faq-q, not a .btn) gets the color treatment. iOS Safari only
+   applies :active while a document touch listener exists — see
+   the enabler script in BaseLayout. */
+.btn:active { transform: translateY(1px); }
+.btn--call:active { background: var(--red-dark); }
+.btn--ghost-light:active { background: var(--ink); color: var(--white) !important; }
+.btn--ghost-dark:active { background: var(--white); color: var(--ink) !important; }
+.btn--whatsapp:active { background: rgba(15, 122, 63, 0.08); }
+.section--dark .btn--whatsapp:active, .section--black .btn--whatsapp:active { background: rgba(75, 224, 127, 0.12); }
+.call-bar a:active { background: var(--red-dark); }
+.gallery-btn:active img { opacity: 0.85; }
+.lb-btn:active { background: var(--red); }
+.back-to-top:active { background: var(--red-dark); }
+.lang-switch:active, .menu-toggle:active { background: rgba(255, 255, 255, 0.12); }
+.tile:active { box-shadow: 0 1px 8px rgba(18, 6, 8, 0.08); }
+.faq-q:active { color: var(--red-dark); }
 
 /* ——— Header ——— */
 .site-header {
@@ -204,6 +237,7 @@ img { max-width: 100%; height: auto; display: block; }
   .main-nav a {
     color: var(--white); text-decoration: none; font-weight: 600;
     text-transform: uppercase; font-size: 16px;
+    transition: color 0.15s ease;
   }
   .main-nav a:hover { color: var(--red-hover); }
 }
@@ -217,15 +251,17 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-dropdown a {
   display: block; padding: 12px 18px; color: var(--ink) !important;
   text-transform: none; font-size: 17px;
+  transition: color 0.15s ease;
 }
 .nav-dropdown a:hover { color: var(--red-hover) !important; }
 .header-call { margin-left: auto; min-height: 48px; padding: 8px 16px; }
 @media (min-width: 1100px) { .header-call { margin-left: 0; } }
-.lang-switch { color: var(--white); font-weight: 700; text-decoration: none; border: 2px solid var(--white); border-radius: 6px; padding: 6px 10px; font-size: 15px; display: inline-flex; align-items: center; min-height: 44px; }
+.lang-switch { color: var(--white); font-weight: 700; text-decoration: none; border: 2px solid var(--white); border-radius: 6px; padding: 6px 10px; font-size: 15px; display: inline-flex; align-items: center; min-height: 44px; transition: background-color 0.15s ease; }
 .menu-toggle {
   display: inline-flex; align-items: center; justify-content: center;
   width: 48px; height: 48px; background: transparent; border: 2px solid var(--white);
   border-radius: 6px; color: var(--white); font-size: 22px; cursor: pointer;
+  transition: background-color 0.15s ease;
 }
 @media (min-width: 1100px) { .menu-toggle { display: none; } }
 /* max-height + scroll (audit M8): on short/landscape viewports the
@@ -482,6 +518,7 @@ body.lb-open { overflow: hidden; }
   background: rgba(255, 255, 255, 0.08); color: #fff;
   font-size: 28px; line-height: 1; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
+  transition: background-color 0.15s ease;
 }
 .lb-btn:hover { background: var(--red); }
 .lb-btn:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
@@ -645,9 +682,11 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
   opacity: 0; visibility: hidden; pointer-events: none;
   transform: translateY(8px);
-  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background-color 0.25s ease;
 }
 .back-to-top.visible { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+/* Item 3: back-to-top was the other control with no hover state. */
+.back-to-top:hover { background: var(--red-dark); }
 .back-to-top:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
 @media (min-width: 1100px) { .back-to-top { bottom: 24px; right: 24px; } }
 
