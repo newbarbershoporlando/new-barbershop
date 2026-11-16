@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShopCard from '../components/ShopCard.astro';
 import BlogBand from '../components/BlogBand.astro';
-import { HERO_ALT, type Lang } from '../data/ui';
+import { ui, HERO_ALT, type Lang } from '../data/ui';
 import { locations, shop1, shop2 } from '../data/locations';
 import { pageSeo, aboutCopy } from '../data/pages';
 
@@ -61,7 +61,35 @@ const shops = [shop1, shop2];
     <div class="wrap" style="max-width:800px">
       <p style="font-size:20px;font-weight:600">{c.lead}</p>
       <p>{c.body1}</p>
-      <p>{c.body2}</p>
+      {/* Upgrade (2026-11-16): Read More, mobile only. body1 stays
+          visible always — it carries the addresses and phone numbers.
+          body2 (story/services prose; exact hours also appear in this
+          page's shop cards below) collapses behind the toggle ONLY
+          below 900px and ONLY with JS (see .readmore rules in
+          global.css); desktop and no-JS render it in full. */}
+      <div class="readmore" id="aboutMore" data-readmore>
+        <div class="readmore-in">
+          <p>{c.body2}</p>
+        </div>
+      </div>
+      <p class="readmore-row">
+        <button type="button" class="btn btn--ghost-light" data-readmore-toggle aria-expanded="false" aria-controls="aboutMore">
+          <span data-readmore-label data-more={ui[lang].readMore} data-less={ui[lang].showLess}>{ui[lang].readMore}</span>
+        </button>
+      </p>
+      <script>
+        const rmWrap = document.querySelector('[data-readmore]');
+        const rmBtn = document.querySelector('[data-readmore-toggle]');
+        if (rmWrap && rmBtn) {
+          const rmLabel = rmBtn.querySelector('[data-readmore-label]');
+          rmWrap.classList.add('readmore-collapsed');
+          rmBtn.addEventListener('click', () => {
+            const collapsed = rmWrap.classList.toggle('readmore-collapsed');
+            rmBtn.setAttribute('aria-expanded', String(!collapsed));
+            if (rmLabel) rmLabel.textContent = collapsed ? rmLabel.dataset.more : rmLabel.dataset.less;
+          });
+        }
+      </script>
     </div>
   </section>
 

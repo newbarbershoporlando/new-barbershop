@@ -395,6 +395,25 @@ table.svc td.desc { width: 70%; color: var(--ink); }
 [data-svc-toggle] { display: none; }
 .js [data-svc-toggle] { display: inline-flex; }
 
+/* Upgrade (2026-11-16): Read More region (About story). The
+   collapse is doubly gated — JS available (the .readmore-collapsed
+   class is added by script) AND a sub-900px viewport — so desktop
+   and no-JS always render the full text. The toggle button follows
+   the same rule: hidden on desktop, where there is nothing to
+   expand. */
+.readmore { display: grid; grid-template-rows: 1fr; }
+.readmore-in { overflow: hidden; min-height: 0; }
+.readmore-row { margin-top: 4px; }
+[data-readmore-toggle] { display: none; }
+@media (max-width: 899px) {
+  .js .readmore { transition: grid-template-rows 0.45s ease, visibility 0s linear 0s; }
+  .js .readmore.readmore-collapsed {
+    grid-template-rows: 0fr; visibility: hidden;
+    transition: grid-template-rows 0.45s ease, visibility 0s linear 0.45s;
+  }
+  .js [data-readmore-toggle] { display: inline-flex; }
+}
+
 /* ——— Gallery ———
    Owner caption redesign 2026-11-15: grid figures carry ONLY the
    short style title on one tidy line (the old two-part caption with
