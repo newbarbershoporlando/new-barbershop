@@ -94,6 +94,24 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--coal); color: var(--white);
 }
 .site-header.scrolled { border-bottom: 1px solid var(--red); }
+/* Homepage only (owner request 2026-11-15): the header floats OVER
+   the hero photo — fixed, translucent brand-dark (65%) + backdrop
+   blur so the photo shows through while logo/nav stay legible. Once
+   the photo scrolls past, the HomeView observer adds .header-solid
+   and the header takes the current solid treatment. Other pages
+   never get this class and keep the sticky solid header. */
+.site-header--overlay {
+  position: fixed; left: 0; right: 0;
+  background: rgba(18, 6, 8, 0.65);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: background 0.25s ease;
+}
+.site-header--overlay.header-solid {
+  background: var(--coal);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
 .header-in {
   max-width: var(--max); margin: 0 auto; padding: 10px 16px;
   display: flex; align-items: center; gap: 16px;
@@ -153,14 +171,25 @@ img { max-width: 100%; height: auto; display: block; }
 .mobile-menu .sub { padding-left: 20px; font-size: 18px; }
 .mobile-menu .btn { margin-top: 14px; width: 100%; }
 
-/* ——— Hero (homepage) — owner-locked banner placement ——— */
 /* ——— Hero (home) ———
-   Owner rule, 2026-11-15 phone pass (hero-fix-review.md): NO text over
-   the banner at any viewport — the overlay layout formerly in
-   build-spec §3.3 is reversed. Stack: H1 + subhead on solid --coal →
-   clean full-width banner strip at natural aspect (the baked-in "1"
-   and "2" are never cropped) → both call buttons below the banner,
-   same width, 20px gap, on the standard section rhythm. */
+   Owner request 2026-11-15 (build-spec §3.3, third revision): the
+   owner-supplied Shop 1 interior photo is a full-bleed band starting
+   at y=0 with the header floating translucent over its top. HARD
+   RULE (unchanged through every revision): NO text over the photo at
+   any viewport — its baked-in logo stays fully visible. Below the
+   photo, on solid --coal: H1 → subhead (owner: "Move it", never
+   deleted) → both call buttons, same width, 20px gap → trust strip.
+   Desktop shows the photo at natural aspect, uncropped. Mobile uses
+   a cover-style crop in a 4:3 window, centered — the logo sits in
+   the photo's center, so centering keeps it whole. */
+.hero-photo { background: var(--coal); }
+.hero-photo picture { display: block; }
+.hero-photo img { width: 100%; height: auto; display: block; }
+@media (max-width: 899px) {
+  .hero-photo { aspect-ratio: 4 / 3; }
+  .hero-photo picture { height: 100%; }
+  .hero-photo img { height: 100%; object-fit: cover; object-position: center; }
+}
 .hero {
   background: var(--coal);
   color: var(--white);
@@ -171,9 +200,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .hero h1 { max-width: 640px; }
 .hero-sub { max-width: 520px; font-size: 19px; margin: 0; }
-.hero-banner { display: block; margin: 24px 0; }
-.hero-banner img { width: 100%; height: auto; display: block; }
-.hero-btns { align-items: stretch; max-width: 560px; }
+.hero-btns { align-items: stretch; max-width: 560px; margin-top: 24px; }
 /* Location-named call labels (Call Hunters Creek / Call Florida Mall,
    EN + ES) are longer than the old Shop 1/2 labels: on small screens,
    shrink call-button type a step so label + phone stay on one line

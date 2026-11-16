@@ -12,8 +12,10 @@ interface Props {
   title: string;
   description: string;
   jsonLd?: object | object[];
+  /** Homepage only: translucent header floating over the hero photo. */
+  overlayHeader?: boolean;
 }
-const { lang, slug, title, description, jsonLd } = Astro.props;
+const { lang, slug, title, description, jsonLd, overlayHeader = false } = Astro.props;
 const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const site = Astro.site!;
 const canonical = new URL(path(lang, slug), site).href;
@@ -54,7 +56,7 @@ const ogImage = new URL('/images/banner-wide.webp', site).href;
         style="display:none;visibility:hidden"
         title="GTM"></iframe>
     </noscript>
-    <Header lang={lang} slug={slug} />
+    <Header lang={lang} slug={slug} overlay={overlayHeader} />
     <main>
       <slot />
     </main>

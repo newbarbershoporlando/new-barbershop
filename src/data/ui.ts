@@ -19,6 +19,14 @@ export let BANNER_ALT = {
   es: 'Interior de New Barbershop 1 y New Barbershop 2 — ambas barberías de Orlando, una junto a la otra',
 };
 
+/* Homepage hero photo (owner-supplied 2026-11-15): ONE interior photo
+   (Shop 1) with the combined "New Barber Shop 1 · 2" logo baked into
+   its center — the alt says exactly that, never "two shops". */
+export const HERO_ALT = {
+  en: 'Inside New Barbershop 1 in Orlando — barber chairs, mirrors and ceiling lights, with the New Barber Shop 1 · 2 logo over the center of the photo',
+  es: 'Interior de New Barbershop 1 en Orlando — sillas de barbero, espejos y luces en el techo, con el logotipo de New Barber Shop 1 · 2 sobre el centro de la foto',
+};
+
 export const ui = {
   en: {
     nav: { home: 'Home', about: 'About', services: 'Services', blog: 'Blog', contact: 'Contact', locations: 'Locations' },

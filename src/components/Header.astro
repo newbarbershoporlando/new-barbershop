@@ -6,8 +6,11 @@ interface Props {
   lang: Lang;
   /** Current page slug without locale prefix, e.g. "services" or "locations/new-barbershop-1". */
   slug: string;
+  /** Homepage only: the header floats translucent over the hero photo
+      and turns solid once the photo scrolls past (HomeView observer). */
+  overlay?: boolean;
 }
-const { lang, slug } = Astro.props;
+const { lang, slug, overlay = false } = Astro.props;
 const t = ui[lang];
 const navItems = [
   { label: t.nav.home, slug: '' },
@@ -18,7 +21,7 @@ const navItems = [
 ];
 ---
 
-<header class="site-header" id="siteHeader">
+<header class:list={['site-header', { 'site-header--overlay': overlay }]} id="siteHeader">
   <div class="header-in">
     <a class="header-logo" href={path(lang, '')} aria-label="New Barbershop — Home">
       <img src="/images/logo.png" alt="New Barbershop" width="360" height="115" />
