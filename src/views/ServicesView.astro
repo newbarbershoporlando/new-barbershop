@@ -88,6 +88,16 @@ const site = Astro.site!;
           });
           svcBtn.addEventListener('click', () => setSvc(!svcWrap.classList.contains('svc-collapsed')));
         }
+        // Fragment landings can drift while webfonts/layout settle
+        // (measured: an ES category heading transiently resting
+        // off-viewport). Once the page has fully loaded, re-scroll
+        // to the fragment target so the landing is deterministic.
+        window.addEventListener('load', () => {
+          if (!location.hash) return;
+          let el = null;
+          try { el = document.querySelector(location.hash); } catch (err) { el = null; }
+          if (el && el.classList.contains('svc-group')) el.scrollIntoView();
+        });
       </script>
 
       <div data-rv>
