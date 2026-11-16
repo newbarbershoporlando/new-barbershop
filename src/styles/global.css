@@ -77,6 +77,10 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--red);
   margin: 0 0 4px;
 }
+/* Premium design item 7 (2026-11-16): the eyebrow steps up with
+   the H2 on desktop (it sat at 0.65× of the H2 there vs 0.87× on
+   mobile). */
+@media (min-width: 900px) { .eyebrow { font-size: 30px; } }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 .section { padding: 48px 0; }
 @media (min-width: 900px) { .section { padding: 80px 0; } }

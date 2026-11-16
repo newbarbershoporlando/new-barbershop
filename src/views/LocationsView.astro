@@ -47,7 +47,11 @@ const site = Astro.site!;
     </picture>
   </section>
   <section class="hero">
-    <div class="wrap"><h1>{t.ourLocations}</h1></div>
+    <div class="wrap">
+      {/* Item 7: eyebrow + heading block, same pattern as About. */}
+      <p class="eyebrow" style="text-align:center">{t.eyebrows.visit}</p>
+      <h1>{t.ourLocations}</h1>
+    </div>
   </section>
 
   <script>

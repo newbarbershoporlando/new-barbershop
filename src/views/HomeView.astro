@@ -73,6 +73,7 @@ const site = Astro.site!;
        shop's work early. Same treatment as the Services gallery. -->
   <section class="section" id="workGallery" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{t.eyebrows.work}</p>
       <h2>{c.workHeading}</h2>
       <p style="max-width:800px">{c.workIntro}</p>
       <Gallery items={homeGalleryItems} lang={lang} />
@@ -84,6 +85,7 @@ const site = Astro.site!;
        whole: same markup, classes, copy and ShopCard links. -->
   <section class="section section--paper" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{t.eyebrows.locations}</p>
       <h2>{t.ourLocations}</h2>
       <p>{c.locationsLine}</p>
       <p class="swipe-hint" data-swipe-hint aria-hidden="true">{t.swipeHint}</p>
@@ -96,6 +98,7 @@ const site = Astro.site!;
   <!-- Services preview: 5 category tiles -->
   <section class="section" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{t.eyebrows.services}</p>
       <h2>{c.servicesHeading}</h2>
       <p>{c.servicesIntro}</p>
       <CategoryTiles lang={lang} />
@@ -108,6 +111,7 @@ const site = Astro.site!;
   <!-- Story -->
   <section class="section section--dark" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{t.eyebrows.story}</p>
       <h2>{c.storyHeading}</h2>
       <p style="max-width:760px">{c.storyBody}</p>
       <a class="btn btn--ghost-dark" href={path(lang, 'about')}>{t.learnMore}</a>
@@ -120,6 +124,7 @@ const site = Astro.site!;
        Experience + How It Works run was 1,648px of unbroken white. -->
   <section class="section section--paper" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{t.eyebrows.experience}</p>
       <h2>{c.experienceHeading}</h2>
       <p style="max-width:760px">{c.experienceIntro}</p>
       <div class="cards">

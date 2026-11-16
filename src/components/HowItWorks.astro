@@ -1,5 +1,5 @@
 ---
-import { type Lang } from '../data/ui';
+import { ui, type Lang } from '../data/ui';
 import { howItWorks } from '../data/pages';
 
 interface Props {
@@ -15,6 +15,7 @@ const c = howItWorks[lang];
 
 <section class:list={['section', { 'section--paper': paper }]} data-rv>
   <div class="wrap">
+    <p class="eyebrow">{ui[lang].eyebrows.howItWorks}</p>
     <h2>{c.heading}</h2>
     <p style="max-width:760px">{c.intro}</p>
     <div class="cards">

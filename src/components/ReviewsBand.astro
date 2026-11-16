@@ -25,6 +25,7 @@ function initials(name: string): string {
 
 <section class="section section--black" data-rv>
   <div class="wrap">
+    {heading && <p class="eyebrow">{t.eyebrows.reviews}</p>}
     {heading && <h2>{t.reviewsHeading}</h2>}
     {shops.map((loc) => (
       <div class="review-group">

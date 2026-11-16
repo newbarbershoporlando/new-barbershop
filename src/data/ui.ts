@@ -76,6 +76,23 @@ export const ui = {
     /* Swipe-affordance label above the mobile swipe rows (owner
        add-on 2026-11-16): visual cue only, aria-hidden in markup. */
     swipeHint: 'Swipe to explore →',
+    /* Premium design item 7 (2026-11-16): Yellowtail eyebrow labels
+       for the section-heading block (eyebrow + H2) on major
+       sections. Short script labels in the established style of
+       the Services/About page eyebrows ('Grooming Excellence');
+       decorative — the H2 right below carries the real words. */
+    eyebrows: {
+      work: 'Real Cuts, Real Clients',
+      locations: 'Two Shops, One Family',
+      services: 'Grooming Excellence',
+      story: 'Since 2003',
+      experience: 'Why Choose Us',
+      howItWorks: 'Walk-Ins Welcome',
+      reviews: 'Word of Mouth',
+      blog: 'Tips & Styles',
+      visit: 'Visit Us',
+      contact: 'Get in Touch',
+    },
     ourLocations: 'Our Locations',
     backToBlog: '← Back to the blog',
     skipToContent: 'Skip to content',
@@ -138,6 +155,19 @@ export const ui = {
     showLess: 'Mostrar menos',
     readPost: 'Leer más →',
     swipeHint: 'Desliza para explorar →',
+    /* Item 7: section eyebrows (see EN note). */
+    eyebrows: {
+      work: 'Clientes reales, cortes reales',
+      locations: 'Dos barberías, una familia',
+      services: 'Excelencia en cuidado personal',
+      story: 'Desde 2003',
+      experience: 'Por qué elegirnos',
+      howItWorks: 'Sin cita previa',
+      reviews: 'De boca en boca',
+      blog: 'Consejos y estilos',
+      visit: 'Visítanos',
+      contact: 'Contáctanos',
+    },
     ourLocations: 'Nuestras ubicaciones',
     backToBlog: '← Volver al blog',
     skipToContent: 'Saltar al contenido',
