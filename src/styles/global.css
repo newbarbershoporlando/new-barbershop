@@ -285,6 +285,25 @@ img { max-width: 100%; height: auto; display: block; }
    mobile and desktop; the photo band, trust strip and sticky call
    bar are unchanged. */
 .hero h1 { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+/* Launch Step 1 (owner-approved 2026-11-16 — the Round 3.1 P2(a)
+   treatment, "the approved three-line Spanish mobile headline"): the
+   approved ES homepage headline keeps its exact wording; only its
+   mobile presentation tightens so it stacks in three lines instead
+   of four-to-six. Scoped three ways so nothing else can match:
+   html[lang="es"] (Spanish documents only), .hero:has(.hero-sub)
+   (the homepage hero is the only .hero section containing a subhead
+   — the About/Locations heroes have none, and blog/post H1s never
+   sit in .hero), and ≤480px (mobile only). EN and every desktop
+   width render exactly as before. Proposal metrics (rendered):
+   3 lines at 320/375/390/430, heights 94/101/105/114px. */
+@media (max-width: 480px) {
+  html[lang="es"] .hero:has(.hero-sub) h1 {
+    font-size: clamp(28px, 8vw, 34px);
+    line-height: 1.12;
+    letter-spacing: 0;
+    text-wrap: balance;
+  }
+}
 .hero-sub { max-width: 520px; font-size: 19px; margin: 0 auto; text-align: center; }
 /* Location-named call labels (Call Hunters Creek / Call Florida Mall,
    EN + ES) are longer than the old Shop 1/2 labels: on small screens,
