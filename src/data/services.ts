@@ -2,8 +2,11 @@
 // (sanity/schemas/service.ts). NO prices exist in this data, by owner directive.
 // FINAL copy: Agent B's new-copy.md §2 (enriched descriptions + category
 // intros, Spanish review pass applied). Group order and membership are B's:
-// Neck Shave & Cleanup sits in Finish & Details. Tile images/alts are from
-// assets-ready/manifest.md §4 (honest descriptions of what each photo shows).
+// Neck Shave & Cleanup sits in Finish & Details. Tile images: originally
+// stock from assets-ready/manifest.md §4; replaced 2026-11-16 (owner phone
+// pass) with the owner's real photos — cuts=haircut-03, beard=haircut-02,
+// finish=haircut-01, family=haircut-10, braids=haircut-13 — and the alts
+// below mirror the gallery alts for those same photos in pages.ts.
 
 import type { LocalizedString } from './locations';
 import { USE_SANITY, fetchSanity } from '../lib/sanity';
@@ -37,7 +40,7 @@ const localCategories: ServiceCategory[] = [
       es: 'Cortes clásicos y degradados limpios, adaptados a tu cabello y a tu estilo.',
     },
     image: '/images/tile-cuts.webp',
-    imageAlt: { en: "Barber cutting a client's hair with scissors and comb", es: 'Barbero cortando el cabello de un cliente con tijeras y peine' },
+    imageAlt: { en: 'Client with a finished high skin fade haircut and shaped beard at a barber shop in Orlando, FL', es: 'Cliente con un degradado alto al ras terminado y barba perfilada en una barbería en Orlando, FL' },
   },
   {
     _id: 'cat-beard',
@@ -49,7 +52,7 @@ const localCategories: ServiceCategory[] = [
       es: 'Arreglo de barba y afeitados tradicionales, con líneas definidas y limpias.',
     },
     image: '/images/tile-beard.webp',
-    imageAlt: { en: 'Barber giving a client a high skin fade with clippers', es: 'Barbero haciendo un degradado alto al ras con máquina' },
+    imageAlt: { en: 'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', es: 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL' },
   },
   {
     _id: 'cat-finish',
@@ -61,7 +64,7 @@ const localCategories: ServiceCategory[] = [
       es: 'Los detalles que hacen que un corte se vea terminado — bordes, línea del cuello, cejas y diseños.',
     },
     image: '/images/tile-finish.webp',
-    imageAlt: { en: 'Barber blending a fade with clippers at the nape', es: 'Barbero mezclando un degradado con máquina en la nuca' },
+    imageAlt: { en: 'Client with a high skin fade and a razor line-up at a barber shop in Orlando, FL', es: 'Cliente con un degradado alto al ras y un delineado con navaja en una barbería en Orlando, FL' },
   },
   {
     _id: 'cat-family',
@@ -73,8 +76,9 @@ const localCategories: ServiceCategory[] = [
       es: 'Cortes con paciencia y buen trato para todas las edades de la familia.',
     },
     image: '/images/tile-family.webp',
-    // Manifest §4: young client, NOT verified to be a child — alt must not claim "kids".
-    imageAlt: { en: "Barber cutting the top of a young client's hair with scissors", es: 'Barbero cortando con tijeras la parte superior del cabello de un cliente joven' },
+    // Real photo (owner phone pass 2026-11-16): haircut-10 — the same
+    // young-client kids fade as the gallery's Kids Fade entry.
+    imageAlt: { en: 'Young client with a textured fringe and a kids fade haircut at a barber shop in Orlando, FL', es: 'Cliente joven con flequillo texturizado y degradado para niños en una barbería en Orlando, FL' },
   },
   {
     _id: 'cat-braids',
@@ -85,10 +89,12 @@ const localCategories: ServiceCategory[] = [
       en: 'Braiding for men and women, plus wave styling and care.',
       es: 'Trenzado para hombres y mujeres, además de peinado y cuidado de waves.',
     },
-    // REAL photo: Shop 1 side of the shop's own banner (manifest §4) — no
-    // braids photo exists in the backup; a fade photo must never sit here.
+    // Real photo (owner phone pass 2026-11-16): haircut-13 — the same
+    // cornrows photo as the gallery's Braids entry. (This tile previously
+    // carried the Shop 1 interior banner: no braids photo existed in the
+    // original backup, and a fade photo must never sit here.)
     image: '/images/tile-braids.webp',
-    imageAlt: { en: 'Inside New Barbershop 1 in Orlando', es: 'Interior de New Barbershop 1 en Orlando' },
+    imageAlt: { en: 'Client with neat cornrow braids and faded sides at a barber shop in Orlando, FL', es: 'Cliente con trenzas cornrow impecables y laterales degradados en una barbería en Orlando, FL' },
   },
 ];
 
