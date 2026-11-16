@@ -792,6 +792,328 @@ const localPosts: Post[] = [
       },
     ],
   },
+  {
+    _id: 'post-15',
+    slug: 'blog/how-often-wash-hair-men',
+    image: '/images/blog-15-wash-hair.webp',
+    imageAlt: {
+      en: 'Client with a clean low fade at New Barbershop in Orlando',
+      es: 'Cliente con un degradado bajo y limpio en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'How Often Should a Man Wash His Hair? The Schedule by Hair Type and Scalp',
+        seoTitle: 'How Often Should a Man Wash His Hair? An Orlando Barber’s Schedule by Hair Type | New Barbershop Orlando',
+        metaDescription:
+          'How often to wash men’s hair — the schedule by hair type and scalp, from an Orlando barber: oily, wavy, thick, curly and coily. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Ask ten men how often they wash their hair and you will hear everything from “every day, obviously” to “whenever it starts to itch.” Both can be right — because the honest answer depends on your hair type and your scalp, not on a rule somebody sold you. Here is the schedule we walk clients through in the chair.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'How Often Should a Man Wash His Hair? The Schedule by Hair Type and Scalp',
+        seoTitle: 'How Often Should a Man Wash His Hair? An Orlando Barber’s Schedule by Hair Type | New Barbershop Orlando',
+        metaDescription:
+          'How often to wash men’s hair — the schedule by hair type and scalp, from an Orlando barber: oily, wavy, thick, curly and coily. Walk-ins welcome. Call (407) 470-4846.',
+        intro:
+          'Pregúntale a diez hombres cada cuánto se lavan el cabello y escucharás de todo: desde “todos los días, obvio” hasta “cuando empieza a picar”. Ambos pueden tener razón, porque la respuesta honesta depende de tu tipo de cabello y de tu cuero cabelludo, no de una regla que alguien te vendió. Este es el calendario que repasamos con los clientes en la silla.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Schedule by Hair Type', es: 'El calendario según tu tipo de cabello' },
+        body: {
+          en: 'Oily or straight hair: daily to every other day — oil shows fast on straight strands. Wavy hair: two to three times a week. Thick or coarse hair: about twice a week. Curly hair: once or twice a week. Coily hair: once a week or longer between washes. Not sure which band you are in? Run the day-two test: by the second day after a wash, if your scalp itches, flakes, or your roots feel waxy and heavy, wash sooner; if everything still feels clean and light, you can stretch. Your scalp votes — listen to it.',
+          es: 'Cabello graso o lacio: a diario o un día sí y uno no; la grasa se nota rápido en el cabello lacio. Cabello ondulado: dos o tres veces por semana. Cabello grueso: unas dos veces por semana. Cabello rizado: una o dos veces por semana. Cabello muy rizado o afro: una vez por semana o con más espacio entre lavados. ¿No sabes en qué grupo estás? Haz la prueba del segundo día: si al segundo día de lavarlo el cuero cabelludo te pica, suelta escamas o las raíces se sienten pesadas y con cera, lava antes; si todo se sigue sintiendo limpio y ligero, puedes estirar. Tu cuero cabelludo vota: escúchalo.',
+        },
+      },
+      {
+        heading: { en: 'Technique Beats Calendar', es: 'La técnica le gana al calendario' },
+        body: {
+          en: 'How you wash matters as much as how often. Shampoo is for the scalp — fingertips, never nails, worked into the skin where oil and product actually live. Conditioner is for the lengths, not the roots. A water-only rinse handles gym days and sweat without stripping anything, and if you style with product daily, you have voted yourself into more frequent real washes, because product has to come out. Orlando moves the number too: heat, humidity, outdoor work and pool days all push you up the schedule. Still guessing? Our Hair Wash & Shampoo service is the reset button — and while you are in the chair, ask us to read your scalp and place you in your band honestly.',
+          es: 'Cómo te lavas importa tanto como cada cuánto. El champú es para el cuero cabelludo: con las yemas de los dedos, nunca con las uñas, trabajado sobre la piel, donde viven la grasa y el producto. El acondicionador es para el largo, no para las raíces. Un enjuague solo con agua resuelve los días de gimnasio y sudor sin resecar nada, y si te peinas con producto a diario, tú mismo votaste por lavados reales más frecuentes, porque ese producto tiene que salir. Orlando también mueve el número: el calor, la humedad, el trabajo al aire libre y los días de piscina te suben en el calendario. ¿Sigues adivinando? Nuestro servicio de lavado y champú es el botón de reinicio, y mientras estás en la silla, pídenos que revisemos tu cuero cabelludo y te ubiquemos en tu grupo con honestidad.',
+        },
+      },
+      {
+        heading: { en: 'Ask Us in the Chair', es: 'Pregúntanos en la silla' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-16',
+    slug: 'blog/360-waves-routine',
+    image: '/images/blog-16-waves.webp',
+    imageAlt: {
+      en: 'Client with a short crop — the starting point for training 360 waves',
+      es: 'Cliente con un corte corto: el punto de partida para entrenar las 360 waves',
+    },
+    locales: {
+      en: {
+        title: '360 Waves: The Brush, Durag and Wolfing Routine, Explained by a Barber',
+        seoTitle: '360 Waves Routine: Brush, Durag and Wolfing, Explained by an Orlando Barber | New Barbershop Orlando',
+        metaDescription:
+          'The 360 waves routine from an Orlando barber — brush sessions, durag compression, wash-and-style and wolfing, plus our Waves Styling & Maintenance service. Call (407) 470-4846.',
+        intro:
+          'Waves are the most misunderstood style we cut. Clients ask for them like a haircut; barbers know they are a training program that a haircut merely starts. The pattern is laid by your brush, held by your durag and deepened by your patience — here is the routine, the way we explain it in the chair.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: '360 Waves: The Brush, Durag and Wolfing Routine, Explained by a Barber',
+        seoTitle: '360 Waves Routine: Brush, Durag and Wolfing, Explained by an Orlando Barber | New Barbershop Orlando',
+        metaDescription:
+          'The 360 waves routine from an Orlando barber — brush sessions, durag compression, wash-and-style and wolfing, plus our Waves Styling & Maintenance service. Call (407) 470-4846.',
+        intro:
+          'Las waves son el estilo más incomprendido de los que cortamos. Los clientes las piden como si fueran un corte; los barberos sabemos que son un programa de entrenamiento que el corte apenas inicia. El patrón lo crea tu cepillo, lo sostiene tu durag y lo profundiza tu paciencia. Esta es la rutina, tal como la explicamos en la silla.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Trained, Not Cut: The Brush Sessions', es: 'Se entrenan, no se cortan: las sesiones de cepillo' },
+        body: {
+          en: 'It starts with the right base: a cut with the grain, usually a #1.5 to #2 guard, so the hair lies in the direction the pattern will run. From there, the brush does the work — sessions from the crown outward, in every direction the waves will flow, spread through the day, every day. Short, consistent sessions beat one long one. Most men see a first pattern forming within a few weeks of honest brushing; depth takes months, and anyone who promises you waves in a week is selling something. This is exactly the upkeep our Waves Styling & Maintenance service is built around — check the Services page for what the in-shop side covers.',
+          es: 'Todo empieza con la base correcta: un corte a favor del grano, normalmente con una guía #1.5 a #2, para que el cabello se acueste en la dirección en que correrá el patrón. De ahí, el cepillo hace el trabajo: sesiones desde la coronilla hacia afuera, en cada dirección en que fluirán las waves, repartidas durante el día, todos los días. Las sesiones cortas y constantes le ganan a una sola sesión larga. La mayoría de los hombres ve un primer patrón formándose en pocas semanas de cepillado honesto; la profundidad toma meses, y quien te prometa waves en una semana te está vendiendo algo. Este es justo el mantenimiento alrededor del cual está construido nuestro servicio de peinado y mantenimiento de waves; revisa la página de Servicios para ver qué cubre la parte en la barbería.',
+        },
+      },
+      {
+        heading: { en: 'Compression and the Wash-and-Style', es: 'La compresión y el lavado con peinado' },
+        body: {
+          en: 'Brushing lays the pattern; compression keeps it. The durag goes on after every brush session and stays on all night — skip it and the day’s work puffs back up by morning. Once a week, wash-and-style: cleanse the hair while brushing the pattern in, rinse, brush again, then durag while it dries so the waves set clean instead of frizzy. Keep the hair moisturized between washes — dry hair refuses to lay down, and forcing it only breaks it. The honest promise of the whole system is not faster growth; it is less breakage and a pattern that survives.',
+          es: 'El cepillado crea el patrón; la compresión lo conserva. El durag se pone después de cada sesión de cepillo y se queda toda la noche; si te lo saltas, el trabajo del día se esponja para la mañana. Una vez por semana, lavado con peinado: limpia el cabello mientras cepillas el patrón, enjuaga, cepilla otra vez y ponte el durag mientras se seca, para que las waves se fijen limpias en vez de con frizz. Mantén el cabello hidratado entre lavados: el cabello seco se niega a acostarse, y forzarlo solo lo quiebra. La promesa honesta de todo el sistema no es un crecimiento más rápido; es menos quiebre y un patrón que perdura.',
+        },
+      },
+      {
+        heading: { en: 'Wolfing: Where the Depth Comes From', es: 'Wolfing: de dónde sale la profundidad' },
+        body: {
+          en: 'Wolfing means growing the hair out — typically four to eight weeks without a cut — while brushing harder than ever, so the waves stack and deepen. During a wolf, your barber visits change: most are edges-only (a razor line-up to keep the wolf looking deliberate), and the final visit is the reveal cut, taken back down with the grain to show what you built. Knowing which visit is which is the difference between a deep pattern and an accidental reset. That rhythm — line-ups during the wolf, the reveal at the end — is the heart of our Waves Styling & Maintenance service. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Wolfing significa dejar crecer el cabello — normalmente de cuatro a ocho semanas sin corte — mientras te cepillas más que nunca, para que las waves se apilen y ganen profundidad. Durante un wolf, tus visitas al barbero cambian: la mayoría son solo de bordes (un perfilado a navaja para que el wolf se vea intencional), y la visita final es el corte de revelación, de vuelta abajo y a favor del grano, para mostrar lo que construiste. Saber qué visita es cuál es la diferencia entre un patrón profundo y un reinicio accidental. Ese ritmo — delineados durante el wolf y la revelación al final — es el corazón de nuestro servicio de peinado y mantenimiento de waves. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-17',
+    slug: 'blog/braids-aftercare',
+    image: '/images/blog-17-braids-aftercare.webp',
+    imageAlt: {
+      en: 'Client with clean cornrows braided at New Barbershop 1 in Orlando',
+      es: 'Cliente con trenzas cornrows limpias hechas en New Barbershop 1 en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Braids Aftercare: How to Keep Them Clean, Comfortable and In Longer',
+        seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer | New Barbershop Orlando',
+        metaDescription:
+          'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Hunters Creek. Call (407) 470-4846.',
+        intro:
+          'The install is only half the service. What you do at home decides whether your braids look fresh for the long end of their life or tired by week two. Our braider at New Barbershop 1 gives every client the same aftercare talk — here it is in writing. (Still deciding on the style itself? Start with our Braids in Orlando post; this one is about life after the chair.)',
+        closing: 'Braids are a Hunters Creek service — find the shop’s location and hours on our Contact page.',
+      },
+      es: {
+        title: 'Braids Aftercare: How to Keep Them Clean, Comfortable and In Longer',
+        seoTitle: 'Braids Aftercare: Keep Them Clean and In Longer | New Barbershop Orlando',
+        metaDescription:
+          'Braids aftercare from our Orlando braiders — how long braids last, how to wash them, sleeping in a durag, and when they must come out. Braids at Hunters Creek. Call (407) 470-4846.',
+        intro:
+          'La instalación es solo la mitad del servicio. Lo que haces en casa decide si tus trenzas se ven frescas hasta el final de su vida útil o cansadas en la segunda semana. Nuestra trenzadora en New Barbershop 1 le da a cada cliente la misma charla de cuidado posterior; aquí está por escrito. (¿Todavía estás decidiendo el estilo? Empieza con nuestra publicación Trenzas en Orlando; esta trata de la vida después de la silla.)',
+        closing: 'Las trenzas son un servicio de Hunters Creek — encuentra la ubicación y los horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Honest Lifespan', es: 'La vida útil, con honestidad' },
+        body: {
+          en: 'Most men’s braids and cornrows live four to eight weeks, depending on the style and the care — cornrows often sit at the shorter end. What actually ends them is rarely the calendar: it is new growth loosening the base, frizz lifting the pattern, and buildup collecting at the roots. Care stretches you toward the long end of that range; nothing stretches past it, and a style left in too long starts costing you the hair it was protecting — tangles and breakage at takedown. Plan the takedown when you book the install, and the style never overstays.',
+          es: 'La mayoría de las trenzas y cornrows para hombre viven de cuatro a ocho semanas, según el estilo y el cuidado; las cornrows suelen estar en el extremo más corto. Lo que en realidad las termina rara vez es el calendario: es el crecimiento nuevo aflojando la base, el frizz levantando el patrón y la acumulación en las raíces. El cuidado te acerca al extremo largo de ese rango; nada lo estira más allá, y un estilo que se queda demasiado tiempo empieza a costarte el cabello que protegía: enredos y quiebre al retirarlo. Planifica la retirada cuando reserves la instalación, y el estilo nunca se queda de más.',
+        },
+      },
+      {
+        heading: { en: 'The Weekly Routine', es: 'La rutina semanal' },
+        body: {
+          en: 'Yes, you can wash braids — about once a week, with diluted shampoo worked onto the scalp with your fingertips, not scrubbed through the braids themselves; rinse well and dry fully, every time, because damp braids left to air-dry under a durag stay damp where you cannot see. Between washes, a few drops of light oil along the parts every two or three days keeps the scalp comfortable. And every single night: satin or a durag. Sleep friction is the number-one frizz machine, and it works eight hours a night against an unprotected install.',
+          es: 'Sí, las trenzas se pueden lavar: más o menos una vez por semana, con champú diluido trabajado sobre el cuero cabelludo con las yemas de los dedos, sin frotar las trenzas en sí; enjuaga bien y seca por completo, siempre, porque unas trenzas húmedas bajo un durag se quedan húmedas donde no se ve. Entre lavados, unas gotas de aceite ligero a lo largo de las divisiones cada dos o tres días mantienen cómodo el cuero cabelludo. Y cada noche, sin falta: satén o un durag. La fricción al dormir es la máquina de frizz número uno, y trabaja ocho horas por noche contra una instalación desprotegida.',
+        },
+      },
+      {
+        heading: { en: 'Takedown Discipline — and the Tension Rule', es: 'Disciplina al retirarlas — y la regla de la tensión' },
+        body: {
+          en: 'Two things we say in the chair that belong in writing. First, the tension rule: braids that hurt are too tight — say so at the install, on the day, not weeks later; a good braider adjusts on the spot. Second, when the growth at the base turns into tangles, the style is done, no matter how good it still looks from the front. A mid-wear check at the shop keeps an install honest, and your next set starts from healthy hair. Braids are done at our Hunters Creek shop, for men and women. Call to book braids: Hunters Creek (407) 470-4846. WhatsApp is available at Hunters Creek.',
+          es: 'Dos cosas que decimos en la silla y que merecen estar por escrito. Primero, la regla de la tensión: las trenzas que duelen están demasiado apretadas; dilo en la instalación, ese mismo día, no semanas después; una buena trenzadora ajusta en el momento. Segundo, cuando el crecimiento en la base se convierte en enredos, el estilo terminó, sin importar lo bien que se vea de frente. Una revisión a mitad de uso en la barbería mantiene honesta la instalación, y tu próximo set empieza desde un cabello sano. Las trenzas se hacen en nuestro local de Hunters Creek, para hombres y mujeres. Llama para reservar tus trenzas: Hunters Creek (407) 470-4846. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-18',
+    slug: 'blog/best-hair-product-for-men',
+    image: '/images/blog-18-hair-products.webp',
+    imageAlt: {
+      en: 'Barber styling a client’s hair at New Barbershop in Orlando',
+      es: 'Barbero peinando el cabello de un cliente en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Pomade, Clay, Wax, Gel or Paste? Pick Your Product by Hold and Shine',
+        seoTitle: 'Best Hair Product for Men: Pomade, Clay, Wax, Gel or Paste? | New Barbershop Orlando',
+        metaDescription:
+          'The best hair product for men, decoded by hold and shine — pomade, clay, wax, gel and paste compared by Orlando barbers, plus how to apply each. Call (407) 470-4846.',
+        intro:
+          'The shelf is confusing on purpose: five tubs that all promise “hold,” each doing something completely different. Most men own the wrong one, and then blame their hair. Forget brands — barbers pick product with two questions: how much hold, and how much shine? Answer those and the right category picks itself.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Pomade, Clay, Wax, Gel or Paste? Pick Your Product by Hold and Shine',
+        seoTitle: 'Best Hair Product for Men: Pomade, Clay, Wax, Gel or Paste? | New Barbershop Orlando',
+        metaDescription:
+          'The best hair product for men, decoded by hold and shine — pomade, clay, wax, gel and paste compared by Orlando barbers, plus how to apply each. Call (407) 470-4846.',
+        intro:
+          'El estante confunde a propósito: cinco envases que prometen “fijación”, cada uno haciendo algo completamente distinto. La mayoría de los hombres tiene el equivocado, y luego culpa a su cabello. Olvida las marcas: los barberos elegimos el producto con dos preguntas: ¿cuánta fijación y cuánto brillo? Respóndelas y la categoría correcta se elige sola.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'The Decoder: Five Categories, Two Axes', es: 'El decodificador: cinco categorías, dos ejes' },
+        body: {
+          en: 'Pomade — medium-to-strong hold with real shine: the combed styles (slick back, side part, pompadour). Clay — strong hold, no shine: matte texture, and the one that makes fine hair look thicker because it adds grip without gloss. Wax — flexible, reworkable hold with a little shine: restyle it at noon, it forgives. Gel — the hardest set and the wettest look, locked all day and crunchy if you overdo it. Paste — the middle ground: medium hold, low shine, a natural finish — if you own exactly one tub, this is the default. Match the category to the cut first; our Services page shows the styles each one was made for.',
+          es: 'Pomada: fijación media a fuerte con brillo real; los estilos peinados (slick back, raya al lado, pompadour). Arcilla (clay): fijación fuerte, cero brillo; textura mate, y la que hace que el cabello fino se vea más grueso porque aporta agarre sin brillo. Cera (wax): fijación flexible y retocable con un poco de brillo; la reacomodas al mediodía y perdona. Gel: la fijación más dura y el look más húmedo; dura todo el día y se pone crujiente si te pasas. Pasta (paste): el punto medio; fijación media, poco brillo, acabado natural. Si vas a tener un solo envase, este es el predeterminado. Combina primero la categoría con el corte; nuestra página de Servicios muestra los estilos para los que fue hecho cada uno.',
+        },
+      },
+      {
+        heading: { en: 'Application Is Where Most Men Fail', es: 'La aplicación es donde la mayoría falla' },
+        body: {
+          en: 'The right tub used wrong still fails. The rules: start with a pea-to-dime amount — you can add, you cannot subtract. Warm it between your palms until it disappears. Work it back to front so the front does not get the whole load. And match the water to the product: water-based products go on damp hair; clay and wax go on dry hair, or they slide and clump. If your style dies by midday, nine times out of ten it is amount or application, not the product.',
+          es: 'El envase correcto, usado mal, también falla. Las reglas: empieza con una cantidad del tamaño de un guisante a una moneda; puedes añadir, no puedes quitar. Caliéntalo entre las palmas hasta que desaparezca. Trabájalo de atrás hacia adelante, para que el frente no se lleve toda la carga. Y combina el agua con el producto: los productos a base de agua van sobre cabello húmedo; la arcilla y la cera van sobre cabello seco, o se resbalan y se apelotonan. Si tu peinado muere al mediodía, nueve de cada diez veces es la cantidad o la aplicación, no el producto.',
+        },
+      },
+      {
+        heading: { en: 'Wash-Out Reality', es: 'La realidad al lavarlo' },
+        body: {
+          en: 'Water-based products rinse out in a normal wash. Oil-based ones do not — work conditioner in first to break them down, then shampoo. And the habit that quietly causes trouble: sleeping in product, night after night, is how buildup starts — residue that flakes off and gets mistaken for dandruff. (Our washing-schedule post covers how often to wash it all out, by hair type.) When in doubt, bring your tub to your appointment and ask your barber which one your cut actually wants. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Los productos a base de agua salen con un lavado normal. Los de base aceitosa, no: trabaja primero el acondicionador para deshacerlos y luego lava con champú. Y el hábito que causa problemas en silencio: dormir con producto, noche tras noche, es como empieza la acumulación: residuo que se desprende en escamas y se confunde con caspa. (Nuestra publicación sobre el calendario de lavado cubre cada cuánto lavar todo esto, según el tipo de cabello.) Ante la duda, trae tu envase a tu cita y pregúntale a tu barbero cuál quiere en realidad tu corte. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-19',
+    slug: 'blog/curly-hair-routine-men',
+    image: '/images/blog-19-curly-routine.webp',
+    imageAlt: {
+      en: 'Client with a curly textured top and burst fade at New Barbershop in Orlando',
+      es: 'Cliente con la parte superior rizada y texturizada y un burst fade en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'The Curly Hair Routine for Men: Wash Less, Condition Every Time, Touch Less',
+        seoTitle: 'Curly Hair Routine for Men: Wash Less, Condition More | New Barbershop Orlando',
+        metaDescription:
+          'The curly hair routine for men — wash less, condition every wash, detangle wet, style on damp hair, touch less. From Orlando barbers who cut curls daily. Call (407) 470-4846.',
+        intro:
+          'Curly hair is not difficult hair — it is hair playing by different rules, usually being managed by the straight-hair rulebook. Run the curly routine and the same head of hair that frizzed every afternoon turns cooperative. Three principles run the whole thing: wash less, condition every time, touch less.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'The Curly Hair Routine for Men: Wash Less, Condition Every Time, Touch Less',
+        seoTitle: 'Curly Hair Routine for Men: Wash Less, Condition More | New Barbershop Orlando',
+        metaDescription:
+          'The curly hair routine for men — wash less, condition every wash, detangle wet, style on damp hair, touch less. From Orlando barbers who cut curls daily. Call (407) 470-4846.',
+        intro:
+          'El cabello rizado no es cabello difícil: es cabello que juega con otras reglas y que normalmente se maneja con el manual del cabello lacio. Aplica la rutina para rizos y la misma cabellera que se llenaba de frizz cada tarde se vuelve cooperadora. Tres principios lo gobiernan todo: lava menos, acondiciona siempre, toca menos.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Wash Less, Condition Every Time', es: 'Lava menos, acondiciona siempre' },
+        body: {
+          en: 'Why the rules differ: oil from your scalp travels easily down a straight strand and barely around a curved one, so curls run dry by design. Shampoo accordingly — once to three times a week depending on your curl type (our washing-schedule post has the full by-type table) — but condition every single wash, without exception. Detangling happens in exactly one situation: wet, with conditioner in, using your fingers or a wide-tooth comb. Detangle dry curls and you are not detangling them; you are breaking them and shredding the pattern into frizz.',
+          es: 'Por qué las reglas cambian: la grasa de tu cuero cabelludo viaja fácil por un cabello lacio y apenas logra rodear uno curvo, así que los rizos son secos por diseño. Lava en consecuencia — de una a tres veces por semana según tu tipo de rizo (nuestra publicación sobre el calendario de lavado tiene la tabla completa por tipo) — pero acondiciona en cada lavado, sin excepción. El desenredo ocurre en una sola situación: con el cabello mojado, con acondicionador puesto, usando los dedos o un peine de dientes anchos. Desenredar rizos secos no es desenredarlos: es quebrarlos y destrozar el patrón hasta convertirlo en frizz.',
+        },
+      },
+      {
+        heading: { en: 'Style Wet, Then Touch Less', es: 'Peina mojado y luego toca menos' },
+        body: {
+          en: 'Curly styling happens on wet or damp hair — that is when the pattern sets. One product, scrunched upward into the curls, is usually enough; two is a crowd. Dry it by scrunching with a microfiber towel or an old T-shirt, never by rubbing with a bath towel, which roughs the surface into frizz. Then the hardest rule: once it is dry, hands off. Every touch breaks the cast, separates the curls and manufactures the frizz you were trying to avoid — and a dry brush is worse than any hand, turning a defined pattern into a cloud in ten seconds. Refresh on non-wash days with water and a little conditioner, scrunched the same way.',
+          es: 'El peinado rizado ocurre sobre el cabello mojado o húmedo: ahí es cuando el patrón se fija. Un producto, apretado hacia arriba dentro de los rizos (scrunch), suele bastar; dos ya son multitud. Sécalo apretando con una toalla de microfibra o una camiseta vieja, nunca frotando con una toalla de baño, que áspera la superficie hasta volverla frizz. Y luego la regla más difícil: cuando esté seco, manos fuera. Cada toque rompe la fijación, separa los rizos y fabrica el frizz que querías evitar; y un cepillo en seco es peor que cualquier mano: convierte un patrón definido en una nube en diez segundos. En los días sin lavado, refresca con agua y un poco de acondicionador, apretando de la misma forma.',
+        },
+      },
+      {
+        heading: { en: 'Curls Welcome in Both Shops', es: 'Los rizos son bienvenidos en ambas barberías' },
+        body: {
+          en: 'Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
+  {
+    _id: 'post-20',
+    slug: 'blog/beard-care-at-home',
+    image: '/images/blog-20-beard-care.webp',
+    imageAlt: {
+      en: 'Client with a full, shaped beard at New Barbershop in Orlando',
+      es: 'Cliente con una barba completa y formada en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Beard Care at Home: Wash It, Feed It, Grow It Out Right',
+        seoTitle: 'Beard Care at Home: Wash, Condition and Grow It Out Right | New Barbershop Orlando',
+        metaDescription:
+          'Beard care at home — how to wash and condition a beard, get through the itch phase, handle patchy spots honestly, and use oils and balms right. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'A good beard is grown at home and finished in the chair. What you do at the sink between visits decides whether it looks kept or neglected — and beard hair plays by its own rules, because it is not head hair: it is coarser, drier, and growing out of the most washed-and-shaved skin on your body. Here is the home routine we teach.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Beard Care at Home: Wash It, Feed It, Grow It Out Right',
+        seoTitle: 'Beard Care at Home: Wash, Condition and Grow It Out Right | New Barbershop Orlando',
+        metaDescription:
+          'Beard care at home — how to wash and condition a beard, get through the itch phase, handle patchy spots honestly, and use oils and balms right. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'Una buena barba se crece en casa y se termina en la silla. Lo que haces en el lavabo entre visitas decide si se ve cuidada o descuidada, y el vello de la barba juega con sus propias reglas, porque no es cabello de la cabeza: es más grueso, más seco y crece sobre la piel más lavada y rasurada de tu cuerpo. Esta es la rutina casera que enseñamos.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'Wash It Like a Beard, Not Like Hair', es: 'Lávala como barba, no como cabello' },
+        body: {
+          en: 'Beard hygiene starts with a correction: the shampoo that suits your scalp is usually too harsh for your face, and a dirty beard holds the whole day — food, sweat, city air — against your skin. Wash the beard two to three times a week with a dedicated beard wash (or a gentle cleanser), rinse it with water on the other days, and condition it: a little conditioner worked through after washing keeps coarse beard hair from turning wiry. Dry it by patting, not rubbing. That is the whole hygiene system — everything else is styling.',
+          es: 'La higiene de la barba empieza con una corrección: el champú que le sirve a tu cuero cabelludo suele ser demasiado fuerte para tu cara, y una barba sucia guarda todo el día — comida, sudor, aire de la ciudad — contra tu piel. Lava la barba dos o tres veces por semana con un lavado específico para barba (o un limpiador suave), enjuágala con agua los demás días y acondiciónala: un poco de acondicionador después del lavado evita que el vello grueso de la barba se vuelva áspero. Sécala con toques, sin frotar. Ese es todo el sistema de higiene; lo demás es peinado.',
+        },
+      },
+      {
+        heading: { en: 'Growing It Out: Stages, Itch and Honest Patchiness', es: 'Dejarla crecer: etapas, picazón y zonas despobladas, con honestidad' },
+        body: {
+          en: 'Every beard grow-out has the same plot: two clean weeks, then the itch phase — new growth curling back into the skin — which is where most beards get shaved off in frustration. Push through it with washing, conditioning and brushing; it passes as the hair gains length and softens. While it grows, resist shaping it daily at home; let it gain bulk first, and let the barber set the lines once there is something to shape. And the honest part about patchy spots: styling and shaping can work with what grows — brushing neighboring hair over a thin spot, choosing a length and shape that flatter your pattern — but no routine creates hair where none grows. A good barber will build the best beard your growth allows and tell you straight if a style is not in your hair.',
+          es: 'Todo crecimiento de barba tiene la misma trama: dos semanas limpias y luego la fase de picazón — el vello nuevo curvándose contra la piel — que es donde la mayoría de las barbas se afeitan por frustración. Supérala con lavado, acondicionador y cepillado; pasa cuando el vello gana largo y se suaviza. Mientras crece, resiste la tentación de formarla a diario en casa; déjala ganar volumen primero y deja que el barbero fije las líneas cuando haya algo que formar. Y la parte honesta sobre las zonas despobladas: el peinado y el formado pueden trabajar con lo que crece — cepillar el vello vecino sobre una zona delgada, elegir un largo y una forma que favorezcan tu patrón — pero ninguna rutina crea vello donde no crece. Un buen barbero construirá la mejor barba que tu crecimiento permita y te dirá de frente si un estilo no está en tu vello.',
+        },
+      },
+      {
+        heading: { en: 'Oils, Balms and the Barber’s Anchor', es: 'Aceites, bálsamos y el ancla del barbero' },
+        body: {
+          en: 'Beard oil has one job: conditioning — softening the hair and moisturizing the skin underneath, worked in on a slightly damp beard, down to the skin first and then through the hair. Let us be plain, because the internet is not: oil does not grow hair, and neither does balm. Balm adds light hold and shape on top of oil for longer beards; a brush or comb distributes everything and trains the direction daily. Home care keeps a beard healthy between visits — the shape itself is the chair’s work: our Beard Trim and Beard Shaping & Detailing services set the cheek lines, the neckline and the architecture every few weeks, and a hot towel shave cleans up what home razors rough up. Keep the home routine daily and the shaping on schedule, and the beard always looks deliberate. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'El aceite de barba tiene un solo trabajo: acondicionar — suavizar el vello e hidratar la piel debajo — aplicado sobre la barba ligeramente húmeda, primero hasta la piel y luego a través del vello. Seamos claros, porque internet no lo es: el aceite no hace crecer el vello, y el bálsamo tampoco. El bálsamo aporta fijación ligera y forma sobre el aceite en barbas más largas; un cepillo o peine distribuye todo y entrena la dirección a diario. El cuidado en casa mantiene la barba sana entre visitas; la forma en sí es trabajo de la silla: nuestros servicios de arreglo de barba y de formado y detalle de barba fijan las líneas de las mejillas, la línea del cuello y la arquitectura cada pocas semanas, y un afeitado con toalla caliente limpia lo que las navajas caseras ásperan. Mantén la rutina diaria en casa y el formado en calendario, y la barba siempre se verá intencional. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
 ];
 
 // ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
