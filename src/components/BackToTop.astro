@@ -1,0 +1,33 @@
+---
+import { ui, type Lang } from '../data/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+
+<!-- Floating back-to-top button (owner order 2026-11-16, corrected
+     from a logo click): circular brand-red button, fixed bottom-right
+     ABOVE the sticky call bar, hidden until the visitor has scrolled
+     ~600px. Click smooth-scrolls to the very top; instant jump under
+     prefers-reduced-motion. Rendered by BaseLayout on every page
+     (the self-contained 404 page is excluded by design). -->
+<button class="back-to-top" id="backToTop" type="button" aria-label={t.backToTop}>
+  <span aria-hidden="true">↑</span>
+</button>
+
+<script>
+  const backToTopBtn = document.getElementById('backToTop');
+  if (backToTopBtn) {
+    const THRESHOLD = 600;
+    const updateVisibility = () => {
+      backToTopBtn.classList.toggle('visible', window.scrollY > THRESHOLD);
+    };
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    updateVisibility();
+    backToTopBtn.addEventListener('click', () => {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'instant' : 'smooth' });
+    });
+  }
+</script>
