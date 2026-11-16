@@ -24,12 +24,41 @@ const site = Astro.site!;
     { name: t.nav.home, url: new URL(path(lang, ''), site).href },
     { name: t.nav.locations, url: new URL(path(lang, 'locations'), site).href },
   ])}
+  overlayHeader
 >
-  <section class="page-hero">
+  <!-- Hero-v3 treatment (owner order 2026-11-15, same as homepage):
+       the Locations page's OWN banner photo as a full-bleed band at
+       y=0 with the translucent floating header over it; the headline
+       sits on the solid dark band BELOW the photo. HARD RULE: no text
+       overlaid on the photo at any viewport. Copy and everything
+       below (TrustStrip, location cards) unchanged. -->
+  <section class="hero-photo" id="heroPhoto">
+    <picture>
+      <source type="image/webp" srcset="/images/banner-wide.webp" />
+      <img src="/images/banner-wide.jpg" alt={BANNER_ALT[lang]} width="1320" height="440" fetchpriority="high" />
+    </picture>
+  </section>
+  <section class="hero">
     <div class="wrap"><h1>{t.ourLocations}</h1></div>
   </section>
 
-  <img class="banner-img" src="/images/banner-wide.webp" alt={BANNER_ALT[lang]} width="1320" height="440" />
+  <script>
+    // Overlay header state (same mechanism as HomeView): translucent
+    // while this page's photo band is under the header, solid once it
+    // scrolls past. Only pages that render #heroPhoto + overlayHeader
+    // run this; other interior pages are unaffected.
+    const heroBand = document.getElementById('heroPhoto');
+    const headerEl = document.getElementById('siteHeader');
+    if (heroBand && headerEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(
+        (entries) => {
+          headerEl.classList.toggle('header-solid', !entries[0].isIntersecting);
+        },
+        { rootMargin: '-64px 0px 0px 0px', threshold: 0 },
+      ).observe(heroBand);
+    }
+  </script>
+
   <TrustStrip lang={lang} />
 
   <section class="section">

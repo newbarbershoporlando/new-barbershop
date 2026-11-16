@@ -28,7 +28,7 @@ const site = Astro.site!;
 
       {categories.map((cat) => (
         <div class="svc-group" id={cat.slug}>
-          <h3>{cat.heading[lang]}</h3>
+          <h2>{cat.heading[lang]}</h2>
           <p class="benefit">{cat.benefit[lang]}</p>
           <table class="svc">
             <thead>

@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { locations, type Location } from '../data/locations';
+import type { Lang } from '../data/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+const copy = {
+  en: {
+    seoTitle: 'Accessibility | New Barbershop Orlando',
+    seoDescription:
+      'Our accessibility commitment: we aim for a website everyone can use (WCAG 2.1 AA). If anything is hard to use, call us — Hunters Creek (407) 470-4846, Florida Mall (407) 820-4541.',
+    heading: 'Accessibility',
+    intro:
+      'Everyone should be able to use this website — to read about our services, find a shop and call to book. We build and maintain this site with that goal in mind.',
+    aimHeading: 'What we aim for',
+    aim: [
+      'We target the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA across the whole site, in English and Spanish.',
+      'Text is set in sizes and contrasts meant to stay readable, buttons and links are sized for touch, and the site can be navigated by keyboard — including a “Skip to content” link at the top of every page.',
+      'Photos carry descriptions for screen readers, and if you prefer less motion on screen, the site honors your device’s reduced-motion setting.',
+    ],
+    helpHeading: 'If something is hard to use, call us',
+    help:
+      'If any part of this site is difficult to use — or you would rather skip the website entirely — just call the shop. We will happily tell you our hours, services and directions, and book your chair by phone. Calling is how all our booking works anyway.',
+    callLabel: (loc: Location) => (loc.slug === 'new-barbershop-1' ? 'Call Hunters Creek' : 'Call Florida Mall'),
+  },
+  es: {
+    seoTitle: 'Accesibilidad | New Barbershop Orlando',
+    seoDescription:
+      'Nuestro compromiso de accesibilidad: buscamos un sitio web que todos puedan usar (WCAG 2.1 AA). Si algo te resulta difícil de usar, llámanos: Hunters Creek (407) 470-4846, Florida Mall (407) 820-4541.',
+    heading: 'Accesibilidad',
+    intro:
+      'Todos deberían poder usar este sitio web: leer sobre nuestros servicios, encontrar un local y llamar para reservar. Construimos y mantenemos este sitio con esa meta en mente.',
+    aimHeading: 'Lo que buscamos',
+    aim: [
+      'Apuntamos a las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 en nivel AA en todo el sitio, en inglés y en español.',
+      'El texto usa tamaños y contrastes pensados para mantenerse legible, los botones y enlaces tienen tamaño apto para el tacto, y el sitio se puede navegar con teclado, incluyendo un enlace “Saltar al contenido” al inicio de cada página.',
+      'Las fotos llevan descripciones para lectores de pantalla y, si prefieres menos movimiento en pantalla, el sitio respeta el ajuste de movimiento reducido de tu dispositivo.',
+    ],
+    helpHeading: 'Si algo te resulta difícil de usar, llámanos',
+    help:
+      'Si alguna parte de este sitio te resulta difícil de usar — o si prefieres saltarte el sitio por completo — simplemente llama a la barbería. Con gusto te diremos nuestros horarios, servicios y cómo llegar, y reservaremos tu silla por teléfono. Así funciona toda nuestra reserva de todos modos.',
+    callLabel: (loc: Location) => (loc.slug === 'new-barbershop-1' ? 'Llamar a Hunters Creek' : 'Llamar a Florida Mall'),
+  },
+}[lang];
+---
+
+<BaseLayout lang={lang} slug="accessibility" title={copy.seoTitle} description={copy.seoDescription}>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>{copy.heading}</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p>{copy.intro}</p>
+      <h2>{copy.aimHeading}</h2>
+      <ul>
+        {copy.aim.map((item) => <li>{item}</li>)}
+      </ul>
+      <h2>{copy.helpHeading}</h2>
+      <p>{copy.help}</p>
+      <div class="cards">
+        {
+          locations.map((loc) => (
+            <div class="card">
+              <h3>{loc.name}</h3>
+              <p>
+                {loc.street}
+                <br />
+                {loc.city}, {loc.state} {loc.zip}
+              </p>
+              <p>{loc.hoursSummary[lang]}</p>
+              <p>
+                <a class="btn btn--call" href={loc.phoneHref}>
+                  {copy.callLabel(loc)} — {loc.phoneDisplay}
+                </a>
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

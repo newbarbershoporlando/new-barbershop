@@ -25,6 +25,10 @@ const t = ui[lang];
         </div>
       ))}
     </div>
-    <div class="footer-bottom">{t.copyright}</div>
+    <div class="footer-bottom">
+      {t.copyright}
+      <span class="footer-sep" aria-hidden="true">·</span>
+      <a href={path(lang, 'accessibility')}>{t.accessibility}</a>
+    </div>
   </div>
 </footer>

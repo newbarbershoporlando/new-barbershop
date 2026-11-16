@@ -11,7 +11,7 @@ const { lang } = Astro.props;
     <a class="tile" href={`${path(lang, 'services')}#${cat.slug}`}>
       <img src={cat.image} alt={cat.imageAlt[lang]} loading="lazy" width="600" height="450" />
       <div class="tile-body">
-        <h3>{cat.tileLabel[lang]}</h3>
+        <h2>{cat.tileLabel[lang]}</h2>
         <p>{cat.benefit[lang]}</p>
       </div>
     </a>
