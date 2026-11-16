@@ -1,0 +1,124 @@
+---
+/* Shared photo gallery + lightbox (owner request 2026-11-15).
+   Grid figures carry ONLY the short style title as a one-line
+   caption; the full description lives in the lightbox. Tapping or
+   clicking any photo opens the full-screen viewer with the larger
+   (-lg) image, title + full description, prev/next (buttons,
+   keyboard, swipe) and close via X, backdrop tap or Esc. Vanilla
+   inline script, no libraries — the build ships zero standalone
+   JS files and stays that way. Items come from the shared data
+   layer (src/data/pages.ts), so the Services and homepage
+   galleries can never drift apart. */
+import { ui, type Lang } from '../data/ui';
+import type { GalleryItem } from '../data/pages';
+
+interface Props { items: GalleryItem[]; lang: Lang }
+const { items, lang } = Astro.props;
+const t = ui[lang];
+const shown = items.filter((item) => item.src);
+const labelOf = (item: GalleryItem) =>
+  item.caption ? item.caption.style[lang] : item.alt[lang];
+const jpgOf = (webp: string) => webp.replace(/\.webp$/, '.jpg');
+---
+
+<div data-gallery>
+  <div class="gallery">
+    {shown.map((item, i) => (
+      <figure class="gallery-item">
+        <button
+          type="button"
+          class="gallery-btn"
+          data-index={i}
+          data-full={item.largeSrc}
+          data-full-jpg={item.largeSrc ? jpgOf(item.largeSrc) : ''}
+          data-title={item.caption ? item.caption.style[lang] : ''}
+          data-desc={item.caption ? item.caption.text[lang] : ''}
+          data-alt={item.alt[lang]}
+          aria-label={t.viewLarger(labelOf(item))}
+        >
+          <img src={item.src} alt={item.alt[lang]} loading="lazy" width="800" height="600" />
+        </button>
+        {item.caption && <figcaption class="gallery-cap">{item.caption.style[lang]}</figcaption>}
+      </figure>
+    ))}
+  </div>
+
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label={t.photoViewer}>
+    <button type="button" class="lb-btn lb-close" data-lb-close aria-label={t.closeViewer}>×</button>
+    <button type="button" class="lb-btn lb-prev" data-lb-prev aria-label={t.prevPhoto}>‹</button>
+    <figure class="lb-figure">
+      <picture>
+        <source data-lb-source type="image/webp" />
+        <img data-lb-img alt="" />
+      </picture>
+      <figcaption class="lb-cap">
+        <strong data-lb-title></strong>
+        <span data-lb-desc></span>
+      </figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-next" data-lb-next aria-label={t.nextPhoto}>›</button>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('[data-gallery]').forEach((wrap) => {
+    const buttons = Array.from(wrap.querySelectorAll('.gallery-btn'));
+    const box = wrap.querySelector('[data-lightbox]');
+    if (!buttons.length || !box) return;
+    const img = box.querySelector('[data-lb-img]');
+    const source = box.querySelector('[data-lb-source]');
+    const titleEl = box.querySelector('[data-lb-title]');
+    const descEl = box.querySelector('[data-lb-desc]');
+    const closeBtn = box.querySelector('[data-lb-close]');
+    let idx = 0;
+    let lastFocus = null;
+
+    const show = (n) => {
+      idx = ((n % buttons.length) + buttons.length) % buttons.length;
+      const b = buttons[idx];
+      source.srcset = b.dataset.full || '';
+      img.src = b.dataset.fullJpg || b.dataset.full || '';
+      img.alt = b.dataset.alt || '';
+      titleEl.textContent = b.dataset.title || b.dataset.alt || '';
+      descEl.textContent = b.dataset.desc || '';
+      descEl.style.display = b.dataset.desc ? '' : 'none';
+    };
+    const onKey = (e) => {
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(idx - 1);
+      else if (e.key === 'ArrowRight') show(idx + 1);
+    };
+    const open = (n) => {
+      lastFocus = document.activeElement;
+      show(n);
+      box.hidden = false;
+      document.body.classList.add('lb-open');
+      document.addEventListener('keydown', onKey);
+      closeBtn.focus();
+    };
+    const close = () => {
+      box.hidden = true;
+      document.body.classList.remove('lb-open');
+      document.removeEventListener('keydown', onKey);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    };
+
+    buttons.forEach((b, i) => b.addEventListener('click', () => open(i)));
+    closeBtn.addEventListener('click', close);
+    box.querySelector('[data-lb-prev]').addEventListener('click', () => show(idx - 1));
+    box.querySelector('[data-lb-next]').addEventListener('click', () => show(idx + 1));
+    box.addEventListener('click', (e) => {
+      if (e.target === box) close();
+    });
+    let touchX = null;
+    box.addEventListener('touchstart', (e) => {
+      touchX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    box.addEventListener('touchend', (e) => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 42) show(idx + (dx < 0 ? 1 : -1));
+      touchX = null;
+    }, { passive: true });
+  });
+</script>

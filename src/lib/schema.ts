@@ -8,6 +8,7 @@
 import { locations, type Location } from '../data/locations';
 import { services } from '../data/services';
 import type { Faq } from '../data/faqs';
+import type { GalleryItem } from '../data/pages';
 import type { Lang } from '../data/ui';
 
 const DAY_SCHEMA: Record<string, string> = {
@@ -98,6 +99,27 @@ export function faqPageNode(items: Faq[], lang: Lang) {
       name: f.question[lang],
       acceptedAnswer: { '@type': 'Answer', text: f.answer[lang] },
     })),
+  };
+}
+
+// ImageObject nodes for a photo gallery (owner image-SEO addition
+// 2026-11-15): one entry per RENDERED gallery photo on the pages
+// that display it, generated from the same data the gallery renders
+// — name = the caption title, caption = the caption description,
+// contentUrl = the lightbox-size image. Uncaptioned general photos
+// use their alt text for both fields. This is a separate block
+// alongside the BarberShop graph; it does not alter its facts.
+export function galleryImageGraph(siteUrl: string, items: GalleryItem[], lang: Lang) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': items
+      .filter((i) => i.src)
+      .map((i) => ({
+        '@type': 'ImageObject',
+        name: i.caption ? i.caption.style[lang] : i.alt[lang],
+        caption: i.caption ? i.caption.text[lang] : i.alt[lang],
+        contentUrl: `${siteUrl}${i.largeSrc ?? i.src}`,
+      })),
   };
 }
 

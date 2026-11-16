@@ -60,6 +60,11 @@ export const ui = {
     backToBlog: '← Back to the blog',
     seeServices: 'See our Services',
     contactUs: 'Contact page',
+    photoViewer: 'Photo viewer',
+    closeViewer: 'Close photo viewer',
+    prevPhoto: 'Previous photo',
+    nextPhoto: 'Next photo',
+    viewLarger: (label: string) => `View larger photo: ${label}`,
   },
   es: {
     nav: { home: 'Inicio', about: 'Nosotros', services: 'Servicios', blog: 'Blog', contact: 'Contacto', locations: 'Ubicaciones' },
@@ -93,6 +98,11 @@ export const ui = {
     backToBlog: '← Volver al blog',
     seeServices: 'Ver nuestros Servicios',
     contactUs: 'página de Contacto',
+    photoViewer: 'Visor de fotos',
+    closeViewer: 'Cerrar el visor de fotos',
+    prevPhoto: 'Foto anterior',
+    nextPhoto: 'Foto siguiente',
+    viewLarger: (label: string) => `Ver la foto más grande: ${label}`,
   },
 };
 

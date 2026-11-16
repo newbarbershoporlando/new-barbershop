@@ -112,9 +112,9 @@ export const pageSeo: Record<string, Record<Lang, Seo>> = {
 
 export const homeCopy = {
   en: {
-    heroH1: 'Experience Premier Grooming',
+    heroH1: 'Top-Rated Barber Shop in Orlando for Fades & Grooming',
     heroLine:
-      'Exceptional haircuts and shaves tailored to enhance your style and confidence in a relaxing environment.',
+      'Haircuts, skin fades, beard trims and hot towel shaves at two Orlando locations — family-run since 2003, 1,400+ five-star reviews, walk-ins welcome.',
     workHeading: 'Our Work',
     workIntro:
       'Real cuts from our own chairs — every photo below is our work, no stock pictures.',
@@ -142,9 +142,9 @@ export const homeCopy = {
     locationsLine: 'Visit either of our two Orlando barbershops.',
   },
   es: {
-    heroH1: 'Experimenta un cuidado de primer nivel',
+    heroH1: 'La Barbería Mejor Valorada de Orlando para Fades y Grooming',
     heroLine:
-      'Cortes de cabello y afeitados excepcionales, diseñados para realzar tu estilo y tu confianza en un ambiente relajante.',
+      'Cortes de cabello, skin fades, arreglos de barba y afeitado con toalla caliente en dos ubicaciones de Orlando — negocio familiar desde 2003, más de 1,400 reseñas de cinco estrellas, sin cita previa.',
     workHeading: 'Nuestro trabajo',
     workIntro:
       'Cortes reales de nuestras propias sillas — cada foto de abajo es nuestro trabajo, sin fotos de archivo.',
@@ -302,6 +302,8 @@ export const howItWorks = {
 // the media swap and are NEVER rendered with a mismatched photo.
 export interface GalleryItem {
   src: string | null;
+  /** Lightbox-size variant of src (3:2 crop, up to 1200px wide). */
+  largeSrc: string | null;
   alt: { en: string; es: string };
   caption?: {
     style: { en: string; es: string };
@@ -309,6 +311,9 @@ export interface GalleryItem {
   };
   reserved?: boolean;
 }
+
+const lgOf = (src: string | null): string | null =>
+  src ? src.replace(/\.webp$/, '-lg.webp') : null;
 
 const cap = (
   src: string | null,
@@ -321,65 +326,66 @@ const cap = (
   reserved = false,
 ): GalleryItem => ({
   src,
+  largeSrc: lgOf(src),
   alt: { en: alten, es: altes },
   caption: { style: { en: sen, es: ses }, text: { en: ten, es: tes } },
   reserved,
 });
 
 export const galleryItems: GalleryItem[] = [
-  cap('/images/gallery-01-classic-haircut-real.webp',
-    'Client with a classic pompadour and a shaped beard', 'Cliente con un tupé clásico y barba perfilada',
+  cap('/images/classic-haircut-orlando.webp',
+    'Client with a classic pompadour haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un corte clásico con tupé y barba perfilada en una barbería en Orlando, FL',
     'Classic Haircut', 'Corte clásico',
     'A timeless cut, tailored to your style and finished clean.', 'Un corte atemporal, adaptado a tu estilo y con un acabado limpio.'),
-  cap('/images/gallery-02-low-fade.webp',
-    'Barber blending a fade with clippers at the nape', 'Barbero mezclando un degradado con máquina en la nuca',
+  cap('/images/low-fade-orlando.webp',
+    'Barber blending a low fade haircut with clippers at the nape in an Orlando barber shop', 'Barbero mezclando un degradado bajo con máquina en la nuca en una barbería de Orlando',
     'Low Fade', 'Degradado bajo',
     'A subtle blend that keeps the sides clean and natural.', 'Un difuminado sutil que mantiene los laterales limpios y naturales.'),
-  cap('/images/gallery-03-high-skin-fade-real.webp',
-    'Client with a finished high skin fade and shaped beard', 'Cliente con un degradado alto al ras terminado y barba perfilada',
+  cap('/images/high-skin-fade-orlando.webp',
+    'Client with a finished high skin fade haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un degradado alto al ras terminado y barba perfilada en una barbería en Orlando, FL',
     'High Skin Fade', 'Degradado alto al ras',
     'A bold, high-contrast fade taken down to the skin.', 'Un degradado llamativo y de alto contraste, llevado hasta la piel.'),
-  cap('/images/gallery-04-taper-fade.webp',
-    'Barber tapering the neckline with clippers', 'Barbero haciendo el taper en la nuca con máquina',
+  cap('/images/taper-fade-orlando.webp',
+    'Barber tapering the neckline with clippers — taper fade haircut in an Orlando barber shop', 'Barbero haciendo el taper en la nuca con máquina — degradado taper en una barbería de Orlando',
     'Taper Fade', 'Degradado taper',
     'A clean taper around the edges, for a polished everyday look.', 'Un taper limpio en los bordes, para lucir impecable todos los días.'),
-  cap('/images/gallery-05-burst-fade.webp',
-    'Young client with a curly textured top and a burst fade around the ear', 'Cliente joven con la parte superior rizada y texturizada y un degradado burst alrededor de la oreja',
+  cap('/images/burst-fade-orlando.webp',
+    'Young client with a curly textured top and a burst fade haircut around the ear at a barber shop in Orlando, FL', 'Cliente joven con la parte superior rizada y texturizada y un degradado burst alrededor de la oreja en una barbería en Orlando, FL',
     'Burst Fade', 'Degradado burst',
     'A curved fade that arcs around the ear for a standout finish.', 'Un degradado curvo que rodea la oreja, para un acabado que destaca.'),
-  cap('/images/gallery-06-buzz-cut.webp',
-    'Client with a buzz cut, faded sides and a shaped beard', 'Cliente con corte rapado, laterales degradados y barba perfilada',
+  cap('/images/buzz-cut-orlando.webp',
+    'Client with a buzz cut haircut, faded sides and a shaped beard at a barber shop in Orlando, FL', 'Cliente con corte rapado, laterales degradados y barba perfilada en una barbería en Orlando, FL',
     'Buzz Cut', 'Corte rapado',
-    'One length all over — simple, even and sharp.', 'Una sola longitud en todo el cabello — sencillo, uniforme y definido.'),
-  cap('/images/gallery-07-haircut-beard-combo-real.webp',
-    'Finished haircut and shaped beard with a crisp line-up, side view', 'Corte terminado y barba perfilada con delineado definido, vista de lado',
+    'One length all over — simple, even and sharp.', 'Una sola longitud en toda la cabeza — sencillo, uniforme y definido.'),
+  cap('/images/haircut-and-beard-combo-orlando.webp',
+    'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL',
     'Haircut & Beard Combo', 'Combo corte + barba',
     'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.'),
   cap(null, 'Hot Towel Shave', 'Afeitado con toalla caliente',
     'Hot Towel Shave', 'Afeitado con toalla caliente',
     'Our traditional shave — hot towels, a close finish, total relaxation.', 'Nuestro afeitado tradicional — toallas calientes, un acabado al ras y relajación total.', true),
-  cap('/images/gallery-09-razor-line-up.webp',
-    'Client with a high skin fade and a razor-sharp line-up', 'Cliente con un degradado alto al ras y un delineado definido con navaja',
+  cap('/images/razor-line-up-orlando.webp',
+    'Client with a high skin fade and a razor line-up at a barber shop in Orlando, FL', 'Cliente con un degradado alto al ras y un delineado con navaja en una barbería en Orlando, FL',
     'Razor Line-Up', 'Delineado con navaja',
     'Crisp razor edges on the hairline and the beard.', 'Bordes definidos con navaja en la línea del cabello y la barba.'),
-  cap('/images/gallery-10-hair-design.webp',
-    'Client with a carved flame hair design and a fade', 'Cliente con un diseño de llamas tallado en el cabello y un degradado',
+  cap('/images/hair-design-orlando.webp',
+    'Client with a carved flame hair design and a fade at a barber shop in Orlando, FL', 'Cliente con un diseño de llamas tallado en el cabello y un degradado en una barbería en Orlando, FL',
     'Hair Design', 'Diseño en el cabello',
     'Custom designs and patterns, cut to your idea.', 'Diseños y patrones personalizados, cortados según tu idea.'),
-  cap('/images/gallery-11-kids-fade.webp',
-    'Young client with a textured fringe and a skin fade', 'Cliente joven con flequillo texturizado y degradado al ras',
+  cap('/images/kids-fade-haircut-orlando.webp',
+    'Young client with a textured fringe and a kids fade haircut at a barber shop in Orlando, FL', 'Cliente joven con flequillo texturizado y degradado para niños en una barbería en Orlando, FL',
     'Kids Fade', 'Degradado para niños',
     'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
-  cap('/images/gallery-12-braids.webp',
-    'Client with neat cornrow braids and faded sides', 'Cliente con trenzas cornrow impecables y laterales degradados',
+  cap('/images/braids-orlando.webp',
+    'Client with neat cornrow braids and faded sides at a barber shop in Orlando, FL', 'Cliente con trenzas cornrow impecables y laterales degradados en una barbería en Orlando, FL',
     'Braids', 'Trenzas',
     'Neat, comfortable braiding for men and women, made to last.', 'Trenzado limpio y cómodo para hombres y mujeres, hecho para durar.'),
   // General set (manifest §3) — verified stock texture, no style caption.
-  { src: '/images/gallery-general-01.webp', alt: { en: "Barber combing a client's hair in the shop", es: 'Barbero peinando el cabello de un cliente en la barbería' } },
-  { src: '/images/gallery-general-02.webp', alt: { en: 'Close-up of a scissor cut on dark hair', es: 'Primer plano de un corte con tijeras en cabello oscuro' } },
-  { src: '/images/gallery-general-03.webp', alt: { en: "Barber trimming the back of a client's haircut with scissors", es: 'Barbero recortando con tijeras la parte trasera del corte de un cliente' } },
-  { src: '/images/gallery-general-04.webp', alt: { en: "Barber cutting the top of a young client's hair with scissors", es: 'Barbero cortando con tijeras la parte superior del cabello de un cliente joven' } },
-  { src: '/images/gallery-general-05.webp', alt: { en: "Barber fading a client's hair with clippers", es: 'Barbero haciendo un degradado con máquina a un cliente' } },
+  { src: '/images/barber-combing-hair-orlando.webp', largeSrc: lgOf('/images/barber-combing-hair-orlando.webp'), alt: { en: "Barber combing a client's hair at a barber shop in Orlando, FL", es: 'Barbero peinando el cabello de un cliente en una barbería en Orlando, FL' } },
+  { src: '/images/scissor-cut-close-up-orlando.webp', largeSrc: lgOf('/images/scissor-cut-close-up-orlando.webp'), alt: { en: 'Close-up of a scissor cut on dark hair at a barber shop in Orlando, FL', es: 'Primer plano de un corte con tijeras en cabello oscuro en una barbería en Orlando, FL' } },
+  { src: '/images/barber-trimming-haircut-orlando.webp', largeSrc: lgOf('/images/barber-trimming-haircut-orlando.webp'), alt: { en: "Barber trimming the back of a client's haircut with scissors at a barber shop in Orlando, FL", es: 'Barbero recortando con tijeras la parte trasera del corte de un cliente en una barbería en Orlando, FL' } },
+  { src: '/images/barber-cutting-young-client-hair-orlando.webp', largeSrc: lgOf('/images/barber-cutting-young-client-hair-orlando.webp'), alt: { en: "Barber cutting the top of a young client's hair with scissors at a barber shop in Orlando, FL", es: 'Barbero cortando con tijeras la parte superior del cabello de un cliente joven en una barbería en Orlando, FL' } },
+  { src: '/images/barber-fading-hair-clippers-orlando.webp', largeSrc: lgOf('/images/barber-fading-hair-clippers-orlando.webp'), alt: { en: "Barber fading a client's hair with clippers at a barber shop in Orlando, FL", es: 'Barbero haciendo un degradado con máquina a un cliente en una barbería en Orlando, FL' } },
 ];
 
 /* Homepage work gallery (owner addition 2026-11-15): REAL client
@@ -390,20 +396,20 @@ export const galleryItems: GalleryItem[] = [
    slot here (the stronger shot); haircut-15 is new. */
 const bySrc = (src: string): GalleryItem => galleryItems.find((i) => i.src === src)!;
 export const homeGalleryItems: GalleryItem[] = [
-  bySrc('/images/gallery-09-razor-line-up.webp'),
-  bySrc('/images/gallery-10-hair-design.webp'),
-  bySrc('/images/gallery-12-braids.webp'),
-  bySrc('/images/gallery-06-buzz-cut.webp'),
-  bySrc('/images/gallery-05-burst-fade.webp'),
-  cap('/images/gallery-13-burst-fade-beard.webp',
-    'Client with a burst fade around the ear and a full shaped beard, side view', 'Cliente con un degradado burst alrededor de la oreja y barba completa perfilada, vista de lado',
+  bySrc('/images/razor-line-up-orlando.webp'),
+  bySrc('/images/hair-design-orlando.webp'),
+  bySrc('/images/braids-orlando.webp'),
+  bySrc('/images/buzz-cut-orlando.webp'),
+  bySrc('/images/burst-fade-orlando.webp'),
+  cap('/images/burst-fade-and-beard-orlando.webp',
+    'Client with a burst fade around the ear and a full shaped beard, side view, at a barber shop in Orlando, FL', 'Cliente con un degradado burst alrededor de la oreja y barba completa perfilada, vista de lado, en una barbería en Orlando, FL',
     'Burst Fade & Beard', 'Degradado burst + barba',
     'A curved burst fade finished with clean, shaped beard work.', 'Un degradado burst curvo terminado con un arreglo de barba limpio y perfilado.'),
-  cap('/images/gallery-14-kids-fade.webp',
-    'Young client with a skin fade and a sharp line-up', 'Cliente joven con un degradado al ras y un delineado definido',
+  cap('/images/kids-fade-orlando.webp',
+    'Young client with a skin fade and a sharp line-up — a kids fade haircut at a barber shop in Orlando, FL', 'Cliente joven con un degradado al ras y un delineado definido — degradado para niños en una barbería en Orlando, FL',
     'Kids Fade', 'Degradado para niños',
     'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
-  bySrc('/images/gallery-01-classic-haircut-real.webp'),
-  bySrc('/images/gallery-03-high-skin-fade-real.webp'),
-  bySrc('/images/gallery-07-haircut-beard-combo-real.webp'),
+  bySrc('/images/classic-haircut-orlando.webp'),
+  bySrc('/images/high-skin-fade-orlando.webp'),
+  bySrc('/images/haircut-and-beard-combo-orlando.webp'),
 ];

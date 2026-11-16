@@ -8,15 +8,18 @@ import { categories, servicesByCategory } from '../data/services';
 import { featuredTestimonial } from '../data/reviews';
 import { faqsFor } from '../data/faqs';
 import { pageSeo, servicesCopy, galleryItems } from '../data/pages';
+import { galleryImageGraph } from '../lib/schema';
+import Gallery from '../components/Gallery.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = ui[lang];
 const c = servicesCopy[lang];
 const seo = pageSeo.services[lang];
+const site = Astro.site!;
 ---
 
-<BaseLayout lang={lang} slug="services" title={seo.title} description={seo.description}>
+<BaseLayout lang={lang} slug="services" title={seo.title} description={seo.description} jsonLd={galleryImageGraph(site.href.replace(/\/$/, ''), galleryItems, lang)}>
   <section class="section">
     <div class="wrap">
       <p class="eyebrow">{c.eyebrow}</p>
@@ -48,18 +51,7 @@ const seo = pageSeo.services[lang];
 
       <h2>{c.galleryHeading}</h2>
       <p style="max-width:800px">{c.galleryIntro}</p>
-      <div class="gallery">
-        {galleryItems.filter((item) => item.src).map((item) => (
-          <figure style="margin:0">
-            <img src={item.src} alt={item.alt[lang]} loading="lazy" width="800" height="600" />
-            {item.caption && (
-              <figcaption>
-                <strong>{item.caption.style[lang]}</strong> — {item.caption.text[lang]}
-              </figcaption>
-            )}
-          </figure>
-        ))}
-      </div>
+      <Gallery items={galleryItems} lang={lang} />
 
       <div class="action-row" style="margin-top:24px">
         <a class="btn btn--ghost-light" href={shop1.mapsUrl} target="_blank" rel="noopener">{t.seeWork(1)}</a>
