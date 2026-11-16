@@ -1114,6 +1114,60 @@ const localPosts: Post[] = [
       },
     ],
   },
+  {
+    _id: 'post-21',
+    slug: 'blog/are-beards-attractive',
+    image: '/images/blog-21-beards-attractive.webp',
+    imageAlt: {
+      en: 'Client with a well-kept, shaped beard at New Barbershop in Orlando',
+      es: 'Cliente con una barba cuidada y formada en New Barbershop en Orlando',
+    },
+    locales: {
+      en: {
+        title: 'Are Beards Attractive? What the Research Says — and Why Upkeep Decides It',
+        seoTitle: 'Are Beards Attractive? What the Research Says | New Barbershop Orlando',
+        metaDescription:
+          'Are beards attractive? What research finds about maturity, masculinity and status — and why upkeep, shaping and clean lines decide it. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'It is the question half our beard clients are quietly asking when they sit down: are beards actually attractive, or is that just something bearded men tell each other? Researchers have genuinely studied this one — and their answer is more interesting than a yes or a no. What the studies keep finding is that a beard changes how a man is read. Whether that reading works for you depends on what you do with it.',
+        closing:
+          'Stop by either shop or call to book your chair. Find both locations and hours on our Contact page.',
+      },
+      es: {
+        title: 'Are Beards Attractive? What the Research Says — and Why Upkeep Decides It',
+        seoTitle: 'Are Beards Attractive? What the Research Says | New Barbershop Orlando',
+        metaDescription:
+          'Are beards attractive? What research finds about maturity, masculinity and status — and why upkeep, shaping and clean lines decide it. Orlando barbers. Call (407) 470-4846.',
+        intro:
+          'Es la pregunta que la mitad de nuestros clientes de barba se hace en silencio al sentarse: ¿las barbas son atractivas de verdad, o es algo que los hombres con barba se dicen entre ellos? Los investigadores sí han estudiado esto, y su respuesta es más interesante que un sí o un no. Lo que los estudios encuentran una y otra vez es que una barba cambia cómo se lee a un hombre. Que esa lectura juegue a tu favor depende de lo que hagas con ella.',
+        closing:
+          'Pasa por cualquiera de las dos barberías o llama para reservar tu silla. Encuentra ambas ubicaciones y horarios en nuestra página de Contacto.',
+      },
+    },
+    sections: [
+      {
+        heading: { en: 'What the Studies Actually Find', es: 'Lo que los estudios encuentran en realidad' },
+        body: {
+          en: 'Across a run of published studies where people rate photographs of the same men clean-shaven and bearded, a pattern repeats: bearded faces are consistently read as older and more mature, more masculine, and higher in social status — the words raters reach for are things like “confident,” “capable” and “established.” Heavier, fuller beards tend to push those particular readings the furthest. In plain barbershop terms: a beard adds presence. It makes a young face look seasoned and a professional look like he has been one for a while. That is a real effect, measured with photographs and rating scales — not a legend beards tell about themselves.',
+          es: 'En una serie de estudios publicados donde las personas califican fotografías de los mismos hombres afeitados y con barba, un patrón se repite: los rostros con barba se leen consistentemente como mayores y más maduros, más masculinos y de mayor estatus social; las palabras que los evaluadores buscan son cosas como “seguro”, “capaz” y “establecido”. Las barbas más pobladas y completas tienden a llevar esas lecturas más lejos. En términos de barbería: una barba añade presencia. Hace que un rostro joven se vea curtido y que un profesional parezca llevar tiempo siéndolo. Es un efecto real, medido con fotografías y escalas de calificación, no una leyenda que las barbas cuentan sobre sí mismas.',
+        },
+      },
+      {
+        heading: { en: 'The Honest Nuance', es: 'El matiz honesto' },
+        body: {
+          en: 'Now the part the headlines skip. The effect is not a law: it shifts with beard length — many raters put the sweet spot at a kept, medium beard rather than the wildest growth — and it shifts with the person, the face and the context; a boardroom, a first date and a job site do not read the same beard the same way. And one finding shows up everywhere, in the research and in our mirrors: condition beats coverage. An unkempt beard — patchy lines, a wandering neckline, dry and unbrushed — reads the opposite of mature and capable; it reads neglected. The studies rate beards as a category; the world rates your beard, in the state you keep it in.',
+          es: 'Ahora la parte que los titulares se saltan. El efecto no es una ley: cambia con el largo de la barba — muchos evaluadores ponen el punto ideal en una barba cuidada y media, no en el crecimiento más salvaje — y cambia con la persona, el rostro y el contexto; una sala de juntas, una primera cita y una obra no leen la misma barba de la misma manera. Y un hallazgo aparece en todas partes, en la investigación y en nuestros espejos: el estado le gana a la cobertura. Una barba descuidada — líneas desparejas, una línea de cuello errante, seca y sin cepillar — se lee como lo opuesto de maduro y capaz: se lee abandonada. Los estudios califican las barbas como categoría; el mundo califica tu barba, en el estado en que la mantienes.',
+        },
+      },
+      {
+        heading: { en: 'The Barber’s Part: Upkeep Decides It', es: 'La parte del barbero: el mantenimiento lo decide' },
+        body: {
+          en: 'So the research hands you a lever — maturity, masculinity, presence — and upkeep decides which way it moves. Shaping gives the beard architecture instead of accident; clean cheek lines and a deliberate neckline are what separate “grew a beard” from “wears a beard”; and conditioning keeps it looking like hair, not wire — our Beard Care at Home post covers the sink routine in full. In the chair, our Beard Trim and Beard Shaping & Detailing services do the geometry every few weeks. No barber can promise a beard will change your luck — but a kept beard is the version of you the studies were describing. Call to book: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp is available at Hunters Creek.',
+          es: 'Así que la investigación te entrega una palanca — madurez, masculinidad, presencia — y el mantenimiento decide hacia dónde se mueve. El formado le da a la barba arquitectura en vez de accidente; unas líneas de mejilla limpias y una línea de cuello intencional son lo que separa “se dejó la barba” de “lleva una barba”; y el acondicionamiento hace que se vea como cabello y no como alambre: nuestra publicación sobre el cuidado de la barba en casa cubre la rutina del lavabo completa. En la silla, nuestros servicios de arreglo de barba y de formado y detalle de barba hacen la geometría cada pocas semanas. Ningún barbero puede prometer que una barba cambiará tu suerte, pero una barba cuidada es la versión de ti que los estudios describían. Llama para reservar: Hunters Creek (407) 470-4846 · Florida Mall (407) 820-4541. WhatsApp está disponible en Hunters Creek.',
+        },
+      },
+    ],
+  },
 ];
 
 // ——— Sanity swap (wiring guide §6, Blog query verbatim) ———
