@@ -37,8 +37,8 @@ const localPosts: Post[] = [
     slug: 'blog/top-rated-barber-shop-orlando',
     image: '/images/blog-01-top-rated.webp',
     imageAlt: {
-      en: "Barber combing a client's hair",
-      es: 'Barbero peinando el cabello de un cliente',
+      en: 'Client with a slicked pompadour, shaved design line and shaped beard, side view',
+      es: 'Cliente con tupé peinado, línea de diseño afeitada y barba perfilada, vista de lado',
     },
     locales: {
       en: {
@@ -94,8 +94,8 @@ const localPosts: Post[] = [
     slug: 'blog/expert-fades-orlando',
     image: '/images/blog-02-fades.webp',
     imageAlt: {
-      en: "Barber fading a client's hair with clippers",
-      es: 'Barbero haciendo un degradado con máquina a un cliente',
+      en: 'Client with a slicked pompadour, hard part and clean fade, back view',
+      es: 'Cliente con tupé peinado hacia atrás, raya marcada y degradado limpio, vista trasera',
     },
     locales: {
       en: {
@@ -147,12 +147,12 @@ const localPosts: Post[] = [
     _id: 'post-3',
     slug: 'blog/braids-orlando',
     // REAL photo (manifest §5): the Shop 1 side of the shop's own banner —
-    // no braids photo exists in the backup, and a fade photo must never
-    // illustrate this post. Swaps for a real braids photo at the media swap.
+    // 2026-11-17: the owner supplied a real braids photo (cornrows into a
+    // bun) — it replaces the shop-interior graphic that stood in for it.
     image: '/images/blog-03-braids.webp',
     imageAlt: {
-      en: 'Inside New Barbershop 1 and New Barbershop 2 — both Orlando barber shop locations side by side',
-      es: 'Interior de New Barbershop 1 y New Barbershop 2 — ambas barberías de Orlando, una junto a la otra',
+      en: 'Woman with neat cornrow braids pulled back into a bun at a barber shop in Orlando, FL',
+      es: 'Mujer con trenzas cornrow impecables recogidas en un moño en una barbería en Orlando, FL',
     },
     locales: {
       en: {
@@ -203,8 +203,8 @@ const localPosts: Post[] = [
     slug: 'blog/welcome-neighborhood-barbershop-orlando',
     image: '/images/blog-04-welcome.webp',
     imageAlt: {
-      en: "Barber trimming the back of a client's haircut with scissors",
-      es: 'Barbero recortando con tijeras la parte trasera del corte de un cliente',
+      en: 'Client with a side part, skin fade and shaped beard at the barber station',
+      es: 'Cliente con raya lateral, degradado al ras y barba perfilada en la estación del barbero',
     },
     locales: {
       en: {
@@ -743,8 +743,8 @@ const localPosts: Post[] = [
     slug: 'blog/fade-vs-taper',
     image: '/images/blog-14-fade-vs-taper.webp',
     imageAlt: {
-      en: "Barber blending a fade with clippers at the side of a client's head",
-      es: 'Barbero difuminando un degradado con máquina en el lateral de la cabeza de un cliente',
+      en: 'Client with a pompadour and a high skin fade showing the blend, back view',
+      es: 'Cliente con tupé y degradado alto al ras que muestra la difuminación, vista trasera',
     },
     locales: {
       en: {
@@ -957,8 +957,8 @@ const localPosts: Post[] = [
     slug: 'blog/best-hair-product-for-men',
     image: '/images/blog-18-hair-products.webp',
     imageAlt: {
-      en: "Barber cutting a client's hair with scissors and a comb, seen from behind",
-      es: 'Barbero cortando el cabello de un cliente con tijeras y peine, visto desde atrás',
+      en: 'Client with a shaved lightning design and a slicked, glossy styled top',
+      es: 'Cliente con un diseño de rayo afeitado y la parte superior peinada con acabado brillante',
     },
     locales: {
       en: {

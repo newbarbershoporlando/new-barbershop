@@ -356,9 +356,10 @@ export const galleryItems: GalleryItem[] = [
     'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL',
     'Haircut & Beard Combo', 'Combo corte + barba',
     'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.'),
-  cap(null, 'Hot Towel Shave', 'Afeitado con toalla caliente',
+  cap('/images/hot-towel-shave-orlando.webp',
+    "Barber wrapping a hot towel around a reclined client's beard for a traditional shave at a barber shop in Orlando, FL", 'Barbero envolviendo una toalla caliente alrededor de la barba de un cliente reclinado para un afeitado tradicional en una barbería en Orlando, FL',
     'Hot Towel Shave', 'Afeitado con toalla caliente',
-    'Our traditional shave — hot towels, a close finish, total relaxation.', 'Nuestro afeitado tradicional — toallas calientes, un acabado al ras y relajación total.', true),
+    'Our traditional shave — hot towels, a close finish, total relaxation.', 'Nuestro afeitado tradicional — toallas calientes, un acabado al ras y relajación total.'),
   cap('/images/razor-line-up-orlando.webp',
     'Client with a high skin fade and a razor line-up at a barber shop in Orlando, FL', 'Cliente con un degradado alto al ras y un delineado con navaja en una barbería en Orlando, FL',
     'Razor Line-Up', 'Delineado con navaja',
@@ -386,14 +387,18 @@ export const galleryItems: GalleryItem[] = [
   // presence in the services list, category tiles and blog content.
   { src: '/images/barber-with-client-fade-orlando.webp', largeSrc: lgOf('/images/barber-with-client-fade-orlando.webp'), alt: { en: "Barber standing behind a client with a finished skin fade and shaped beard at a barber shop in Orlando, FL", es: 'Barbero de pie detrás de un cliente con un degradado al ras terminado y barba perfilada en una barbería en Orlando, FL' } },
   { src: '/images/barber-braiding-client-hair-orlando.webp', largeSrc: lgOf('/images/barber-braiding-client-hair-orlando.webp'), alt: { en: "Barber working on a client's cornrow braids in the chair at a barber shop in Orlando, FL", es: 'Barbero trabajando en las trenzas cornrow de un cliente en la silla en una barbería en Orlando, FL' } },
+  // 2026-11-17: owner-supplied kids photo, added as a third general item
+  // (the captioned Kids Fade slots already carry other real photos).
+  { src: '/images/kids-textured-crop-orlando.webp', largeSrc: lgOf('/images/kids-textured-crop-orlando.webp'), alt: { en: 'Young client with a textured crop and a temple fade at a barber shop in Orlando, FL', es: 'Cliente joven con corte texturizado y degradado en la sien en una barbería en Orlando, FL' } },
 ];
 
 /* Homepage work gallery (owner addition 2026-11-15): REAL client
    photos only — the captioned haircut set, reusing the Services
    gallery entries by src so captions/alts can never drift apart.
-   No stock items, and no Hot Towel Shave (still no photo exists —
-   no reserved slot on the homepage). haircut-16 takes the Kids Fade
-   slot here (the stronger shot); haircut-15 is new. */
+   No stock items. (The Hot Towel Shave photo, supplied 2026-11-17,
+   lives in the Services gallery only — this homepage set stays as
+   curated.) haircut-16 takes the Kids Fade slot here (the stronger
+   shot); haircut-15 is new. */
 const bySrc = (src: string): GalleryItem => galleryItems.find((i) => i.src === src)!;
 export const homeGalleryItems: GalleryItem[] = [
   bySrc('/images/razor-line-up-orlando.webp'),

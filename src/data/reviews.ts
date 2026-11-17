@@ -1,8 +1,10 @@
 // Structured content — mirrors the Sanity `review` schema (sanity/schemas/review.ts).
-// Quotes are verbatim Google reviews from the content pack — never edited.
-// Shop 2 quotes were written bilingually / in Spanish originally and are kept
-// exactly as written in BOTH locales (per content pack). Shop 1 quotes have a
-// recorded Spanish translation for the /es/ pages.
+// Quotes are verbatim Google reviews — never edited.
+// 2026-11-17 refresh (Item 10, owner-approved picks from the verbatim GBP
+// pull in files/REVIEW-POOL-2026-11-17.md): every quote is kept EXACTLY as
+// written in BOTH locales — no translations. The Shop 1 replacements are
+// Spanish originals and ship as written on the EN and ES pages alike, the
+// same treatment Shop 2 quotes have always had here.
 
 import type { LocalizedString } from './locations';
 import { USE_SANITY, fetchSanity } from '../lib/sanity';
@@ -15,60 +17,60 @@ export interface Review {
 }
 
 const localReviews: Review[] = [
-  // ——— New Barbershop 1 ———
+  // ——— New Barbershop 1 (Spanish originals, kept as written in both locales) ———
   {
-    _id: 'rev-s1-carlos',
+    _id: 'rev-s1-raul',
     location: 'shop1',
-    author: 'Carlos López',
+    author: 'Raul Wallace',
     text: {
-      en: 'Quality and professionalism service with Kenya',
-      es: 'Servicio de calidad y profesionalismo con Kenya',
+      en: 'Lo mejores barberos del planeta están en esta barbería muy humiles y demasiado talentosos',
+      es: 'Lo mejores barberos del planeta están en esta barbería muy humiles y demasiado talentosos',
     },
   },
   {
-    _id: 'rev-s1-sophia',
+    _id: 'rev-s1-asdrubal',
     location: 'shop1',
-    author: 'Sophia Rodriguez',
+    author: 'Asdrubal Madueño Uzcategui',
     text: {
-      en: 'Excellent service with keny barber',
-      es: 'Excelente servicio con el barbero Keny',
+      en: 'Muy buena atención y excelente servicio',
+      es: 'Muy buena atención y excelente servicio',
     },
   },
   {
-    _id: 'rev-s1-zxyuak',
+    _id: 'rev-s1-jonathan',
     location: 'shop1',
-    author: 'zxyuak ?¿',
+    author: 'Jonathan Cantillo',
     text: {
-      en: 'Excellent barbershop and Ale king service',
-      es: 'Excelente barbería y un servicio de rey con Ale',
+      en: 'Excelente trabajo de los barberos',
+      es: 'Excelente trabajo de los barberos',
     },
   },
   // ——— New Barbershop 2 (kept as written in both locales) ———
   {
-    _id: 'rev-s2-juan',
+    _id: 'rev-s2-franche',
     location: 'shop2',
-    author: 'juan velazquez',
+    author: 'Franche John',
     text: {
-      en: 'Me encanta esta barbería! Todo el personal siempre es muy amable, acogedor y profesional. Se nota que se enorgullecen de su trabajo, y los cortes siempre quedan limpios, modernos y con mucho estilo. Charlie es mi barbero, ¡ese es mi pana! Es súper talentoso, presta mucha atención a los detalles y siempre se asegura de que salga de ahí luciendo fresh. Se nota que realmente sabe lo que hace. Definitivamente una de las mejores barberias de la ciudad. Excelente ambiente, excelente gente y excelente servicio. La recomiendo al 100%!',
-      es: 'Me encanta esta barbería! Todo el personal siempre es muy amable, acogedor y profesional. Se nota que se enorgullecen de su trabajo, y los cortes siempre quedan limpios, modernos y con mucho estilo. Charlie es mi barbero, ¡ese es mi pana! Es súper talentoso, presta mucha atención a los detalles y siempre se asegura de que salga de ahí luciendo fresh. Se nota que realmente sabe lo que hace. Definitivamente una de las mejores barberias de la ciudad. Excelente ambiente, excelente gente y excelente servicio. La recomiendo al 100%!',
+      en: 'Great service !! Precise and steady with the clippers! Highly recommended!',
+      es: 'Great service !! Precise and steady with the clippers! Highly recommended!',
     },
   },
   {
-    _id: 'rev-s2-jessica',
+    _id: 'rev-s2-karina',
     location: 'shop2',
-    author: 'JESSICA MERCADO',
+    author: 'Karina Rodriguez',
     text: {
-      en: 'Great Service, Clean Environment, Great Prices. Best Nail Technician. Highly Recommended. Tremendo Servicio, Ambiente Limpio, Buenos Precios. La Mejor Tecnica de Úñas. Altamente Recomendado.',
-      es: 'Great Service, Clean Environment, Great Prices. Best Nail Technician. Highly Recommended. Tremendo Servicio, Ambiente Limpio, Buenos Precios. La Mejor Tecnica de Úñas. Altamente Recomendado.',
+      en: 'The best barbershop in town.... Everything is clean and the barbers have the best customer service and care for you.',
+      es: 'The best barbershop in town.... Everything is clean and the barbers have the best customer service and care for you.',
     },
   },
   {
-    _id: 'rev-s2-jay',
+    _id: 'rev-s2-yj',
     location: 'shop2',
-    author: 'Jay Escargo',
+    author: 'Y J',
     text: {
-      en: 'These guys did an excellent job!! They helped me out immensely!! Charlie and Frankie were amazing, friendly, and very customer focused. I highly recommend them!! Must visit at least once!! Estos muchachos hicieron un trabajo excelente! Me ayudaron muchísimo! Charlie y Frankie fueron increíbles, amables y muy atentos conmigo.',
-      es: 'These guys did an excellent job!! They helped me out immensely!! Charlie and Frankie were amazing, friendly, and very customer focused. I highly recommend them!! Must visit at least once!! Estos muchachos hicieron un trabajo excelente! Me ayudaron muchísimo! Charlie y Frankie fueron increíbles, amables y muy atentos conmigo.',
+      en: 'Exelente servicio & muy buenos con niños 100% recomendado ambiente familiar !',
+      es: 'Exelente servicio & muy buenos con niños 100% recomendado ambiente familiar !',
     },
   },
 ];
@@ -93,10 +95,10 @@ export function reviewsFor(locationId: string): Review[] {
 
 /** Featured testimonial on the Services page (verbatim, 5 stars). */
 const localFeaturedTestimonial = {
-  author: 'Preston Figueroa',
+  author: 'Leyan Martinez',
   text: {
-    en: "Provided great customer service. Very clean shop. Very welcoming. The cut was incredible, very clean, sharp and quick. He used many products. It's hard for my brothers and I to trust just anyone but this guy did the job and did it very well! When in Florida we will be back. We are from Austin, Texas.",
-    es: 'Brindaron un excelente servicio al cliente. La barbería está muy limpia. Muy acogedores. El corte fue increíble, muy limpio, definido y rápido. Usó muchos productos. Para mis hermanos y para mí es difícil confiar en cualquiera, pero él hizo el trabajo y lo hizo muy bien. Cuando estemos en Florida, volveremos. Somos de Austin, Texas.',
+    en: 'Is the number 1 in the world',
+    es: 'Is the number 1 in the world',
   } as LocalizedString,
 };
 

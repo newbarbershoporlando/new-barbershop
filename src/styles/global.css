@@ -884,10 +884,21 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
    still aligns with the page gutter. Pure CSS: no JS, works with
    touch, mouse drag-scroll and keyboard scroll alike, and never
    interferes with vertical page scrolling (snap applies to the
-   row's own axis only). */
+   row's own axis only).
+   Cushion fix (2026-11-17): mandatory scroll-snap was eating the
+   16px start padding — the snap target for the first item sat at
+   scrollLeft 16, so every row rested with its first card flush
+   against the screen edge (owner screenshot). scroll-padding-
+   inline: 16px (== the .wrap gutter) shifts every snap target by
+   the gutter: rows now rest at scrollLeft 0 with the first card
+   aligned to the gutter, and every later card settles aligned to
+   the same cushion instead of the edge. The end padding already
+   gave the last card its 16px inset at full scroll; the matching
+   scroll-padding end keeps snap math symmetric. */
 @media (max-width: 899px) {
   .cards--swipe {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    scroll-padding-inline: 16px;
     touch-action: pan-x pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
@@ -898,6 +909,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 @media (max-width: 639px) {
   .gallery {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    scroll-padding-inline: 16px;
     touch-action: pan-x pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
@@ -906,6 +918,7 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
   .gallery-item { flex: 0 0 68%; scroll-snap-align: start; }
   .post-cards--swipe {
     display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    scroll-padding-inline: 16px;
     touch-action: pan-x pan-y;
     margin-inline: -16px; padding-inline: 16px; padding-bottom: 10px;
     scrollbar-width: none;
