@@ -382,7 +382,7 @@ html.sticky-hero { --hero-band-h: 75vw; }
 html.sticky-hero .hero-photo { position: sticky; top: 0; }
 .hero-release { height: calc(var(--hero-band-h) * 1.1); }
 .scroll-over { position: relative; background: var(--white); margin-top: calc(var(--hero-band-h) * -1.1); }
-/* Header-state sentinel (see the observer script in HomeView): a
+/* Header-state sentinel (see the observer script in StickyHero): a
    1px marker whose bottom edge sits exactly at the top of the
    .scroll-over wrapper, i.e. at document y = photo height. Out of
    flow (absolute), so it adds nothing to the layout. */
