@@ -634,7 +634,12 @@ body.lb-open { overflow: hidden; }
 .review-cards { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 18px 0; }
 @media (min-width: 900px) { .review-cards { grid-template-columns: repeat(3, 1fr); } }
 .review-card {
-  background: #171717; border: 1px solid #2e2e2e; border-radius: 12px; padding: 20px;
+  /* RC Phase 4 — design item 16 remainder (2026-11-17): the old
+     #171717 / #2e2e2e were the site's only NEUTRAL grays in a warm
+     palette. Warm equivalents at matched luminance: white text
+     17.93 -> 18.70:1, red stars 3.81 -> 3.98:1 (computed) — the
+     palette warms, contrast does not regress. */
+  background: #1d0e11; border: 1px solid #3d262c; border-radius: 12px; padding: 20px;
   color: var(--white);
 }
 .review-card .stars { color: var(--red); letter-spacing: 3px; margin-bottom: 8px; }
@@ -658,7 +663,9 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 .faq-item { border-bottom: 1px solid var(--line); padding: 16px 0; }
 .faq-item h3 { font-family: 'Barlow', sans-serif; text-transform: none; letter-spacing: 0; font-size: 19px; font-weight: 700; margin-bottom: 6px; }
 .faq-item p { margin: 0; max-width: 760px; }
-.section--dark .faq-item, .section--black .faq-item { border-bottom-color: #2e2e2e; }
+/* Item 16 remainder: same warm replacement as .review-card — this
+   border was the other #2e2e2e (neutral gray) usage. */
+.section--dark .faq-item, .section--black .faq-item { border-bottom-color: #3d262c; }
 /* Upgrade (2026-11-16): accordion enhancement. The button inherits
    the h3 typography exactly; the chevron renders ONLY in the
    JS-enhanced state (.faq--enhanced is added by the component
@@ -722,6 +729,13 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 
 /* ——— Footer ——— */
 .site-footer { background: var(--coal); color: var(--white); padding: 48px 0 110px; }
+/* RC Phase 4 — design item 16 remainder (2026-11-17): sections step
+   their vertical padding 48px -> 80px at >=900px; the footer's top
+   padding never stepped, so desktop pages ended on a tighter rhythm
+   than they ran on. Top only — the bottom padding (110px mobile for
+   call-bar clearance, 48px once the bar hides at >=1100px) is
+   unchanged. */
+@media (min-width: 900px) { .site-footer { padding-top: 80px; } }
 @media (min-width: 1100px) { .site-footer { padding-bottom: 48px; } }
 .footer-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
 @media (min-width: 900px) { .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; } }
