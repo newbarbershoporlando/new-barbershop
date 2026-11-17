@@ -3,7 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import TrustStrip from '../components/TrustStrip.astro';
 import ShopCard from '../components/ShopCard.astro';
 import BlogBand from '../components/BlogBand.astro';
-import { ui, path, HERO_ALT, type Lang } from '../data/ui';
+import StickyHero from '../components/StickyHero.astro';
+import { ui, path, type Lang } from '../data/ui';
 import { locations } from '../data/locations';
 import { pageSeo } from '../data/pages';
 import { breadcrumbNode } from '../lib/schema';
@@ -25,6 +26,7 @@ const site = Astro.site!;
     { name: t.nav.locations, url: new URL(path(lang, 'locations'), site).href },
   ])}
   overlayHeader
+  htmlClass="sticky-hero"
 >
   <!-- Hero-v3 treatment (owner order 2026-11-15, same as homepage):
        full-bleed photo band at y=0 with the translucent floating
@@ -37,15 +39,16 @@ const site = Astro.site!;
        HOMEPAGE hero photo and its exact picture markup, so the
        .hero-photo sizing matches the homepage framing for framing
        (desktop natural aspect; mobile 4:3 cover window) and the
-       baked-in logo stays fully visible. -->
-  <section class="hero-photo" id="heroPhoto">
-    <picture>
-      <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
-      <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
-      <source type="image/webp" srcset="/images/shop1-hero.webp" />
-      <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
-    </picture>
-  </section>
+       baked-in logo stays fully visible.
+       RELEASE CANDIDATE (2026-11-17): the photo band is rendered by
+       the shared StickyHero component, so this page gets the same
+       sticky/scroll-over hero as the homepage; everything below
+       (headline band first) is the component's slot and slides over
+       the stationary photo. The page's old photo-watching header
+       observer is replaced by the component's sentinel observer —
+       same toggle point (photo height − 64px), verified in the RC
+       battery. -->
+  <StickyHero lang={lang}>
   <section class="hero">
     <div class="wrap">
       {/* Item 7: eyebrow + heading block, same pattern as About. */}
@@ -54,22 +57,6 @@ const site = Astro.site!;
     </div>
   </section>
 
-  <script>
-    // Overlay header state (same mechanism as HomeView): translucent
-    // while this page's photo band is under the header, solid once it
-    // scrolls past. Only pages that render #heroPhoto + overlayHeader
-    // run this; other interior pages are unaffected.
-    const heroBand = document.getElementById('heroPhoto');
-    const headerEl = document.getElementById('siteHeader');
-    if (heroBand && headerEl && 'IntersectionObserver' in window) {
-      new IntersectionObserver(
-        (entries) => {
-          headerEl.classList.toggle('header-solid', !entries[0].isIntersecting);
-        },
-        { rootMargin: '-64px 0px 0px 0px', threshold: 0 },
-      ).observe(heroBand);
-    }
-  </script>
 
   <TrustStrip lang={lang} />
 
@@ -84,4 +71,5 @@ const site = Astro.site!;
 
   {/* Item 6: the blog band is this page's 2nd light section → paper. */}
   <BlogBand lang={lang} paper />
+  </StickyHero>
 </BaseLayout>

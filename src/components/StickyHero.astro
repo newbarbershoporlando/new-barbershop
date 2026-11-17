@@ -1,0 +1,83 @@
+---
+/* StickyHero — the reusable sticky-hero / scroll-over pattern
+   (the owner's landonorris-style effect: homepage v2, 2026-11-17;
+   generalized into this shared component for the release candidate
+   so every eligible page uses ONE implementation, not copies).
+   Renders, in order:
+   1. .hero-stick — the photographic hero band (.hero-photo, made
+      position:sticky by the html.sticky-hero rules in global.css)
+      plus the invisible .hero-release spacer (1.1 × the hero
+      height, via the --hero-band-h custom property) that bounds
+      the stick: the photo releases just after it is fully covered
+      and never stays pinned behind the page.
+   2. .scroll-over — a wrapper around everything that follows the
+      photo (the default slot). position:relative with an opaque
+      base background and deliberately NO z-index: document order
+      paints it above the sticky photo, and avoiding a stacking
+      context keeps fixed descendants (the gallery lightbox,
+      z-index 200) above the z-50 site header. The wrapper is
+      pulled up over the spacer by an equal negative margin, so
+      the layout — document height included — is identical to the
+      pre-effect page in every mode (sticky, no-stick fallback,
+      reduced-motion).
+   3. The overlay-header observer script (sentinel-based, below).
+   Pages using this component MUST pass htmlClass="sticky-hero"
+   to BaseLayout so the scoped CSS applies (sticky position, the
+   @supports overflow-x:clip workaround, the reduced-motion
+   fallback — see global.css).
+   ELIGIBILITY (release-candidate audit, 2026-11-17): only pages
+   whose top is this exact full-bleed photo band use it — Home,
+   About and Locations index, EN + ES. Pages without a substantial
+   photographic hero at the top (Services, Contact, Blog index,
+   Accessibility: text only; Location detail: a coal text band;
+   Blog posts: an inset article image below the H1) do NOT use it.
+   The photo itself is the owner-supplied Shop 1 interior with its
+   baked-in logo: HARD RULE — no text is ever overlaid on it; each
+   page's headline sits on the solid band inside the slot, below
+   the photo. */
+import { HERO_ALT, type Lang } from '../data/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+
+<div class="hero-stick">
+  <section class="hero-photo" id="heroPhoto">
+    <picture>
+      <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
+      <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
+      <source type="image/webp" srcset="/images/shop1-hero.webp" />
+      <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
+    </picture>
+  </section>
+  <div class="hero-release" aria-hidden="true"></div>
+</div>
+<div class="scroll-over">
+  <span class="hero-sentinel" id="heroSentinel" aria-hidden="true"></span>
+  <slot />
+</div>
+
+<script>
+  // Overlay header state: translucent while the hero photo is under
+  // the header, solid once the photo's bottom edge passes the
+  // header's bottom edge (the 64px header height). The photo is
+  // sticky — its own rect stays pinned and no longer reports
+  // coverage — so the observer watches the 1px sentinel at the top
+  // of the .scroll-over wrapper instead. The sentinel's bottom edge
+  // sits exactly where the photo's bottom edge used to travel
+  // (document y = photo height), and the root's bottom margin is
+  // expanded far past the fold so "still below the viewport" reads
+  // as intersecting, exactly as the tall photo band did when these
+  // pages observed the band directly: the toggle point is unchanged
+  // (solid once scrollY passes photo height − 64px).
+  const heroSentinel = document.getElementById('heroSentinel');
+  const headerEl = document.getElementById('siteHeader');
+  if (heroSentinel && headerEl && 'IntersectionObserver' in window) {
+    new IntersectionObserver(
+      (entries) => {
+        headerEl.classList.toggle('header-solid', !entries[0].isIntersecting);
+      },
+      { rootMargin: '-64px 0px 10000px 0px', threshold: 0 },
+    ).observe(heroSentinel);
+  }
+</script>

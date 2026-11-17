@@ -354,15 +354,24 @@ img { max-width: 100%; height: auto; display: block; }
    the headline band's seat directly under the photo are unchanged,
    and if sticky never engages (the fallback below) the page is
    pixel-identical to the pre-effect site.
-   Scoped via html.page-home (passed only by HomeView): About and
-   Locations use .hero-photo too and must not change. */
-html.page-home .hero-photo { position: sticky; top: 0; }
-.hero-release { height: 82.5vw; }
-.scroll-over { position: relative; background: var(--white); margin-top: -82.5vw; }
+   Scoped via html.sticky-hero (passed by every page that renders
+   the shared StickyHero component: Home, About, Locations index —
+   the three templates whose top is this photo band; no other page
+   may pass it). The hero height is parameterized as --hero-band-h
+   (75vw ≤899px from the 4:3 window; 56.288vw ≥900px from the
+   1320×743 frame) so the release spacer and the wrapper's negative
+   margin both derive from it: a future hero with a different
+   aspect changes ONE property, not the arithmetic. (61.9167vw in
+   the v2 homepage build was 56.288vw × 1.1 rounded by hand; the
+   calc form differs by ~0.001px and the spacer/margin pair cancels
+   exactly either way.) */
+html.sticky-hero { --hero-band-h: 75vw; }
 @media (min-width: 900px) {
-  .hero-release { height: 61.9167vw; }
-  .scroll-over { margin-top: -61.9167vw; }
+  html.sticky-hero { --hero-band-h: 56.288vw; }
 }
+html.sticky-hero .hero-photo { position: sticky; top: 0; }
+.hero-release { height: calc(var(--hero-band-h) * 1.1); }
+.scroll-over { position: relative; background: var(--white); margin-top: calc(var(--hero-band-h) * -1.1); }
 /* Header-state sentinel (see the observer script in HomeView): a
    1px marker whose bottom edge sits exactly at the top of the
    .scroll-over wrapper, i.e. at document y = photo height. Out of
@@ -374,20 +383,21 @@ html.page-home .hero-photo { position: sticky; top: 0; }
 /* Sticky needs no ancestor to be a scroll container, but the base
    html,body overflow-x:hidden silently breaks position:sticky
    (item-5 finding). overflow-x:clip clips identically yet creates
-   no scroll container, so the hero genuinely sticks. Scoped to the
-   homepage — item 5's global version stays separately gated on the
+   no scroll container, so the hero genuinely sticks. Scoped to
+   the StickyHero pages (html.sticky-hero) — item 5's global
+   version stays separately gated on the
    owner's iPhone verification. Engines without clip support
    (Safari < 16) keep overflow-x:hidden: sticky then simply never
    engages and the photo scrolls with the page exactly as it did
    before — the layout above is identical either way, so there is
    no broken half-stuck state. */
 @supports (overflow: clip) {
-  html.page-home, html.page-home body { overflow-x: clip; }
+  html.sticky-hero, html.sticky-hero body { overflow-x: clip; }
 }
 /* Reduced motion: no sticky hero — the photo takes its original
    position:relative and scrolls with the page exactly as before. */
 @media (prefers-reduced-motion: reduce) {
-  html.page-home .hero-photo { position: relative; }
+  html.sticky-hero .hero-photo { position: relative; }
 }
 .hero {
   background: var(--coal);

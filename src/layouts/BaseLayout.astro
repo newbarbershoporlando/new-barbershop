@@ -24,10 +24,10 @@ interface Props {
   jsonLd?: object | object[];
   /** Homepage only: translucent header floating over the hero photo. */
   overlayHeader?: boolean;
-  /** Optional class on <html> (homepage passes "page-home" so the
-      parallax-v2 sticky/overflow rules in global.css can be scoped
-      to the homepage only — About/Locations share .hero-photo and
-      must not change). Omitted entirely when not passed. */
+  /** Optional class on <html> (pages rendering the shared
+      StickyHero component pass "sticky-hero" so the sticky /
+      overflow / reduced-motion rules in global.css scope to
+      exactly those pages). Omitted entirely when not passed. */
   htmlClass?: string;
 }
 const { lang, slug, title, description, jsonLd, overlayHeader = false, htmlClass } = Astro.props;
