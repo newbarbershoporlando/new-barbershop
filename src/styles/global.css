@@ -409,6 +409,38 @@ html.sticky-hero .hero-photo { position: sticky; top: 0; }
 @media (prefers-reduced-motion: reduce) {
   html.sticky-hero .hero-photo { position: relative; }
 }
+/* ——— Preview 3 (2026-11-17, PREVIEW ONLY): iOS sticky-hero glitch
+   countermeasures, all scoped to html.sticky-hero so the other 69
+   pages are untouched. Targets, per the five-agent research round
+   (files/HERO-RESEARCH-1..5):
+   (1) Canvas: html/body take --coal on hero pages, so an unpainted
+       or dropped tile — and the iOS rubber-band overscroll at the
+       top — shows coal instead of white (the page's failure color
+       was white against a coal hero zone).
+   (2) The two blocks that visibly duplicate — the .hero headline
+       band and .trust-strip, the first two children of
+       .scroll-over, previously never composited in any test — get
+       their own layers via translateZ(0). Legal here because
+       neither is an ancestor of the fixed gallery lightbox (it
+       lives in the Gallery subtree inside .scroll-over); the
+       wrapper itself stays transform-free, as required.
+   (3) Reveal shutdown completed: Preview 2 removed only the
+       [data-rv] transform; the opacity transition still ran and
+       still forced layer promotion/flattening per block. On hero
+       pages the reveals inside .scroll-over now render in their
+       final state outright (opacity 1, no transition).
+   (4) Header: .header-solid keeps the backdrop blur instead of
+       flipping backdrop-filter to none mid-gesture at the toggle
+       point; only the background still transitions to solid coal. */
+html.sticky-hero { background: var(--coal); }
+html.sticky-hero body { background: var(--coal); }
+html.sticky-hero .scroll-over .hero { transform: translateZ(0); }
+html.sticky-hero .scroll-over .trust-strip { transform: translateZ(0); }
+html.sticky-hero .scroll-over [data-rv] { opacity: 1; transform: none; transition: none; }
+html.sticky-hero .site-header--overlay.header-solid {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
 .hero {
   background: var(--coal);
   color: var(--white);
