@@ -114,11 +114,21 @@ img { max-width: 100%; height: auto; display: block; }
 .btn--ghost-dark:hover { background: var(--white); color: var(--ink) !important; }
 .btn--whatsapp { border-color: #25d366; color: #0f7a3f !important; background: transparent; }
 /* Item 3: the WhatsApp variant was the one button with no hover
-   state at all — a tint of its own AA-verified green (text color
-   unchanged, so contrast is unchanged). */
+   state at all. The hover is an inset RING, never a background
+   tint: a tint behind the green text changes the surface the text
+   sits on and DOES change its contrast (the fc36c9c fixup computed
+   a tinted-paper composite at 4.27:1, below AA) — an earlier
+   version of this comment claimed otherwise and was wrong. The
+   ring adds emphasis while the text keeps its resting background
+   and its resting, AA-verified contrast. */
 .btn--whatsapp:hover { box-shadow: inset 0 0 0 1px #0f7a3f; }
 .section--dark .btn--whatsapp, .section--black .btn--whatsapp { color: #4be07f !important; }
-.section--dark .btn--whatsapp:hover, .section--black .btn--whatsapp:hover { background: rgba(75, 224, 127, 0.12); }
+/* RC Phase 4 (2026-11-17): the dark-section hover/active used a
+   12% green bg tint — computed #4be07f contrast 9.74:1 on coal /
+   10.44:1 on black while tinted, vs 11.63:1 / 12.27:1 resting.
+   Same ring treatment as the light sections: hover now keeps the
+   resting background, so hover contrast = resting contrast. */
+.section--dark .btn--whatsapp:hover, .section--black .btn--whatsapp:hover { box-shadow: inset 0 0 0 1px #4be07f; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn-stack { display: flex; flex-direction: column; align-items: flex-start; }
 .btn-stack .btn + .btn { margin-top: 20px; }
@@ -139,7 +149,7 @@ img { max-width: 100%; height: auto; display: block; }
 .btn--ghost-light:active { background: var(--ink); color: var(--white) !important; }
 .btn--ghost-dark:active { background: var(--white); color: var(--ink) !important; }
 .btn--whatsapp:active { box-shadow: inset 0 0 0 1px #0f7a3f; }
-.section--dark .btn--whatsapp:active, .section--black .btn--whatsapp:active { background: rgba(75, 224, 127, 0.12); }
+.section--dark .btn--whatsapp:active, .section--black .btn--whatsapp:active { box-shadow: inset 0 0 0 1px #4be07f; }
 .call-bar a:active { background: var(--red-dark); }
 .gallery-btn:active img { opacity: 0.85; }
 .lb-btn:active { background: var(--red); }
