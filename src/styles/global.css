@@ -21,6 +21,24 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html, body { overflow-x: hidden; }
+/* Item 5 (rebased onto 46fe578, 2026-11-17): overflow-x: hidden makes
+   html/body a scroll container, which defeats position: sticky in
+   Chromium — the site header only stuck where a page had scoped
+   clip in (the StickyHero pages). overflow-x: clip prevents
+   horizontal page overflow WITHOUT creating a scroll container, so
+   the sticky header works as designed on every page. The clip rule
+   is gated behind @supports: engines without clip support
+   (Safari <16) never enter the block and keep hidden — they behave
+   exactly as the site did before this change (overflow contained,
+   header scrolls away). Graceful, not broken. (A plain duplicate
+   declaration — hidden, then clip — was NOT used: the CSS minifier
+   collapses it to clip alone, silently dropping the fallback.
+   Verified in the first isolated Item 5 build.) This global rule
+   subsumes the former html.sticky-hero-scoped @supports block,
+   which is removed below. */
+@supports (overflow: clip) {
+  html, body { overflow-x: clip; }
+}
 body {
   margin: 0;
   font-family: 'Barlow', system-ui, sans-serif;
@@ -393,17 +411,15 @@ html.sticky-hero .hero-photo { position: sticky; top: 0; }
 /* Sticky needs no ancestor to be a scroll container, but the base
    html,body overflow-x:hidden silently breaks position:sticky
    (item-5 finding). overflow-x:clip clips identically yet creates
-   no scroll container, so the hero genuinely sticks. Scoped to
-   the StickyHero pages (html.sticky-hero) — item 5's global
-   version stays separately gated on the
-   owner's iPhone verification. Engines without clip support
-   (Safari < 16) keep overflow-x:hidden: sticky then simply never
-   engages and the photo scrolls with the page exactly as it did
-   before — the layout above is identical either way, so there is
-   no broken half-stuck state. */
-@supports (overflow: clip) {
-  html.sticky-hero, html.sticky-hero body { overflow-x: clip; }
-}
+   no scroll container, so the hero genuinely sticks. The clip
+   upgrade is now GLOBAL (item 5, rebased 2026-11-17 — see the
+   @supports block beside the base rule at the top of this file);
+   it covers these StickyHero pages exactly as the former scoped
+   rule did. Engines without clip support (Safari < 16) keep
+   overflow-x:hidden: sticky then simply never engages and the
+   photo scrolls with the page exactly as it did before — the
+   layout above is identical either way, so there is no broken
+   half-stuck state. */
 /* Reduced motion: no sticky hero — the photo takes its original
    position:relative and scrolls with the page exactly as before. */
 @media (prefers-reduced-motion: reduce) {
@@ -626,7 +642,12 @@ table.svc td.desc { width: 70%; color: var(--ink); }
    (they already truncate with an ellipsis). */
 
 /* ——— Lightbox (gallery photo viewer) ——— */
-body.lb-open { overflow: hidden; }
+/* Item 5 (rebased onto 46fe578, 2026-11-17): the lock must cover
+   html as well as body — locking body alone left the root scroller
+   live (html computed to overflow-y: auto), so a drag on an open
+   photo scrolled the page behind the lightbox. The Gallery script
+   toggles .lb-open on both. */
+html.lb-open, body.lb-open { overflow: hidden; }
 .lightbox {
   position: fixed; inset: 0; z-index: 200;
   background: rgba(12, 5, 6, 0.94);

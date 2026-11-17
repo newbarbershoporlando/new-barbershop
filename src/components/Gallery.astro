@@ -108,12 +108,14 @@ const jpgOf = (webp: string) => webp.replace(/\.webp$/, '.jpg');
       lastFocus = document.activeElement;
       show(n);
       box.hidden = false;
+      document.documentElement.classList.add('lb-open');
       document.body.classList.add('lb-open');
       document.addEventListener('keydown', onKey);
       closeBtn.focus();
     };
     const close = () => {
       box.hidden = true;
+      document.documentElement.classList.remove('lb-open');
       document.body.classList.remove('lb-open');
       document.removeEventListener('keydown', onKey);
       if (lastFocus && lastFocus.focus) lastFocus.focus();
