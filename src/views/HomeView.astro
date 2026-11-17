@@ -66,6 +66,61 @@ const site = Astro.site!;
     }
   </script>
 
+  <script>
+    // Parallax hero (owner request 2026-11-17, PREVIEW ONLY): the hero
+    // photo progressively HIDES as the user scrolls down and reveals
+    // again scrolling back up. The visible state is a pure function of
+    // scrollY — scrubbed, bidirectional, no timers, no hysteresis:
+    //   progress p = clamp(scrollY / (band height × 0.95), 0, 1)
+    //   picture clip-path inset-top grows 0% → 100% (the photo's lower
+    //   portion stays in view longest, so the photo reads as pinned
+    //   while the page scrolls past — the parallax depth), and the img
+    //   drifts down slightly while scaling 1.00 → 1.06 (the scale bleed,
+    //   3p% per side, always covers the ≤2p% drift, so no gap can open).
+    // At p = 0 both inline styles are REMOVED — scrollY 0 is pixel-
+    // identical to the pre-parallax site. Only clip-path + transform
+    // are ever touched: the hero's layout box never changes (CLS 0),
+    // and the hero carries NO opacity/visibility gate (LCP protection,
+    // commit 9471852 precedent). Gates: no-JS → this script never runs
+    // and the site is exactly the static site; prefers-reduced-motion
+    // → the effect is never armed. rAF is on-demand (scheduled by the
+    // passive scroll listener / resize), never a standing loop.
+    (function () {
+      var band = document.getElementById('heroPhoto');
+      if (!band) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var pic = band.querySelector('picture');
+      var img = band.querySelector('img');
+      if (!pic || !img) return;
+      var range = band.offsetHeight * 0.95;
+      var ticking = false;
+      function apply() {
+        ticking = false;
+        var p = range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0;
+        if (p <= 0) {
+          pic.style.clipPath = '';
+          pic.style.webkitClipPath = '';
+          img.style.transform = '';
+          return;
+        }
+        var clip = 'inset(' + (p * 100).toFixed(2) + '% 0 0 0)';
+        pic.style.clipPath = clip;
+        pic.style.webkitClipPath = clip;
+        img.style.transform =
+          'translate3d(0, ' + (p * 2).toFixed(3) + '%, 0) scale(' + (1 + p * 0.06).toFixed(4) + ')';
+      }
+      function schedule() {
+        if (!ticking) { ticking = true; window.requestAnimationFrame(apply); }
+      }
+      window.addEventListener('scroll', schedule, { passive: true });
+      window.addEventListener('resize', function () {
+        range = band.offsetHeight * 0.95;
+        schedule();
+      });
+      apply();
+    })();
+  </script>
+
   <TrustStrip lang={lang} />
 
   <!-- Work gallery — owner addition 2026-11-15: real client photos
