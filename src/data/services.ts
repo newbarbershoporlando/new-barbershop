@@ -51,7 +51,7 @@ const localCategories: ServiceCategory[] = [
       en: 'Beard grooming and traditional shaves, finished with sharp, clean lines.',
       es: 'Arreglo de barba y afeitados tradicionales, con líneas definidas y limpias.',
     },
-    image: '/images/tile-beard.webp',
+    image: '/images/tile-beard-flip.webp',
     imageAlt: { en: 'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', es: 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL' },
   },
   {

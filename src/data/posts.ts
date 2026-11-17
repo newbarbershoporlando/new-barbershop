@@ -955,7 +955,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-18',
     slug: 'blog/best-hair-product-for-men',
-    image: '/images/blog-18-hair-products.webp',
+    image: '/images/blog-18-hair-products-v2.webp',
     imageAlt: {
       en: 'Client with a shaved lightning design and a slicked, glossy styled top',
       es: 'Cliente con un diseño de rayo afeitado y la parte superior peinada con acabado brillante',

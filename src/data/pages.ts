@@ -352,7 +352,7 @@ export const galleryItems: GalleryItem[] = [
     'Client with a buzz cut haircut, faded sides and a shaped beard at a barber shop in Orlando, FL', 'Cliente con corte rapado, laterales degradados y barba perfilada en una barbería en Orlando, FL',
     'Buzz Cut', 'Corte rapado',
     'One length all over — simple, even and sharp.', 'Una sola longitud en toda la cabeza — sencillo, uniforme y definido.'),
-  cap('/images/haircut-and-beard-combo-orlando.webp',
+  cap('/images/haircut-and-beard-combo-orlando-flip.webp',
     'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL',
     'Haircut & Beard Combo', 'Combo corte + barba',
     'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.'),
@@ -416,5 +416,5 @@ export const homeGalleryItems: GalleryItem[] = [
     'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
   bySrc('/images/classic-haircut-orlando.webp'),
   bySrc('/images/high-skin-fade-orlando.webp'),
-  bySrc('/images/haircut-and-beard-combo-orlando.webp'),
+  bySrc('/images/haircut-and-beard-combo-orlando-flip.webp'),
 ];
