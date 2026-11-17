@@ -20,7 +20,7 @@ const seo = pageSeo.home[lang];
 const site = Astro.site!;
 ---
 
-<BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={[homeGraph(site.href.replace(/\/$/, '')), galleryImageGraph(site.href.replace(/\/$/, ''), homeGalleryItems, lang)]} overlayHeader>
+<BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={[homeGraph(site.href.replace(/\/$/, '')), galleryImageGraph(site.href.replace(/\/$/, ''), homeGalleryItems, lang)]} overlayHeader htmlClass="page-home">
   <!-- Hero — owner requests 2026-11-15 (supersede the banner-strip
        stack of the same day's phone pass): the owner-supplied Shop 1
        interior photo is a full-bleed band at y=0 and the header floats
@@ -33,93 +33,41 @@ const site = Astro.site!;
        hero (owner change, same day): the floating bottom call bar is
        the homepage's call action, visible from the top of the page
        exactly as on Contact — see StickyCallBar. -->
-  <section class="hero-photo" id="heroPhoto">
-    <picture>
-      <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
-      <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
-      <source type="image/webp" srcset="/images/shop1-hero.webp" />
-      <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
-    </picture>
-  </section>
-  <section class="hero">
-    <div class="wrap">
-      <h1>{c.heroH1}</h1>
-      <p class="hero-sub">{c.heroLine}</p>
-    </div>
-  </section>
-
-  <script>
-    // Overlay header state: translucent while the hero photo is under
-    // the header, solid once the photo's bottom edge passes the
-    // header's bottom edge (rootMargin trims the root by the 64px
-    // header height). Homepage only — other pages never render
-    // #heroPhoto and never get the overlay class.
-    const heroBand = document.getElementById('heroPhoto');
-    const headerEl = document.getElementById('siteHeader');
-    if (heroBand && headerEl && 'IntersectionObserver' in window) {
-      new IntersectionObserver(
-        (entries) => {
-          headerEl.classList.toggle('header-solid', !entries[0].isIntersecting);
-        },
-        { rootMargin: '-64px 0px 0px 0px', threshold: 0 },
-      ).observe(heroBand);
-    }
-  </script>
-
-  <script>
-    // Parallax hero (owner request 2026-11-17, PREVIEW ONLY): the hero
-    // photo progressively HIDES as the user scrolls down and reveals
-    // again scrolling back up. The visible state is a pure function of
-    // scrollY — scrubbed, bidirectional, no timers, no hysteresis:
-    //   progress p = clamp(scrollY / (band height × 0.95), 0, 1)
-    //   picture clip-path inset-top grows 0% → 100% (the photo's lower
-    //   portion stays in view longest, so the photo reads as pinned
-    //   while the page scrolls past — the parallax depth), and the img
-    //   drifts down slightly while scaling 1.00 → 1.06 (the scale bleed,
-    //   3p% per side, always covers the ≤2p% drift, so no gap can open).
-    // At p = 0 both inline styles are REMOVED — scrollY 0 is pixel-
-    // identical to the pre-parallax site. Only clip-path + transform
-    // are ever touched: the hero's layout box never changes (CLS 0),
-    // and the hero carries NO opacity/visibility gate (LCP protection,
-    // commit 9471852 precedent). Gates: no-JS → this script never runs
-    // and the site is exactly the static site; prefers-reduced-motion
-    // → the effect is never armed. rAF is on-demand (scheduled by the
-    // passive scroll listener / resize), never a standing loop.
-    (function () {
-      var band = document.getElementById('heroPhoto');
-      if (!band) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      var pic = band.querySelector('picture');
-      var img = band.querySelector('img');
-      if (!pic || !img) return;
-      var range = band.offsetHeight * 0.95;
-      var ticking = false;
-      function apply() {
-        ticking = false;
-        var p = range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0;
-        if (p <= 0) {
-          pic.style.clipPath = '';
-          pic.style.webkitClipPath = '';
-          img.style.transform = '';
-          return;
-        }
-        var clip = 'inset(' + (p * 100).toFixed(2) + '% 0 0 0)';
-        pic.style.clipPath = clip;
-        pic.style.webkitClipPath = clip;
-        img.style.transform =
-          'translate3d(0, ' + (p * 2).toFixed(3) + '%, 0) scale(' + (1 + p * 0.06).toFixed(4) + ')';
-      }
-      function schedule() {
-        if (!ticking) { ticking = true; window.requestAnimationFrame(apply); }
-      }
-      window.addEventListener('scroll', schedule, { passive: true });
-      window.addEventListener('resize', function () {
-        range = band.offsetHeight * 0.95;
-        schedule();
-      });
-      apply();
-    })();
-  </script>
+  <!-- Parallax hero v2 (owner correction 2026-11-17, PREVIEW ONLY —
+       replaces the rejected v1 clip-path script, which is REMOVED):
+       the photo band is position:sticky (see global.css) and stays
+       stationary while the .scroll-over wrapper below — pulled up
+       over the .hero-release spacer by an equal negative margin —
+       slides up and over it, concealing it from the bottom toward
+       the top. The .hero-stick box (photo + spacer) bounds the
+       stick: the photo releases at scrollY = spacer height ≈ 1.1×
+       the photo height, just after the wrapper fully covers it, and
+       slides away underneath the wrapper. Spacer and negative
+       margin cancel exactly, so the layout — including the document
+       height and the band's seat directly under the photo — is
+       identical to the pre-effect page in every mode (no-stick
+       fallback and reduced-motion included). Pure CSS: no script
+       drives or gates the effect, and the photo gets NO transform,
+       zoom, drift or opacity treatment. -->
+  <div class="hero-stick">
+    <section class="hero-photo" id="heroPhoto">
+      <picture>
+        <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
+        <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
+        <source type="image/webp" srcset="/images/shop1-hero.webp" />
+        <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
+      </picture>
+    </section>
+    <div class="hero-release" aria-hidden="true"></div>
+  </div>
+  <div class="scroll-over">
+    <span class="hero-sentinel" id="heroSentinel" aria-hidden="true"></span>
+    <section class="hero">
+      <div class="wrap">
+        <h1>{c.heroH1}</h1>
+        <p class="hero-sub">{c.heroLine}</p>
+      </div>
+    </section>
 
   <TrustStrip lang={lang} />
 
@@ -199,4 +147,31 @@ const site = Astro.site!;
   <ReviewsBand lang={lang} />
   {/* Item 6: the blog band is this page's 6th light section → paper. */}
   <BlogBand lang={lang} paper />
+  </div>
+
+  <script>
+    // Overlay header state: translucent while the hero photo is under
+    // the header, solid once the photo's bottom edge passes the
+    // header's bottom edge (the 64px header height). Parallax v2
+    // (2026-11-17): the photo is now sticky — its own rect stays
+    // pinned and no longer reports coverage — so the observer watches
+    // the 1px sentinel at the top of the .scroll-over wrapper
+    // instead. The sentinel's bottom edge sits exactly where the
+    // photo's bottom edge used to travel (document y = photo
+    // height), and the root's bottom margin is expanded far past the
+    // fold so "still below the viewport" reads as intersecting,
+    // exactly as the tall photo band did: the toggle point is
+    // unchanged (solid once scrollY passes photo height − 64px).
+    // Homepage only — other pages keep their own observer scripts.
+    const heroSentinel = document.getElementById('heroSentinel');
+    const headerEl = document.getElementById('siteHeader');
+    if (heroSentinel && headerEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(
+        (entries) => {
+          headerEl.classList.toggle('header-solid', !entries[0].isIntersecting);
+        },
+        { rootMargin: '-64px 0px 10000px 0px', threshold: 0 },
+      ).observe(heroSentinel);
+    }
+  </script>
 </BaseLayout>

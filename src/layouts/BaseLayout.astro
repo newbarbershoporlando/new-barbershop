@@ -24,8 +24,13 @@ interface Props {
   jsonLd?: object | object[];
   /** Homepage only: translucent header floating over the hero photo. */
   overlayHeader?: boolean;
+  /** Optional class on <html> (homepage passes "page-home" so the
+      parallax-v2 sticky/overflow rules in global.css can be scoped
+      to the homepage only — About/Locations share .hero-photo and
+      must not change). Omitted entirely when not passed. */
+  htmlClass?: string;
 }
-const { lang, slug, title, description, jsonLd, overlayHeader = false } = Astro.props;
+const { lang, slug, title, description, jsonLd, overlayHeader = false, htmlClass } = Astro.props;
 const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const site = Astro.site!;
 const canonical = new URL(path(lang, slug), site).href;
@@ -35,7 +40,7 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} class={htmlClass}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
