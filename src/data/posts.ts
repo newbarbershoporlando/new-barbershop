@@ -149,7 +149,7 @@ const localPosts: Post[] = [
     // REAL photo (manifest §5): the Shop 1 side of the shop's own banner —
     // 2026-11-17: the owner supplied a real braids photo (cornrows into a
     // bun) — it replaces the shop-interior graphic that stood in for it.
-    image: '/images/blog-03-braids.webp',
+    image: '/images/blog-03-braids-v2.webp',
     imageAlt: {
       en: 'Woman with neat cornrow braids pulled back into a bun at a barber shop in Orlando, FL',
       es: 'Mujer con trenzas cornrow impecables recogidas en un moño en una barbería en Orlando, FL',
@@ -1063,7 +1063,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-20',
     slug: 'blog/beard-care-at-home',
-    image: '/images/blog-20-beard-care.webp',
+    image: '/images/blog-20-beard-care-v2.webp',
     imageAlt: {
       en: 'Client with a slicked top, high skin fade and a full shaped beard in the barber chair',
       es: 'Cliente con la parte superior peinada hacia atrás, degradado alto al ras y barba completa perfilada en la silla del barbero',
