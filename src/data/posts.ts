@@ -35,7 +35,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-1',
     slug: 'blog/top-rated-barber-shop-orlando',
-    image: '/images/blog-01-top-rated.webp',
+    image: '/images/blog-01-top-rated-v2.webp',
     imageAlt: {
       en: 'Client with a slicked pompadour and shaved design line, three-quarter view',
       es: 'Cliente con tupé peinado y línea de diseño afeitada, vista de tres cuartos',
