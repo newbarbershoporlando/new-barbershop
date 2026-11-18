@@ -34,6 +34,14 @@ const site = Astro.site!;
        hero (owner change, same day): the floating bottom call bar is
        the homepage's call action, visible from the top of the page
        exactly as on Contact — see StickyCallBar. -->
+  <!-- Hero upgrade (owner spec 2026-11-17): this page alone passes
+       StickyHero's `overlay` prop — the photo is the clean
+       high-resolution export (no baked-in logo) and the exact
+       header logo artwork is overlaid as its own layer with the
+       1 / 2 location markers, superseding the no-overlay rule for
+       the homepage only. No headline, subhead or button moves onto
+       the photo: the H1 and subhead stay on the coal band below,
+       exactly as before. About/Locations are unchanged. -->
   <!-- Sticky hero (owner correction 2026-11-17, PREVIEW ONLY —
        the v2 sticky/scroll-over build, generalized into the shared
        StickyHero component for the release candidate): the photo
@@ -44,7 +52,7 @@ const site = Astro.site!;
        the bounded release, and the fallbacks. Pure CSS: no script
        drives or gates the effect, and the photo gets NO transform,
        zoom, drift or opacity treatment. -->
-  <StickyHero lang={lang}>
+  <StickyHero lang={lang} overlay>
     <section class="hero">
       <div class="wrap">
         <h1>{c.heroH1}</h1>

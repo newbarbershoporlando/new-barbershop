@@ -34,21 +34,73 @@
    The photo itself is the owner-supplied Shop 1 interior with its
    baked-in logo: HARD RULE — no text is ever overlaid on it; each
    page's headline sits on the solid band inside the slot, below
-   the photo. */
+   the photo.
+   SUPERSESSION (owner spec 2026-11-17, hero upgrade): the owner
+   superseded that rule for the HOMEPAGE first. When a page passes
+   the `overlay` prop (HomeView), the photo is the clean,
+   logo-free high-resolution export of the same interior
+   (hero-home-* srcset) and the exact header logo artwork
+   (logo-hero-2048, the same art as /images/logo.png) is overlaid
+   as a separate layer, centered, on a soft dark silhouette shade
+   fitted behind the logo-and-markers group, with the circular
+   red location markers 1 (left) and 2 (right) hanging BELOW the
+   ends of the lettering, never on top of it (owner badge
+   hang-below fix 2026-11-17; placement and shade measured from
+   the baked composite, owner reference-match revision
+   2026-11-17) — see .hero-overlay in global.css.
+   EXTENSION (owner, 2026-11-17, later the same day: "update the
+   rest of the site pages with all these updates to the home page
+   we just did"): AboutView and LocationsView now pass the prop
+   too, so all three StickyHero pages (EN + ES) render the same
+   clean photo + overlay treatment at the final homepage values.
+   The non-overlay branch below is retained but no longer used by
+   any page. The HARD RULE is unchanged in substance on every
+   page: no headline, copy or button is ever overlaid on the
+   photo — each page's headline still sits on the solid band
+   inside the slot, below the photo; the only overlay is the
+   logo-and-markers layer itself. */
 import { HERO_ALT, type Lang } from '../data/ui';
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
+interface Props { lang: Lang; overlay?: boolean }
+const { lang, overlay = false } = Astro.props;
 ---
 
 <div class="hero-stick">
   <section class="hero-photo" id="heroPhoto">
-    <picture>
-      <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
-      <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
-      <source type="image/webp" srcset="/images/shop1-hero.webp" />
-      <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
-    </picture>
+    {overlay ? (
+      <>
+        <picture>
+          <source type="image/avif" srcset="/images/hero-home-1080.avif 1080w, /images/hero-home-1600.avif 1600w, /images/hero-home-2560.avif 2560w" sizes="100vw" />
+          <source type="image/webp" srcset="/images/hero-home-1080.webp 1080w, /images/hero-home-1600.webp 1600w, /images/hero-home-2560.webp 2560w" sizes="100vw" />
+          <img src="/images/hero-home-1600.jpg" srcset="/images/hero-home-1080.jpg 1080w, /images/hero-home-1600.jpg 1600w, /images/hero-home-2560.jpg 2560w" sizes="100vw" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
+        </picture>
+        <div class="hero-overlay" aria-hidden="true">
+          <div class="hero-logo-box">
+            <div class="hero-logo-shade">
+              <picture>
+                <source type="image/webp" srcset="/images/logo-hero-2048.webp" />
+                <img class="hero-logo-shade-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" />
+              </picture>
+              <span class="hero-logo-shade-disc hero-logo-shade-disc--left"></span>
+              <span class="hero-logo-shade-disc hero-logo-shade-disc--right"></span>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="/images/logo-hero-2048.webp" />
+              <img class="hero-logo-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" />
+            </picture>
+            <span class="hero-badge hero-badge--left">1</span>
+            <span class="hero-badge hero-badge--right">2</span>
+          </div>
+        </div>
+      </>
+    ) : (
+      <picture>
+        <source media="(max-width: 899px)" type="image/webp" srcset="/images/shop1-hero-mobile.webp" />
+        <source media="(max-width: 899px)" type="image/jpeg" srcset="/images/shop1-hero-mobile.jpg" />
+        <source type="image/webp" srcset="/images/shop1-hero.webp" />
+        <img src="/images/shop1-hero.jpg" alt={HERO_ALT[lang]} width="1320" height="743" fetchpriority="high" />
+      </picture>
+    )}
   </section>
   <div class="hero-release" aria-hidden="true"></div>
 </div>
@@ -70,6 +122,11 @@ const { lang } = Astro.props;
   // as intersecting, exactly as the tall photo band did when these
   // pages observed the band directly: the toggle point is unchanged
   // (solid once scrollY passes photo height − 64px).
+  // The .header-solid state ALSO drives the header-logo handoff
+  // (owner, 2026-11-17): the photo carries the shop logo, so the
+  // header logo stays hidden until this same state turns the
+  // header solid — see the html.js.sticky-hero rules in
+  // global.css. No separate listener is involved.
   const heroSentinel = document.getElementById('heroSentinel');
   const headerEl = document.getElementById('siteHeader');
   if (heroSentinel && headerEl && 'IntersectionObserver' in window) {
@@ -79,5 +136,11 @@ const { lang } = Astro.props;
       },
       { rootMargin: '-64px 0px 10000px 0px', threshold: 0 },
     ).observe(heroSentinel);
+  } else if (headerEl) {
+    // Fail open: with no observer there is no header state to
+    // drive the handoff, so take the solid state at once —
+    // header and header logo fully visible, never stranded
+    // hidden.
+    headerEl.classList.add('header-solid');
   }
 </script>

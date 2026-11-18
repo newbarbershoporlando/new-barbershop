@@ -1,6 +1,6 @@
 ---
 import { ui, type Lang } from '../data/ui';
-import { howItWorks } from '../data/pages';
+import { howItWorks, howItWorksStep1ByShop } from '../data/pages';
 
 interface Props {
   lang: Lang;
@@ -8,9 +8,21 @@ interface Props {
       caller assigns the paper band where this section is the
       page's second light section. Default stays white. */
   paper?: boolean;
+  /** Post-redesign audit fix (2026-11-17): location detail pages pass
+      their own shop so step 1 leads with that shop's number only.
+      Absent (homepage) = the shared both-shops step. */
+  shop?: 'shop1' | 'shop2';
 }
-const { lang, paper = false } = Astro.props;
-const c = howItWorks[lang];
+const { lang, paper = false, shop } = Astro.props;
+const base = howItWorks[lang];
+const c = shop
+  ? {
+      ...base,
+      steps: base.steps.map((s, i) =>
+        i === 0 ? { ...s, body: howItWorksStep1ByShop[lang][shop] } : s,
+      ),
+    }
+  : base;
 ---
 
 <section class:list={['section', { 'section--paper': paper }]} data-rv>

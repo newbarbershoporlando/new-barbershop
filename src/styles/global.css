@@ -1,5 +1,8 @@
 /* New Barbershop — design system implementation (design-system.md).
-   Palette sampled from the real logo: red #E80613 on warm near-black #1F0A0C.
+   Palette: site red #E80613 on warm near-black #1F0A0C. (The logo
+   artwork's own red is #E30613; #E80613 is the established site token
+   used across the design system — comment corrected 2026-11-17, the
+   token itself is unchanged.)
    Fonts self-hosted in /public/fonts (Oswald / Barlow / Yellowtail). */
 
 @import url('/fonts/fonts.css');
@@ -348,6 +351,165 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-photo picture { height: 100%; }
   .hero-photo img { height: 100%; object-fit: cover; object-position: center; }
 }
+/* ——— Hero logo overlay (owner spec 2026-11-17, HOMEPAGE ONLY —
+   see the supersession note in StickyHero.astro): the clean photo
+   and the exact header logo artwork are independent layers. The
+   overlay wrapper centers a logo box over the photo band.
+   Sizing: the baked-in logo's lettering measures 0.331 of the
+   photo width (grid-measured on shop1-hero.jpg). --lw reproduces
+   that fraction of the DISPLAYED photo width: 33vw where the
+   photo is full-bleed uncropped (≥900px), 44vw in the ≤899px 4:3
+   cover crop (only ~75% of the photo's width is visible there,
+   so 0.331 of the displayed width is 0.44 of the viewport),
+   capped at 640px either way. The 2048px source stays sharp at
+   every size.
+   Reference-match revision (owner, 2026-11-17 — "the numbers
+   placed in the same way as this one and the shade behind the
+   logo as well", against the live baked composite): badge and
+   shade geometry re-measured on shop1-hero.jpg by color mask +
+   radial edge scans + a baked-vs-clean luminance-ratio profile.
+   Lettering bbox 448..888 × 300..489 (440×189); badge discs
+   Ø ≈ 55px (0.125 of the lettering width), centers (500, 474)
+   and (850, 474) — i.e. tucked at the ends of the lettering's
+   bottom edge where the underline swoosh ends: center x at
+   0.118 (left) / 0.914 (right) of the box width, center y at
+   0.921 of the box height (the box's bottom edge is the "p"
+   descender tip in both artworks, so the fractions map 1:1).
+   Badge diameter (0.125) and digit size (0.085) both derive
+   from --lw, so the digits can never drift from the circles.
+   Shade: the baked letterforms sit on a near-opaque black patch
+   (scene luminance in the lettering gaps ≈ 10–35% of the clean
+   photo) feathering out past the group silhouette — ≈0.12 of
+   the lettering width at the sides, ≈0.19 of the height above,
+   ≈0.37 of the height below. Reproduced by .hero-logo-shade:
+   a solid black ellipse (1.08 × the box width, 1.30 × the box
+   height, centered at 54% of the box height, alpha .88) under
+   a proportional blur — the blurred-silhouette construction
+   the reference itself uses: an opaque core covering the
+   lettering with a soft gaussian feather on every side and no
+   hard edge anywhere (a radial-gradient ellipse was tried
+   first and read as a translucent panel with a visible bottom
+   edge — rejected on the renders). The letterform drop-shadow
+   stays on top of it (the reference carries both).
+   Badge hang-below fix (owner, 2026-11-17 — "The 1 and the 2
+   SHOULD NOT BE ON TOP OF THE LOGO"): the 0.921 center-y above
+   was the BAKE's geometry, where the badges hang off the
+   underline swoosh below the letterforms; the header artwork
+   has no swoosh and its letterforms fill more of the box
+   (alpha-measured bottoms inside the badge spans: 0.917 of
+   the box height at the left span, the "p" descender tip
+   0.989 at the right), so at 0.921 the discs covered the
+   lettering's lower strokes. The badge centers now sit at
+   112% of the box height: the discs hang BELOW the logo,
+   their tops just clearing the letterform bottoms (only the
+   "p" descender's thin tail tip tucks behind the right disc's
+   top edge, inside the descender zone) while the shade's core
+   (bottom edge at 119% of the box height) still backs them,
+   so they read as hanging off the group. Horizontal centers
+   (0.118 / 0.914) and the Ø 0.125 sizing are unchanged.
+   Badge spread + shade stretch (owner, 2026-11-17 — "Move
+   the 1 to the left some more and the 2 to the right some
+   more", then "Spread them out some more and stretch dark
+   core"): badge centers first moved to 0.068 / 0.964, then
+   out another step to x 0.018 (left) / 1.014 (right) of the
+   box width — hanging just past the lettering's ends; the
+   112% center-y, Ø 0.125 and digit size are unchanged. Out
+   there the discs sat on the old ellipse shade's feather,
+   so the shade was rebuilt as a STADIUM (capsule): 1.42 ×
+   the box width, 0.50 × --lw tall (= 1.57 × the box
+   height), border-radius half its height, centered at
+   (50%, 63%) of the box height, same .88 black under the
+   same proportional blur. The capsule's straighter flanks
+   keep the solid core behind both badges at their hang:
+   each badge center sits ≈0.17 × --lw inside the core
+   boundary (≈3.8× the blur radius) and the whole disc
+   stays inside the unblurred shape — verified by luminance
+   sampling on the renders (patch directly behind each
+   badge center vs behind the logo center, elements hidden
+   in turn). Total shade footprint ≈1.51 × --lw wide ×
+   1.85 × the box height, inside the photo band at every
+   viewport; the letterform drop-shadow stays on top.
+   Silhouette shade (owner, 2026-11-17 — "The shade would
+   look a lot better behind the numbers and logo"): on the
+   phone the stretched capsule read as a dark band floating
+   wider than the group, so the capsule is replaced by a
+   shade built from the group's own shapes, the way the
+   baked composite's shade works — a blurred silhouette of
+   the whole group. .hero-logo-shade is now a full-box layer
+   (opacity .88, the same proportional blur) holding: a copy
+   of the logo artwork itself rendered solid black
+   (brightness(0)) and scaled 1.1× about the group's center
+   (50% 66% — the group spans the lettering plus the badges
+   hanging to 132% of the box height), and two solid black
+   discs centered exactly on the badge centers (1.8% /
+   101.4% of the box width, 112% of the box height) at
+   0.20 × --lw (1.6× the badge Ø), all blurred together
+   into one soft silhouette that hugs the logo + numbers
+   instead of extending sideways past them. Badge geometry,
+   the logo and the letterform drop-shadow are unchanged.
+   Shade darkened (owner, 2026-11-17 — "Darken the shade
+   behind the logo"): layer opacity .88 → 1, blur 0.045 →
+   0.035 × --lw so the core stays dense, silhouette logo
+   copy scaled 1.1× → 1.13× (discs unchanged at 1.6× the
+   badge Ø on the badge centers). Still a soft silhouette —
+   feathered edge, no hard lines — fitted to the group.
+   Badge 1 spread (owner, 2026-11-17 — "spread out the 1
+   some more. The 2 looks perfect"): ONLY the left badge
+   moves, one more 5-point step out — center −3.2% of the
+   box width; its silhouette disc moves with it so the dark
+   backing stays exactly behind it. The right badge stays
+   at 101.4% untouched; Ø, 112% center-y, digits, logo and
+   shade values unchanged. */
+.hero-overlay {
+  --lw: min(33vw, 640px);
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  z-index: 1; pointer-events: none;
+}
+@media (max-width: 899px) {
+  .hero-overlay { --lw: min(44vw, 640px); }
+}
+.hero-overlay .hero-logo-box { position: relative; width: var(--lw); }
+.hero-overlay .hero-logo-shade {
+  position: absolute; inset: 0;
+  filter: blur(calc(var(--lw) * 0.035));
+  opacity: 1;
+  z-index: 0;
+}
+.hero-overlay .hero-logo-shade-img {
+  display: block; width: 100%; height: auto;
+  filter: brightness(0);
+  transform: scale(1.13);
+  transform-origin: 50% 66%;
+}
+.hero-overlay .hero-logo-shade-disc {
+  position: absolute; top: 112%;
+  width: calc(var(--lw) * 0.2); height: calc(var(--lw) * 0.2);
+  border-radius: 50%;
+  background: #000;
+}
+.hero-overlay .hero-logo-shade-disc--left { left: -3.2%; transform: translate(-50%, -50%); }
+.hero-overlay .hero-logo-shade-disc--right { right: -1.4%; transform: translate(50%, -50%); }
+.hero-overlay .hero-logo-box picture { display: block; height: auto; position: relative; z-index: 1; }
+.hero-overlay .hero-logo-img {
+  display: block; width: 100%; height: auto; object-fit: contain;
+  filter: drop-shadow(0 6px 24px rgba(0, 0, 0, .45));
+}
+.hero-overlay .hero-badge {
+  position: absolute; top: 112%;
+  width: calc(var(--lw) * 0.125); height: calc(var(--lw) * 0.125);
+  border-radius: 50%;
+  background: #E80613; color: #fff;
+  border: 2px solid rgba(255, 255, 255, .85);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+  display: grid; place-items: center;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  font-size: calc(var(--lw) * 0.085);
+  line-height: 1;
+  z-index: 2;
+}
+.hero-overlay .hero-badge--left { left: -3.2%; transform: translate(-50%, -50%); }
+.hero-overlay .hero-badge--right { right: -1.4%; transform: translate(50%, -50%); }
 /* ——— Parallax hero v2 (owner correction 2026-11-17, PREVIEW ONLY):
    sticky hero + scroll-over content reveal, replacing the rejected
    v1 clip-path build (ef621df). The photo band is position:sticky
@@ -456,6 +618,43 @@ html.sticky-hero .scroll-over [data-rv] { opacity: 1; transform: none; transitio
 html.sticky-hero .site-header--overlay.header-solid {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+}
+/* ——— Header-logo handoff (owner, 2026-11-17 — "make the logo
+   in the header appear when i scroll up, so we dont have to
+   logos"): on StickyHero pages (Home / About / Locations index,
+   EN + ES — exactly the html.sticky-hero set) the photo already
+   carries the shop logo (the homepage overlay layer, or baked
+   into the shared photo on About / Locations), so the header
+   logo duplicates it while the photo is on screen. The header
+   logo is therefore held back until the EXISTING sentinel
+   observer adds .header-solid (the photo's bottom edge past
+   the header): the logo's visibility is driven by that same
+   state — no second scroll listener — fading in as the header
+   turns solid and back out on return to the top.
+   Progressive enhancement: the hiding lives under html.js (set
+   by the BaseLayout head script before first paint, so there
+   is no visible flash of the logo at the top on load), and a
+   no-JS visitor always sees the logo. If IntersectionObserver
+   is unavailable the StickyHero script fails open (it adds
+   .header-solid at init), so the logo can never be stranded
+   hidden. opacity + visibility only: the logo's box keeps its
+   exact dimensions in both states (header height unchanged,
+   no layout shift), and visibility:hidden also takes the home
+   link out of tab order and hit-testing while hidden. Every
+   other page keeps the always-visible header logo. */
+html.js.sticky-hero .header-logo {
+  transition: opacity 0.25s ease, visibility 0s linear 0.25s;
+}
+html.js.sticky-hero .site-header:not(.header-solid) .header-logo {
+  opacity: 0;
+  visibility: hidden;
+}
+html.js.sticky-hero .site-header.header-solid .header-logo {
+  transition: opacity 0.25s ease, visibility 0s;
+}
+/* Reduced motion: the handoff toggles instantly, no fade. */
+@media (prefers-reduced-motion: reduce) {
+  html.js.sticky-hero .header-logo { transition: none; }
 }
 .hero {
   background: var(--coal);

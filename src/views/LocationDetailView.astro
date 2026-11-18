@@ -78,7 +78,7 @@ const abs = (slug: string) => new URL(path(lang, slug), site).href;
   {/* Item 6: light sections alternate strictly on this page —
       intro W, how-it-works P, photos W, services P, FAQ W,
       also-visit P, blog W (was W/W/P/W — a 1,732px white run). */}
-  <HowItWorks lang={lang} paper />
+  <HowItWorks lang={lang} paper shop={scope} />
 
   <section class="section" data-rv>
     <div class="wrap">

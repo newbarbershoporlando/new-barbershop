@@ -48,7 +48,15 @@ const site = Astro.site!;
        observer is replaced by the component's sentinel observer —
        same toggle point (photo height − 64px), verified in the RC
        battery. -->
-  <StickyHero lang={lang}>
+  <!-- Hero upgrade extended (owner, 2026-11-17: "update the rest
+       of the site pages with all these updates to the home page we
+       just did"): this page now passes StickyHero's `overlay` prop
+       exactly as the homepage does — clean high-resolution photo,
+       overlaid header-logo layer with the darkened silhouette
+       shade and the 1 / 2 markers at the final homepage positions.
+       The headline stays on the solid band below the photo; no
+       copy moves onto the photo. -->
+  <StickyHero lang={lang} overlay>
   <section class="hero">
     <div class="wrap">
       {/* Item 7: eyebrow + heading block, same pattern as About. */}

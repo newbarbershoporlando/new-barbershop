@@ -118,7 +118,7 @@ const localLocations: Location[] = [
     introHeading: { en: 'The Original New Barbershop', es: 'La New Barbershop original' },
     intro: {
       en: 'New Barbershop 1 is the original New Barbershop in Orlando, on South Orange Blossom Trail in Southchase. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. Braids for men and women are available at this shop, and we serve you in English y español.',
-      es: 'New Barbershop 1 es la barbería original de New Barbershop en Orlando, sobre South Orange Blossom Trail, en Southchase. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. En esta barbería ofrecemos trenzas para hombres y mujeres, y te atendemos en English y español.',
+      es: 'New Barbershop 1 es la barbería original de New Barbershop en Orlando, sobre South Orange Blossom Trail, en Southchase. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. En esta barbería ofrecemos trenzas para hombres y mujeres, y te atendemos en inglés y español.',
     },
   },
   {
@@ -190,7 +190,7 @@ const localLocations: Location[] = [
     },
     intro: {
       en: 'New Barbershop 2 is our neighborhood barbershop on South Orange Blossom Trail, near Florida Mall. We are a family-friendly shop with haircuts for all ages, from kids to seniors, in a welcoming, relaxed atmosphere. We are open seven days a week, from early morning to late evening, and walk-ins are always welcome. We serve you in English y español — call (407) 820-4541 to book.',
-      es: 'New Barbershop 2 es nuestra barbería de barrio sobre South Orange Blossom Trail, cerca de Florida Mall. Somos una barbería familiar con cortes para todas las edades, desde niños hasta adultos mayores, en un ambiente acogedor y relajado. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. Te atendemos en English y español — llama al (407) 820-4541 para reservar.',
+      es: 'New Barbershop 2 es nuestra barbería de barrio sobre South Orange Blossom Trail, cerca de Florida Mall. Somos una barbería familiar con cortes para todas las edades, desde niños hasta adultos mayores, en un ambiente acogedor y relajado. Abrimos los siete días de la semana, desde temprano en la mañana hasta tarde en la noche, y siempre aceptamos clientes sin cita. Te atendemos en inglés y español — llama al (407) 820-4541 para reservar.',
     },
   },
 ];

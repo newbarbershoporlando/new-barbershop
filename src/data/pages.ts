@@ -120,8 +120,8 @@ export const homeCopy = {
       'Real cuts from our own chairs — every photo below is our work, no stock pictures.',
     servicesHeading: 'Explore Our Premium Services',
     servicesIntro:
-      'Discover the perfect blend of style and sophistication with our range of grooming services tailored just for men.',
-    storyHeading: 'The Story Behind Barbershop',
+      'Discover the perfect blend of style and sophistication with our range of grooming services tailored to you.',
+    storyHeading: 'The Story Behind New Barbershop',
     // CORRECTED per Agent B's new-copy.md §5C (closes content-pack Gap 3):
     // "family-run since 2003 / over 20 years" replaces "over a decade".
     storyBody:
@@ -136,7 +136,7 @@ export const homeCopy = {
       },
       {
         title: 'Relaxed Atmosphere',
-        body: 'At Barbershop, we prioritize your comfort. Enjoy a laid-back environment where you can unwind while receiving exceptional grooming services from our talented team.',
+        body: 'At New Barbershop, we prioritize your comfort. Enjoy a laid-back environment where you can unwind while receiving exceptional grooming services from our talented team.',
       },
     ],
     locationsLine: 'Visit either of our two Orlando barbershops.',
@@ -151,7 +151,7 @@ export const homeCopy = {
     servicesHeading: 'Explora nuestros servicios premium',
     servicesIntro:
       'Descubre la combinación perfecta de estilo y sofisticación con nuestra gama de servicios de cuidado personal diseñados para ti.',
-    storyHeading: 'La historia detrás de Barbershop',
+    storyHeading: 'La historia detrás de New Barbershop',
     storyBody:
       'Un negocio familiar desde 2003, New Barbershop aporta más de 20 años de experiencia a cada cliente. Hemos perfeccionado el arte de los cortes de cabello y los afeitados, combinando técnicas clásicas con tendencias modernas. Nuestros barberos se dedican a perfeccionar sus habilidades, aprendiendo continuamente para brindar el más alto nivel de servicio a cada cliente. Nos enorgullecemos de nuestra atención al detalle y nuestro compromiso con un cuidado personal excepcional.',
     experienceHeading: 'Experimenta hoy un cuidado sin igual',
@@ -160,11 +160,11 @@ export const homeCopy = {
     experienceCards: [
       {
         title: 'Atención personalizada',
-        body: 'Creemos que cada cliente merece un cuidado individual. Nuestros barberos se toman el tiempo de entender tus preferencias de estilo y trabajan con dedicación para lograr el look que deseas.',
+        body: 'Creemos que cada cliente merece un cuidado individual. Nuestros barberos se toman el tiempo de entender tus preferencias de estilo y trabajan con dedicación para lograr el estilo que deseas.',
       },
       {
         title: 'Ambiente relajado',
-        body: 'En Barbershop, tu comodidad es la prioridad. Disfruta de un ambiente tranquilo donde puedes relajarte mientras recibes servicios excepcionales de nuestro talentoso equipo.',
+        body: 'En New Barbershop, tu comodidad es la prioridad. Disfruta de un ambiente tranquilo donde puedes relajarte mientras recibes servicios excepcionales de nuestro talentoso equipo.',
       },
     ],
     locationsLine: 'Visita cualquiera de nuestras dos barberías en Orlando.',
@@ -176,7 +176,7 @@ export const servicesCopy = {
     eyebrow: 'Grooming Excellence',
     heading: 'Explore Our Premium Services',
     intro:
-      'Discover the perfect blend of style and sophistication with our range of grooming services tailored just for men.',
+      'Discover the perfect blend of style and sophistication with our range of grooming services tailored to you.',
     galleryHeading: 'Our Work',
     galleryIntro: "See a style you like? Show the photo to your barber and we'll take it from there.",
   },
@@ -193,7 +193,7 @@ export const servicesCopy = {
 export const aboutCopy = {
   en: {
     eyebrow: 'Grooming Excellence',
-    heading: 'The Story Behind Barbershop',
+    heading: 'The Story Behind New Barbershop',
     lead: 'Family-run since 2003, New Barbershop brings over 20 years of experience to every chair in Orlando.',
     body1:
       'We are two Orlando barbershops on South Orange Blossom Trail: New Barbershop 1 at 9741 S Orange Blossom Trl, Orlando, FL 32837, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, Orlando, FL 32809, near Florida Mall — about 3.7 miles apart. Walk-ins are always welcome. Booking is by phone: call Southchase at (407) 470-4846 or Florida Mall at (407) 820-4541. WhatsApp is available at Southchase.',
@@ -201,7 +201,7 @@ export const aboutCopy = {
       'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. We serve you in English y español. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client.',
     valuesHeading: 'Our Core Values',
     valuesIntro:
-      'At Barbershop, our core values guide us in delivering exceptional grooming experiences that empower our clients.',
+      'At New Barbershop, our core values guide us in delivering exceptional grooming experiences that empower our clients.',
     values: [
       {
         title: 'Integrity',
@@ -221,15 +221,15 @@ export const aboutCopy = {
   },
   es: {
     eyebrow: 'Excelencia en cuidado personal',
-    heading: 'La historia detrás de Barbershop',
+    heading: 'La historia detrás de New Barbershop',
     lead: 'Un negocio familiar desde 2003, New Barbershop aporta más de 20 años de experiencia a cada silla en Orlando.',
     body1:
       'Somos dos barberías de Orlando sobre South Orange Blossom Trail: New Barbershop 1 en 9741 S Orange Blossom Trl, Orlando, FL 32837, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, Orlando, FL 32809, cerca de Florida Mall — a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita. Las reservas son por teléfono: llama a Southchase al (407) 470-4846 o a Florida Mall al (407) 820-4541. WhatsApp está disponible en Southchase.',
     body2:
-      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Te atendemos en English y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
+      'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Te atendemos en inglés y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
     valuesHeading: 'Nuestros valores',
     valuesIntro:
-      'En Barbershop, nuestros valores guían la forma en que brindamos experiencias excepcionales de cuidado personal que dan confianza a nuestros clientes.',
+      'En New Barbershop, nuestros valores guían la forma en que brindamos experiencias excepcionales de cuidado personal que dan confianza a nuestros clientes.',
     values: [
       {
         title: 'Integridad',
@@ -291,6 +291,27 @@ export const howItWorks = {
         body: 'Sal con un corte limpio y un acabado impecable, los siete días de la semana.',
       },
     ],
+  },
+} as const;
+
+// Post-redesign audit fix (2026-11-17, owner Phase 4 item 4): on a
+// location detail page, How It Works step 1 leads with THAT shop's own
+// number instead of asking the visitor to pick between both numbers.
+// The homepage keeps the shared both-shops step above (correct there);
+// the other shop's number stays on the location page in the "Also
+// visit" cross-link and the footer.
+export const howItWorksStep1ByShop = {
+  en: {
+    shop1:
+      'Call Southchase at (407) 470-4846 to book your chair. Rather just come by? Walk-ins are always welcome.',
+    shop2:
+      'Call Florida Mall at (407) 820-4541 to book your chair. Rather just come by? Walk-ins are always welcome.',
+  },
+  es: {
+    shop1:
+      'Llama a Southchase al (407) 470-4846 para apartar tu cita. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
+    shop2:
+      'Llama a Florida Mall al (407) 820-4541 para apartar tu cita. ¿Prefieres venir directamente? Siempre aceptamos clientes sin cita.',
   },
 } as const;
 

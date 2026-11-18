@@ -172,8 +172,8 @@ const localServices: Service[] = [
     'Cortes lado a lado para papás y niños — una visita, dos cortes recién hechos, juntos.'),
   // Braids & Styling
   s('svc-braids', 'braids', 'cat-braids', 'Braids', 'Trenzas',
-    'Braiding for men and women — clean parts, even tension and a style made to last, from cornrows to box braids and more.',
-    'Trenzado para hombres y mujeres — secciones bien definidas, tensión uniforme y un estilo hecho para durar, desde cornrows hasta box braids y más.'),
+    'Braiding for men and women — clean parts, even tension and a style made to last, from cornrows to box braids and more. Available at Southchase only.',
+    'Trenzado para hombres y mujeres — secciones bien definidas, tensión uniforme y un estilo hecho para durar, desde cornrows hasta box braids y más. Disponible solo en Southchase.'),
   s('svc-waves', 'waves-styling-maintenance', 'cat-braids', 'Waves Styling & Maintenance', 'Estilo y mantenimiento de waves',
     'Wave styling, brushing and care — for a defined pattern that holds between visits.',
     'Peinado, cepillado y cuidado de waves — para un patrón definido que se mantiene entre visitas.'),

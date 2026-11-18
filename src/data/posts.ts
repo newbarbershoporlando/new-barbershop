@@ -37,8 +37,8 @@ const localPosts: Post[] = [
     slug: 'blog/top-rated-barber-shop-orlando',
     image: '/images/blog-01-top-rated.webp',
     imageAlt: {
-      en: 'Client with a slicked pompadour, shaved design line and shaped beard, side view',
-      es: 'Cliente con tupé peinado, línea de diseño afeitada y barba perfilada, vista de lado',
+      en: 'Client with a slicked pompadour and shaved design line, three-quarter view',
+      es: 'Cliente con tupé peinado y línea de diseño afeitada, vista de tres cuartos',
     },
     locales: {
       en: {
@@ -77,7 +77,7 @@ const localPosts: Post[] = [
         heading: { en: 'Services for Every Style', es: 'Servicios para cada estilo' },
         body: {
           en: 'Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. Whether you want a clean fade, a sharp line-up or a classic cut, our barbers shape it to your style. See the full list on our Services page. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          es: 'Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Ya sea que quieras un degradado limpio, un delineado definido o un corte clásico, nuestros barberos lo adaptan a tu estilo. Mira la lista completa en nuestra página de Servicios. Te atendemos en inglés y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
@@ -131,7 +131,7 @@ const localPosts: Post[] = [
         heading: { en: 'Two Orlando Shops, One Standard', es: 'Dos barberías en Orlando, un mismo estándar' },
         body: {
           en: 'We are a family-run business since 2003, with two shops on South Orange Blossom Trail — New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          es: 'Somos un negocio familiar desde 2003, con dos barberías sobre South Orange Blossom Trail — New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en inglés y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
@@ -186,7 +186,7 @@ const localPosts: Post[] = [
         heading: { en: 'More Than Braids', es: 'Más que trenzas' },
         body: {
           en: 'Our full service also covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and our barbers shape every cut to your style. See everything we do on our Services page. We are a family-run business since 2003, with over 20 years of experience, two shops on South Orange Blossom Trail, and over 1,400 Google reviews across both shops, with our Southchase shop rated 5.0 stars. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con nuestro local de Southchase calificado con 5.0 estrellas. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          es: 'Nuestro servicio completo también incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y nuestros barberos adaptan cada corte a tu estilo. Mira todo lo que hacemos en nuestra página de Servicios. Somos un negocio familiar desde 2003, con más de 20 años de experiencia, dos barberías sobre South Orange Blossom Trail y más de 1,400 reseñas de Google entre ambas, con nuestro local de Southchase calificado con 5.0 estrellas. Te atendemos en inglés y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
@@ -233,7 +233,7 @@ const localPosts: Post[] = [
         heading: { en: 'Your Neighborhood Barbershop Orlando', es: 'Tu barbería de barrio en Orlando' },
         body: {
           en: 'We have two Orlando shops: New Barbershop 1 at 9741 S Orange Blossom Trl, in Southchase, and New Barbershop 2 at 6220 S Orange Blossom Trl, near Florida Mall, about 3.7 miles apart. Walk-ins are always welcome, and booking is by phone. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client. We serve you in English y español, and both shops are open seven days a week, from early morning to late evening.',
-          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en English y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
+          es: 'Tenemos dos barberías en Orlando: New Barbershop 1 en 9741 S Orange Blossom Trl, en Southchase, y New Barbershop 2 en 6220 S Orange Blossom Trl, cerca de Florida Mall, a unas 3.7 millas de distancia. Siempre aceptamos clientes sin cita y las reservas son por teléfono. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente. Te atendemos en inglés y español, y ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche.',
         },
       },
       {
@@ -287,7 +287,7 @@ const localPosts: Post[] = [
         heading: { en: 'A Vacation Cut, No Appointment Needed', es: 'Un corte en vacaciones, sin necesidad de cita' },
         body: {
           en: 'Vacations run on their own schedule, so we keep ours simple: walk-ins are welcome every day, and a quick call ahead is all it takes if you want to check the wait. Haircuts, skin fades, beard trims, hot towel shaves, line-ups and kids cuts — the full service list travels well, and our barbers will match the cut you have or set you up with something new for your vacation photos and nights out. We serve you in English y español, so nothing gets lost in translation.',
-          es: 'Las vacaciones tienen su propio ritmo, así que nosotros lo hacemos simple: aceptamos clientes sin cita todos los días, y una llamada rápida basta si quieres consultar la espera. Cortes de cabello, degradados al ras, arreglos de barba, afeitados con toalla caliente, delineados y cortes para niños: la lista completa de servicios viaja bien, y nuestros barberos pueden mantener tu corte de siempre o darte un estilo nuevo para tus fotos de vacaciones y tus salidas nocturnas. Te atendemos en English y español, para que nada se pierda en la traducción.',
+          es: 'Las vacaciones tienen su propio ritmo, así que nosotros lo hacemos simple: aceptamos clientes sin cita todos los días, y una llamada rápida basta si quieres consultar la espera. Cortes de cabello, degradados al ras, arreglos de barba, afeitados con toalla caliente, delineados y cortes para niños: la lista completa de servicios viaja bien, y nuestros barberos pueden mantener tu corte de siempre o darte un estilo nuevo para tus fotos de vacaciones y tus salidas nocturnas. Te atendemos en inglés y español, para que nada se pierda en la traducción.',
         },
       },
       {
@@ -635,8 +635,8 @@ const localPosts: Post[] = [
     slug: 'blog/men-grooming-habits',
     image: '/images/blog-12-grooming-habits.webp',
     imageAlt: {
-      en: 'Barber finishing a razor line-up at New Barbershop in Orlando',
-      es: 'Barbero terminando un perfilado a navaja en New Barbershop en Orlando',
+      en: 'Client with a high skin fade and a razor line-up at New Barbershop in Orlando',
+      es: 'Cliente con un degradado alto al ras y un delineado con navaja en New Barbershop en Orlando',
     },
     locales: {
       en: {
@@ -957,8 +957,8 @@ const localPosts: Post[] = [
     slug: 'blog/best-hair-product-for-men',
     image: '/images/blog-18-hair-products-v2.webp',
     imageAlt: {
-      en: 'Client with a shaved lightning design and a slicked, glossy styled top',
-      es: 'Cliente con un diseño de rayo afeitado y la parte superior peinada con acabado brillante',
+      en: 'Client with a shaved lightning design and a slicked, glossy green-tipped styled top',
+      es: 'Cliente con un diseño de rayo afeitado y la parte superior con puntas verdes, peinada con acabado brillante',
     },
     locales: {
       en: {
@@ -1227,8 +1227,8 @@ const localPosts: Post[] = [
     slug: 'blog/line-up-haircut',
     image: '/images/blog-23-line-up.webp',
     imageAlt: {
-      en: 'Barber finishing a razor line-up — the edge work that frames a cut',
-      es: 'Barbero terminando un perfilado a navaja: el trabajo de bordes que enmarca un corte',
+      en: 'Client with a high skin fade and a razor line-up — the edge work that frames a cut',
+      es: 'Cliente con un degradado alto al ras y un delineado con navaja: el trabajo de bordes que enmarca un corte',
     },
     locales: {
       en: {

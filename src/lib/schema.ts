@@ -28,7 +28,11 @@ export function shopNode(loc: Location, siteUrl: string) {
     '@type': 'BarberShop',
     '@id': `${siteUrl}/#${loc._id}`,
     name: loc.name,
-    image: `${siteUrl}/images/banner-wide.webp`,
+    // Post-redesign audit fix (2026-11-17): each shop's schema image is
+    // its OWN real interior photo (loc.photo), not the two-shop banner
+    // composite. Fallback keeps the banner if a Sanity-sourced location
+    // ever arrives without a photo.
+    image: loc.photo ? `${siteUrl}${loc.photo}` : `${siteUrl}/images/banner-wide.webp`,
     url: `${siteUrl}/locations/${loc.slug}/`,
     telephone: loc.phoneDisplay,
     address: {
