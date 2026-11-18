@@ -79,14 +79,14 @@ const { lang, overlay = false } = Astro.props;
             <div class="hero-logo-shade">
               <picture>
                 <source type="image/webp" srcset="/images/logo-hero-2048.webp" />
-                <img class="hero-logo-shade-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" />
+                <img class="hero-logo-shade-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" decoding="async" />
               </picture>
               <span class="hero-logo-shade-disc hero-logo-shade-disc--left"></span>
               <span class="hero-logo-shade-disc hero-logo-shade-disc--right"></span>
             </div>
             <picture>
               <source type="image/webp" srcset="/images/logo-hero-2048.webp" />
-              <img class="hero-logo-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" />
+              <img class="hero-logo-img" src="/images/logo-hero-2048.png" alt="" width="2048" height="652" draggable="false" decoding="async" />
             </picture>
             <span class="hero-badge hero-badge--left">1</span>
             <span class="hero-badge hero-badge--right">2</span>

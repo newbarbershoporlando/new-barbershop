@@ -29,8 +29,9 @@ interface Props {
       overflow / reduced-motion rules in global.css scope to
       exactly those pages). Omitted entirely when not passed. */
   htmlClass?: string;
+  heroPreload?: boolean;
 }
-const { lang, slug, title, description, jsonLd, overlayHeader = false, htmlClass } = Astro.props;
+const { lang, slug, title, description, jsonLd, overlayHeader = false, htmlClass, heroPreload = false } = Astro.props;
 const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const site = Astro.site!;
 const canonical = new URL(path(lang, slug), site).href;
@@ -44,6 +45,7 @@ const ogImage = new URL('/images/og-image.jpg', site).href;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {heroPreload && (<link rel="preload" as="image" type="image/avif" imagesrcset="/images/hero-home-1080.avif 1080w, /images/hero-home-1600.avif 1600w, /images/hero-home-2560.avif 2560w" imagesizes="100vw" fetchpriority="high" />)}
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />

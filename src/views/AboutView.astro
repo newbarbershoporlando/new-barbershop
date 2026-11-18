@@ -5,7 +5,8 @@ import BlogBand from '../components/BlogBand.astro';
 import StickyHero from '../components/StickyHero.astro';
 import { ui, type Lang } from '../data/ui';
 import { locations, shop1, shop2 } from '../data/locations';
-import { pageSeo, aboutCopy } from '../data/pages';
+import { pageSeo, aboutCopy, aboutTeamItems } from '../data/pages';
+import Gallery from '../components/Gallery.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -14,7 +15,7 @@ const seo = pageSeo.about[lang];
 const shops = [shop1, shop2];
 ---
 
-<BaseLayout lang={lang} slug="about" title={seo.title} description={seo.description} overlayHeader htmlClass="sticky-hero">
+<BaseLayout lang={lang} slug="about" title={seo.title} description={seo.description} overlayHeader htmlClass="sticky-hero" heroPreload>
   <!-- Hero-v3 treatment (owner order 2026-11-15, same as homepage):
        full-bleed photo band at y=0 with the translucent floating
        header over it; the headline block sits on the solid dark band
@@ -88,6 +89,7 @@ const shops = [shop1, shop2];
 
   <section class="section section--paper" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{ui[lang].eyebrows.values}</p>
       <h2>{c.valuesHeading}</h2>
       <p>{c.valuesIntro}</p>
       <div class="values">
@@ -103,7 +105,10 @@ const shops = [shop1, shop2];
 
   <section class="section" data-rv>
     <div class="wrap">
+      <p class="eyebrow">{ui[lang].eyebrows.team}</p>
       <h2>{c.teamHeading}</h2>
+      <p>{c.teamIntro}</p>
+      <Gallery lang={lang} items={aboutTeamItems} />
       <div class="btn-row">
         {shops.map((loc, i) => (
           <a class="btn btn--ghost-light" data-shop={loc._id === 'shop1' ? 'shop_1' : 'shop_2'} href={loc.mapsUrl} target="_blank" rel="noopener">

@@ -7,7 +7,7 @@ import ReviewsBand from '../components/ReviewsBand.astro';
 import BlogBand from '../components/BlogBand.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import { ui, path, type Lang } from '../data/ui';
-import { locations } from '../data/locations';
+import { locations, shop1 } from '../data/locations';
 import { pageSeo, homeCopy, homeGalleryItems } from '../data/pages';
 import { homeGraph, galleryImageGraph } from '../lib/schema';
 import Gallery from '../components/Gallery.astro';
@@ -21,7 +21,7 @@ const seo = pageSeo.home[lang];
 const site = Astro.site!;
 ---
 
-<BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={[homeGraph(site.href.replace(/\/$/, '')), galleryImageGraph(site.href.replace(/\/$/, ''), homeGalleryItems, lang)]} overlayHeader htmlClass="sticky-hero">
+<BaseLayout lang={lang} slug="" title={seo.title} description={seo.description} jsonLd={[homeGraph(site.href.replace(/\/$/, '')), galleryImageGraph(site.href.replace(/\/$/, ''), homeGalleryItems, lang)]} overlayHeader htmlClass="sticky-hero" heroPreload>
   <!-- Hero — owner requests 2026-11-15 (supersede the banner-strip
        stack of the same day's phone pass): the owner-supplied Shop 1
        interior photo is a full-bleed band at y=0 and the header floats
@@ -103,12 +103,19 @@ const site = Astro.site!;
   </section>
 
   <!-- Story -->
-  <section class="section section--dark" data-rv>
+  <section class="section section--dark story-band" data-rv>
     <div class="wrap">
-      <p class="eyebrow">{t.eyebrows.story}</p>
-      <h2>{c.storyHeading}</h2>
-      <p style="max-width:760px">{c.storyBody}</p>
-      <a class="btn btn--ghost-dark" href={path(lang, 'about')}>{t.learnMore}</a>
+      <div class="two-col">
+        <div>
+          <p class="eyebrow">{t.eyebrows.story}</p>
+          <h2>{c.storyHeading}</h2>
+          <p>{c.storyBody}</p>
+          <a class="btn btn--ghost-dark" href={path(lang, 'about')}>{t.learnMore}</a>
+        </div>
+        <div>
+          <img src={shop1.photo} alt={shop1.photoAlt[lang]} width="1320" height="990" loading="lazy" decoding="async" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -126,7 +133,11 @@ const site = Astro.site!;
           <article class="card">
             <h3>{card.title}</h3>
             <p>{card.body}</p>
-            <a class="btn btn--ghost-light" href={path(lang, 'services')}>{t.learnMore}</a>
+            {card.cta === 'locations' ? (
+              <a class="btn btn--ghost-light" href={path(lang, 'locations')}>{t.ourLocations}</a>
+            ) : (
+              <a class="btn btn--ghost-light" href={path(lang, 'services')}>{t.learnMore}</a>
+            )}
           </article>
         ))}
       </div>

@@ -732,10 +732,13 @@ html.js.sticky-hero .site-header.header-solid .header-logo {
 /* ——— Cards / shop blocks ——— */
 .cards { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 900px) { .cards { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .cards--3 { grid-template-columns: repeat(3, 1fr); } }
 .card {
   background: var(--white); border-radius: 12px; padding: 24px;
   box-shadow: 0 2px 14px rgba(18,6,8,0.10);
 }
+.shop-card { display: flex; flex-direction: column; }
+.shop-card .visit-link { margin-top: auto; padding-top: 14px; margin-bottom: 0; }
 /* Premium design item 4 (2026-11-16): ONE component-heading step
    (24px mobile / 28px desktop) for every card heading — shop
    names, value props, step cards and post-card titles previously
@@ -978,6 +981,8 @@ table.hours tr.today td { color: var(--red-dark); font-weight: 700; }
 .post-cards { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 640px) { .post-cards { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1000px) { .post-cards { grid-template-columns: repeat(3, 1fr); } }
+.post-cards .card h2 a, .post-cards .card h3 a { color: var(--ink); text-decoration: none; }
+.post-cards .card h2 a:hover, .post-cards .card h2 a:focus-visible, .post-cards .card h3 a:hover, .post-cards .card h3 a:focus-visible { color: var(--red-dark); text-decoration: underline; }
 .post-body { max-width: 720px; margin: 0 auto; font-size: 18px; line-height: 1.6; }
 .post-body h2 { margin-top: 1.4em; }
 /* Related-posts + visit blocks at the end of every post (audit H3). */
@@ -1176,5 +1181,6 @@ body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 .banner-img { width: 100%; }
 .two-col { display: grid; grid-template-columns: 1fr; gap: 28px; }
 @media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; align-items: start; } }
-.values { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.values { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: start; }
 @media (min-width: 900px) { .values { grid-template-columns: repeat(3, 1fr); } }
+.story-band .two-col img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; }

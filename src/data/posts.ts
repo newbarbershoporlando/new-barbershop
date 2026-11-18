@@ -473,8 +473,8 @@ const localPosts: Post[] = [
     slug: 'blog/how-often-haircut-men',
     image: '/images/blog-09-how-often.webp',
     imageAlt: {
-      en: 'Client with a fresh high skin fade at New Barbershop in Orlando',
-      es: 'Cliente con un degradado alto al ras recién hecho en New Barbershop en Orlando',
+      en: 'Client with a fresh high skin fade and a sharp line-up, seated in the barber chair at New Barbershop in Orlando',
+      es: 'Cliente con un degradado alto al ras recién hecho y un delineado definido, sentado en la silla de barbero en New Barbershop en Orlando',
     },
     locales: {
       en: {
@@ -581,8 +581,8 @@ const localPosts: Post[] = [
     slug: 'blog/haircut-new-start',
     image: '/images/blog-11-new-start.webp',
     imageAlt: {
-      en: 'Client with a fresh burst fade and shaped beard at New Barbershop in Orlando',
-      es: 'Cliente con un burst fade recién hecho y la barba formada en New Barbershop en Orlando',
+      en: 'Client with a fresh fade, a straight fringe and a sharp line-up at New Barbershop in Orlando',
+      es: 'Cliente con un degradado fresco, flequillo recto y un delineado definido en New Barbershop en Orlando',
     },
     locales: {
       en: {
@@ -635,8 +635,8 @@ const localPosts: Post[] = [
     slug: 'blog/men-grooming-habits',
     image: '/images/blog-12-grooming-habits.webp',
     imageAlt: {
-      en: 'Client with a high skin fade and a razor line-up at New Barbershop in Orlando',
-      es: 'Cliente con un degradado alto al ras y un delineado con navaja en New Barbershop en Orlando',
+      en: 'Client with a shaped beard and a fade, reclined with a hot towel wrapped around his neck during a shave',
+      es: 'Cliente con barba perfilada y degradado, reclinado con una toalla caliente alrededor del cuello durante un afeitado',
     },
     locales: {
       en: {
@@ -797,8 +797,8 @@ const localPosts: Post[] = [
     slug: 'blog/how-often-wash-hair-men',
     image: '/images/blog-15-wash-hair.webp',
     imageAlt: {
-      en: 'Close-up of a barber fading the nape of a client with curly hair',
-      es: 'Primer plano de un barbero degradando la nuca de un cliente con cabello rizado',
+      en: 'Client reclined at the shampoo bowl while a barber lathers his hair with shampoo at New Barbershop in Orlando',
+      es: 'Cliente reclinado en el lavacabezas mientras un barbero le lava el cabello con champú en New Barbershop en Orlando',
     },
     locales: {
       en: {
@@ -851,8 +851,8 @@ const localPosts: Post[] = [
     slug: 'blog/360-waves-routine',
     image: '/images/blog-16-waves.webp',
     imageAlt: {
-      en: 'Client with a short crop — the starting point for training 360 waves',
-      es: 'Cliente con un corte corto: el punto de partida para entrenar las 360 waves',
+      en: 'Top-down view of a deep 360 waves hairstyle pattern',
+      es: 'Vista desde arriba de un patrón profundo de 360 waves',
     },
     locales: {
       en: {
@@ -1065,8 +1065,8 @@ const localPosts: Post[] = [
     slug: 'blog/beard-care-at-home',
     image: '/images/blog-20-beard-care.webp',
     imageAlt: {
-      en: 'Client with a full, shaped beard at New Barbershop in Orlando',
-      es: 'Cliente con una barba completa y formada en New Barbershop en Orlando',
+      en: 'Client with a slicked top, high skin fade and a full shaped beard in the barber chair',
+      es: 'Cliente con la parte superior peinada hacia atrás, degradado alto al ras y barba completa perfilada en la silla del barbero',
     },
     locales: {
       en: {
@@ -1497,8 +1497,8 @@ const localPosts: Post[] = [
     slug: 'blog/new-car-haircut',
     image: '/images/blog-28-new-ride.webp',
     imageAlt: {
-      en: 'Client with a fresh skin fade at New Barbershop in Orlando — the finishing touch on new-car day',
-      es: 'Cliente con un degradado al ras recién hecho en New Barbershop en Orlando: el toque final del día del auto nuevo',
+      en: 'Client with cornrow braids in progress, seated in the barber chair by the shop window',
+      es: 'Cliente con trenzas cornrow en proceso, sentado en la silla del barbero junto a la ventana de la barbería',
     },
     locales: {
       en: {

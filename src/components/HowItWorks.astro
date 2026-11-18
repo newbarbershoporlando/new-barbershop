@@ -30,7 +30,7 @@ const c = shop
     <p class="eyebrow">{ui[lang].eyebrows.howItWorks}</p>
     <h2>{c.heading}</h2>
     <p style="max-width:760px">{c.intro}</p>
-    <div class="cards">
+    <div class="cards cards--3">
       {c.steps.map((step, i) => (
         <article class="card">
           <h3>{i + 1}. {step.title}</h3>

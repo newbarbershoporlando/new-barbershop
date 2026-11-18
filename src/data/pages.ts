@@ -133,10 +133,12 @@ export const homeCopy = {
       {
         title: 'Personalized Attention',
         body: 'We believe that every client deserves individualized care. Our barbers take the time to understand your style preferences and work diligently to achieve your desired look.',
+        cta: 'services',
       },
       {
-        title: 'Relaxed Atmosphere',
-        body: 'At New Barbershop, we prioritize your comfort. Enjoy a laid-back environment where you can unwind while receiving exceptional grooming services from our talented team.',
+        title: 'Two Shops, Walk-Ins Welcome',
+        body: 'Visit us in Southchase or near Florida Mall — two family-run shops on Orange Blossom Trail, open seven days a week. Walk-ins are always welcome, and we serve you in English and Spanish.',
+        cta: 'locations',
       },
     ],
     locationsLine: 'Visit either of our two Orlando barbershops.',
@@ -161,10 +163,12 @@ export const homeCopy = {
       {
         title: 'Atención personalizada',
         body: 'Creemos que cada cliente merece un cuidado individual. Nuestros barberos se toman el tiempo de entender tus preferencias de estilo y trabajan con dedicación para lograr el estilo que deseas.',
+        cta: 'services',
       },
       {
-        title: 'Ambiente relajado',
-        body: 'En New Barbershop, tu comodidad es la prioridad. Disfruta de un ambiente tranquilo donde puedes relajarte mientras recibes servicios excepcionales de nuestro talentoso equipo.',
+        title: 'Dos barberías, sin cita previa',
+        body: 'Visítanos en Southchase o cerca de Florida Mall — dos barberías familiares en Orange Blossom Trail, abiertas los siete días de la semana. Siempre aceptamos clientes sin cita y te atendemos en inglés y español.',
+        cta: 'locations',
       },
     ],
     locationsLine: 'Visita cualquiera de nuestras dos barberías en Orlando.',
@@ -200,23 +204,24 @@ export const aboutCopy = {
     body2:
       'Both shops are open seven days a week, from early morning to late evening. Our full service covers haircuts, beard trims, hot towel shaves, hair designs, eyebrows and kids cuts — and braids for men and women at Southchase. We serve you in English y español. With over 1,400 Google reviews across both shops, and our Southchase shop rated 5.0 stars, we take pride in every cut and every client.',
     valuesHeading: 'Our Core Values',
-    valuesIntro:
-      'At New Barbershop, our core values guide us in delivering exceptional grooming experiences that empower our clients.',
+    valuesIntro: 'Three things have kept our chairs full since 2003:',
     values: [
       {
-        title: 'Integrity',
-        body: 'We believe in honest communication and transparency, ensuring every client feels valued and confident in their grooming choices.',
+        title: 'Family First',
+        body: "Family-run since 2003, we're not a chain. We run two Orlando barbershops like a family business — because we are one — and we treat regulars and first-timers alike like neighbors, because most of you are.",
       },
       {
-        title: 'Quality',
-        body: 'Our commitment to excellence means using the finest products and techniques, delivering results that leave our clients looking sharp and feeling great.',
+        title: 'The Craft, Done Right',
+        body: "Fades, classic cuts, beard work and hot towel shaves — every cut is finished clean and checked before you leave the chair. If it isn't sharp, it isn't done, and we fix it before you walk out.",
       },
       {
-        title: 'Community',
-        body: 'We strive to create a welcoming atmosphere that fosters connection and camaraderie, supporting our local community and building lasting relationships.',
+        title: 'Walk In, In Your Language',
+        body: "No appointment? Walk-ins are welcome at both shops, seven days a week. And we serve you in English y español — tell us the style you want in the language you're most comfortable in.",
       },
     ],
-    teamHeading: 'Our Team of Experts',
+    teamHeading: 'Experience in Every Chair',
+    teamIntro:
+      "New Barbershop is family-run, and our barbers bring over 20 years of experience to the chairs at both Orlando shops — Southchase and near Florida Mall. The team works the full craft: precision fades and classic cuts, beard trims and hot towel shaves, razor line-ups and hair designs, and kids cuts cut with patience. At Southchase, braids for men and women are part of the service too. Tell us the style you're after — in English or Spanish — and we'll take it from there. Walk-ins are always welcome.",
     teamButton: (n: number) => `New Barbershop ${n} — See Photos & Reviews on Google`,
   },
   es: {
@@ -228,30 +233,43 @@ export const aboutCopy = {
     body2:
       'Ambas barberías abren los siete días de la semana, desde temprano en la mañana hasta tarde en la noche. Nuestro servicio completo incluye cortes de cabello, arreglos de barba, afeitados con toalla caliente, diseños en el cabello, cejas y cortes para niños — y trenzas para hombres y mujeres en Southchase. Te atendemos en inglés y español. Con más de 1,400 reseñas de Google entre ambas barberías, y nuestro local de Southchase con una calificación de 5.0 estrellas, nos enorgullecemos de cada corte y cada cliente.',
     valuesHeading: 'Nuestros valores',
-    valuesIntro:
-      'En New Barbershop, nuestros valores guían la forma en que brindamos experiencias excepcionales de cuidado personal que dan confianza a nuestros clientes.',
+    valuesIntro: 'Tres cosas han mantenido nuestras sillas llenas desde 2003:',
     values: [
       {
-        title: 'Integridad',
-        body: 'Creemos en la comunicación honesta y la transparencia, para que cada cliente se sienta valorado y seguro de sus decisiones de estilo.',
+        title: 'La familia primero',
+        body: 'Un negocio familiar desde 2003: no somos una cadena. Llevamos nuestras dos barberías de Orlando como lo que somos, un negocio de familia, y tratamos a los clientes de siempre y a los nuevos como vecinos, porque la mayoría lo son.',
       },
       {
-        title: 'Calidad',
-        body: 'Nuestro compromiso con la excelencia significa usar los mejores productos y técnicas, logrando resultados que dejan a nuestros clientes luciendo impecables y sintiéndose muy bien.',
+        title: 'El oficio, bien hecho',
+        body: 'Degradados, cortes clásicos, arreglo de barba y afeitado con toalla caliente — cada corte se termina limpio y se revisa antes de que te levantes de la silla. Si no está impecable, no está terminado, y lo corregimos antes de que salgas.',
       },
       {
-        title: 'Comunidad',
-        body: 'Nos esforzamos por crear un ambiente acogedor que fomenta la conexión y la camaradería, apoyando a nuestra comunidad local y construyendo relaciones duraderas.',
+        title: 'Ven sin cita, en tu idioma',
+        body: '¿Sin cita? Aceptamos clientes sin cita en ambas barberías, los siete días de la semana. Y te atendemos en inglés y español — cuéntanos el estilo que buscas en el idioma en el que te sientas más cómodo.',
       },
     ],
-    teamHeading: 'Nuestro equipo de expertos',
+    teamHeading: 'Experiencia en cada silla',
+    teamIntro:
+      'New Barbershop es un negocio familiar, y nuestros barberos aportan más de 20 años de experiencia a las sillas de ambas barberías de Orlando — Southchase y cerca de Florida Mall. El equipo domina el oficio completo: degradados de precisión y cortes clásicos, arreglos de barba y afeitados con toalla caliente, delineados a navaja y diseños en el cabello, y cortes para niños hechos con paciencia. En Southchase, las trenzas para hombres y mujeres también forman parte del servicio. Cuéntanos el estilo que buscas — en inglés o español — y nosotros nos encargamos del resto. Siempre aceptamos clientes sin cita.',
     teamButton: (n: number) => `New Barbershop ${n} — Mira fotos y reseñas en Google`,
   },
 } as const;
 
 export const contactCopy = {
-  en: { heading: 'Get in Touch', locationsHeading: 'Our Locations' },
-  es: { heading: 'Contáctanos', locationsHeading: 'Nuestras ubicaciones' },
+  en: {
+    heading: 'Get in Touch',
+    locationsHeading: 'Our Locations',
+    intro:
+      'Two Orlando barbershops on South Orange Blossom Trail — pick your shop and call to book, or just walk in. New Barbershop 1 in Southchase, (407) 470-4846, is open daily 8:00 AM–10:30 PM and is also on WhatsApp. New Barbershop 2 near Florida Mall, (407) 820-4541, is open Monday 9:00 AM–9:00 PM and Tuesday–Sunday 9:00 AM–10:00 PM. Both shops welcome walk-ins — tap a number below to call.',
+    instagramLead: 'See our latest cuts on Instagram:',
+  },
+  es: {
+    heading: 'Contáctanos',
+    locationsHeading: 'Nuestras ubicaciones',
+    intro:
+      'Dos barberías en Orlando sobre South Orange Blossom Trail — elige tu barbería y llama para reservar, o ven sin cita. New Barbershop 1 en Southchase, (407) 470-4846, abre todos los días de 8:00 AM a 10:30 PM y también está en WhatsApp. New Barbershop 2 cerca de Florida Mall, (407) 820-4541, abre lunes de 9:00 AM a 9:00 PM y de martes a domingo de 9:00 AM a 10:00 PM. Ambas barberías aceptan clientes sin cita — toca un número abajo para llamar.',
+    instagramLead: 'Mira nuestros cortes más recientes en Instagram:',
+  },
 } as const;
 
 // "How It Works" block (new-copy.md §3) — shared by Home + both location pages.
@@ -334,6 +352,9 @@ export interface GalleryItem {
     text: { en: string; es: string };
   };
   reserved?: boolean;
+  /** CSS object-position for the grid crop (e.g. '50% 100%' keeps the
+      bottom of the frame — beard — in view). Unset = default center. */
+  objectPosition?: string;
 }
 
 const lgOf = (src: string | null): string | null =>
@@ -348,19 +369,22 @@ const cap = (
   ten: string,
   tes: string,
   reserved = false,
+  objectPosition?: string,
 ): GalleryItem => ({
   src,
   largeSrc: lgOf(src),
   alt: { en: alten, es: altes },
   caption: { style: { en: sen, es: ses }, text: { en: ten, es: tes } },
   reserved,
+  objectPosition,
 });
 
 export const galleryItems: GalleryItem[] = [
   cap('/images/classic-haircut-orlando.webp',
     'Client with a classic pompadour haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un corte clásico con tupé y barba perfilada en una barbería en Orlando, FL',
     'Classic Haircut', 'Corte clásico',
-    'A timeless cut, tailored to your style and finished clean.', 'Un corte atemporal, adaptado a tu estilo y con un acabado limpio.'),
+    'A timeless cut, tailored to your style and finished clean.', 'Un corte atemporal, adaptado a tu estilo y con un acabado limpio.',
+    false, '50% 100%'),
   cap('/images/high-skin-fade-orlando.webp',
     'Client with a finished high skin fade haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un degradado alto al ras terminado y barba perfilada en una barbería en Orlando, FL',
     'High Skin Fade', 'Degradado alto al ras',
@@ -370,13 +394,14 @@ export const galleryItems: GalleryItem[] = [
     'Burst Fade', 'Degradado burst',
     'A curved fade that arcs around the ear for a standout finish.', 'Un degradado curvo que rodea la oreja, para un acabado que destaca.'),
   cap('/images/buzz-cut-orlando.webp',
-    'Client with a buzz cut haircut, faded sides and a shaped beard at a barber shop in Orlando, FL', 'Cliente con corte rapado, laterales degradados y barba perfilada en una barbería en Orlando, FL',
-    'Buzz Cut', 'Corte rapado',
-    'One length all over — simple, even and sharp.', 'Una sola longitud en toda la cabeza — sencillo, uniforme y definido.'),
+    'Client with a short textured crop and a skin fade, side view, at a barber shop in Orlando, FL', 'Cliente con un corte corto texturizado y un degradado al ras, vista de lado, en una barbería en Orlando, FL',
+    'Textured Crop & Skin Fade', 'Corte texturizado con degradado al ras',
+    'Short textured length on top, faded clean down to the skin on the sides.', 'Largo corto y texturizado arriba, degradado limpio hasta la piel en los laterales.'),
   cap('/images/haircut-and-beard-combo-orlando-flip.webp',
     'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL',
     'Haircut & Beard Combo', 'Combo corte + barba',
-    'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.'),
+    'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.',
+    false, '50% 100%'),
   cap('/images/hot-towel-shave-orlando.webp',
     "Barber wrapping a hot towel around a reclined client's beard for a traditional shave at a barber shop in Orlando, FL", 'Barbero envolviendo una toalla caliente alrededor de la barba de un cliente reclinado para un afeitado tradicional en una barbería en Orlando, FL',
     'Hot Towel Shave', 'Afeitado con toalla caliente',
@@ -437,5 +462,15 @@ export const homeGalleryItems: GalleryItem[] = [
     'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
   bySrc('/images/classic-haircut-orlando.webp'),
   bySrc('/images/high-skin-fade-orlando.webp'),
+  bySrc('/images/haircut-and-beard-combo-orlando-flip.webp'),
+];
+
+/* About page team gallery (improvement phase): captioned real photos
+   reused by src from the Services gallery, in curated order. */
+export const aboutTeamItems: GalleryItem[] = [
+  bySrc('/images/classic-haircut-orlando.webp'),
+  bySrc('/images/braids-orlando.webp'),
+  bySrc('/images/burst-fade-orlando.webp'),
+  bySrc('/images/hair-design-orlando.webp'),
   bySrc('/images/haircut-and-beard-combo-orlando-flip.webp'),
 ];

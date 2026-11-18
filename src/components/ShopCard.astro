@@ -12,7 +12,7 @@ const { loc, lang, showVisit = true } = Astro.props;
 const t = ui[lang];
 ---
 
-<article class="card">
+<article class="card shop-card">
   <h2>{loc.name}</h2>
   <p class="area">{loc.area[lang]}</p>
   <p class="addr">{loc.street}<br />{loc.city}, {loc.state} {loc.zip}</p>
@@ -30,7 +30,7 @@ const t = ui[lang];
     )}
   </div>
   {showVisit && (
-    <p style="margin-top:14px;margin-bottom:0">
+    <p class="visit-link">
       <a href={path(lang, `locations/${loc.slug}`)}>
         {loc._id === 'shop1' ? t.visitShop1 : t.visitShop2}
       </a>
