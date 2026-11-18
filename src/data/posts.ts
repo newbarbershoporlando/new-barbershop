@@ -92,7 +92,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-2',
     slug: 'blog/expert-fades-orlando',
-    image: '/images/blog-02-fades.webp',
+    image: '/images/blog-02-fades-v2.webp',
     imageAlt: {
       en: 'Client with a slicked pompadour, hard part and clean fade, back view',
       es: 'Cliente con tupé peinado hacia atrás, raya marcada y degradado limpio, vista trasera',
@@ -201,7 +201,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-4',
     slug: 'blog/welcome-neighborhood-barbershop-orlando',
-    image: '/images/blog-04-welcome.webp',
+    image: '/images/blog-04-welcome-v2.webp',
     imageAlt: {
       en: 'Client with a side part, skin fade and shaped beard at the barber station',
       es: 'Cliente con raya lateral, degradado al ras y barba perfilada en la estación del barbero',
@@ -741,7 +741,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-14',
     slug: 'blog/fade-vs-taper',
-    image: '/images/blog-14-fade-vs-taper.webp',
+    image: '/images/blog-14-fade-vs-taper-v2.webp',
     imageAlt: {
       en: 'Client with a pompadour and a high skin fade showing the blend, back view',
       es: 'Cliente con tupé y degradado alto al ras que muestra la difuminación, vista trasera',
