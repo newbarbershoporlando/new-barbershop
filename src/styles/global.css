@@ -5,7 +5,7 @@
    token itself is unchanged.)
    Fonts self-hosted in /public/fonts (Oswald / Barlow / Yellowtail). */
 
-@import url('/fonts/fonts.css');
+@import url('/fonts/fonts-v2.css');
 
 :root {
   --red: #e80613;

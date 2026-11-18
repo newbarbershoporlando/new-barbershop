@@ -471,7 +471,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-9',
     slug: 'blog/how-often-haircut-men',
-    image: '/images/blog-09-how-often.webp',
+    image: '/images/blog-09-how-often-v2.webp',
     imageAlt: {
       en: 'Client with a fresh high skin fade and a sharp line-up, seated in the barber chair at New Barbershop in Orlando',
       es: 'Cliente con un degradado alto al ras recién hecho y un delineado definido, sentado en la silla de barbero en New Barbershop en Orlando',
@@ -579,7 +579,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-11',
     slug: 'blog/haircut-new-start',
-    image: '/images/blog-11-new-start.webp',
+    image: '/images/blog-11-new-start-v2.webp',
     imageAlt: {
       en: 'Client with a fresh fade, a straight fringe and a sharp line-up at New Barbershop in Orlando',
       es: 'Cliente con un degradado fresco, flequillo recto y un delineado definido en New Barbershop en Orlando',
@@ -633,7 +633,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-12',
     slug: 'blog/men-grooming-habits',
-    image: '/images/blog-12-grooming-habits.webp',
+    image: '/images/blog-12-grooming-habits-v2.webp',
     imageAlt: {
       en: 'Client with a shaped beard and a fade, reclined with a hot towel wrapped around his neck during a shave',
       es: 'Cliente con barba perfilada y degradado, reclinado con una toalla caliente alrededor del cuello durante un afeitado',
@@ -795,7 +795,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-15',
     slug: 'blog/how-often-wash-hair-men',
-    image: '/images/blog-15-wash-hair.webp',
+    image: '/images/blog-15-wash-hair-v2.webp',
     imageAlt: {
       en: 'Client reclined at the shampoo bowl while a barber lathers his hair with shampoo at New Barbershop in Orlando',
       es: 'Cliente reclinado en el lavacabezas mientras un barbero le lava el cabello con champú en New Barbershop en Orlando',
@@ -849,7 +849,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-16',
     slug: 'blog/360-waves-routine',
-    image: '/images/blog-16-waves.webp',
+    image: '/images/blog-16-waves-v2.webp',
     imageAlt: {
       en: 'Top-down view of a deep 360 waves hairstyle pattern',
       es: 'Vista desde arriba de un patrón profundo de 360 waves',
@@ -1495,7 +1495,7 @@ const localPosts: Post[] = [
   {
     _id: 'post-28',
     slug: 'blog/new-car-haircut',
-    image: '/images/blog-28-new-ride.webp',
+    image: '/images/blog-28-new-ride-v2.webp',
     imageAlt: {
       en: 'Client with cornrow braids in progress, seated in the barber chair by the shop window',
       es: 'Cliente con trenzas cornrow en proceso, sentado en la silla del barbero junto a la ventana de la barbería',

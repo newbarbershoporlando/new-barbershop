@@ -380,7 +380,7 @@ const cap = (
 });
 
 export const galleryItems: GalleryItem[] = [
-  cap('/images/classic-haircut-orlando.webp',
+  cap('/images/classic-haircut-orlando-v2.webp',
     'Client with a classic pompadour haircut and shaped beard at a barber shop in Orlando, FL', 'Cliente con un corte clásico con tupé y barba perfilada en una barbería en Orlando, FL',
     'Classic Haircut', 'Corte clásico',
     'A timeless cut, tailored to your style and finished clean.', 'Un corte atemporal, adaptado a tu estilo y con un acabado limpio.',
@@ -397,7 +397,7 @@ export const galleryItems: GalleryItem[] = [
     'Client with a short textured crop and a skin fade, side view, at a barber shop in Orlando, FL', 'Cliente con un corte corto texturizado y un degradado al ras, vista de lado, en una barbería en Orlando, FL',
     'Textured Crop & Skin Fade', 'Corte texturizado con degradado al ras',
     'Short textured length on top, faded clean down to the skin on the sides.', 'Largo corto y texturizado arriba, degradado limpio hasta la piel en los laterales.'),
-  cap('/images/haircut-and-beard-combo-orlando-flip.webp',
+  cap('/images/haircut-and-beard-combo-orlando-flip2.webp',
     'Finished haircut and beard combo with a crisp line-up, side view, at a barber shop in Orlando, FL', 'Combo de corte y barba terminado con delineado definido, vista de lado, en una barbería en Orlando, FL',
     'Haircut & Beard Combo', 'Combo corte + barba',
     'The full service: cut and beard, finished together in one visit.', 'El servicio completo: corte y barba, terminados juntos en una sola visita.',
@@ -460,17 +460,17 @@ export const homeGalleryItems: GalleryItem[] = [
     'Young client with a skin fade and a sharp line-up — a kids fade haircut at a barber shop in Orlando, FL', 'Cliente joven con un degradado al ras y un delineado definido — degradado para niños en una barbería en Orlando, FL',
     'Kids Fade', 'Degradado para niños',
     'Clean fades for young clients, cut with patience.', 'Degradados limpios para los clientes jóvenes, cortados con paciencia.'),
-  bySrc('/images/classic-haircut-orlando.webp'),
+  bySrc('/images/classic-haircut-orlando-v2.webp'),
   bySrc('/images/high-skin-fade-orlando.webp'),
-  bySrc('/images/haircut-and-beard-combo-orlando-flip.webp'),
+  bySrc('/images/haircut-and-beard-combo-orlando-flip2.webp'),
 ];
 
 /* About page team gallery (improvement phase): captioned real photos
    reused by src from the Services gallery, in curated order. */
 export const aboutTeamItems: GalleryItem[] = [
-  bySrc('/images/classic-haircut-orlando.webp'),
+  bySrc('/images/classic-haircut-orlando-v2.webp'),
   bySrc('/images/braids-orlando.webp'),
   bySrc('/images/burst-fade-orlando.webp'),
   bySrc('/images/hair-design-orlando.webp'),
-  bySrc('/images/haircut-and-beard-combo-orlando-flip.webp'),
+  bySrc('/images/haircut-and-beard-combo-orlando-flip2.webp'),
 ];
